@@ -21,13 +21,11 @@ let cssInfoArray: CssInfo[] = [];
 const getFromMoz = async (property: string) => {
   try {
     //Grab CSS info from Moz with Cheerio
-    //@ts-ignore
     const $ = await cheerio.fromURL(
       `https://developer.mozilla.org/en-US/docs/Web/CSS/${property}`,
     );
 
     //Find Spec Table
-    //@ts-ignore
     const specTable = $(".standard-table").find("a");
 
     let arrayOfSpecs = [];
@@ -46,7 +44,7 @@ const getFromMoz = async (property: string) => {
 
 const scrapeSpecSheet = async (sheet: string, property: string) => {
   console.log("SCRAPPING: ", sheet);
-  //@ts-ignore
+  
   const sheetHTML = await cheerio.fromURL(sheet);
 
   //is the css property refrenced in this sheet
