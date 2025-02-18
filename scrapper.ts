@@ -1,19 +1,7 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
 import moment from "npm:moment";
-
-type CssInfo = {
-  authors: Authors[] | null;
-  date: string | null;
-  thisSpecUrl: string | null;
-  previousSpecUrls: string[] | null;
-  about: string | null;
-};
-
-type Authors = {
-  name: string;
-  company: string | null;
-  link: string | null;
-};
+import type {Authors, CssInfo} from './type.ts'
+import cssFiles from './basics.ts'
 
 let property = "border";
 let cssInfoArray: CssInfo[] = [];
@@ -44,7 +32,7 @@ const getFromMoz = async (property: string) => {
 
 const scrapeSpecSheet = async (sheet: string, property: string) => {
   console.log("SCRAPPING: ", sheet);
-  
+
   const sheetHTML = await cheerio.fromURL(sheet);
 
   //is the css property refrenced in this sheet
@@ -79,6 +67,7 @@ const getCSSInfo = (sheetHTML: cheerio.CheerioAPI) => {
 };
 
 const checkIfPresent = (sheetHTML: any, property: string) => {
+
   //works for doc type: https://drafts.csswg.org/css-backgrounds/#index
   //Find index title
   let indexTitle = sheetHTML("#index-defined-here").next();
