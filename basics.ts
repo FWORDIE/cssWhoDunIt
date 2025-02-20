@@ -1,5 +1,3 @@
-import type { Authors, CssInfo } from "type";
-
 // These are used when we run out of CSS3 Draft Links Module Links to explore
 // e.g. We run out of previous versions of a property to explore,
 // therefore it must be part of CSS2.1. If the property is still present in all
