@@ -1,7 +1,12 @@
 import type { Authors, CssInfo } from "type";
 
-export const cssFiles = [
-  "https://www.w3.org/TR/CSS1/",
-  "https://www.w3.org/TR/2008/REC-CSS2-20080411/",
-  "https://www.w3.org/TR/CSS2/",
+// These are used when we run out of CSS3 Draft Links Module Links to explore
+// e.g. We run out of previous versions of a property to explore,
+// therefore it must be part of CSS2.1. If the property is still present in all
+// the 2.1 drafts then it must be in 2 etc
+
+export const CSSDrafts = [
+	"https://www.w3.org/TR/CSS1/",
+	"https://www.w3.org/TR/2008/REC-CSS2-20080411/",
+	"https://www.w3.org/TR/CSS2/",
 ];
