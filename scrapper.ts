@@ -11,11 +11,11 @@ let propertyInfo: CssProperty = {
 	about: "await getAboutfromMDN(property)",
 };
 
-// PLAN:
-// Create an array of the history of Each CSS property (See Type CssProperty and History for details)
-// This list can then be sorted by date and create a history of each property
-// Can be used for A, a add-on, e.g. this site was designed by Erik from Google
-// Or B, an api that others can add to or use for their own projects
+// PLAN: Create an array of the history of Each CSS property (See Type
+// CssProperty and History for details) This list can then be sorted by date and
+// create a history of each property Can be used for A, a add-on, e.g. this site
+// was designed by Erik from Google Or B, an api that others can add to or use
+// for their own projects
 
 const getFromMDN = async (property: string) => {
 	//This block trys stuff, and if it fails it tells us why hopefully
@@ -55,7 +55,8 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 
 	const sheetHTML = await cheerio.fromURL(sheet);
 
-	// IDEA: We Could try and look for a fingerprint for each doc type so we can pass that as an arguemnt for scrapping
+	// IDEA: We Could try and look for a fingerprint for each doc type so we can
+	// pass that as an arguemnt for scrapping
 
 	// Is the css property refrenced in this sheet
 	const isPresent = checkIfPresent(sheetHTML, property);
@@ -70,22 +71,22 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 
 		//Here we check if the doc had previous specs mentioned
 		if (thisSpecsInfo.previousSpecUrls.length > 0) {
-			// Now we run this functional recersively for all those docs
-			// HERE IMRE WILL WRITE A FOR LOOP TO DO THIS
+			// Now we run this functional recersively for all those docs HERE
+			// IMRE WILL WRITE A FOR LOOP TO DO THIS
 		} else {
-			// If no Specs are refrence but the property was present, we check the process again with CSS2.1
-			// This needs to also handle CSS2 and CSS1
-			// And handle when it is an orginal Properrty
+			// If no Specs are refrence but the property was present, we check
+			// the process again with CSS2.1 This needs to also handle CSS2 and
+			// CSS1 And handle when it is an orginal Properrty
 		}
 	}
-	// This code will recussively dig into the spec sheets till the property is not present
+	// This code will recussively dig into the spec sheets till the property is
+	// not present
 
 	// If not return
 	return;
 };
 
 const getCSSInfo = (sheetHTML: cheerio.CheerioAPI) => {
-
 	let thisSpecsInfo: History = {
 		authors: null,
 		date: null,
@@ -105,12 +106,12 @@ const getCSSInfo = (sheetHTML: cheerio.CheerioAPI) => {
 	thisSpecsInfo.date = formatedDate || null;
 
 	//Returns the Doc info it finds
-	return thisSpecsInfo
+	return thisSpecsInfo;
 };
 
 const checkIfPresent = (sheetHTML: cheerio.CheerioAPI, property: string) => {
-	// This function will check if a css properrty is mentiond in a Doc
-	// Will have to be added to as more types of Doc are found
+	// This function will check if a css properrty is mentiond in a Doc Will
+	// have to be added to as more types of Doc are found
 
 	let isPresent = false;
 
@@ -123,8 +124,8 @@ const checkIfPresent = (sheetHTML: cheerio.CheerioAPI, property: string) => {
 	if (indexTitle) {
 		const indexSection = indexTitle.next();
 		if (indexSection) {
-			// Finds index of attributes and turn it into an array
-			// Also convert it into an Array
+			// Finds index of attributes and turn it into an array Also convert
+			// it into an Array
 			let index = [...indexSection.find("li a")];
 			isPresent = index.some((elm: any) => {
 				return elm.children[0].data == property;
@@ -142,7 +143,7 @@ const checkIfPresent = (sheetHTML: cheerio.CheerioAPI, property: string) => {
 	return false;
 };
 
-const getAboutfromMDN = (property:string) => {
+const getAboutfromMDN = (property: string) => {
 	// This will grab info about a property from MDN
 	return "we will write this function later";
 };
@@ -165,6 +166,13 @@ const init = async (property: string) => {
 	for (let x = 0; x < intialArrayOfSpecs.length; x++) {
 		await scrapeSpecSheet(intialArrayOfSpecs[x], property);
 	}
+
+	//TODO: After we have all the specs, we can order by date to get the origin
+	//spec of each property
 };
 
+// This can be run on every property from a list/array Complied to a an array of
+// CssProperty Objects and their History Arrays IDEA: This can be used to do
+// various things. E.g. mabye it makes more sense to just have a list of specs
+// sorted by date that mention the css properties mentioned
 init(property);
