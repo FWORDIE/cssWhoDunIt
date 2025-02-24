@@ -17,3 +17,6 @@ Then run the scrapper with:
 ``` deno run -A scrapper.ts  ```
 
 
+###links for different docs###
+[https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/) 
+[https://www.w3.org/TR/2017/WD-css-logical-1-20170518/](https://www.w3.org/TR/2017/WD-css-logical-1-20170518/) 

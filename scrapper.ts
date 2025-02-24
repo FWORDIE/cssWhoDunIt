@@ -81,6 +81,10 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 			// IMRE WILL WRITE A FOR LOOP TO DO THIS
 			// loop through previous spec sheets
 			// in the loop run this fucntion again
+			for (let x = 0; x < thisSpecsInfo.previousSpecUrls.length; x++) {
+				await scrapeSpecSheet(thisSpecsInfo.previousSpecUrls[x], property);
+			}
+		
 		} else {
 			// If no Specs are refrence but the property was present, we check
 			// the process again with CSS2.1 This needs to also handle CSS2 and
