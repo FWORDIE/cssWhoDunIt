@@ -1,6 +1,6 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
 import moment from "npm:moment";
-import type { CssProperty, History } from "./types.ts";
+import type { Authors, CssProperty, History } from "./types.ts";
 import { CSSDrafts } from "./basics.ts";
 
 const property = "border";
@@ -16,8 +16,6 @@ let propertyInfo: CssProperty = {
 // create a history of each property Can be used for A, a add-on, e.g. this site
 // was designed by Erik from Google Or B, an api that others can add to or use
 // for their own projects
-
-// thıs ıs dum
 
 const getFromMDN = async (property: string) => {
 	//This block trys stuff, and if it fails it tells us why hopefully
@@ -66,8 +64,13 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 	//If property is present scrape info
 	if (isPresentandType.isPresent) {
 		//Add scraped info to its History Array
-		let thisSpecsInfo = await getCSSInfo(sheetHTML, isPresentandType.type);
+		let thisSpecsInfo = await getCSSInfo(
+			sheetHTML,
+			isPresentandType.type,
+			sheet,
+		);
 
+		console.log(thisSpecsInfo);
 		//Ignore Type error will be fixed in future
 		propertyInfo.history.push(thisSpecsInfo);
 
@@ -91,13 +94,18 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 	return;
 };
 
-const getCSSInfo = (sheetHTML: cheerio.CheerioAPI, type: string | null) => {
+const getCSSInfo = (
+	sheetHTML: cheerio.CheerioAPI,
+	type: string | null,
+	sheet: string,
+) => {
+	console.log("Getting CSS Spec Info for type ", type);
 	let thisSpecsInfo: History = {
 		authors: null,
-		date: null,
-		thisSpecUrl: null,
+		date: null, //done
+		thisSpecUrl: sheet, //done
 		thisDocName: null,
-		type: "Unknown",
+		type: "Unknown", //done
 		previousSpecUrls: [],
 	};
 
@@ -105,14 +113,109 @@ const getCSSInfo = (sheetHTML: cheerio.CheerioAPI, type: string | null) => {
 
 	switch (type) {
 		case "A": {
-			console.log("type A");
-
-			//find date (may not work)
+			// find date (may not work)
 			let date = sheetHTML(".head").find("time").text();
 			let formatedDate = moment(date, "DD MMMM YYYY").format();
-			console.log(formatedDate);
+			if (formatedDate) {
+				thisSpecsInfo.date = formatedDate;
+			} else {
+				thisSpecsInfo.date = null;
+				console.log("Error Finding data for: ", sheet);
+			}
 
-			thisSpecsInfo.date = formatedDate || null;
+			// find type of doc
+			let docType = sheetHTML("#w3c-state").find("a").text();
+			docType = docType.trim();
+			console.log(docType);
+			if (docType) {
+				thisSpecsInfo.type = docType;
+			} else {
+				console.log("Error Finding doc type for: ", sheet);
+				thisSpecsInfo.type = "Unknown";
+			}
+
+			// find doc name
+			const docName = sheetHTML("#title").text();
+			if (docName) {
+				thisSpecsInfo.thisDocName = docName;
+			} else {
+				thisSpecsInfo.thisDocName = null;
+				console.log("Error Finding name for: ", sheet);
+			}
+
+			// find authors
+			const allAuthors = sheetHTML("body").find(".editor");
+			const authors: Authors[] = [];
+
+			// loop through all the tags with author class
+			for (let x = 0; x < allAuthors.length; x++) {
+				const innerText = allAuthors[x].children[0].data;
+
+				// stop when one is found with Former Editor String
+				if (
+					(innerText && innerText.trim() === "Former Editor:") ||
+					(innerText && innerText.trim() === "Former Editors:")
+				) {
+					break;
+				}
+
+				//scrape author info
+				if (!innerText) {
+					const author = allAuthors[x].children[0].children[0].data;
+					const org = allAuthors[x].children[2].children[0].data;
+					const link = allAuthors[x].children[0].attribs.href;
+					authors.push({
+						name: author,
+						org: org,
+						type: "Editor",
+						link: link,
+					});
+				}
+			}
+
+			// check we found somethin
+			if (authors.length > 0) {
+				thisSpecsInfo.authors = authors;
+			} else {
+				thisSpecsInfo.authors = null;
+				console.log("Error Finding authors for: ", sheet);
+			}
+
+			// LAst one woop woop
+			// find previous spec sheets
+			const previousVersionsArray: string[] = [];
+
+			// find latest published verison
+			const lastestPub = sheetHTML(".head")
+				.find("dt:contains('Latest published version:')")
+				.next()
+				.text();
+			if (lastestPub) {
+				previousVersionsArray.push(lastestPub.trim());
+			}
+
+			// find previous published versions
+			const allPreviousVersions = sheetHTML(".head").find("[rel='prev']");
+
+			//loop through all to find their links
+			for (let x = 0; x < allPreviousVersions.length; x++) {
+				const link = allPreviousVersions[x].children[0].data;
+				if (link) {
+					previousVersionsArray.push(link.trim());
+				}
+			}
+
+			if (previousVersionsArray.length > 0) {
+				// remove duplicates
+				thisSpecsInfo.previousSpecUrls = [
+					...new Set(previousVersionsArray),
+				];
+			} else {
+				// Is this whewre we shopuld add links to css2.1/2/1
+				thisSpecsInfo.previousSpecUrls = [];
+			}
+
+			// console.log(allPreviousVersions)
 			break;
 		}
 		case "B": {
@@ -158,10 +261,10 @@ const checkIfPresentandType = (
 
 	// Check if property is present
 	if (isPresent) {
-		return { isPresent: false, type: null };
+		return { isPresent: true, type: "A" };
 	}
 
-	return { isPresent: false, type: "A" };
+	return { isPresent: false, type: null };
 };
 
 const getAboutfromMDN = (property: string) => {
