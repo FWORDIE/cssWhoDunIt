@@ -17,6 +17,8 @@ let propertyInfo: CssProperty = {
 // was designed by Erik from Google Or B, an api that others can add to or use
 // for their own projects
 
+// thıs ıs dum
+
 const getFromMDN = async (property: string) => {
 	//This block trys stuff, and if it fails it tells us why hopefully
 	try {
