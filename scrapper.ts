@@ -3,13 +3,15 @@ import moment from "npm:moment";
 import type { Authors, CssProperty, History } from "./types.ts";
 import { CSSDrafts } from "./basics.ts";
 
-const property = "border";
+const property = "margin";
 let propertyInfo: CssProperty = {
 	name: property,
 	history: [],
 	mdnLink: `https://developer.mozilla.org/en-US/docs/Web/CSS/${property}`,
 	about: "await getAboutfromMDN(property)",
 };
+
+let searches: string[] = [];
 
 // PLAN: Create an array of the history of Each CSS property (See Type
 // CssProperty and History for details) This list can then be sorted by date and
@@ -53,13 +55,17 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 	// This function will scrape all our Specs
 	console.log("Started Scrapping: ", sheet);
 
+	// Add this top a list of spec sheet urls
+	// This way we don't do the same sheet twice
+	searches.push(sheet);
+
 	const sheetHTML = await cheerio.fromURL(sheet);
 
 	// IDEA: We Could try and look for a fingerprint for each doc type so we can
 	// pass that as an arguemnt for scrapping
 
 	// Is the css property refrenced in this sheet
-	const isPresentandType = checkIfPresentandType(sheetHTML, property);
+	const isPresentandType = checkIfPresentandType(sheetHTML, property, sheet);
 
 	//If property is present scrape info
 	if (isPresentandType.isPresent) {
@@ -70,26 +76,41 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 			sheet,
 		);
 
-		console.log(thisSpecsInfo);
+		// console.log(thisSpecsInfo);
 		//Ignore Type error will be fixed in future
 		propertyInfo.history.push(thisSpecsInfo);
 
 		//Here we check if the doc had previous specs mentioned
 		if (thisSpecsInfo.previousSpecUrls.length > 0) {
 			// Now we run this functional recersively for all those docs HERE
-			// Check if we have already looked at this Spec Sheets
-			// IMRE WILL WRITE A FOR LOOP TO DO THIS
 			// loop through previous spec sheets
 			// in the loop run this fucntion again
 			for (let x = 0; x < thisSpecsInfo.previousSpecUrls.length; x++) {
-				await scrapeSpecSheet(thisSpecsInfo.previousSpecUrls[x], property);
+				const thisSpec = thisSpecsInfo.previousSpecUrls[x];
+
+				// Check if this sheet has been searched
+				const alreadySerched = searches.some((specUrl) => {
+					return specUrl == thisSpec;
+				});
+
+				if (!alreadySerched) {
+					await scrapeSpecSheet(
+						thisSpecsInfo.previousSpecUrls[x],
+						property,
+					);
+				} else {
+					console.log(
+						"This sheet has lready been serached:",
+						thisSpec,
+					);
+				}
 			}
-		
 		} else {
 			// If no Specs are refrence but the property was present, we check
 			// the process again with CSS2.1 This needs to also handle CSS2 and
 			// CSS1 And handle when it is an orginal Properrty
 		}
+	} else {
 	}
 	// This code will recussively dig into the spec sheets till the property is
 	// not present
@@ -103,7 +124,7 @@ const getCSSInfo = (
 	type: string | null,
 	sheet: string,
 ) => {
-	console.log("Getting CSS Spec Info for type ", type);
+	// console.log("Getting CSS Spec Info for type ", type);
 	let thisSpecsInfo: History = {
 		authors: null,
 		date: null, //done
@@ -130,7 +151,6 @@ const getCSSInfo = (
 			// find type of doc
 			let docType = sheetHTML("#w3c-state").find("a").text();
 			docType = docType.trim();
-			console.log(docType);
 			if (docType) {
 				thisSpecsInfo.type = docType;
 			} else {
@@ -237,6 +257,7 @@ const getCSSInfo = (
 const checkIfPresentandType = (
 	sheetHTML: cheerio.CheerioAPI,
 	property: string,
+	sheet: string,
 ) => {
 	// This function will check if a css properrty is mentiond in a Doc Will
 	// have to be added to as more types of Doc are found
@@ -258,6 +279,17 @@ const checkIfPresentandType = (
 			isPresent = index.some((elm: any) => {
 				return elm.children[0].data == property;
 			});
+			//Double check for things that aren't links
+			//e.g. margin in https://drafts.csswg.org/css-box/#margin
+
+			if (!isPresent) {
+				let indexNew = [...indexSection.find("li")];
+				isPresent = indexNew.some((elm: any) => {
+					if (elm.children[0].data) {
+						return elm.children[0].data.trim() == property;
+					}
+				});
+			}
 		}
 	}
 
@@ -267,7 +299,7 @@ const checkIfPresentandType = (
 	if (isPresent) {
 		return { isPresent: true, type: "A" };
 	}
-
+	console.log("Property not present in ", sheet);
 	return { isPresent: false, type: null };
 };
 
@@ -297,6 +329,15 @@ const init = async (property: string) => {
 
 	//TODO: After we have all the specs, we can order by date to get the origin
 	//spec of each property
+
+	console.log("DONE!!!");
+	console.log(
+		`It's history is ${propertyInfo.history.length} Spec sheets long`,
+	);
+	await Deno.writeTextFile(
+		`infos/${property}-Info.json`,
+		JSON.stringify(propertyInfo),
+	);
 };
 
 // This can be run on every property from a list/array Complied to a an array of
