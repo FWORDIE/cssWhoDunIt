@@ -74,6 +74,7 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 		//Here we check if the doc had previous specs mentioned
 		if (thisSpecsInfo.previousSpecUrls.length > 0) {
 			// Now we run this functional recersively for all those docs HERE
+			// Check if we have already looked at this Spec Sheets
 			// IMRE WILL WRITE A FOR LOOP TO DO THIS
 			// loop through previous spec sheets
 			// in the loop run this fucntion again

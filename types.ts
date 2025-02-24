@@ -4,7 +4,7 @@ export type History = {
 	thisSpecUrl: string | null;
 	previousSpecUrls: string[];
 	thisDocName: string | null;
-	type: "Draft" | "Reccomendation" | "Unknown";
+	type: "Working Draft" | "Editors Draft" | "Recomendation" | "Unknown";
 };
 
 export type CssProperty = {
