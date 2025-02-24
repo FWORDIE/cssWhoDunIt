@@ -4,18 +4,19 @@ export type History = {
 	thisSpecUrl: string | null;
 	previousSpecUrls: string[];
 	thisDocName: string | null;
-	type: "Draft" | "Reccomendation" | "Unkown";
+	type: "Draft" | "Reccomendation" | "Unknown";
 };
 
 export type CssProperty = {
 	history: History[];
 	about: string | null; // Note Take from mdn Docs
-	name: string |null;
-	mdnLink: string |null;
+	name: string | null;
+	mdnLink: string | null;
 };
 
 export type Authors = {
 	name: string;
 	company: string | null;
 	link: string | null;
+	type: "Editor" | "Author" | "Unknown";
 };

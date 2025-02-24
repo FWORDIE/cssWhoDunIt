@@ -59,12 +59,12 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 	// pass that as an arguemnt for scrapping
 
 	// Is the css property refrenced in this sheet
-	const isPresent = checkIfPresent(sheetHTML, property);
+	const isPresentandType = checkIfPresentandType(sheetHTML, property);
 
 	//If property is present scrape info
-	if (isPresent) {
+	if (isPresentandType.isPresent) {
 		//Add scraped info to its History Array
-		let thisSpecsInfo = await getCSSInfo(sheetHTML);
+		let thisSpecsInfo = await getCSSInfo(sheetHTML, isPresentandType.type);
 
 		//Ignore Type error will be fixed in future
 		propertyInfo.history.push(thisSpecsInfo);
@@ -73,6 +73,8 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 		if (thisSpecsInfo.previousSpecUrls.length > 0) {
 			// Now we run this functional recersively for all those docs HERE
 			// IMRE WILL WRITE A FOR LOOP TO DO THIS
+			// loop through previous spec sheets
+			// in the loop run this fucntion again
 		} else {
 			// If no Specs are refrence but the property was present, we check
 			// the process again with CSS2.1 This needs to also handle CSS2 and
@@ -86,30 +88,46 @@ const scrapeSpecSheet = async (sheet: string, property: string) => {
 	return;
 };
 
-const getCSSInfo = (sheetHTML: cheerio.CheerioAPI) => {
+const getCSSInfo = (sheetHTML: cheerio.CheerioAPI, type: string | null) => {
 	let thisSpecsInfo: History = {
 		authors: null,
 		date: null,
 		thisSpecUrl: null,
 		thisDocName: null,
-		type: "Unkown",
+		type: "Unknown",
 		previousSpecUrls: [],
 	};
 
 	// Below here are is all the document scrapping
 
-	//find date (may not work)
-	let date = sheetHTML(".head").find("time").text();
-	let formatedDate = moment(date, "DD MMMM YYYY").format();
-	console.log(formatedDate);
+	switch (type) {
+		case "A": {
+			console.log("type A");
 
-	thisSpecsInfo.date = formatedDate || null;
+			//find date (may not work)
+			let date = sheetHTML(".head").find("time").text();
+			let formatedDate = moment(date, "DD MMMM YYYY").format();
+			console.log(formatedDate);
+
+			thisSpecsInfo.date = formatedDate || null;
+			break;
+		}
+		case "B": {
+			console.log("type B");
+			break;
+		}
+		default:
+			break;
+	}
 
 	//Returns the Doc info it finds
 	return thisSpecsInfo;
 };
 
-const checkIfPresent = (sheetHTML: cheerio.CheerioAPI, property: string) => {
+const checkIfPresentandType = (
+	sheetHTML: cheerio.CheerioAPI,
+	property: string,
+) => {
 	// This function will check if a css properrty is mentiond in a Doc Will
 	// have to be added to as more types of Doc are found
 
@@ -137,10 +155,10 @@ const checkIfPresent = (sheetHTML: cheerio.CheerioAPI, property: string) => {
 
 	// Check if property is present
 	if (isPresent) {
-		return true;
+		return { isPresent: false, type: null };
 	}
 
-	return false;
+	return { isPresent: false, type: "A" };
 };
 
 const getAboutfromMDN = (property: string) => {
