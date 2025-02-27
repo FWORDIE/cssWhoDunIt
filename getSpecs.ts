@@ -21,6 +21,10 @@ const getspecsFromList = async () => {
 	// for (let x = 0; x < $listItems.length; x++)
 	for (const element of $listItems) {
 		// Find the name of the deliverer
+		// This finds the element with text 'Deliverers'
+		// and then goes to the next Element in the DOM, the text we want
+		// This text tells us which working group was invloved, and we can
+		// ignore anything that isn't the CSS working group
 		const Deliverers = $(element)
 			.find("dt:contains('Deliverers')")
 			.next()
@@ -82,6 +86,8 @@ const searchHistory = async (historyLink: string) => {
 	}
 
 	// find the related section and its children
+	// This finds the element with ID 'related-lable'
+	// and then goes to the next Element in the DOM, the table we want
 	const $moreSection = $$("#related-label").next().find("li a");
 
 	//for each child
