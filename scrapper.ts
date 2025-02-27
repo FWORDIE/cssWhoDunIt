@@ -13,7 +13,13 @@ let propertyInfo: CssProperty = {
 
 let searches: string[] = [];
 
-// PLAN: Create an array of the history of Each CSS property (See Type
+// UPDATE:
+// We changed approach and are now grabbing all docs first
+// We will then search for all properties in these
+// See getSpecs.ts
+
+// PLAN:
+// Create an array of the history of Each CSS property (See Type
 // CssProperty and History for details) This list can then be sorted by date and
 // create a history of each property Can be used for A, a add-on, e.g. this site
 // was designed by Erik from Google Or B, an api that others can add to or use
