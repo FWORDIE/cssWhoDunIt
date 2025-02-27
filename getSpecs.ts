@@ -17,6 +17,8 @@ const getspecsFromList = async () => {
 	const $listItems = $(".tr-list__item");
 
 	// Loop over each
+	// This is the equivolent of:
+	// for (let x = 0; x < $listItems.length; x++)
 	for (const element of $listItems) {
 		// Find the name of the deliverer
 		const Deliverers = $(element)
@@ -69,6 +71,8 @@ const searchHistory = async (historyLink: string) => {
 	const $tableElements = $$("table").find("td a");
 
 	// on each row of the table
+	// This is the equivolent of:
+	// for (let x = 0; x < $tableElements.length; x++)
 	for (const element of $tableElements) {
 		// grab each link from table row
 		const doc = $$(element).attr()?.href;
@@ -81,6 +85,8 @@ const searchHistory = async (historyLink: string) => {
 	const $moreSection = $$("#related-label").next().find("li a");
 
 	//for each child
+	// This is the equivolent of:
+	// for (let x = 0; x < $moreSection.length; x++)
 	for (const element of $moreSection) {
 		// grab its link
 		const historyURL = $$(element).attr()?.href;
