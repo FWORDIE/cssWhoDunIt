@@ -7,7 +7,7 @@ let specs: string[] = [];
 
 const checkedHistory: string[] = [];
 
-const getspecsFromList = async () => {
+const getSpecsFromList = async () => {
 	//Grab W3C standards and drafts
 	const $ = await cheerio.fromURL(
 		`https://www.w3.org/TR/?filter-tr-name=&status[]=draftStandard&status[]=candidateStandard&status[]=standard&tags[]=css`,
@@ -114,14 +114,15 @@ const searchHistory = async (historyLink: string) => {
 	}
 };
 
-const checkforFile = (specs: string[], checkFile: string) => {
-	return specs.some((url) => url == checkFile);
+// Small function to check if a certain Spec has been found
+const checkforSpec = (specs: string[], checkSpec: string) => {
+	return specs.some((url) => url == checkSpec);
 };
 
-await getspecsFromList();
+await getSpecsFromList();
 
 console.log(
-	checkforFile(
+	checkforSpec(
 		specs,
 		"https://www.w3.org/TR/2022/WD-scroll-animations-1-20221025/",
 	),
