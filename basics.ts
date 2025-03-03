@@ -8,3 +8,9 @@ export const CSSDrafts = [
 	"https://www.w3.org/TR/2008/REC-CSS2-20080411/",
 	"https://www.w3.org/TR/CSS2/",
 ];
+
+export const specSheetLinkArray = JSON.parse(
+	await Deno.readTextFile("./AllSpecs.json"),
+);
+
+export const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));

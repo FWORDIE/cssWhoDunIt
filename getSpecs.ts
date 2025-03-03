@@ -1,4 +1,5 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
+import { delay, specSheetLinkArray } from "./basics.ts";
 
 // URL used to make links direct properly
 const baseURL = "https://www.w3.org";
@@ -8,6 +9,8 @@ let specs: string[] = [];
 const checkedHistory: string[] = [];
 
 const getSpecsFromList = async () => {
+	console.log("Starting Scrape");
+
 	//Grab W3C standards and drafts
 	const $ = await cheerio.fromURL(
 		`https://www.w3.org/TR/?filter-tr-name=&status[]=draftStandard&status[]=candidateStandard&status[]=standard&tags[]=css`,
@@ -58,13 +61,16 @@ const getSpecsFromList = async () => {
 	// Use the set trick to rmeove duplicates
 	specs = [...new Set(specs)];
 
-	console.log(specs.length);
+	console.log(`Found ${specs.length} Spec Sheets from first scrape`);
+
+	specs = await getEditorDrafs(specs);
+
+	console.log(`Found ${specs.length} Spec Sheets after second scrape!`);
+
+	console.log("Saving Scraped sheet urls");
 
 	/// Write a JSON of the links
-	await Deno.writeTextFile(
-		`infos/AllSpecs.json`,
-		JSON.stringify(specs, null, 2),
-	);
+	await Deno.writeTextFile(`AllSpecs.json`, JSON.stringify(specs, null, 2));
 };
 
 const searchHistory = async (historyLink: string) => {
@@ -114,12 +120,115 @@ const searchHistory = async (historyLink: string) => {
 	}
 };
 
-// Small function to check if a certain Spec has been found
-const checkforSpec = (specs: string[], checkSpec: string) => {
-	return specs.some((url) => url == checkSpec);
+// This function gets all the editors drafts from the main specs
+const getEditorDrafs = async (specs: string[]) => {
+	console.log("Scraping for editor drafts");
+
+	let newSpecLinks: string[] = [];
+
+	// used for debuggin
+	let brokenLinks: string[] = [];
+
+	for (const spec of specs) {
+		// this adds a pause between our calls
+		// due to getting 'Too Many Request' errors
+		await delay(200);
+
+		// we use try her incase we get errors
+		try {
+			// grabing the page with cheerio
+			let $ = await cheerio.fromURL(spec);
+
+			// here we try many ways to get the editor links
+			let editorLink = $(`dt:contains("Editor's")`)
+				.next()
+				.find("a")
+				.attr()?.href;
+			if (!editorLink) {
+				editorLink = $(`dt:contains("Editor’s")`)
+					.next()
+					.find("a")
+					.attr()?.href;
+			}
+			if (!editorLink) {
+				editorLink = $(`dt:contains("editor's")`)
+					.next()
+					.find("a")
+					.attr()?.href;
+			}
+			if (!editorLink) {
+				editorLink = $(`dt:contains("Editors draft")`)
+					.next()
+					.find("a")
+					.attr()?.href;
+			}
+			if (!editorLink) {
+				editorLink = $(`dt:contains("Editors' draft")`)
+					.next()
+					.find("a")
+					.attr()?.href;
+			}
+			if (!editorLink) {
+				editorLink = $(`dt:contains("Latest Editor Version")`)
+					.next()
+					.find("a")
+					.attr()?.href;
+			}
+			if (!editorLink) {
+				editorLink = $(`dt:contains("Latest Editor Draft")`)
+					.next()
+					.find("a")
+					.attr()?.href;
+			}
+			if (!editorLink) {
+				editorLink = $(`dt:contains("Editors Draft")`)
+					.next()
+					.find("a")
+					.attr()?.href;
+			}
+
+			if (!editorLink) {
+				// if we still don't get the editors link, it means
+				// the spec doesn't have one
+				// or the spec refrences it in a weird way
+				// hence we add it to an array so we can debug
+
+				console.log(spec);
+				brokenLinks.push(spec);
+			} else {
+				//if we do have a link we add it to an array
+				newSpecLinks.push(editorLink);
+			}
+		} catch (e: any) {
+			// Log any errors we get
+			// but then continue
+			console.log(e.message);
+		}
+	}
+
+	// here we add the new editor draft links to the main spec array
+	specs = [...new Set([...specs, ...newSpecLinks])];
+
+	//  write file of broken? specs, for debugging
+	await Deno.writeTextFile(
+		"./brokenSpecs.json",
+		JSON.stringify(brokenLinks, null, 2),
+	);
+
+	//return all specs
+	return specs;
 };
 
 await getSpecsFromList();
+
+// Small function to check if a certain Spec has been found
+const checkforSpec = (specs: string[], checkSpec: string) => {
+	if (specs.some((url) => url == checkSpec)) {
+		return "Test Passed!";
+	} else {
+		return "Test Failed!";
+	}
+};
 
 console.log(
 	checkforSpec(
