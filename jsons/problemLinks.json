@@ -1,0 +1,15 @@
+[
+    {
+        "thisSpecUrl": "https://www.w3.org/TR/1998/REC-CSS2-19980512/fonts.html",
+        "docName": "Fonts",
+        "issue": "there is no abstract, this doc is older than me",
+        "description": "weird doc about glyphs and fonts"
+
+    },    {
+        "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-grid-layout-20120322/",
+        "DocName": "CSS Grid Layout",
+         "issue": "the abstract fetch is a false positive",
+        "description": "abstract is Status of This\n   Document"
+
+    }
+]
