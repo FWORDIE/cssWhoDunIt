@@ -10,7 +10,12 @@ export const CSSDrafts = [
 ];
 
 export const specSheetLinkArray = JSON.parse(
-	await Deno.readTextFile("./AllSpecs.json"),
+	await Deno.readTextFile("./jsons/AllSpecs.json"),
 );
+
+export const testArray = (num = 10) => {
+	const shuffled = [...specSheetLinkArray].sort(() => 0.5 - Math.random());
+	return shuffled.slice(0, num);
+};
 
 export const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));

@@ -8,13 +8,14 @@ export type History = {
 };
 
 export type SpecSheet = {
-	authors: Authors[] | null;
-	date: string | null;
-	thisSpecUrl: string | null;
-	thisDocName: string | null;
-	type: string | "Unknwon";
-	abstract: string| null;
-	properties:string[];
+	authors: Authors[] | undefined;
+	editors: Authors[] | undefined;
+	date: string | undefined;
+	thisSpecUrl: string | undefined;
+	thisDocName: string | undefined;
+	type: string | undefined;
+	abstract: string | undefined;
+	properties: string[];
 	//keywords: oneDay;
 };
 
@@ -31,3 +32,5 @@ export type Authors = {
 	link: string | null;
 	type: string | null;
 };
+
+export type ErrorLink = { type: string; sheet: string };

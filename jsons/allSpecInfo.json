@@ -1,0 +1,62 @@
+[
+  {
+    "date": "2024-04-04T00:00:00+02:00",
+    "thisSpecUrl": "https://drafts.csswg.org/css-box-3/",
+    "properties": [],
+    "abstract": "This specification describes the margin and padding properties, which create spacing in and around a CSS box."
+  },
+  {
+    "date": "2018-04-10T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/",
+    "properties": [],
+    "abstract": "This specification defines modifications to the existing CSS Fonts 3 specification along with additional experimental features."
+  },
+  {
+    "date": "2012-01-12T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-images-20120112/",
+    "properties": [],
+    "abstract": "CSS is a language for describing the rendering of structured documents\n   (such as HTML and XML) on screen, on paper, in speech, etc. This module\n   contains the features of CSS level 3 relating to the <image> type\n   and replaced elements. It includes and extends the functionality of CSS\n   level 2 [CSS21], which builds on CSS\n   level 1 [CSS1].\n   The main extensions compared to level 2 are the generalization of the\n   <url> type to the <image> type, several additions to the ‘<image>’ type, a\n   generic sizing algorithm for images and other replaced content in CSS, and\n   several properties controlling the interaction of replaced elements and\n   CSS's layout models."
+  },
+  {
+    "date": "2020-12-16T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-contain-2-20201216/",
+    "properties": [],
+    "abstract": "This CSS module describes the contain property, which indicates that the element’s subtree is independent of the rest of the page. This enables heavy optimizations by user agents when used well."
+  },
+  {
+    "date": "2017-08-08T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-contain-1-20170808/",
+    "properties": [],
+    "abstract": "This CSS module describes the contain property, which indicates that the element’s subtree is independent of the rest of the page. This enables heavy optimizations by user agents when used well."
+  },
+  {
+    "date": "2024-07-23T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-scroll-snap-2/",
+    "properties": [],
+    "abstract": "This module contains features to control panning and scrolling behavior with “snap positions”."
+  },
+  {
+    "date": "2017-02-09T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20170209/",
+    "properties": [],
+    "abstract": "This module contains features to control panning and scrolling behavior with “snap positions”."
+  },
+  {
+    "date": "2013-03-14T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css3-page-20130314/",
+    "properties": [],
+    "abstract": "This module describes the page model that\n    partitions a flow into pages. It builds on the Box model module and\n    introduces and defines the page model and paged media. It adds\n    functionality for pagination, page margins, page size and orientation,\n    headers and footers, widows and orphans, and image orientation. Finally\n    it extends generated content to enable page numbering and running headers\n    / footers."
+  },
+  {
+    "date": "2017-04-13T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-images-4-20170413/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS level 4 relating to the <image> type and replaced elements.\n\nIt includes and extends the functionality of CSS level 2 [CSS21] and in the previous level of this specification [css3-images].\nThe main extensions compared to [css3-images] are several additions to the <image> type, such as the image() notation, the element() notation, and conic gradients."
+  },
+  {
+    "date": "2024-04-11T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-box-3/",
+    "properties": [],
+    "abstract": "This specification describes the margin and padding properties, which create spacing in and around a CSS box."
+  }
+]
