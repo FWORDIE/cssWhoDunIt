@@ -12,225 +12,224 @@ let brokenLinks: ErrorLink[] = [];
 let allSpecInfo: SpecSheet[] = [];
 
 const getSpecInfo = async (specSheet: string) => {
-  console.log("Scraping: ", specSheet);
-  try {
-    //Make a cheerio object from each url
-    const $specSheet = await cheerio.fromURL(specSheet);
+	console.log("Scraping: ", specSheet);
+	try {
+		//Make a cheerio object from each url
+		const $specSheet = await cheerio.fromURL(specSheet);
 
-    let thisSpecsInfo: SpecSheet = {
-      authors: await getAuthors($specSheet, specSheet),
-      editors: await getEditors($specSheet, specSheet),
-      date: await getDate($specSheet, specSheet),
-      thisSpecUrl: specSheet,
-      thisDocName: await getDocName($specSheet, specSheet),
-      type: await getType($specSheet, specSheet),
-      properties: await getProps($specSheet, specSheet),
-      abstract: await getAbstract($specSheet, specSheet),
-    };
+		let thisSpecsInfo: SpecSheet = {
+			authors: await getAuthors($specSheet, specSheet),
+			editors: await getEditors($specSheet, specSheet),
+			date: await getDate($specSheet, specSheet),
+			thisSpecUrl: specSheet,
+			thisDocName: await getDocName($specSheet, specSheet),
+			type: await getType($specSheet, specSheet),
+			properties: await getProps($specSheet, specSheet),
+			abstract: await getAbstract($specSheet, specSheet),
+		};
 
-    console.log("Finished Scraping: ", specSheet);
+		console.log("Finished Scraping: ", specSheet);
 
-    allSpecInfo.push(thisSpecsInfo);
-    // console.log(thisSpecsInfo);
-  } catch (e: any) {
-    //catch erros but continue
-    console.log(e.message, " --- ", specSheet);
-    brokenLinks.push({ type: `ERROR ${e.message}`, sheet: specSheet });
-  }
-  await Deno.writeTextFile(
-    "./jsons/allSpecInfo.json",
-    JSON.stringify(allSpecInfo, null, 2),
-  );
+		allSpecInfo.push(thisSpecsInfo);
+		// console.log(thisSpecsInfo);
+	} catch (e: any) {
+		//catch erros but continue
+		console.log(e.message, " --- ", specSheet);
+		brokenLinks.push({ type: `ERROR ${e.message}`, sheet: specSheet });
+	}
+	await Deno.writeTextFile(
+		"./jsons/allSpecInfo.json",
+		JSON.stringify(allSpecInfo, null, 2),
+	);
 };
 
 const getAuthors = ($: cheerio.CheerioAPI, sheet: string) => {
-  return undefined;
+	let string = "hellsods";
+	string = `hekosdas ${brokenLinks}`;
+	return undefined;
 };
 
 const getEditors = ($: cheerio.CheerioAPI, sheet: string) => {
-  return undefined;
+	return undefined;
 };
 
 const getDate = ($: cheerio.CheerioAPI, sheet: string) => {
-  try {
-    // find date with time tag
-    let date = $(".head").find("time").text();
-    let formatedDate = moment(date, "DD MMMM YYYY").format();
-    if (formatedDate && formatedDate != "Invalid date") {
-      // console.log(formatedDate);
-      return formatedDate;
-    }
+	try {
+		// find date with time tag
+		let date = $(".head").find("time").text();
+		let formatedDate = moment(date, "DD MMMM YYYY").format();
+		if (formatedDate && formatedDate != "Invalid date") {
+			// console.log(formatedDate);
+			return formatedDate;
+		}
 
-    // For no time tag
-    let thisVersion = $(".head")
-      .find("dt:contains('This version:')")
-      .next()
-      .find("a")
-      .attr()?.href;
+		// For no time tag
+		let thisVersion = $(".head")
+			.find("dt:contains('This version:')")
+			.next()
+			.find("a")
+			.attr()?.href;
 
-    // Alt Spelling
-    if (!thisVersion) {
-      thisVersion = $(".head")
-        .find("dt:contains('This Version:')")
-        .next()
-        .find("a")
-        .attr()?.href;
-    }
-    if (thisVersion) {
-      console.log(thisVersion);
-      // Deals with trailig slashes at the end of URLs
-      let change = thisVersion[thisVersion.length - 1] === "/" ? 1 : 0;
+		// Alt Spelling
+		if (!thisVersion) {
+			thisVersion = $(".head")
+				.find("dt:contains('This Version:')")
+				.next()
+				.find("a")
+				.attr()?.href;
+		}
 
-      date = thisVersion.slice(
-        thisVersion.length - (8 + change),
-        thisVersion.length - change,
-      );
+		if (thisVersion) {
+			// Deals with trailig slashes at the end of URLs
+			let change = thisVersion[thisVersion.length - 1] === "/" ? 1 : 0;
 
-      formatedDate = moment(date, "YYYYMMDD").format();
+			date = thisVersion.slice(
+				thisVersion.length - (8 + change),
+				thisVersion.length - change,
+			);
 
-      if (formatedDate && formatedDate != "Invalid date") {
-        return formatedDate;
-      }
-    }
+			formatedDate = moment(date, "YYYYMMDD").format();
 
-    //fall bak get date from url
-    date = sheet.slice(sheet.length - 11, sheet.length - 5);
-    formatedDate = moment(date, "YYMMDD").format();
-    if (formatedDate && formatedDate != "Invalid date") {
-      return formatedDate;
-    }
-    date = sheet.slice(sheet.length - 19, sheet.length - 11);
-    formatedDate = moment(date, "YYYYMMDD").format();
-    if (formatedDate && formatedDate != "Invalid date") {
-      return formatedDate;
-    }
-    let change = sheet[sheet.length - 1] === "/" ? 1 : 0;
+			if (formatedDate && formatedDate != "Invalid date") {
+				return formatedDate;
+			}
+		}
 
-    date = sheet.slice(
-      sheet.length - (8 + change),
-      sheet.length - change,
-    );
+		//fall bak get date from url
+		date = sheet.slice(sheet.length - 11, sheet.length - 5);
+		formatedDate = moment(date, "YYMMDD").format();
+		if (formatedDate && formatedDate != "Invalid date") {
+			return formatedDate;
+		}
+		date = sheet.slice(sheet.length - 19, sheet.length - 11);
+		formatedDate = moment(date, "YYYYMMDD").format();
+		if (formatedDate && formatedDate != "Invalid date") {
+			return formatedDate;
+		}
+		let change = sheet[sheet.length - 1] === "/" ? 1 : 0;
 
-    formatedDate = moment(date, "YYYYMMDD").format();
-    if (formatedDate && formatedDate != "Invalid date") {
-      return formatedDate;
-    }
+		date = sheet.slice(sheet.length - (8 + change), sheet.length - change);
 
-    logError("DATE", sheet);
-    return undefined;
-  } catch {
-    logError("DATE & ERROR", sheet);
-    return undefined;
-  }
+		formatedDate = moment(date, "YYYYMMDD").format();
+		if (formatedDate && formatedDate != "Invalid date") {
+			return formatedDate;
+		}
+
+		logError("DATE", sheet);
+		return undefined;
+	} catch {
+		logError("DATE & ERROR", sheet);
+		return undefined;
+	}
 };
 //Finding docnames
 const getDocName = ($: cheerio.CheerioAPI, sheet: string) => {
-  try {
-    //from the title in the head
-    let docName = $("title").text().trim();
-    if (docName) {
-      return docName;
-    }
-    logError("DOCNAME", sheet);
-    return undefined;
-  } catch {
-    logError("DOCNAME & ERROR", sheet);
-    return undefined;
-  }
+	try {
+		//from the title in the head
+		let docName = $("title").text().trim();
+		if (docName) {
+			return docName;
+		}
+		logError("DOCNAME", sheet);
+		return undefined;
+	} catch {
+		logError("DOCNAME & ERROR", sheet);
+		return undefined;
+	}
 };
 
 const getType = ($: cheerio.CheerioAPI, sheet: string) => {
-  return undefined;
+	return undefined;
 };
 
 const getProps = ($: cheerio.CheerioAPI, sheet: string) => {
-  return [];
+	return [];
 };
 
 const getAbstract = ($: cheerio.CheerioAPI, sheet: string) => {
-  try {
-    let abstract = $('[data-fill-with="abstract"]').find("p").text().trim();
+	try {
+		let abstract = $('[data-fill-with="abstract"]').find("p").text().trim();
 
-    if (!abstract) {
-      abstract = $("#abstract").next().text().trim();
-    }
-    if (!abstract) {
-      abstract = $("#Abstract").next().text().trim();
-    }
-    if (!abstract) {
-      abstract = $("#Abstract").parent().next().text().trim();
-    }
-    if (!abstract) {
-      abstract = $('[name="abstract"]').parent().next().text().trim();
-    }
-	if (!abstract) {
-		abstract = $("h2:contains('Abstract')").next().text().trim();
-	  }
-    if (abstract) {
-      return abstract;
-    }
-    logError("ABSTRACT", sheet);
-    return undefined;
-  } catch {
-    logError("ABSTRACT & ERROR", sheet);
-    return undefined;
-  }
+		if (!abstract) {
+			abstract = $("#abstract").next().text().trim();
+		}
+		if (!abstract) {
+			abstract = $("#Abstract").next().text().trim();
+		}
+		if (!abstract) {
+			abstract = $("#Abstract").parent().next().text().trim();
+		}
+		if (!abstract) {
+			abstract = $('[name="abstract"]').parent().next().text().trim();
+		}
+		if (!abstract) {
+			abstract = $("h2:contains('Abstract')").next().text().trim();
+		}
+		if (abstract) {
+			return abstract;
+		}
+		logError("ABSTRACT", sheet);
+		return undefined;
+	} catch {
+		logError("ABSTRACT & ERROR", sheet);
+		return undefined;
+	}
 };
 
 const logError = (type: string, sheet: string) => {
-  const issue: ErrorLink = {
-    type: type,
-    sheet: sheet,
-  };
+	const issue: ErrorLink = {
+		type: type,
+		sheet: sheet,
+	};
 
-  brokenLinks.push(issue);
-  console.log(`${type} FAILED FOR ${sheet}`);
+	brokenLinks.push(issue);
+	console.log(`${type} FAILED FOR ${sheet}`);
 };
 
 const scrapeAll = async () => {
-  let specs = specSheetLinkArray;
+	let specs = specSheetLinkArray;
 
-  if (Deno.args[0] == "test") {
-    specs = testArray(Number(Deno.args[1]) || 10);
-    console.log(`Running ${specs.length} test sheets`);
-  } else if (Deno.args[0] == "spec") {
-    specs = [Deno.args[1]];
-    console.log(`Running just ${Deno.args[1]} test sheets`);
-  } else if (Deno.args[0] == "old") {
-    specs = JSON.parse(await Deno.readTextFile("./jsons/oldSpecs.json"));
-    console.log(`Running ${specs.length} old specs sheets`);
-  } else if (Deno.args[0] == "broken") {
-    specs = JSON.parse(
-      await Deno.readTextFile("./jsons/brokenSpecs.json"),
-    ).map(function (el: ErrorLink) {
-      return el.sheet;
-    });
-    console.log(`Running ${specs.length} broken specs sheets`);
-  } else {
-    console.log(`Running all ${specs.length} sheets`);
-  }
+	if (Deno.args[0] == "test") {
+		specs = testArray(Number(Deno.args[1]) || 10);
+		console.log(`Running ${specs.length} test sheets`);
+	} else if (Deno.args[0] == "spec") {
+		specs = [Deno.args[1]];
+		console.log(`Running just ${Deno.args[1]} test sheets`);
+	} else if (Deno.args[0] == "old") {
+		specs = JSON.parse(await Deno.readTextFile("./jsons/oldSpecs.json"));
+		console.log(`Running ${specs.length} old specs sheets`);
+	} else if (Deno.args[0] == "broken") {
+		specs = JSON.parse(
+			await Deno.readTextFile("./jsons/brokenSpecs.json"),
+		).map(function (el: ErrorLink) {
+			return el.sheet;
+		});
+		console.log(`Running ${specs.length} broken specs sheets`);
+	} else {
+		console.log(`Running all ${specs.length} sheets`);
+	}
 
-  for (const specSheet of specs) {
-    await getSpecInfo(specSheet);
-  }
+	for (const specSheet of specs) {
+		await getSpecInfo(specSheet);
+	}
 
-  console.log(`Finished with only ${brokenLinks.length} Specs Failing`);
+	console.log(`Finished with only ${brokenLinks.length} Specs Failing`);
 
-  // Save Broken Links
-  await Deno.writeTextFile(
-    "./jsons/brokenSpecs.json",
-    JSON.stringify(brokenLinks, null, 2),
-  );
+	// Save Broken Links
+	await Deno.writeTextFile(
+		"./jsons/brokenSpecs.json",
+		JSON.stringify(brokenLinks, null, 2),
+	);
 
-  // Save all run links
-  if (Deno.args[0] != "broken") {
-    await Deno.writeTextFile(
-      "./jsons/oldSpecs.json",
-      JSON.stringify(specs, null, 2),
-    );
-  }
+	// Save all run links
+	if (Deno.args[0] != "broken") {
+		await Deno.writeTextFile(
+			"./jsons/oldSpecs.json",
+			JSON.stringify(specs, null, 2),
+		);
+	}
 
-  //Function that removes the working urls
+	//Function that removes the working urls
 };
 
 scrapeAll();
