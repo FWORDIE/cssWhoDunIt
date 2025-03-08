@@ -1,62 +1,51 @@
 [
   {
-    "type": "ERROR Response status code 429: Too Many Requests",
-    "sheet": "https://www.w3.org/TR/2003/CR-css3-text-20030514"
-  },
-  {
-    "type": "ERROR Response status code 429: Too Many Requests",
-    "sheet": "https://www.w3.org/TR/compositing-1/"
-  },
-  {
-    "type": "ABSTRACT",
+    "types": [
+      "ABSTRACT"
+    ],
     "sheet": "https://www.w3.org/TR/1998/REC-CSS2-19980512/fonts.html"
   },
   {
-    "type": "ERROR Response status code 429: Too Many Requests",
-    "sheet": "https://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/"
-  },
-  {
-    "type": "ERROR Response status code 429: Too Many Requests",
-    "sheet": "https://www.w3.org/TR/2019/WD-css-content-3-20190710/"
-  },
-  {
-    "type": "ABSTRACT",
+    "types": [
+      "ABSTRACT"
+    ],
     "sheet": "https://www.w3.org/TR/WD-CSS2-971104"
   },
   {
-    "type": "DATE",
-    "sheet": "https://w3c.github.io/web-animations/"
-  },
-  {
-    "type": "ABSTRACT",
-    "sheet": "https://w3c.github.io/web-animations/"
-  },
-  {
-    "type": "DATE",
+    "types": [
+      "DATE",
+      "ABSTRACT"
+    ],
     "sheet": "http://dev.w3.org/fxtf/web-animations/"
   },
   {
-    "type": "ABSTRACT",
-    "sheet": "http://dev.w3.org/fxtf/web-animations/"
-  },
-  {
-    "type": "ABSTRACT",
+    "types": [
+      "ABSTRACT"
+    ],
     "sheet": "https://drafts.css-houdini.org/css-animationworklet-1/"
   },
   {
-    "type": "ERROR Response status code 404: Not Found",
+    "types": [
+      "ERROR: Response status code 404: Not Found"
+    ],
     "sheet": "http://dvcs.w3.org/hg/FXTF/raw-file/default/masking/index.html"
   },
   {
-    "type": "ERROR Response status code 404: Not Found",
+    "types": [
+      "ERROR: Response status code 404: Not Found"
+    ],
     "sheet": "http://dvcs.w3.org/hg/FXTF/raw-file/tip/masking/index.html"
   },
   {
-    "type": "ERROR Response status code 404: Not Found",
+    "types": [
+      "ERROR: Response status code 404: Not Found"
+    ],
     "sheet": "https://dvcs.w3.org/hg/FXTF/raw-file/default/filters/index.html"
   },
   {
-    "type": "DATE",
+    "types": [
+      "DATE"
+    ],
     "sheet": "http://dev.w3.org/csswg/css-style-attr/"
   }
 ]

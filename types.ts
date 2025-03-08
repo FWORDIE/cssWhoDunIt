@@ -33,4 +33,4 @@ export type Authors = {
 	type: string | null;
 };
 
-export type ErrorLink = { type: string; sheet: string };
+export type ErrorLink = { types: string[]; sheet: string };

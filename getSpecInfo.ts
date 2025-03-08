@@ -6,18 +6,129 @@ import * as cheerio from "npm:cheerio@^1.0.0";
 import { specSheetLinkArray, testArray } from "./basics.ts";
 import type { ErrorLink, SpecSheet } from "./types.ts";
 import moment from "npm:moment";
+import ProgressBar from "jsr:@deno-library/progress";
+import { delay } from "jsr:@std/async";
+import { parseArgs } from "jsr:@std/cli/parse-args";
+const brokenLinks: ErrorLink[] = [];
+const allSpecInfo: SpecSheet[] = [];
 
-let brokenLinks: ErrorLink[] = [];
+// Get URLs of scrapped Spec Sheets
+// See getSpecs.ts
+let specs = specSheetLinkArray;
 
-let allSpecInfo: SpecSheet[] = [];
+// General Set Up
+
+const flags = parseArgs(Deno.args, {
+	string: ["force"],
+	default: { force: "false" },
+});
+
+// Progress Bar Set Up
+let completed = 0;
+const title = "Progress:";
+const total = specs.length;
+const progress = new ProgressBar({
+	title,
+	total,
+	complete: "=",
+	incomplete: "-",
+	display: ":title :completed/:total :time [:bar] :percent ETA :eta",
+});
+
+// Main Function
+const scrapeAll = async () => {
+	// A list of functions that help with debuggind
+	if (Deno.args[0] == "test") {
+		// Run for a random selection of Specs
+		specs = testArray(Number(Deno.args[1]) || 10);
+		await progress.console(`Running ${specs.length} test sheets`);
+	} else if (Deno.args[0] == "spec") {
+		// Run for a specific Spec
+		specs = [Deno.args[1]];
+		await progress.console(`Running just ${Deno.args[1]} test sheets`);
+	} else if (Deno.args[0] == "old") {
+		// Run the last batch again
+		specs = JSON.parse(await Deno.readTextFile("./jsons/oldSpecs.json"));
+		await progress.console(`Running ${specs.length} old specs sheets`);
+	} else if (Deno.args[0] == "broken") {
+		// Run any that failed last time
+		// See brokenSpecs.json
+		// Here we parse the json, so we only get the links
+		specs = JSON.parse(
+			await Deno.readTextFile("./jsons/brokenSpecs.json"),
+		).map(function (el: ErrorLink) {
+			return el.sheet;
+		});
+		await progress.console(`Running ${specs.length} broken specs sheets`);
+	} else {
+		// defualt run with all specs from AllSpecs.json
+		await progress.console(`Running all ${specs.length} sheets`);
+	}
+
+	progress.total = specs.length;
+
+	// Loop to go over all Spec Urls
+	for (const specSheet of specs) {
+		await getSpecInfo(specSheet);
+	}
+
+	await progress.console(
+		`Finished with only ${brokenLinks.length} Specs Failing`,
+	);
+
+	await progress.complete;
+
+	delay(1000);
+	progress.render(completed++);
+	// Save Broken Links
+	await Deno.writeTextFile(
+		"./jsons/brokenSpecs.json",
+		JSON.stringify(brokenLinks, null, 2),
+	);
+
+	// Save all run links
+	if (Deno.args[0] != "broken") {
+		await Deno.writeTextFile(
+			"./jsons/oldSpecs.json",
+			JSON.stringify(specs, null, 2),
+		);
+	}
+	// Rerun broken incase of 429: Too Many Requests
+	// Only if Forced --force=true
+	if (flags.force === "true") {
+		progress.console("force rerun");
+		progress.total = brokenLinks.length;
+		completed = 0;
+		// Rerun broken incase of 429: Too Many Requests
+		for (const specSheet of brokenLinks.map(function (el: ErrorLink) {
+			return el.sheet;
+		})) {
+			await getSpecInfo(specSheet);
+		}
+	}
+
+	// TODO: Function that removes the working urls
+};
 
 const getSpecInfo = async (specSheet: string) => {
-	console.log("Scraping: ", specSheet);
+	// await progress.console(`Scraping: ${specSheet}`);
+
 	try {
 		//Make a cheerio object from each url
-		const $specSheet = await cheerio.fromURL(specSheet);
+		let $specSheet = await cheerio.fromURL(specSheet);
 
-		let thisSpecsInfo: SpecSheet = {
+		//Deal with redirecting e.g. https://w3c.github.io/web-animations/
+
+		if ($specSheet("title").text().trim() === "Redirecting...") {
+			const redirect = $specSheet("body p a").attr()?.href;
+			if (redirect) {
+				await progress.console(
+					`Redirecting from ${specSheet} to ${redirect}`,
+				);
+				$specSheet = await cheerio.fromURL(redirect);
+			}
+		}
+		const thisSpecsInfo: SpecSheet = {
 			authors: await getAuthors($specSheet, specSheet),
 			editors: await getEditors($specSheet, specSheet),
 			date: await getDate($specSheet, specSheet),
@@ -28,14 +139,25 @@ const getSpecInfo = async (specSheet: string) => {
 			abstract: await getAbstract($specSheet, specSheet),
 		};
 
-		console.log("Finished Scraping: ", specSheet);
-
+		// await progress.console("Finished Scraping: ", specSheet);
+		await progress.render(completed++, {
+			title: `Errors: ${brokenLinks.length}`,
+		});
 		allSpecInfo.push(thisSpecsInfo);
-		// console.log(thisSpecsInfo);
-	} catch (e: any) {
-		//catch erros but continue
-		console.log(e.message, " --- ", specSheet);
-		brokenLinks.push({ type: `ERROR ${e.message}`, sheet: specSheet });
+		// await progress.console(thisSpecsInfo);
+	} catch (e) {
+		let msg = "Unkown";
+		//c atch erros but continue
+		// Over engineered Error Logging
+
+		if (typeof e === "string") {
+			msg = e.toUpperCase(); // works, `e` narrowed to string
+		} else if (e instanceof Error) {
+			msg = e.message; // works, `e` narrowed to Error
+		}
+		await progress.console(`${msg} --- ${specSheet}`);
+
+		logError(`ERROR: ${msg}`, specSheet);
 	}
 	await Deno.writeTextFile(
 		"./jsons/allSpecInfo.json",
@@ -44,8 +166,6 @@ const getSpecInfo = async (specSheet: string) => {
 };
 
 const getAuthors = ($: cheerio.CheerioAPI, sheet: string) => {
-	let string = "hellsods";
-	string = `hekosdas ${brokenLinks}`;
 	return undefined;
 };
 
@@ -53,13 +173,13 @@ const getEditors = ($: cheerio.CheerioAPI, sheet: string) => {
 	return undefined;
 };
 
-const getDate = ($: cheerio.CheerioAPI, sheet: string) => {
+const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 	try {
 		// find date with time tag
 		let date = $(".head").find("time").text();
 		let formatedDate = moment(date, "DD MMMM YYYY").format();
 		if (formatedDate && formatedDate != "Invalid date") {
-			// console.log(formatedDate);
+			// await progress.console(formatedDate);
 			return formatedDate;
 		}
 
@@ -81,7 +201,7 @@ const getDate = ($: cheerio.CheerioAPI, sheet: string) => {
 
 		if (thisVersion) {
 			// Deals with trailig slashes at the end of URLs
-			let change = thisVersion[thisVersion.length - 1] === "/" ? 1 : 0;
+			const change = thisVersion[thisVersion.length - 1] === "/" ? 1 : 0;
 
 			date = thisVersion.slice(
 				thisVersion.length - (8 + change),
@@ -95,21 +215,23 @@ const getDate = ($: cheerio.CheerioAPI, sheet: string) => {
 			}
 		}
 
-		//fall bak get date from url
+		// fall back to get date from URL
+		// with .html
 		date = sheet.slice(sheet.length - 11, sheet.length - 5);
 		formatedDate = moment(date, "YYMMDD").format();
 		if (formatedDate && formatedDate != "Invalid date") {
 			return formatedDate;
 		}
+		// with /fonts.html
 		date = sheet.slice(sheet.length - 19, sheet.length - 11);
 		formatedDate = moment(date, "YYYYMMDD").format();
 		if (formatedDate && formatedDate != "Invalid date") {
 			return formatedDate;
 		}
-		let change = sheet[sheet.length - 1] === "/" ? 1 : 0;
 
+		// other
+		const change = sheet[sheet.length - 1] === "/" ? 1 : 0;
 		date = sheet.slice(sheet.length - (8 + change), sheet.length - change);
-
 		formatedDate = moment(date, "YYYYMMDD").format();
 		if (formatedDate && formatedDate != "Invalid date") {
 			return formatedDate;
@@ -176,60 +298,32 @@ const getAbstract = ($: cheerio.CheerioAPI, sheet: string) => {
 	}
 };
 
-const logError = (type: string, sheet: string) => {
-	const issue: ErrorLink = {
-		type: type,
-		sheet: sheet,
-	};
 
-	brokenLinks.push(issue);
-	console.log(`${type} FAILED FOR ${sheet}`);
-};
+//Function we use to log erros and back up problem links
+const logError = async (type: string, sheet: string) => {
 
-const scrapeAll = async () => {
-	let specs = specSheetLinkArray;
+	// Add to list of issues for Sheet if it already has a problem
+	const found = brokenLinks.find((sheetObject: ErrorLink, index: number) => {
+		if (sheetObject.sheet === sheet) {
+			brokenLinks[index] = {
+				types: [...brokenLinks[index].types, type],
+				sheet: sheet,
+			};
+			return true; // stop searching
+		}
+	});
 
-	if (Deno.args[0] == "test") {
-		specs = testArray(Number(Deno.args[1]) || 10);
-		console.log(`Running ${specs.length} test sheets`);
-	} else if (Deno.args[0] == "spec") {
-		specs = [Deno.args[1]];
-		console.log(`Running just ${Deno.args[1]} test sheets`);
-	} else if (Deno.args[0] == "old") {
-		specs = JSON.parse(await Deno.readTextFile("./jsons/oldSpecs.json"));
-		console.log(`Running ${specs.length} old specs sheets`);
-	} else if (Deno.args[0] == "broken") {
-		specs = JSON.parse(
-			await Deno.readTextFile("./jsons/brokenSpecs.json"),
-		).map(function (el: ErrorLink) {
-			return el.sheet;
-		});
-		console.log(`Running ${specs.length} broken specs sheets`);
-	} else {
-		console.log(`Running all ${specs.length} sheets`);
+	if (!found) {
+		//if not add a new link
+		const issue: ErrorLink = {
+			types: [type],
+			sheet: sheet,
+		};
+
+		brokenLinks.push(issue);
 	}
 
-	for (const specSheet of specs) {
-		await getSpecInfo(specSheet);
-	}
-
-	console.log(`Finished with only ${brokenLinks.length} Specs Failing`);
-
-	// Save Broken Links
-	await Deno.writeTextFile(
-		"./jsons/brokenSpecs.json",
-		JSON.stringify(brokenLinks, null, 2),
-	);
-
-	// Save all run links
-	if (Deno.args[0] != "broken") {
-		await Deno.writeTextFile(
-			"./jsons/oldSpecs.json",
-			JSON.stringify(specs, null, 2),
-		);
-	}
-
-	//Function that removes the working urls
+	await progress.console(`${type} FAILED FOR ${sheet}`);
 };
 
 scrapeAll();
