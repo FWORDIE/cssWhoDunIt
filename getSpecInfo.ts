@@ -7,7 +7,7 @@ import { specSheetLinkArray, testArray } from "./basics.ts";
 import type { ErrorLink, SpecSheet } from "./types.ts";
 import moment from "npm:moment";
 import ProgressBar from "jsr:@deno-library/progress";
-import { delay } from "jsr:@std/async";
+import { delay, retry } from "jsr:@std/async";
 import { parseArgs } from "jsr:@std/cli/parse-args";
 const brokenLinks: ErrorLink[] = [];
 const allSpecInfo: SpecSheet[] = [];
@@ -19,8 +19,8 @@ let specs = specSheetLinkArray;
 // General Set Up
 
 const flags = parseArgs(Deno.args, {
-	string: ["force"],
-	default: { force: "false" },
+	string: ["force", "focus"],
+	default: { force: "false", focus: "all" },
 });
 
 // Progress Bar Set Up
@@ -37,19 +37,38 @@ const progress = new ProgressBar({
 
 // Main Function
 const scrapeAll = async () => {
+	//handle focus arguemnt
+	if (
+		!flags.focus.match(
+			"all|authors|editors|date|url|name|type|props|abstract",
+		)
+	) {
+		await progress.console(`Unkown focus '${flags.focus}'`);
+		await progress.console(
+			'Focus must equalone of "all|authors|editors|date|url|name|type|props|abstract" ',
+		);
+		return false;
+	}
+
 	// A list of functions that help with debuggind
 	if (Deno.args[0] == "test") {
 		// Run for a random selection of Specs
 		specs = testArray(Number(Deno.args[1]) || 10);
-		await progress.console(`Running ${specs.length} test sheets`);
+		await progress.console(
+			`Running ${specs.length} test sheets for ${flags.focus}`,
+		);
 	} else if (Deno.args[0] == "spec") {
 		// Run for a specific Spec
 		specs = [Deno.args[1]];
-		await progress.console(`Running just ${Deno.args[1]} test sheets`);
+		await progress.console(
+			`Running just ${Deno.args[1]} test sheets for ${flags.focus}`,
+		);
 	} else if (Deno.args[0] == "old") {
 		// Run the last batch again
 		specs = JSON.parse(await Deno.readTextFile("./jsons/oldSpecs.json"));
-		await progress.console(`Running ${specs.length} old specs sheets`);
+		await progress.console(
+			`Running ${specs.length} old specs sheets for ${flags.focus}`,
+		);
 	} else if (Deno.args[0] == "broken") {
 		// Run any that failed last time
 		// See brokenSpecs.json
@@ -59,16 +78,22 @@ const scrapeAll = async () => {
 		).map(function (el: ErrorLink) {
 			return el.sheet;
 		});
-		await progress.console(`Running ${specs.length} broken specs sheets`);
+		await progress.console(
+			`Running ${specs.length} broken specs sheets for ${flags.focus}`,
+		);
 	} else {
 		// defualt run with all specs from AllSpecs.json
-		await progress.console(`Running all ${specs.length} sheets`);
+		await progress.console(
+			`Running all ${specs.length} sheets for ${flags.focus}`,
+		);
 	}
 
 	progress.total = specs.length;
 
 	// Loop to go over all Spec Urls
 	for (const specSheet of specs) {
+		//pause for for time out issues
+		await delay(500);
 		await getSpecInfo(specSheet);
 	}
 
@@ -78,8 +103,8 @@ const scrapeAll = async () => {
 
 	await progress.complete;
 
-	delay(1000);
-	progress.render(completed++);
+	await delay(1000);
+	await progress.render(completed++);
 	// Save Broken Links
 	await Deno.writeTextFile(
 		"./jsons/brokenSpecs.json",
@@ -153,7 +178,7 @@ const getSpecInfo = async (specSheet: string) => {
 		} else if (e instanceof Error) {
 			msg = e.message; // works, `e` narrowed to Error
 		}
-		await progress.console(`${msg} --- ${specSheet}`);
+		// await progress.console(`${msg} --- ${specSheet}`);
 
 		logError(`ERROR: ${msg}`, specSheet);
 	}
@@ -167,14 +192,27 @@ const getSpecInfo = async (specSheet: string) => {
 };
 
 const getAuthors = ($: cheerio.CheerioAPI, sheet: string) => {
+	// Ignore if focus is called and not relevent
+	if (!flags.focus.match("all|authors")) {
+		return undefined;
+	}
 	return undefined;
 };
 
 const getEditors = ($: cheerio.CheerioAPI, sheet: string) => {
+	// Ignore if focus is called and not relevent
+	if (!flags.focus.match("all|editors")) {
+		return undefined;
+	}
+
 	return undefined;
 };
 
 const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
+	// Ignore if focus is called and not relevent
+	if (!flags.focus.match("all|date")) {
+		return undefined;
+	}
 	try {
 		// find date with time tag
 		let date = $(".head").find("time").text();
@@ -247,6 +285,10 @@ const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 };
 //Finding docnames
 const getDocName = ($: cheerio.CheerioAPI, sheet: string) => {
+	// Ignore if focus is called and not relevent
+	if (!flags.focus.match("all|name")) {
+		return undefined;
+	}
 	try {
 		//from the title in the head
 		let docName = $("title").text().trim();
@@ -262,14 +304,26 @@ const getDocName = ($: cheerio.CheerioAPI, sheet: string) => {
 };
 
 const getType = ($: cheerio.CheerioAPI, sheet: string) => {
+	// Ignore if focus is called and not relevent
+	if (!flags.focus.match("all|type")) {
+		return undefined;
+	}
 	return undefined;
 };
 
 const getProps = ($: cheerio.CheerioAPI, sheet: string) => {
-	return [];
+	// Ignore if focus is called and not relevent
+	if (!flags.focus.match("all|props")) {
+		return undefined;
+	}
+	return undefined;
 };
 
 const getAbstract = ($: cheerio.CheerioAPI, sheet: string) => {
+	// Ignore if focus is called and not relevent
+	if (!flags.focus.match("all|abstract")) {
+		return undefined;
+	}
 	try {
 		let abstract = $('[data-fill-with="abstract"]').find("p").text().trim();
 
