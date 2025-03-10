@@ -70,7 +70,7 @@ const getSpecsFromList = async () => {
 	console.log("Saving Scraped sheet urls");
 
 	/// Write a JSON of the links
-	await Deno.writeTextFile(`AllSpecs.json`, JSON.stringify(specs, null, 2));
+	await Deno.writeTextFile(`./jsons/AllSpecs.json`, JSON.stringify(specs, null, 2));
 };
 
 const searchHistory = async (historyLink: string) => {

@@ -105,11 +105,6 @@ const scrapeAll = async () => {
 
 	await delay(1000);
 	await progress.render(completed++);
-	// Save Broken Links
-	await Deno.writeTextFile(
-		"./jsons/brokenSpecs.json",
-		JSON.stringify(brokenLinks, null, 2),
-	);
 
 	// Save all run links
 	if (Deno.args[0] != "broken") {
@@ -377,6 +372,12 @@ const logError = async (type: string, sheet: string) => {
 	}
 
 	await progress.console(`${type} FAILED FOR ${sheet}`);
+    
+	// Save Broken Links
+	await Deno.writeTextFile(
+		"./jsons/brokenSpecs.json",
+		JSON.stringify(brokenLinks, null, 2),
+	);
 };
 
 scrapeAll();

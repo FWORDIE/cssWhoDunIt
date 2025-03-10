@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "types": [
+      "ABSTRACT"
+    ],
+    "sheet": "https://www.w3.org/TR/1998/REC-CSS2-19980512/fonts.html"
+  },
+  {
+    "types": [
+      "ABSTRACT"
+    ],
+    "sheet": "https://www.w3.org/TR/WD-CSS2-971104"
+  },
+  {
+    "types": [
+      "DATE",
+      "ABSTRACT"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/web-animations/"
+  },
+  {
+    "types": [
+      "ABSTRACT"
+    ],
+    "sheet": "https://drafts.css-houdini.org/css-animationworklet-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 404: Not Found"
+    ],
+    "sheet": "http://dvcs.w3.org/hg/FXTF/raw-file/default/masking/index.html"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 404: Not Found"
+    ],
+    "sheet": "http://dvcs.w3.org/hg/FXTF/raw-file/tip/masking/index.html"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 404: Not Found"
+    ],
+    "sheet": "https://dvcs.w3.org/hg/FXTF/raw-file/default/filters/index.html"
+  },
+  {
+    "types": [
+      "DATE"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css-style-attr/"
+  }
+]
