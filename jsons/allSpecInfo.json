@@ -1,60 +1,701 @@
 [
   {
+    "date": "2024-03-21T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2024/CRD-compositing-1-20240321/",
+    "thisDocName": "Compositing and Blending Level 1",
+    "properties": [],
+    "abstract": "Compositing describes how shapes of different elements are combined into a single image. There are various possible approaches for compositing. Previous versions of SVG and CSS used Simple Alpha Compositing. In this model, each element is rendered into its own buffer and is then merged with its backdrop using the Porter Duff source-over operator. This specification will define a new compositing model that expands upon the Simple Alpha Compositing model by offering:"
+  },
+  {
+    "date": "2022-10-25T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-css-view-transitions-1-20221025/",
+    "thisDocName": "CSS View Transitions Module Level 1",
+    "properties": [],
+    "abstract": "This module defines the View Transition API, along with associated properties and pseudo-elements."
+  },
+  {
+    "date": "2024-05-11T00:00:00+02:00",
+    "thisSpecUrl": "https://drafts.csswg.org/css-font-loading/",
+    "thisDocName": "CSS Font Loading Module Level 3",
+    "properties": [],
+    "abstract": "This CSS module describes events and interfaces used for dynamically loading font resources."
+  },
+  {
+    "date": "2023-06-02T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2023/WD-css-animations-2-20230602/",
+    "thisDocName": "CSS Animations Level 2",
+    "properties": [],
+    "abstract": "This CSS module describes a way for authors to animate the values of CSS properties over time, using keyframes. The behavior of these keyframe animations can be controlled by specifying their duration, number of repeats, and repeating behavior."
+  },
+  {
+    "date": "2017-12-05T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-color-3-20171205/",
+    "thisDocName": "CSS Color Module Level 3",
+    "properties": [],
+    "abstract": "CSS (Cascading Style Sheets) is a language for describing the rendering\n   of HTML and XML documents on screen, on paper, in speech, etc. It uses\n   color-related properties and values to color the text, backgrounds,\n   borders, and other parts of elements in a document. This specification\n   describes color values and properties for foreground color and group\n   opacity. These include properties and values from CSS level 2 and new\n   values."
+  },
+  {
+    "date": "2021-12-16T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-values-4-20211216/",
+    "thisDocName": "CSS Values and Units Module Level 4",
+    "properties": [],
+    "abstract": "This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions."
+  },
+  {
+    "date": "2010-06-08T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2010/WD-css3-gcpm-20100608",
+    "thisDocName": "CSS Generated Content for Paged Media Module",
+    "properties": [],
+    "abstract": "This module describes features often used in printed publications. Most\n   of the specified functionality involves some sort of generated content\n   where content from the document is adorned, replicated, or moved in the\n   final presentation of the document. Along with two other CSS3 modules\n   – multi-column layout and paged media – this module offers\n   advanced functionality for presenting structured documents on paged media.\n   This specification only applies to the ‘print’ media type."
+  },
+  {
+    "date": "2022-09-17T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-contain-2/",
+    "thisDocName": "CSS Containment Module Level 2",
+    "properties": [],
+    "abstract": "This CSS module describes the contain property, which indicates that the element’s subtree is independent of the rest of the page. This enables heavy optimizations by user agents when used well."
+  },
+  {
+    "date": "2020-10-28T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-box-3-20201028/",
+    "thisDocName": "CSS Box Model Module Level 3",
+    "properties": [],
+    "abstract": "This specification describes the margin and padding properties, which create spacing in and around a CSS box."
+  },
+  {
+    "date": "2023-05-25T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2023/WD-css-view-transitions-1-20230525/",
+    "thisDocName": "CSS View Transitions Module Level 1",
+    "properties": [],
+    "abstract": "This module defines the View Transition API, along with associated properties and pseudo-elements."
+  },
+  {
     "date": "1998-05-12T00:00:00+02:00",
     "thisSpecUrl": "https://www.w3.org/TR/1998/REC-CSS2-19980512/fonts.html",
     "thisDocName": "Fonts",
     "properties": []
   },
   {
-    "date": "2002-09-01T00:00:00+02:00",
-    "thisSpecUrl": "https://www.w3.org/TR/WD-CSS2-971104",
-    "thisDocName": "CSS2 Specification Release",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/fxtf/web-animations/",
-    "thisDocName": "Index of web-animations/",
-    "properties": []
-  },
-  {
-    "date": "2022-07-15T00:00:00+02:00",
-    "thisSpecUrl": "https://drafts.css-houdini.org/css-animationworklet-1/",
-    "thisDocName": "CSS Animation Worklet API",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-style-attr/",
-    "thisDocName": "CSS Style Attributes",
+    "date": "2017-09-05T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-mediaqueries-4-20170905/",
+    "thisDocName": "Media Queries Level 4",
     "properties": [],
-    "abstract": "Markup languages such as HTML [HTML401] and\n   SVG [SVG11]\n   provide a style attribute on most elements, to hold inline style\n   information that applies to those elements. This module describes the\n   syntax and interpretation of the CSS fragment that can be used in such\n   style attributes."
+    "abstract": "Media Queries allow authors to test and query values or features of the user agent or display device, independent of the document being rendered.  They are used in the CSS @media rule to conditionally apply styles to a document, and in various other contexts and languages, such as HTML and Javascript.Media Queries Level 4 describes the mechanism and syntax of media queries, media types, and media features. It extends and supersedes the features defined in Media Queries Level 3."
   },
   {
-    "date": "1998-05-12T00:00:00+02:00",
-    "thisSpecUrl": "https://www.w3.org/TR/1998/REC-CSS2-19980512/fonts.html",
-    "thisDocName": "Fonts",
-    "properties": []
-  },
-  {
-    "date": "2002-09-01T00:00:00+02:00",
-    "thisSpecUrl": "https://www.w3.org/TR/WD-CSS2-971104",
-    "thisDocName": "CSS2 Specification Release",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/fxtf/web-animations/",
-    "thisDocName": "Index of web-animations/",
-    "properties": []
-  },
-  {
-    "date": "2022-07-15T00:00:00+02:00",
-    "thisSpecUrl": "https://drafts.css-houdini.org/css-animationworklet-1/",
-    "thisDocName": "CSS Animation Worklet API",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-style-attr/",
-    "thisDocName": "CSS Style Attributes",
+    "date": "2020-11-17T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/",
+    "thisDocName": "CSS Fonts Module Level 4",
     "properties": [],
-    "abstract": "Markup languages such as HTML [HTML401] and\n   SVG [SVG11]\n   provide a style attribute on most elements, to hold inline style\n   information that applies to those elements. This module describes the\n   syntax and interpretation of the CSS fragment that can be used in such\n   style attributes."
+    "abstract": "This specification defines modifications to the existing CSS Fonts 3 specification along with additional features."
+  },
+  {
+    "date": "2016-09-29T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2016/CR-css-values-3-20160929/",
+    "thisDocName": "CSS Values and Units Module Level 3",
+    "properties": [],
+    "abstract": "This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions."
+  },
+  {
+    "date": "2017-04-13T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-images-4-20170413/",
+    "thisDocName": "CSS Image Values and Replaced Content Module Level 4",
+    "properties": [],
+    "abstract": "This module contains the features of CSS level 4 relating to the <image> type and replaced elements.\n\nIt includes and extends the functionality of CSS level 2 [CSS21] and in the previous level of this specification [css3-images].\nThe main extensions compared to [css3-images] are several additions to the <image> type, such as the image() notation, the element() notation, and conic gradients."
+  },
+  {
+    "date": "2014-05-22T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-geometry-1-20140522/",
+    "thisDocName": "Geometry Interfaces Module Level 1",
+    "properties": [],
+    "abstract": "This specification provides basic geometric interfaces.\nCSS is a language for describing the rendering of structured documents\n(such as HTML and XML)\non screen, on paper, in speech, etc."
+  },
+  {
+    "date": "2020-11-11T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-values-4-20201111/",
+    "thisDocName": "CSS Values and Units Module Level 4",
+    "properties": [],
+    "abstract": "This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions."
+  },
+  {
+    "date": "2001-07-31T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2001/WD-css3-fonts-20010731/",
+    "thisDocName": "CSS3 module: Fonts",
+    "properties": [],
+    "abstract": "This document presents a set of properties allowing font specification by a user agent as well\n as additional font decoration properties like font effects, emphasis, smoothing, etc...\nThe font specification is identical to the similar section in CSS 2\n[CSS2]. The font decoration properties are new to CSS3."
+  },
+  {
+    "date": "2024-08-08T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2024/WD-css-inline-3-20240808/",
+    "thisDocName": "CSS Inline Layout Module Level 3",
+    "properties": [],
+    "abstract": "The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. This module describes box model for this inline layout model and defines the block-axis alignment and sizing of inline-level content, extending the model in [CSS2]. It also adds a special layout mode for drop-caps."
+  },
+  {
+    "date": "2012-06-19T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/",
+    "thisDocName": "Media Queries",
+    "properties": [],
+    "abstract": "HTML4 and CSS2 currently support media-dependent style sheets tailored\n   for different media types. For example, a document may use\n   sans-serif fonts when displayed on a screen and serif fonts when printed.\n   ‘screen’ and ‘print’ are two media types that have been defined.\n   Media queries extend the functionality of media types by allowing\n   more precise labeling of style sheets."
+  },
+  {
+    "date": "2019-10-10T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-images-3-20191010/",
+    "thisDocName": "CSS Images Module Level 3",
+    "properties": [],
+    "abstract": "This module contains the features of CSS level 3 relating to the <image> type and some replaced elements.\n\n\tIt includes and extends the functionality of CSS level 2 [CSS2].\n\tThe main extensions compared to CSS2.1 are the generalization of the <url> type to the <image> type,\n\tseveral additions to the <image> type, a generic sizing algorithm for images and other replaced content in CSS,\n\tdefinitions for interpolating several <image> types,\n\tand several properties controlling the interaction of replaced elements and CSS’s layout models."
+  },
+  {
+    "date": "2002-08-02T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-background-20020802",
+    "thisDocName": "CSS3 module: Backgrounds",
+    "properties": [],
+    "abstract": "CSS (Cascading Style Sheets) is a language for describing the rendering of\nstructured documents (such as HTML and XML) on screen, on paper, in speech,\netc. This draft describes the functionality that is proposed for CSS level 3\nto describe backgrounds, such as background colors and background images. It\nincludes and extends the functionality of CSS level 2 [CSS2], which builds on CSS Level 1 [CSS1]."
+  },
+  {
+    "date": "2017-12-14T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-scroll-snap-1-20171214/",
+    "thisDocName": "CSS Scroll Snap Module Level 1",
+    "properties": [],
+    "abstract": "This module contains features to control panning and scrolling behavior with “snap positions”."
+  },
+  {
+    "date": "2016-03-01T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2016/CR-css-flexbox-1-20160301/",
+    "thisDocName": "CSS Flexible Box Layout Module Level 1",
+    "properties": [],
+    "abstract": "The specification describes a CSS box model optimized for user interface design. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated. Nesting of these boxes (horizontal inside vertical, or vertical inside horizontal) can be used to build layouts in two dimensions."
+  },
+  {
+    "date": "2019-06-06T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-overscroll-1/",
+    "thisDocName": "CSS Overscroll Behavior Module Level 1",
+    "properties": [],
+    "abstract": "This module defines overscroll-behavior to control the behavior when the scroll position\n\nof a scroll container reaches the edge of the scrollport.\nThis allows content authors to hint that the boundary default actions,\nsuch as scroll chaining and overscroll, should not be triggered."
+  },
+  {
+    "date": "2016-07-05T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-color-4-20160705/",
+    "thisDocName": "CSS Color Module Level 4",
+    "properties": [],
+    "abstract": "This specification describes CSS <color> values and properties for foreground color and group opacity."
+  },
+  {
+    "date": "2010-12-02T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2010/WD-css3-writing-modes-20101202/",
+    "thisDocName": "CSS Writing Modes Module Level 3",
+    "properties": [],
+    "abstract": "This module specifies the text layout model in CSS and the properties\n   that control it. It covers bidirectional and vertical text."
+  },
+  {
+    "date": "2011-05-31T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110531/",
+    "thisDocName": "CSS Writing Modes Module Level 3",
+    "properties": [],
+    "abstract": "CSS3 Writing Modes defines CSS features to support for various\n   international writing modes, such as left-to-right (e.g. Latin or Indic),\n   right-to-left (e.g. Hebrew or Arabic), bidirectional (e.g. mixed Latin and\n   Arabic) and vertical (e.g. Asian scripts)."
+  },
+  {
+    "date": "2019-11-26T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-nav-1-20191126/",
+    "thisDocName": "CSS Spatial Navigation Level 1",
+    "properties": [],
+    "abstract": "This specification defines a general model for navigating the focus using the arrow keys,\n\n    as well as related CSS, JavaScript features and Events."
+  },
+  {
+    "date": "2023-04-01T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2023/WD-css-inline-3-20230401/",
+    "thisDocName": "CSS Inline Layout Module Level 3",
+    "properties": [],
+    "abstract": "The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. This module describes box model for this inline layout model and defines the block-axis alignment and sizing of inline-level content, extending the model in [CSS2]. It also adds a special layout mode for drop-caps."
+  },
+  {
+    "date": "2019-09-03T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190903/",
+    "thisDocName": "CSS Writing Modes Level 3",
+    "properties": [],
+    "abstract": "CSS Writing Modes Level 3 defines CSS support for various writing modes and their combinations, including left-to-right and right-to-left text ordering as well as horizontal and vertical orientations."
+  },
+  {
+    "date": "2018-12-18T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-break-4-20181218/",
+    "thisDocName": "CSS Fragmentation Module Level 4",
+    "properties": [],
+    "abstract": "This module describes the fragmentation model that partitions a flow into pages, columns, or regions.\n\nIt builds on the Page model module and introduces and defines the fragmentation model.\nIt adds functionality for pagination, breaking variable fragment size and orientation, widows and orphans."
+  },
+  {
+    "date": "2014-01-16T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css3-break-20140116/",
+    "thisDocName": "CSS Fragmentation Module Level 3",
+    "properties": [],
+    "abstract": "This module describes the fragmentation model that partitions a flow\n   into pages, columns, or regions. It builds on the Page model module and\n   introduces and defines the fragmentation model. It adds functionality for\n   pagination, breaking variable fragment size and orientation, widows and\n   orphans."
+  },
+  {
+    "date": "2018-05-24T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/",
+    "thisDocName": "CSS Writing Modes Level 4",
+    "properties": [],
+    "abstract": "CSS Writing Modes Level 4 defines CSS support for various international writing modes, such as left-to-right (e.g. Latin or Indic), right-to-left (e.g. Hebrew or Arabic), bidirectional (e.g. mixed Latin and Arabic) and vertical (e.g. Asian scripts)."
+  },
+  {
+    "date": "2011-03-22T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-flexbox-20110322/",
+    "thisDocName": "Flexible Box Layout Module",
+    "properties": [],
+    "abstract": "The draft describes a CSS box model optimized for interface design. It\n   provides an additional layout system alongside the ones already in CSS. [CSS21] In this new box\n   model, the children of a box are laid out either horizontally or\n   vertically, and unused space can be assigned to a particular child or\n   distributed among the children by assignment of \"flex\" to the children\n   that should expand. Nesting of these boxes (horizontal inside vertical, or\n   vertical inside horizontal) can be used to build layouts in two\n   dimensions. This model is based on the box model in the XUL user-interface\n   language used for the user interface of many Mozilla-based applications\n   (such as Firefox)."
+  },
+  {
+    "date": "2024-09-30T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-text-3/",
+    "thisDocName": "CSS Text Module Level 3",
+    "properties": [],
+    "abstract": "This CSS module defines properties for text manipulation and specifies their processing model. It covers line breaking, justification and alignment, white space handling, and text transformation."
+  },
+  {
+    "date": "2018-12-04T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/geometry-1/",
+    "thisDocName": "Geometry Interfaces Module Level 1",
+    "properties": [],
+    "abstract": "This specification provides basic geometric interfaces to represent points, rectangles, quadrilaterals and transformation matrices that can be used by other modules or specifications."
+  },
+  {
+    "date": "2001-07-26T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2001/WD-css3-box-20010726/",
+    "thisDocName": "CSS3 module: the box model",
+    "properties": [],
+    "abstract": "CSS (Cascading Style Sheets) describe the rendering of documents on\nvarious media. When textual documents (e.g., HTML, WML) are laid out\non visual media (e.g., screen, paper), CSS represents the elements\nof the document by rectangular boxes that are laid out one after the other or\nnested inside each other in an ordering that is called a flow. This\nmodule describes the characteristics of the flow and of the various kinds of\nboxes."
+  },
+  {
+    "date": "2021-07-29T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-fonts-4-20210729/",
+    "thisDocName": "CSS Fonts Module Level 4",
+    "properties": [],
+    "abstract": "This specification defines modifications to the existing CSS Fonts 3 specification along with additional features."
+  },
+  {
+    "date": "2002-01-23T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-mediaqueries-20020123/",
+    "thisDocName": "Media queries",
+    "properties": [],
+    "abstract": "HTML4 and CSS2 currently support media-dependent style sheets tailored for\ndifferent media types. For example, a document may use sans-serif\nfonts when displayed on a screen and serif fonts when printed. \"Screen\" and\n\"print\" are two of media types that have been defined. Media queries\nextend the functionality of media types by allowing more precise labeling of\nstyle sheets."
+  },
+  {
+    "date": "2017-03-07T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-tables-3-20170307/",
+    "thisDocName": "CSS Table Module Level 3",
+    "properties": [],
+    "abstract": "This CSS module defines a two-dimensional grid-based layout system, optimized for tabular data rendering. In the table layout model, each display node is assigned to an intersection between a set of consecutive rows and a set of consecutive columns, themselves generated from the table structure and sized according to their content."
+  },
+  {
+    "date": "2024-07-23T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-scroll-snap-2/",
+    "thisDocName": "CSS Scroll Snap Module Level 2",
+    "properties": [],
+    "abstract": "This module contains features to control panning and scrolling behavior with “snap positions”."
+  },
+  {
+    "date": "2019-07-30T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190730/",
+    "thisDocName": "CSS Writing Modes Level 3",
+    "properties": [],
+    "abstract": "CSS Writing Modes Level 3 defines CSS support for various writing modes and their combinations, including left-to-right and right-to-left text ordering as well as horizontal and vertical orientations."
+  },
+  {
+    "date": "2024-03-26T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2024/WD-css-anchor-position-1-20240326/",
+    "thisDocName": "CSS Anchor Positioning",
+    "properties": [],
+    "abstract": "This specification defines 'anchor positioning', where a positioned element can size and position itself relative to one or more \"anchor elements\" elsewhere on the page."
+  },
+  {
+    "date": "2009-06-18T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2009/WD-css3-fonts-20090618",
+    "thisDocName": "CSS Fonts Module Level 3",
+    "properties": [],
+    "abstract": "This CSS3 module describes how font properties are specified and how\n   font resources are loaded dynamically. The contents of this specification\n   are a consolidation of content previously divided into CSS3 Fonts and\n   CSS3 Web\n   Fonts modules."
+  },
+  {
+    "date": "2011-04-28T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110428",
+    "thisDocName": "CSS Writing Modes Module Level 3",
+    "properties": [],
+    "abstract": "CSS3 Writing Modes defines CSS features to support for various\n   international writing modes, such as left-to-right (e.g. Latin or Indic),\n   right-to-left (e.g. Hebrew or Arabic), bidirectional (e.g. mixed Latin and\n   Arabic) and vertical (e.g. Asian scripts)."
+  },
+  {
+    "date": "2002-02-20T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-lists-20020220",
+    "thisDocName": "CSS3 module: Lists",
+    "properties": [],
+    "abstract": "This CSS level 3 module describes how lists are styled."
+  },
+  {
+    "date": "2018-12-04T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-break-3/",
+    "thisDocName": "CSS Fragmentation Module Level 3",
+    "properties": [],
+    "abstract": "This module describes the fragmentation model that partitions a flow  into pages, columns, or regions.\n\nIt builds on the Page model module and introduces and defines the fragmentation model.\nIt adds functionality for pagination, breaking variable fragment size and orientation, widows and orphans."
+  },
+  {
+    "date": "2021-03-16T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-ui-4-20210316/",
+    "thisDocName": "CSS Basic User Interface Module Level 4",
+    "properties": [],
+    "abstract": "This specification describes user interface related\n\n          properties and values to style HTML and XML (including XHTML).\n          It includes and extends user interface related features\n          from the properties and values of previous CSS levels.\n          It uses various properties and values\n          to style basic user interface elements in a document."
+  },
+  {
+    "date": "2020-04-29T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-text-3-20200429/",
+    "thisDocName": "CSS Text Module Level 3",
+    "properties": [],
+    "abstract": "This CSS module defines properties for text manipulation and specifies their processing model. It covers line breaking, justification and alignment, white space handling, and text transformation."
+  },
+  {
+    "date": "2022-01-13T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2022/CR-css-cascade-5-20220113/",
+    "thisDocName": "CSS Cascading and Inheritance Level 5",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level is cascade layers."
+  },
+  {
+    "date": "2020-11-11T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-scroll-anchoring-1/",
+    "thisDocName": "CSS Scroll Anchoring Module Level 1",
+    "properties": [],
+    "abstract": "Changes in DOM elements above the visible region of a scrolling box can result in the page moving\n\nwhile the user is in the middle of consuming the content.This spec proposes a mechanism to mitigate this jarring user experience\n\nby keeping track of the position of an anchor node and adjusting the scroll offset accordingly.This spec also proposes an API for web developers to opt-out of this behavior."
+  },
+  {
+    "date": "2020-08-27T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-inline-3-20200827/",
+    "thisDocName": "CSS Inline Layout Module Level 3",
+    "properties": [],
+    "abstract": "The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. This module describes box model for this inline layout model and defines the block-axis alignment and sizing of inline-level content, extending the model in [CSS2]. It also adds a special layout mode for drop-caps."
+  },
+  {
+    "date": "2012-10-25T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-filter-effects-20121025/",
+    "thisDocName": "Filter Effects 1.0",
+    "properties": [],
+    "abstract": "Filter effects are a way of processing an element's rendering before it\n   is displayed in the document. Typically, rendering an element via CSS or\n   SVG can conceptually described as if the element, including its children,\n   are drawn into a buffer (such as a raster image) and then that buffer is\n   composited into the elements parent. Filters apply an effect before the\n   compositing stage. Examples of such effects are blurring, changing color\n   intensity and warping the image."
+  },
+  {
+    "date": "2014-03-20T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-lists-3-20140320/",
+    "thisDocName": "CSS Lists and Counters Module Level 3",
+    "properties": [],
+    "abstract": "This draft contains the features of CSS level 3 relating to list styling. It includes and extends the functionality of CSS level 2 [CSS21]. The main extensions compared to level 2 are a pseudo-element representing the list marker, and a method for authors to define their own list-styles.\nCSS is a language for describing the rendering of structured documents \n(such as HTML and XML) \non screen, on paper, in speech, etc."
+  },
+  {
+    "date": "2011-06-30T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-ruby-20110630/",
+    "thisDocName": "CSS3 Ruby Module",
+    "properties": [],
+    "abstract": "\"Ruby\" are short runs of text alongside the base text, typically\nused in East Asian documents to indicate pronunciation or to provide a\nshort annotation. This document proposes a set of CSS properties\nassociated with the 'Ruby' elements. They can be used in combination\nwith the Ruby elements of HTML."
+  },
+  {
+    "date": "2014-03-20T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2014/CR-css-writing-modes-3-20140320/",
+    "thisDocName": "CSS Writing Modes Level 3",
+    "properties": [],
+    "abstract": "CSS Writing Modes Level 3 defines CSS support for various international writing modes, such as left-to-right (e.g. Latin or Indic), right-to-left (e.g. Hebrew or Arabic), bidirectional (e.g. mixed Latin and Arabic) and vertical (e.g. Asian scripts).\nCSS is a language for describing the rendering of structured documents \n(such as HTML and XML) \non screen, on paper, in speech, etc."
+  },
+  {
+    "date": "2009-07-23T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2009/WD-css3-images-20090723/",
+    "thisDocName": "CSS Image Values Module Level 3",
+    "properties": [],
+    "abstract": "This CSS Image Values module defines the syntax for <image> values\n   in CSS. <image> values can be a single URI to an image, a list of\n   URIs denoting a series of fallbacks, sprites (image slices), or gradients."
+  },
+  {
+    "date": "1996-04-18T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-960418.html",
+    "thisDocName": "Cascading Style Sheets, level 1",
+    "properties": [],
+    "abstract": "This document specifies level 1 of the Cascading Style Sheet\nmechanism (CSS1). CSS1 is a simple style sheet mechanism that allows\nauthors and readers to attach style (e.g. fonts, colors and spacing)\nto HTML documents. The CSS1 language is human readable and writable,\nand expresses style in common desktop publishing terminology."
+  },
+  {
+    "date": "2013-09-19T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-syntax-3-20130919/",
+    "thisDocName": "CSS Syntax Module Level 3",
+    "properties": [],
+    "abstract": "This module describes, in general terms, the basic structure and syntax of CSS stylesheets. It defines, in detail, the syntax and parsing of CSS - how to turn a stream of bytes into a meaningful stylesheet.\nCSS is a language for describing the rendering of structured documents\n(such as HTML and XML)\non screen, on paper, in speech, etc."
+  },
+  {
+    "date": "2016-01-14T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2016/CR-css-cascade-4-20160114/",
+    "thisDocName": "CSS Cascading and Inheritance Level 4",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level are the revert keyword and <supports-condition> for the @import rule."
+  },
+  {
+    "date": "2014-05-13T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-gcpm-3-20140513/",
+    "thisDocName": "CSS Generated Content for Paged Media Module",
+    "properties": [],
+    "abstract": "Books and other paged media often use special techniques to display information. Content may be moved to or generated for special areas of the page, such as running heads or footnotes. Generated content within pages, such as tab leaders or cross-references, helps readers navigate within and between pages.\nCSS is a language for describing the rendering of structured documents \n(such as HTML and XML) \non screen, on paper, in speech, etc."
+  },
+  {
+    "date": "2020-04-21T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-box-3-20200421/",
+    "thisDocName": "CSS Box Model Module Level 3",
+    "properties": [],
+    "abstract": "This specification describes the margin and padding properties, which create spacing in and around a CSS box."
+  },
+  {
+    "date": "2019-01-31T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-values-4-20190131/",
+    "thisDocName": "CSS Values and Units Module Level 4",
+    "properties": [],
+    "abstract": "This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions."
+  },
+  {
+    "date": "2007-08-09T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2007/WD-css3-box-20070809/",
+    "thisDocName": "CSS basic box model",
+    "properties": [],
+    "abstract": "CSS (Cascading Style Sheets) describes the rendering of documents on\n   various media. When textual documents (e.g., HTML) are laid out on visual\n   media (e.g., screen or print), CSS models the document as a hierarchy of\n   boxes containing words, lines, paragraphs, tables, etc. each with\n   properties such as size, color and font."
+  },
+  {
+    "date": "2024-08-04T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-box-4/",
+    "thisDocName": "CSS Box Model Module Level 4",
+    "properties": [],
+    "abstract": "This specification describes the margin and padding properties, which create spacing in and around a CSS box. It may later be extended to include borders (currently described in [css-backgrounds-3])."
+  },
+  {
+    "date": "2015-09-08T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css-cascade-4-20150908/",
+    "thisDocName": "CSS Cascading and Inheritance Level 4",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level are the revert keyword and <supports-condition> for the @import rule."
+  },
+  {
+    "date": "2022-11-11T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-selectors-4-20221111/",
+    "thisDocName": "Selectors Level 4",
+    "properties": [],
+    "abstract": "Selectors are patterns that match against elements in a tree, and as such form one of several technologies that can be used to select nodes in a document. Selectors have been optimized for use with HTML and XML, and are designed to be usable in performance-critical code. They are a core component of CSS (Cascading Style Sheets), which uses Selectors to bind style properties to elements in the document.\n\nSelectors Level 4 describes the selectors that already exist in [SELECT], and further introduces new selectors for CSS and other languages that may need them."
+  },
+  {
+    "date": "2021-12-24T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2021/CRD-css-syntax-3-20211224/",
+    "thisDocName": "CSS Syntax Module Level 3",
+    "properties": [],
+    "abstract": "This module describes, in general terms, the basic structure and syntax of CSS stylesheets. It defines, in detail, the syntax and parsing of CSS - how to turn a stream of bytes into a meaningful stylesheet."
+  },
+  {
+    "date": "2009-04-23T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2009/CR-CSS2-20090423",
+    "thisDocName": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
+    "properties": [],
+    "abstract": "This specification defines Cascading Style Sheets, level 2\nrevision 1 (CSS 2.1). CSS 2.1 is a style sheet language\nthat allows\nauthors and users to attach style (e.g., fonts and spacing) to\nstructured documents (e.g., HTML documents and XML\napplications). By separating the presentation style of documents from\nthe content of documents, CSS 2.1 simplifies Web authoring and\nsite maintenance."
+  },
+  {
+    "date": "2020-12-22T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/NOTE-css-2020-20201222/",
+    "thisDocName": "CSS Snapshot 2020",
+    "properties": [],
+    "abstract": "This document collects together into one definition all the specs that\n\n\ttogether form the current state of Cascading Style Sheets (CSS) as of 2020.\n\tThe primary audience is CSS implementers, not CSS authors, as this definition\n\tincludes modules by specification stability, not Web browser adoption rate."
+  },
+  {
+    "date": "2023-03-16T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2023/CRD-css-display-3-20230316/",
+    "thisDocName": "CSS Display Module Level 3",
+    "properties": [],
+    "abstract": "This module describes how the CSS formatting box tree is generated from the document element tree and defines the display property that controls it."
+  },
+  {
+    "date": "2025-01-10T00:00:00+01:00",
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-inline/",
+    "thisDocName": "CSS Inline Layout Module Level 3",
+    "properties": [],
+    "abstract": "The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. This module describes box model for this inline layout model and defines the block-axis alignment and sizing of inline-level content, extending the model in [CSS2]. It also adds a special layout mode for drop-caps."
+  },
+  {
+    "date": "2018-09-13T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2018/SPSD-CSS1-20180913/",
+    "thisDocName": "Cascading Style Sheets, level 1",
+    "properties": [],
+    "abstract": "This document specifies level 1 of the Cascading Style Sheet\nmechanism (CSS1). CSS1 is a simple style sheet mechanism that allows\nauthors and readers to attach style (e.g. fonts, colors and spacing)\nto HTML documents. The CSS1 language is human readable and writable,\nand expresses style in common desktop publishing terminology."
+  },
+  {
+    "date": "2001-09-01T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/REC-CSS1-961217",
+    "thisDocName": "Cascading Style Sheets, level 1",
+    "properties": [],
+    "abstract": "This document specifies level 1 of the Cascading Style Sheet mechanism (CSS1).\n  CSS1 is a simple style sheet mechanism that allows authors and readers to\n  attach style (e.g. fonts, colors and spacing) to HTML documents. The CSS1\n  language is human readable and writable, and expresses style in common desktop\n  publishing terminology."
+  },
+  {
+    "date": "2024-01-25T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-gcpm-3/",
+    "thisDocName": "CSS Generated Content for Paged Media Module",
+    "properties": [],
+    "abstract": "Books and other paged media often use special techniques to display information. Content may be moved to or generated for special areas of the page, such as running heads or footnotes. Generated content within pages, such as tab leaders or cross-references, helps readers navigate within and between pages."
+  },
+  {
+    "date": "2017-06-13T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/",
+    "thisDocName": "CSS Overflow Module Level 4",
+    "properties": [],
+    "abstract": "This module contains the features of CSS relating to new mechanisms of overflow handling in visual media (e.g., screen or paper).  In interactive media, it describes features that allow the overflow from a fixed size container to be handled by pagination (displaying one page at a time).  It also describes features, applying to all visual media, that allow the contents of an element to be spread across multiple fragments, allowing the contents to flow across multiple regions or to have different styles for different fragments."
+  },
+  {
+    "date": "2020-10-22T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-highlight-api-1-20201022/",
+    "thisDocName": "CSS Custom Highlight API Module Level 1",
+    "properties": [],
+    "abstract": "This CSS module describes a mechanism\n\n\tfor styling arbitrary ranges of a document identified by script."
+  },
+  {
+    "date": "2018-12-18T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-break-4/",
+    "thisDocName": "CSS Fragmentation Module Level 4",
+    "properties": [],
+    "abstract": "This module describes the fragmentation model that partitions a flow into pages, columns, or regions.\n\nIt builds on the Page model module and introduces and defines the fragmentation model.\nIt adds functionality for pagination, breaking variable fragment size and orientation, widows and orphans."
+  },
+  {
+    "date": "2016-07-06T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-mediaqueries-4-20160706/",
+    "thisDocName": "Media Queries Level 4",
+    "properties": [],
+    "abstract": "Media Queries allow authors to test and query values or features of the user agent or display device, independent of the document being rendered.  They are used in the CSS @media rule to conditionally apply styles to a document, and in various other contexts and languages, such as HTML and Javascript.Media Queries Level 4 describes the mechanism and syntax of media queries, media types, and media features. It extends and supersedes the features defined in Media Queries Level 3."
+  },
+  {
+    "date": "2018-08-28T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-display-3-20180828/",
+    "thisDocName": "CSS Display Module Level 3",
+    "properties": [],
+    "abstract": "This module describes how the CSS formatting box tree is generated from the document element tree and defines the display property that controls it."
+  },
+  {
+    "date": "2020-02-11T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/resize-observer-1/",
+    "thisDocName": "Resize Observer",
+    "properties": [],
+    "abstract": "This specification describes an API for observing changes to Element’s size."
+  },
+  {
+    "date": "2016-05-19T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2016/CR-css-cascade-3-20160519/",
+    "thisDocName": "CSS Cascading and Inheritance Level 3",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements."
+  },
+  {
+    "date": "2018-09-20T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/",
+    "thisDocName": "CSS Fonts Module Level 4",
+    "properties": [],
+    "abstract": "This specification defines modifications to the existing CSS Fonts 3 specification along with additional experimental features."
+  },
+  {
+    "date": "2022-04-28T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-css-color-5-20220428/",
+    "thisDocName": "CSS Color Module Level 5",
+    "properties": [],
+    "abstract": "This module extends CSS Color [css-color-4] to add color modification functions."
+  },
+  {
+    "date": "2024-02-13T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2024/CRD-css-color-4-20240213/",
+    "thisDocName": "CSS Color Module Level 4",
+    "properties": [],
+    "abstract": "This specification describes CSS <color> values, and properties for foreground color and group opacity."
+  },
+  {
+    "date": "2024-12-18T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2024/WD-css-inline-3-20241218/",
+    "thisDocName": "CSS Inline Layout Module Level 3",
+    "properties": [],
+    "abstract": "The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. This module describes box model for this inline layout model and defines the block-axis alignment and sizing of inline-level content, extending the model in [CSS2]. It also adds a special layout mode for drop-caps."
+  },
+  {
+    "date": "2013-10-10T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-text-3-20131010/",
+    "thisDocName": "CSS Text Module Level 3",
+    "properties": [],
+    "abstract": "This CSS3 module defines properties for text manipulation and specifies\n   their processing model. It covers line breaking, justification and\n   alignment, white space handling, and text transformation."
+  },
+  {
+    "date": "2021-12-17T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-sizing-3-20211217/",
+    "thisDocName": "CSS Box Sizing Module Level 3",
+    "properties": [],
+    "abstract": "This module extends the CSS sizing properties with keywords that represent content-based \"intrinsic\" sizes and context-based \"extrinsic\" sizes, allowing CSS to more easily describe boxes that fit their content or fit into a particular layout context."
+  },
+  {
+    "date": "2011-12-06T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-images-20111206/",
+    "thisDocName": "CSS Image Values and Replaced Content Module Level 3",
+    "properties": [],
+    "abstract": "CSS is a language for describing the rendering of structured documents\n   (such as HTML and XML) on screen, on paper, in speech, etc. This module\n   contains the features of CSS level 3 relating to the <image> type\n   and replaced elements. It includes and extends the functionality of CSS\n   level 2 [CSS21], which builds on CSS\n   level 1 [CSS1].\n   The main extensions compared to level 2 are the generalization of the\n   <url> type to the <image> type, several additions to the ‘<image>’ type, a\n   generic sizing algorithm for images and other replaced content in CSS, and\n   several properties controlling the interaction of replaced elements and\n   CSS's layout models."
+  },
+  {
+    "date": "2017-07-20T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-display-3-20170720/",
+    "thisDocName": "CSS Display Module Level 3",
+    "properties": [],
+    "abstract": "This module describes how the CSS formatting box tree is generated from the document element tree and defines the display property that controls it."
+  },
+  {
+    "date": "2014-09-16T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-line-grid-1/",
+    "thisDocName": "CSS Line Grid Module Level 1",
+    "properties": [],
+    "abstract": "This module contains CSS features for aligning content to a baseline grid."
+  },
+  {
+    "date": "2025-01-10T00:00:00+01:00",
+    "thisSpecUrl": "https://drafts.csswg.org/css-inline/",
+    "thisDocName": "CSS Inline Layout Module Level 3",
+    "properties": [],
+    "abstract": "The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. This module describes box model for this inline layout model and defines the block-axis alignment and sizing of inline-level content, extending the model in [CSS2]. It also adds a special layout mode for drop-caps."
+  },
+  {
+    "date": "2023-08-28T00:00:00+02:00",
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-cascade/",
+    "thisDocName": "CSS Cascading and Inheritance Level 4",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level are the revert keyword and <supports-condition> for the @import rule."
+  },
+  {
+    "date": "2024-09-06T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2024/WD-css-cascade-6-20240906/",
+    "thisDocName": "CSS Cascading and Inheritance Level 6",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level is § 2.5 Scoping Styles: the @scope rule."
+  },
+  {
+    "date": "2002-08-02T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-fonts-20020802",
+    "thisDocName": "CSS3 module: Fonts",
+    "properties": [],
+    "abstract": "This document presents a set of properties allowing font specification by a user agent as well\n as additional font decoration properties like font effects, emphasis, smoothing, etc...\nThe font specification is very close to the similar section in CSS 2\n[CSS2]. The font decoration properties are new to CSS3."
+  },
+  {
+    "date": "2007-05-04T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2007/WD-css3-gcpm-20070504",
+    "thisDocName": "CSS3 module: Generated Content for Paged Media",
+    "properties": [],
+    "abstract": "This module describes features often used in printed publications. In\n   particular, this specification describes how CSS style sheets can express\n   running headers and footers, leaders, cross-references, footnotes,\n   sidenotes, named flows, hyphenation, new counter styles, character\n   substitution, image resolution, page floats, advanced multi-column layout,\n   conditional content, crop and cross marks, bookmarks, CMYK colors,\n   continuation markers, change bars, line numbers, named page lists, and\n   generated lists. Along with two other CSS3 modules – multi-column\n   layout and paged media – this module offers advanced functionality\n   for presenting structured documents on paged media."
+  },
+  {
+    "date": "2016-03-17T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-cssom-1-20160317/",
+    "thisDocName": "CSS Object Model (CSSOM)",
+    "properties": [],
+    "abstract": "CSSOM defines APIs (including generic parsing and serialization rules) for Media Queries, Selectors, and of course CSS itself."
+  },
+  {
+    "date": "2022-02-17T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/css-conditional-4/",
+    "thisDocName": "CSS Conditional Rules Module Level 4",
+    "properties": [],
+    "abstract": "This module contains the features of CSS\n\n\tfor conditional processing of parts of style sheets,\n\tbased on capabilities of the processor or the environment\n\tthe style sheet is being applied in.\n\tIt includes and extends the functionality of CSS Conditional 3 [css-conditional-3],\n\tadding the ability to query support for particular selectors [SELECTORS-4] through the new selector() notation for supports queries."
+  },
+  {
+    "date": "2018-08-09T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-box-3-20180809/",
+    "thisDocName": "CSS Box Model Module Level 3",
+    "properties": [],
+    "abstract": "This specification describes the margin and padding properties, which create spacing in and around a CSS box. It may later be extended to include borders (currently described in [css-backgrounds-3])."
   }
 ]

@@ -96,7 +96,7 @@ const scrapeAll = async () => {
 	// Rerun broken incase of 429: Too Many Requests
 	// Only if Forced --force=true
 	if (flags.force === "true") {
-		progress.console("force rerun");
+		await progress.console("Rerunning Broken Links");
 		progress.total = brokenLinks.length;
 		completed = 0;
 		// Rerun broken incase of 429: Too Many Requests
@@ -140,9 +140,7 @@ const getSpecInfo = async (specSheet: string) => {
 		};
 
 		// await progress.console("Finished Scraping: ", specSheet);
-		await progress.render(completed++, {
-			title: `Errors: ${brokenLinks.length}`,
-		});
+
 		allSpecInfo.push(thisSpecsInfo);
 		// await progress.console(thisSpecsInfo);
 	} catch (e) {
@@ -159,6 +157,9 @@ const getSpecInfo = async (specSheet: string) => {
 
 		logError(`ERROR: ${msg}`, specSheet);
 	}
+	await progress.render(completed++, {
+		title: `Errors: ${brokenLinks.length}`,
+	});
 	await Deno.writeTextFile(
 		"./jsons/allSpecInfo.json",
 		JSON.stringify(allSpecInfo, null, 2),
@@ -298,10 +299,8 @@ const getAbstract = ($: cheerio.CheerioAPI, sheet: string) => {
 	}
 };
 
-
 //Function we use to log erros and back up problem links
 const logError = async (type: string, sheet: string) => {
-
 	// Add to list of issues for Sheet if it already has a problem
 	const found = brokenLinks.find((sheetObject: ErrorLink, index: number) => {
 		if (sheetObject.sheet === sheet) {
