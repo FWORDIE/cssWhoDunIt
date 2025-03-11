@@ -93,7 +93,7 @@ const scrapeAll = async () => {
 	// Loop to go over all Spec Urls
 	for (const specSheet of specs) {
 		//pause for for time out issues
-		await delay(500);
+		await delay(100);
 		await getSpecInfo(specSheet);
 	}
 
@@ -210,6 +210,7 @@ const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 	}
 	try {
 		// find date with time tag
+		// e.g. https://www.w3.org/TR/css-shadow-parts-1/
 		let date = $(".head").find("time").text();
 		let formatedDate = moment(date, "DD MMMM YYYY").format();
 		if (formatedDate && formatedDate != "Invalid date") {
@@ -218,6 +219,7 @@ const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 		}
 
 		// For no time tag
+		// e.g. https://www.w3.org/TR/2012/WD-css3-text-20121113/
 		let thisVersion = $(".head")
 			.find("dt:contains('This version:')")
 			.next()
@@ -225,6 +227,7 @@ const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 			.attr()?.href;
 
 		// Alt Spelling
+		// e.g. https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
 		if (!thisVersion) {
 			thisVersion = $(".head")
 				.find("dt:contains('This Version:')")
@@ -235,6 +238,7 @@ const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 
 		if (thisVersion) {
 			// Deals with trailig slashes at the end of URLs
+			// e.g. https://www.w3.org/TR/2007/CR-CSS21-2007071919
 			const change = thisVersion[thisVersion.length - 1] === "/" ? 1 : 0;
 
 			date = thisVersion.slice(
@@ -251,12 +255,15 @@ const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 
 		// fall back to get date from URL
 		// with .html
+		// e.g. https://www.w3.org/pub/WWW/TR/WD-css1-951123.html
 		date = sheet.slice(sheet.length - 11, sheet.length - 5);
 		formatedDate = moment(date, "YYMMDD").format();
 		if (formatedDate && formatedDate != "Invalid date") {
 			return formatedDate;
 		}
+
 		// with /fonts.html
+		// e.g. https://www.w3.org/TR/1998/REC-CSS2-19980512/fonts.html
 		date = sheet.slice(sheet.length - 19, sheet.length - 11);
 		formatedDate = moment(date, "YYYYMMDD").format();
 		if (formatedDate && formatedDate != "Invalid date") {
@@ -264,6 +271,7 @@ const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 		}
 
 		// other
+		// e.g. https://www.w3.org/TR/2018/SPSD-CSS1-20180913/
 		const change = sheet[sheet.length - 1] === "/" ? 1 : 0;
 		date = sheet.slice(sheet.length - (8 + change), sheet.length - change);
 		formatedDate = moment(date, "YYYYMMDD").format();
@@ -320,23 +328,38 @@ const getAbstract = ($: cheerio.CheerioAPI, sheet: string) => {
 		return undefined;
 	}
 	try {
+        // List of different ways to find abstract
+
+        // e.g. https://www.w3.org/TR/2024/WD-css-conditional-5-20240723/
 		let abstract = $('[data-fill-with="abstract"]').find("p").text().trim();
 
+        // e.g. https://www.w3.org/TR/2014/WD-css-masking-1-20140213/
 		if (!abstract) {
 			abstract = $("#abstract").next().text().trim();
 		}
+
+        // e.g. https://www.w3.org/TR/2001/WD-css3-box-20010726/
 		if (!abstract) {
 			abstract = $("#Abstract").next().text().trim();
 		}
+
+        // e.g. https://www.w3.org/TR/2003/CR-css3-ruby-20030514
 		if (!abstract) {
 			abstract = $("#Abstract").parent().next().text().trim();
+            if(abstract){
+                progress.console(`Flag 3: ${sheet}`)
+            }
 		}
+        // e.g. https://www.w3.org/TR/2009/WD-css3-selectors-20090310
 		if (!abstract) {
 			abstract = $('[name="abstract"]').parent().next().text().trim();
 		}
+
+        // e.g. https://www.w3.org/1999/06/WD-css3-page-19990623
 		if (!abstract) {
 			abstract = $("h2:contains('Abstract')").next().text().trim();
 		}
+
 		if (abstract) {
 			return abstract;
 		}
@@ -372,7 +395,7 @@ const logError = async (type: string, sheet: string) => {
 	}
 
 	await progress.console(`${type} FAILED FOR ${sheet}`);
-    
+
 	// Save Broken Links
 	await Deno.writeTextFile(
 		"./jsons/brokenSpecs.json",
