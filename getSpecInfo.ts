@@ -150,13 +150,13 @@ const getSpecInfo = async (specSheet: string) => {
 		}
 		const thisSpecsInfo: SpecSheet = {
 			authors: await getAuthors($specSheet, specSheet),
-			editors: await getEditors($specSheet, specSheet),
-			date: await getDate($specSheet, specSheet),
-			thisSpecUrl: specSheet,
+			editors: await getEditors($specSheet, specSheet), 
+			date: await getDate($specSheet, specSheet), // Done
+			thisSpecUrl: specSheet, // Done
 			thisDocName: await getDocName($specSheet, specSheet),
-			type: await getType($specSheet, specSheet),
-			properties: await getProps($specSheet, specSheet),
-			abstract: await getAbstract($specSheet, specSheet),
+			type: await getType($specSheet, specSheet), // Imre
+			properties: await getProps($specSheet, specSheet), // Fred
+			abstract: await getAbstract($specSheet, specSheet), // Done
 		};
 
 		// await progress.console("Finished Scraping: ", specSheet);
