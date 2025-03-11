@@ -16,6 +16,7 @@ export type SpecSheet = {
 	type: string | undefined;
 	abstract: string | undefined;
 	properties: string[] | undefined;
+	terms: string[] | undefined;
 	//keywords: oneDay;
 };
 

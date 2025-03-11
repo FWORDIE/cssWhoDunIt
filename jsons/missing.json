@@ -1,6 +1,15 @@
 {
 	"props": [
 		"https://drafts.csswg.org/css-2024/",
-		"http://dev.w3.org/csswg/css-scoping/"
+		"http://dev.w3.org/csswg/css-scoping/",
+		"www.w3.org/TR/2002/WD-css3-mediaqueries-20020123/",
+		"https://drafts.csswg.org/css-easing/#index",
+		"https://www.w3.org/TR/2023/WD-css-values-4-20230406/#index-defined-here",
+		"https://www.w3.org/TR/2001/WD-css3-mediaqueries-20010404/",
+        "https://www.w3.org/TR/2024/WD-css-typed-om-1-20240321/"
+	],
+	"terms": [
+		"www.w3.org/TR/2002/WD-css3-mediaqueries-20020123/",
+		"https://www.w3.org/TR/2001/WD-css3-mediaqueries-20010404/"
 	]
 }

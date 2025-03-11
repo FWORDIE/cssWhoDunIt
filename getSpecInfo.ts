@@ -5,10 +5,10 @@
 //NOTE Moved each function on file for collobrative reasons
 
 import * as cheerio from "npm:cheerio@^1.0.0";
-import { specSheetLinkArray, testArray } from "./basics.ts";
+import { brokenLinks, specSheetLinkArray, testArray } from "./basics.ts";
 import type { ErrorLink, SpecSheet } from "./types.ts";
 import ProgressBar from "jsr:@deno-library/progress";
-import { delay, retry } from "jsr:@std/async";
+import { delay } from "jsr:@std/async";
 import { parseArgs } from "jsr:@std/cli/parse-args";
 import { logError } from "./scripts/logger.ts";
 import { getAuthors } from "./scripts/getAuthors.ts";
@@ -18,8 +18,8 @@ import { getDocName } from "./scripts/getDocName.ts";
 import { getType } from "./scripts/getType.ts";
 import { getProps } from "./scripts/getProps.ts";
 import { getAbstract } from "./scripts/getAbstract.ts";
+import { getTerms } from "./scripts/getTerms.ts";
 
-const brokenLinks: ErrorLink[] = [];
 const allSpecInfo: SpecSheet[] = [];
 
 // Get URLs of scrapped Spec Sheets
@@ -50,12 +50,12 @@ const scrapeAll = async () => {
 	//handle focus arguemnt
 	if (
 		!flags.focus.match(
-			"all|authors|editors|date|url|name|type|props|abstract",
+			"all|authors|editors|date|url|name|type|props|abstract|terms",
 		)
 	) {
 		await progress.console(`Unkown focus '${flags.focus}'`);
 		await progress.console(
-			'Focus must equalone of "all|authors|editors|date|url|name|type|props|abstract" ',
+			'Focus must equalone of "all|authors|editors|date|url|name|type|props|abstract|terms" ',
 		);
 		return false;
 	}
@@ -166,6 +166,7 @@ const getSpecInfo = async (specSheet: string) => {
 			thisDocName: await getDocName($specSheet, specSheet),
 			type: await getType($specSheet, specSheet), // Imre
 			properties: await getProps($specSheet, specSheet), // Fred
+			terms: await getTerms($specSheet, specSheet), // Fred
 			abstract: await getAbstract($specSheet, specSheet), // Done
 		};
 

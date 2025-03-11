@@ -22,5 +22,11 @@
 		"DocName": "CSS Animation Worklet API",
 		"issue": "there is no abstract",
 		"description": "literally has an empty abstract"
-	}
+	},
+    {
+        "thisSpecUrl":"https://www.w3.org/TR/2013/WD-css-text-decor-3-20130103/#text-shadow-property",
+        "DocName":"CSS Text Decoration Module Level 3",
+        "issue": "Does this contain props",
+        "description":"debatable"
+    }
 ]

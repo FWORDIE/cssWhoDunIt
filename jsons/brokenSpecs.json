@@ -1,33 +1,8 @@
 [
   {
     "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-lists/"
-  },
-  {
-    "types": [
-      "DATE",
       "Props"
     ],
-    "sheet": "http://dev.w3.org/csswg/css-style-attr/"
-  },
-  {
-    "types": [
-      "Props"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css-scoping/"
-  },
-  {
-    "types": [
-      "Props"
-    ],
-    "sheet": "https://drafts.csswg.org/css-2024/"
-  },
-  {
-    "types": [
-      "Props"
-    ],
-    "sheet": "http://dev.w3.org/fxtf/geometry/"
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-background-20020802"
   }
 ]

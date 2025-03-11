@@ -1,147 +1,21 @@
 [
   {
-    "date": "2019-09-03T00:00:00+02:00",
-    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190903/",
-    "thisDocName": "CSS Writing Modes Level 3",
+    "date": "2002-08-02T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-background-20020802",
+    "thisDocName": "CSS3 module: Backgrounds",
     "properties": [
-      "direction",
-      "glyph-orientation-vertical",
-      "text-combine-upright",
-      "text-orientation",
-      "unicode-bidi",
-      "writing-mode"
+      "background",
+      "background-attachment",
+      "background-clip",
+      "background-color",
+      "background-image",
+      "background-origin",
+      "background-position",
+      "background-quantity",
+      "background-repeat",
+      "background-size",
+      "background-spacing"
     ],
-    "abstract": "CSS Writing Modes Level 3 defines CSS support for various writing modes and their combinations, including left-to-right and right-to-left text ordering as well as horizontal and vertical orientations."
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-style-attr/",
-    "thisDocName": "CSS Style Attributes",
-    "abstract": "Markup languages such as HTML [HTML401] and\n   SVG [SVG11]\n   provide a style attribute on most elements, to hold inline style\n   information that applies to those elements. This module describes the\n   syntax and interpretation of the CSS fragment that can be used in such\n   style attributes."
-  },
-  {
-    "date": "2024-01-24T00:00:00+01:00",
-    "thisSpecUrl": "https://drafts.csswg.org/css-logical/",
-    "thisDocName": "CSS Logical Properties and Values Level 1",
-    "properties": [
-      "block-size",
-      "border-block",
-      "border-block-color",
-      "border-block-end",
-      "border-block-end-color",
-      "border-block-end-style",
-      "border-block-end-width",
-      "border-block-start",
-      "border-block-start-color",
-      "border-block-start-style",
-      "border-block-start-width",
-      "border-block-style",
-      "border-block-width",
-      "border-end-end-radius",
-      "border-end-start-radius",
-      "border-inline",
-      "border-inline-color",
-      "border-inline-end",
-      "border-inline-end-color",
-      "border-inline-end-style",
-      "border-inline-end-width",
-      "border-inline-start",
-      "border-inline-start-color",
-      "border-inline-start-style",
-      "border-inline-start-width",
-      "border-inline-style",
-      "border-inline-width",
-      "border-start-end-radius",
-      "border-start-start-radius",
-      "inline-size",
-      "inset",
-      "inset-block",
-      "inset-block-end",
-      "inset-block-start",
-      "inset-inline",
-      "inset-inline-end",
-      "inset-inline-start",
-      "margin-block",
-      "margin-block-end",
-      "margin-block-start",
-      "margin-inline",
-      "margin-inline-end",
-      "margin-inline-start",
-      "max-block-size",
-      "max-inline-size",
-      "min-block-size",
-      "min-inline-size",
-      "padding-block",
-      "padding-block-end",
-      "padding-block-start",
-      "padding-inline",
-      "padding-inline-end",
-      "padding-inline-start"
-    ],
-    "abstract": "This module introduces logical properties and values that provide the author with the ability to control layout through logical, rather than physical, direction and dimension mappings. The module defines logical properties and values for the features defined in [CSS2]. These properties are writing-mode relative equivalents of their corresponding physical properties."
-  },
-  {
-    "date": "2025-01-22T00:00:00+01:00",
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-scoping/",
-    "thisDocName": "CSS Scoping Module Level 1",
-    "abstract": "This specification defines scoping/encapsulation mechanisms for CSS, focusing on the Shadow DOM scoping mechanism."
-  },
-  {
-    "date": "2025-03-10T00:00:00+01:00",
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-flexbox/",
-    "thisDocName": "CSS Flexible Box Layout Module Level 1",
-    "properties": [
-      "align-content",
-      "align-items",
-      "align-self",
-      "flex",
-      "flex-basis",
-      "flex-direction",
-      "flex-flow",
-      "flex-grow",
-      "flex-shrink",
-      "flex-wrap",
-      "justify-content"
-    ],
-    "abstract": "The specification describes a CSS box model optimized for user interface design. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated. Nesting of these boxes (horizontal inside vertical, or vertical inside horizontal) can be used to build layouts in two dimensions."
-  },
-  {
-    "date": "2024-03-05T00:00:00+01:00",
-    "thisSpecUrl": "http://dev.w3.org/fxtf/filters/",
-    "thisDocName": "Filter Effects Module Level 1",
-    "properties": [
-      "color-interpolation-filters",
-      "filter",
-      "flood-color",
-      "flood-opacity",
-      "lighting-color"
-    ],
-    "abstract": "Filter effects are a way of processing an element’s rendering before it is displayed in the document. Typically, rendering an element via CSS or SVG can conceptually be described as if the element, including its children, are drawn into a buffer (such as a raster image) and then that buffer is composited into the elements parent. Filters apply an effect before the compositing stage. Examples of such effects are blurring, changing color intensity and warping the image.Although originally designed for use in SVG, filter effects are a set of operations to apply on an image buffer and therefore can be applied to nearly any presentational environment, including CSS. They are triggered by a style instruction (the filter property). This specification describes filters in a manner that allows them to be used in content styled by CSS, such as HTML and SVG. It also defines a CSS property value function that produces a CSS <image> value."
-  },
-  {
-    "date": "2025-02-28T00:00:00+01:00",
-    "thisSpecUrl": "https://drafts.csswg.org/css-2024/",
-    "thisDocName": "CSS Snapshot 2024",
-    "abstract": "This document collects together into one definition all the specs that\ntogether form the current state of Cascading Style Sheets (CSS) as of 2024.\nThe primary audience is CSS implementers, not CSS authors, as this definition\nincludes modules by specification stability, not Web browser adoption rate."
-  },
-  {
-    "date": "2024-08-30T00:00:00+02:00",
-    "thisSpecUrl": "http://dev.w3.org/fxtf/geometry/",
-    "thisDocName": "Geometry Interfaces Module Level 1",
-    "abstract": "This specification provides basic geometric interfaces to represent points, rectangles, quadrilaterals and transformation matrices that can be used by other modules or specifications."
-  },
-  {
-    "date": "2020-12-18T00:00:00+01:00",
-    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-sizing-3-20201218/",
-    "thisDocName": "CSS Box Sizing Module Level 3",
-    "properties": [
-      "box-sizing",
-      "height",
-      "max-height",
-      "max-width",
-      "min-height",
-      "min-width",
-      "width"
-    ],
-    "abstract": "This module extends the CSS sizing properties with keywords that represent content-based \"intrinsic\" sizes and context-based \"extrinsic\" sizes, allowing CSS to more easily describe boxes that fit their content or fit into a particular layout context."
+    "abstract": "CSS (Cascading Style Sheets) is a language for describing the rendering of\nstructured documents (such as HTML and XML) on screen, on paper, in speech,\netc. This draft describes the functionality that is proposed for CSS level 3\nto describe backgrounds, such as background colors and background images. It\nincludes and extends the functionality of CSS level 2 [CSS2], which builds on CSS Level 1 [CSS1]."
   }
 ]
