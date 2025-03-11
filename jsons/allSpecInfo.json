@@ -139,5 +139,158 @@
   },
   {
     "thisSpecUrl": "https://drafts.csswg.org/css-values-3/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/css-transforms-1/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2012/CR-css3-images-20120417/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2006/WD-css3-gcpm-20060919"
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/fxtf/motion-1/"
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/mediaqueries4/"
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-grid/"
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-contain-3/"
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-cascade/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2020/CR-css-backgrounds-3-20201222/"
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-easing/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-sizing-3-20170207/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-ui-3-20170302/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css-style-attr-20020515"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2024/WD-css-text-4-20240529/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-typed-om-1-20160607/"
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-color-hdr-1/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/css-writing-modes-3/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2020/CR-css-text-3-20201222/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-values-4-20181010/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2024/WD-css-anchor-position-1-20240326/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2008/WD-css3-mediaqueries-20081015/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-geometry-1-20140522/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-scrollbars-1-20210829/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-fonts-20020802"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2021/CR-css-counter-styles-3-20210727/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-cascade-3-20130730/"
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-timing/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-break-20150129/"
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-conditional-4/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-color-4-20211215/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-text-3-20181206/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2020/NOTE-css-2020-20201222/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-css-contain-3-20220818/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2001/WD-css3-box-20010726/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/css-color-5/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2015/CR-css-counter-styles-3-20150203/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/css-gcpm-3/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/css-overflow-4/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-writing-modes-3-20131024/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-transitions-20120403/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-grid-1-20140513/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-cascade-5-20210319/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-values-4-20180814/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-mediaqueries-5-20211218/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-tables-3-20170307/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2023/WD-scroll-animations-1-20230606/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2020/CRD-css-grid-1-20201218/"
   }
 ]
