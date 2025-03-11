@@ -2,13 +2,23 @@
 // Our approach will be to run this unction itervaily and when it fails, fix the failure
 // This is becuase spec sheets are differently formated
 
+//NOTE Moved each function on file for collobrative reasons
+
 import * as cheerio from "npm:cheerio@^1.0.0";
 import { specSheetLinkArray, testArray } from "./basics.ts";
 import type { ErrorLink, SpecSheet } from "./types.ts";
-import moment from "npm:moment";
 import ProgressBar from "jsr:@deno-library/progress";
 import { delay, retry } from "jsr:@std/async";
 import { parseArgs } from "jsr:@std/cli/parse-args";
+import { logError } from "./scripts/logger.ts";
+import { getAuthors } from "./scripts/getAuthors.ts";
+import { getEditors } from "./scripts/getEditors.ts";
+import { getDate } from "./scripts/getDate.ts";
+import { getDocName } from "./scripts/getDocName.ts";
+import { getType } from "./scripts/getType.ts";
+import { getProps } from "./scripts/getProps.ts";
+import { getAbstract } from "./scripts/getAbstract.ts";
+
 const brokenLinks: ErrorLink[] = [];
 const allSpecInfo: SpecSheet[] = [];
 
@@ -18,7 +28,7 @@ let specs = specSheetLinkArray;
 
 // General Set Up
 
-const flags = parseArgs(Deno.args, {
+export const flags = parseArgs(Deno.args, {
 	string: ["force", "focus"],
 	default: { force: "false", focus: "all" },
 });
@@ -27,7 +37,7 @@ const flags = parseArgs(Deno.args, {
 let completed = 0;
 const title = "Progress:";
 const total = specs.length;
-const progress = new ProgressBar({
+export const progress = new ProgressBar({
 	title,
 	total,
 	complete: "=",
@@ -150,7 +160,7 @@ const getSpecInfo = async (specSheet: string) => {
 		}
 		const thisSpecsInfo: SpecSheet = {
 			authors: await getAuthors($specSheet, specSheet),
-			editors: await getEditors($specSheet, specSheet), 
+			editors: await getEditors($specSheet, specSheet),
 			date: await getDate($specSheet, specSheet), // Done
 			thisSpecUrl: specSheet, // Done
 			thisDocName: await getDocName($specSheet, specSheet),
@@ -183,223 +193,6 @@ const getSpecInfo = async (specSheet: string) => {
 	await Deno.writeTextFile(
 		"./jsons/allSpecInfo.json",
 		JSON.stringify(allSpecInfo, null, 2),
-	);
-};
-
-const getAuthors = ($: cheerio.CheerioAPI, sheet: string) => {
-	// Ignore if focus is called and not relevent
-	if (!flags.focus.match("all|authors")) {
-		return undefined;
-	}
-	return undefined;
-};
-
-const getEditors = ($: cheerio.CheerioAPI, sheet: string) => {
-	// Ignore if focus is called and not relevent
-	if (!flags.focus.match("all|editors")) {
-		return undefined;
-	}
-
-	return undefined;
-};
-
-const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
-	// Ignore if focus is called and not relevent
-	if (!flags.focus.match("all|date")) {
-		return undefined;
-	}
-	try {
-		// find date with time tag
-		// e.g. https://www.w3.org/TR/css-shadow-parts-1/
-		let date = $(".head").find("time").text();
-		let formatedDate = moment(date, "DD MMMM YYYY").format();
-		if (formatedDate && formatedDate != "Invalid date") {
-			// await progress.console(formatedDate);
-			return formatedDate;
-		}
-
-		// For no time tag
-		// e.g. https://www.w3.org/TR/2012/WD-css3-text-20121113/
-		let thisVersion = $(".head")
-			.find("dt:contains('This version:')")
-			.next()
-			.find("a")
-			.attr()?.href;
-
-		// Alt Spelling
-		// e.g. https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/
-		if (!thisVersion) {
-			thisVersion = $(".head")
-				.find("dt:contains('This Version:')")
-				.next()
-				.find("a")
-				.attr()?.href;
-		}
-
-		if (thisVersion) {
-			// Deals with trailig slashes at the end of URLs
-			// e.g. https://www.w3.org/TR/2007/CR-CSS21-2007071919
-			const change = thisVersion[thisVersion.length - 1] === "/" ? 1 : 0;
-
-			date = thisVersion.slice(
-				thisVersion.length - (8 + change),
-				thisVersion.length - change,
-			);
-
-			formatedDate = moment(date, "YYYYMMDD").format();
-
-			if (formatedDate && formatedDate != "Invalid date") {
-				return formatedDate;
-			}
-		}
-
-		// fall back to get date from URL
-		// with .html
-		// e.g. https://www.w3.org/pub/WWW/TR/WD-css1-951123.html
-		date = sheet.slice(sheet.length - 11, sheet.length - 5);
-		formatedDate = moment(date, "YYMMDD").format();
-		if (formatedDate && formatedDate != "Invalid date") {
-			return formatedDate;
-		}
-
-		// with /fonts.html
-		// e.g. https://www.w3.org/TR/1998/REC-CSS2-19980512/fonts.html
-		date = sheet.slice(sheet.length - 19, sheet.length - 11);
-		formatedDate = moment(date, "YYYYMMDD").format();
-		if (formatedDate && formatedDate != "Invalid date") {
-			return formatedDate;
-		}
-
-		// other
-		// e.g. https://www.w3.org/TR/2018/SPSD-CSS1-20180913/
-		const change = sheet[sheet.length - 1] === "/" ? 1 : 0;
-		date = sheet.slice(sheet.length - (8 + change), sheet.length - change);
-		formatedDate = moment(date, "YYYYMMDD").format();
-		if (formatedDate && formatedDate != "Invalid date") {
-			return formatedDate;
-		}
-
-		logError("DATE", sheet);
-		return undefined;
-	} catch {
-		logError("DATE & ERROR", sheet);
-		return undefined;
-	}
-};
-//Finding docnames
-const getDocName = ($: cheerio.CheerioAPI, sheet: string) => {
-	// Ignore if focus is called and not relevent
-	if (!flags.focus.match("all|name")) {
-		return undefined;
-	}
-	try {
-		//from the title in the head
-		let docName = $("title").text().trim();
-		if (docName) {
-			return docName;
-		}
-		logError("DOCNAME", sheet);
-		return undefined;
-	} catch {
-		logError("DOCNAME & ERROR", sheet);
-		return undefined;
-	}
-};
-
-const getType = ($: cheerio.CheerioAPI, sheet: string) => {
-	// Ignore if focus is called and not relevent
-	if (!flags.focus.match("all|type")) {
-		return undefined;
-	}
-	return undefined;
-};
-
-const getProps = ($: cheerio.CheerioAPI, sheet: string) => {
-	// Ignore if focus is called and not relevent
-	if (!flags.focus.match("all|props")) {
-		return undefined;
-	}
-	return undefined;
-};
-
-const getAbstract = ($: cheerio.CheerioAPI, sheet: string) => {
-	// Ignore if focus is called and not relevent
-	if (!flags.focus.match("all|abstract")) {
-		return undefined;
-	}
-	try {
-        // List of different ways to find abstract
-
-        // e.g. https://www.w3.org/TR/2024/WD-css-conditional-5-20240723/
-		let abstract = $('[data-fill-with="abstract"]').find("p").text().trim();
-
-        // e.g. https://www.w3.org/TR/2014/WD-css-masking-1-20140213/
-		if (!abstract) {
-			abstract = $("#abstract").next().text().trim();
-		}
-
-        // e.g. https://www.w3.org/TR/2001/WD-css3-box-20010726/
-		if (!abstract) {
-			abstract = $("#Abstract").next().text().trim();
-		}
-
-        // e.g. https://www.w3.org/TR/2003/CR-css3-ruby-20030514
-		if (!abstract) {
-			abstract = $("#Abstract").parent().next().text().trim();
-            if(abstract){
-                progress.console(`Flag 3: ${sheet}`)
-            }
-		}
-        // e.g. https://www.w3.org/TR/2009/WD-css3-selectors-20090310
-		if (!abstract) {
-			abstract = $('[name="abstract"]').parent().next().text().trim();
-		}
-
-        // e.g. https://www.w3.org/1999/06/WD-css3-page-19990623
-		if (!abstract) {
-			abstract = $("h2:contains('Abstract')").next().text().trim();
-		}
-
-		if (abstract) {
-			return abstract;
-		}
-		logError("ABSTRACT", sheet);
-		return undefined;
-	} catch {
-		logError("ABSTRACT & ERROR", sheet);
-		return undefined;
-	}
-};
-
-//Function we use to log erros and back up problem links
-const logError = async (type: string, sheet: string) => {
-	// Add to list of issues for Sheet if it already has a problem
-	const found = brokenLinks.find((sheetObject: ErrorLink, index: number) => {
-		if (sheetObject.sheet === sheet) {
-			brokenLinks[index] = {
-				types: [...brokenLinks[index].types, type],
-				sheet: sheet,
-			};
-			return true; // stop searching
-		}
-	});
-
-	if (!found) {
-		//if not add a new link
-		const issue: ErrorLink = {
-			types: [type],
-			sheet: sheet,
-		};
-
-		brokenLinks.push(issue);
-	}
-
-	await progress.console(`${type} FAILED FOR ${sheet}`);
-
-	// Save Broken Links
-	await Deno.writeTextFile(
-		"./jsons/brokenSpecs.json",
-		JSON.stringify(brokenLinks, null, 2),
 	);
 };
 

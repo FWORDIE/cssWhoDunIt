@@ -1,0 +1,6 @@
+{
+	"props": [
+		"https://drafts.csswg.org/css-2024/",
+		"http://dev.w3.org/csswg/css-scoping/"
+	]
+}

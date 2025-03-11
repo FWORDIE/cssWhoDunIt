@@ -3,12 +3,31 @@
     "types": [
       "ERROR: Response status code 400: Bad Request"
     ],
-    "sheet": "http://dev.w3.org/csswg/css3-writing-modes/"
+    "sheet": "http://dev.w3.org/csswg/css3-lists/"
   },
   {
     "types": [
-      "ERROR: Response status code 400: Bad Request"
+      "DATE",
+      "Props"
     ],
-    "sheet": "http://dev.w3.org/csswg/css3-mediaqueries/"
+    "sheet": "http://dev.w3.org/csswg/css-style-attr/"
+  },
+  {
+    "types": [
+      "Props"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css-scoping/"
+  },
+  {
+    "types": [
+      "Props"
+    ],
+    "sheet": "https://drafts.csswg.org/css-2024/"
+  },
+  {
+    "types": [
+      "Props"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/geometry/"
   }
 ]

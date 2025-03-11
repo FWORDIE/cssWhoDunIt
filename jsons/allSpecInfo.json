@@ -1,296 +1,147 @@
 [
   {
-    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-css-contain-2-20220917/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css-text-4-20150922/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-easing-1-20181009/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-contain-2-20191015/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2009/CR-css3-mediaqueries-20090423/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2021/CR-css-scroll-snap-1-20210311/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/css-scroll-anchoring-1/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-css-text-decor-4-20220504/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-grid-2-20180804/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-scroll-snap-1-20190319/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/CRD-css-grid-1-20201021/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2012/PR-css3-mediaqueries-20120426/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/css-flexbox-1/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/CRD-css-display-3-20201218/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-color-4-20210601/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-tables-3-20161025/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/css-highlight-api-1/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2022/CRD-css-text-decor-3-20220505/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2005/WD-css3-background-20050216"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/css-counter-styles-3/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-lists-3-20200709/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-background-20020802"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-masking-20130620/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css-inline-3-20150917/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-masking-1-20140522/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/"
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-overflow-3/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2022/REC-css-contain-1-20221025/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-inline-3-20200618/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2024/WD-css-multicol-2-20241219/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-grid-2/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-values-4/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2021/CRD-css-conditional-3-20211223/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-grid-layout-20121106/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-values-5/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-nav-1-20191126/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-fonts-4-20210729/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-display/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-ui-20150519/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-values-3/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/css-transforms-1/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2012/CR-css3-images-20120417/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2006/WD-css3-gcpm-20060919"
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/fxtf/motion-1/"
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/csswg/mediaqueries4/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-grid/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-contain-3/"
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-cascade/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/CR-css-backgrounds-3-20201222/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-easing/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-sizing-3-20170207/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-ui-3-20170302/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css-style-attr-20020515"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2024/WD-css-text-4-20240529/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-box-3-20181218/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-typed-om-1-20160607/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-color-hdr-1/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/css-writing-modes-3/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/CR-css-text-3-20201222/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-values-4-20181010/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2024/WD-css-anchor-position-1-20240326/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2008/WD-css3-mediaqueries-20081015/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-geometry-1-20140522/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-backgrounds-3-20171017/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-scrollbars-1-20210829/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-fonts-20020802"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2021/CR-css-counter-styles-3-20210727/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-cascade-3-20130730/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-timing/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-break-20150129/"
-  },
-  {
-    "thisSpecUrl": "https://drafts.csswg.org/css-conditional-4/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-color-4-20211215/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-text-3-20181206/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/NOTE-css-2020-20201222/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-css-contain-3-20220818/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2001/WD-css3-box-20010726/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/css-color-5/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2015/CR-css-counter-styles-3-20150203/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/css-gcpm-3/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/css-overflow-4/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-writing-modes-3-20131024/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-transitions-20120403/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-grid-1-20140513/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-cascade-5-20210319/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-values-4-20180814/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-mediaqueries-5-20211218/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-tables-3-20170307/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2023/WD-scroll-animations-1-20230606/"
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2020/CRD-css-grid-1-20201218/"
+    "date": "2019-09-03T00:00:00+02:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190903/",
+    "thisDocName": "CSS Writing Modes Level 3",
+    "properties": [
+      "direction",
+      "glyph-orientation-vertical",
+      "text-combine-upright",
+      "text-orientation",
+      "unicode-bidi",
+      "writing-mode"
+    ],
+    "abstract": "CSS Writing Modes Level 3 defines CSS support for various writing modes and their combinations, including left-to-right and right-to-left text ordering as well as horizontal and vertical orientations."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-style-attr/",
+    "thisDocName": "CSS Style Attributes",
+    "abstract": "Markup languages such as HTML [HTML401] and\n   SVG [SVG11]\n   provide a style attribute on most elements, to hold inline style\n   information that applies to those elements. This module describes the\n   syntax and interpretation of the CSS fragment that can be used in such\n   style attributes."
+  },
+  {
+    "date": "2024-01-24T00:00:00+01:00",
+    "thisSpecUrl": "https://drafts.csswg.org/css-logical/",
+    "thisDocName": "CSS Logical Properties and Values Level 1",
+    "properties": [
+      "block-size",
+      "border-block",
+      "border-block-color",
+      "border-block-end",
+      "border-block-end-color",
+      "border-block-end-style",
+      "border-block-end-width",
+      "border-block-start",
+      "border-block-start-color",
+      "border-block-start-style",
+      "border-block-start-width",
+      "border-block-style",
+      "border-block-width",
+      "border-end-end-radius",
+      "border-end-start-radius",
+      "border-inline",
+      "border-inline-color",
+      "border-inline-end",
+      "border-inline-end-color",
+      "border-inline-end-style",
+      "border-inline-end-width",
+      "border-inline-start",
+      "border-inline-start-color",
+      "border-inline-start-style",
+      "border-inline-start-width",
+      "border-inline-style",
+      "border-inline-width",
+      "border-start-end-radius",
+      "border-start-start-radius",
+      "inline-size",
+      "inset",
+      "inset-block",
+      "inset-block-end",
+      "inset-block-start",
+      "inset-inline",
+      "inset-inline-end",
+      "inset-inline-start",
+      "margin-block",
+      "margin-block-end",
+      "margin-block-start",
+      "margin-inline",
+      "margin-inline-end",
+      "margin-inline-start",
+      "max-block-size",
+      "max-inline-size",
+      "min-block-size",
+      "min-inline-size",
+      "padding-block",
+      "padding-block-end",
+      "padding-block-start",
+      "padding-inline",
+      "padding-inline-end",
+      "padding-inline-start"
+    ],
+    "abstract": "This module introduces logical properties and values that provide the author with the ability to control layout through logical, rather than physical, direction and dimension mappings. The module defines logical properties and values for the features defined in [CSS2]. These properties are writing-mode relative equivalents of their corresponding physical properties."
+  },
+  {
+    "date": "2025-01-22T00:00:00+01:00",
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-scoping/",
+    "thisDocName": "CSS Scoping Module Level 1",
+    "abstract": "This specification defines scoping/encapsulation mechanisms for CSS, focusing on the Shadow DOM scoping mechanism."
+  },
+  {
+    "date": "2025-03-10T00:00:00+01:00",
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-flexbox/",
+    "thisDocName": "CSS Flexible Box Layout Module Level 1",
+    "properties": [
+      "align-content",
+      "align-items",
+      "align-self",
+      "flex",
+      "flex-basis",
+      "flex-direction",
+      "flex-flow",
+      "flex-grow",
+      "flex-shrink",
+      "flex-wrap",
+      "justify-content"
+    ],
+    "abstract": "The specification describes a CSS box model optimized for user interface design. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated. Nesting of these boxes (horizontal inside vertical, or vertical inside horizontal) can be used to build layouts in two dimensions."
+  },
+  {
+    "date": "2024-03-05T00:00:00+01:00",
+    "thisSpecUrl": "http://dev.w3.org/fxtf/filters/",
+    "thisDocName": "Filter Effects Module Level 1",
+    "properties": [
+      "color-interpolation-filters",
+      "filter",
+      "flood-color",
+      "flood-opacity",
+      "lighting-color"
+    ],
+    "abstract": "Filter effects are a way of processing an element’s rendering before it is displayed in the document. Typically, rendering an element via CSS or SVG can conceptually be described as if the element, including its children, are drawn into a buffer (such as a raster image) and then that buffer is composited into the elements parent. Filters apply an effect before the compositing stage. Examples of such effects are blurring, changing color intensity and warping the image.Although originally designed for use in SVG, filter effects are a set of operations to apply on an image buffer and therefore can be applied to nearly any presentational environment, including CSS. They are triggered by a style instruction (the filter property). This specification describes filters in a manner that allows them to be used in content styled by CSS, such as HTML and SVG. It also defines a CSS property value function that produces a CSS <image> value."
+  },
+  {
+    "date": "2025-02-28T00:00:00+01:00",
+    "thisSpecUrl": "https://drafts.csswg.org/css-2024/",
+    "thisDocName": "CSS Snapshot 2024",
+    "abstract": "This document collects together into one definition all the specs that\ntogether form the current state of Cascading Style Sheets (CSS) as of 2024.\nThe primary audience is CSS implementers, not CSS authors, as this definition\nincludes modules by specification stability, not Web browser adoption rate."
+  },
+  {
+    "date": "2024-08-30T00:00:00+02:00",
+    "thisSpecUrl": "http://dev.w3.org/fxtf/geometry/",
+    "thisDocName": "Geometry Interfaces Module Level 1",
+    "abstract": "This specification provides basic geometric interfaces to represent points, rectangles, quadrilaterals and transformation matrices that can be used by other modules or specifications."
+  },
+  {
+    "date": "2020-12-18T00:00:00+01:00",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-sizing-3-20201218/",
+    "thisDocName": "CSS Box Sizing Module Level 3",
+    "properties": [
+      "box-sizing",
+      "height",
+      "max-height",
+      "max-width",
+      "min-height",
+      "min-width",
+      "width"
+    ],
+    "abstract": "This module extends the CSS sizing properties with keywords that represent content-based \"intrinsic\" sizes and context-based \"extrinsic\" sizes, allowing CSS to more easily describe boxes that fit their content or fit into a particular layout context."
   }
 ]

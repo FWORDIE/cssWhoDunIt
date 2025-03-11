@@ -3,6 +3,8 @@
 // therefore it must be part of CSS2.1. If the property is still present in all
 // the 2.1 drafts then it must be in 2 etc
 
+import type { ErrorLink } from "./types.ts";
+
 export const CSSDrafts = [
 	"https://www.w3.org/TR/CSS1/",
 	"https://www.w3.org/TR/2008/REC-CSS2-20080411/",
@@ -19,3 +21,5 @@ export const testArray = (num = 10) => {
 };
 
 export const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
+
+export const brokenLinks: ErrorLink[] = [];
