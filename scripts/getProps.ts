@@ -1,10 +1,10 @@
-import { flags } from "../getSpecInfo.ts";
 import * as cheerio from "npm:cheerio@^1.0.0";
-import { logError } from "./logger.ts";
+import { ignore,logError } from "./basics.ts";
 
-export const getProps = ($: cheerio.CheerioAPI, sheet: string) => {
+
+export const getProps = async ($: cheerio.CheerioAPI, sheet: string) => {
 	// Ignore if focus is called and not relevent
-	if (!flags.focus.match("all|props")) {
+	if (await ignore("props", sheet)) {
 		return undefined;
 	}
 
@@ -23,11 +23,16 @@ export const getProps = ($: cheerio.CheerioAPI, sheet: string) => {
 
 		if (!propertyIndexList || propertyIndexList.length < 1) {
 			// e.g. https://www.w3.org/TR/2013/WD-css3-grid-layout-20130910/
-			propertyIndexList = $("#property-index").next().find("tbody").find("th a");
+			propertyIndexList = $("#property-index")
+				.next()
+				.find("tbody")
+				.find("th a");
 		}
 		if (!propertyIndexList || propertyIndexList.length < 1) {
 			// e.g. https://www.w3.org/TR/2002/WD-css3-background-20020802/
-			propertyIndexList = $("table.proptable").find("tbody").find(".property a");
+			propertyIndexList = $("table.proptable")
+				.find("tbody")
+				.find(".property a");
 		}
 
 		if (propertyIndexList) {

@@ -1,7 +1,7 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
 import moment from "npm:moment";
 import type { Authors, CssProperty, History } from "./types.ts";
-import { CSSDrafts } from "./basics.ts";
+import { CSSDrafts } from "./scripts/basics.ts";
 
 const property = "margin";
 let propertyInfo: CssProperty = {

@@ -1,3 +1,12 @@
 [
-  "https://www.w3.org/TR/2002/WD-css3-background-20020802"
+  "http://dev.w3.org/csswg/css3-animations/",
+  "https://www.w3.org/TR/2014/WD-css3-background-20140204/",
+  "https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/",
+  "https://www.w3.org/TR/2015/WD-motion-1-20150409/",
+  "https://www.w3.org/TR/css-font-loading-3/",
+  "https://www.w3.org/TR/2018/WD-css-align-3-20180830/",
+  "https://www.w3.org/TR/2020/WD-css-contain-2-20201216/",
+  "https://www.w3.org/TR/2018/WD-css-align-3-20180423/",
+  "https://www.w3.org/TR/css-scroll-snap-1/",
+  "https://www.w3.org/TR/2020/CRD-css-display-3-20201218/"
 ]

@@ -5,12 +5,16 @@
 //NOTE Moved each function on file for collobrative reasons
 
 import * as cheerio from "npm:cheerio@^1.0.0";
-import { brokenLinks, specSheetLinkArray, testArray } from "./basics.ts";
+import {
+	brokenLinks,
+	specSheetLinkArray,
+	testArray,
+	logError,
+} from "./scripts/basics.ts";
 import type { ErrorLink, SpecSheet } from "./types.ts";
 import ProgressBar from "jsr:@deno-library/progress";
 import { delay } from "jsr:@std/async";
 import { parseArgs } from "jsr:@std/cli/parse-args";
-import { logError } from "./scripts/logger.ts";
 import { getAuthors } from "./scripts/getAuthors.ts";
 import { getEditors } from "./scripts/getEditors.ts";
 import { getDate } from "./scripts/getDate.ts";
@@ -35,7 +39,7 @@ export const flags = parseArgs(Deno.args, {
 
 // Progress Bar Set Up
 let completed = 0;
-const title = "Progress:";
+const title = "";
 const total = specs.length;
 export const progress = new ProgressBar({
 	title,
@@ -103,18 +107,15 @@ const scrapeAll = async () => {
 	// Loop to go over all Spec Urls
 	for (const specSheet of specs) {
 		//pause for for time out issues
-		await delay(100);
+		await delay(250);
 		await getSpecInfo(specSheet);
 	}
 
 	await progress.console(
 		`Finished with only ${brokenLinks.length} Specs Failing`,
 	);
-
+	await progress.render(completed++)
 	await progress.complete;
-
-	await delay(1000);
-	await progress.render(completed++);
 
 	// Save all run links
 	if (Deno.args[0] != "broken") {
@@ -188,9 +189,7 @@ const getSpecInfo = async (specSheet: string) => {
 
 		logError(`ERROR: ${msg}`, specSheet);
 	}
-	await progress.render(completed++, {
-		title: `Errors: ${brokenLinks.length}`,
-	});
+	await progress.render(completed++);
 	await Deno.writeTextFile(
 		"./jsons/allSpecInfo.json",
 		JSON.stringify(allSpecInfo, null, 2),

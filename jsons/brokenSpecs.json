@@ -3,6 +3,12 @@
     "types": [
       "Props"
     ],
-    "sheet": "https://www.w3.org/TR/2002/WD-css3-background-20020802"
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/"
+  },
+  {
+    "types": [
+      "Props"
+    ],
+    "sheet": "https://www.w3.org/TR/css-font-loading-3/"
   }
 ]

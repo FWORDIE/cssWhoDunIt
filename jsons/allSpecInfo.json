@@ -1,8 +1,20 @@
 [
   {
-    "date": "2002-08-02T00:00:00+02:00",
-    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-background-20020802",
-    "thisDocName": "CSS3 module: Backgrounds",
+    "thisSpecUrl": "http://dev.w3.org/csswg/css3-animations/",
+    "properties": [
+      "animation",
+      "animation-delay",
+      "animation-direction",
+      "animation-duration",
+      "animation-fill-mode",
+      "animation-iteration-count",
+      "animation-name",
+      "animation-play-state",
+      "animation-timing-function"
+    ]
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css3-background-20140204/",
     "properties": [
       "background",
       "background-attachment",
@@ -11,11 +23,132 @@
       "background-image",
       "background-origin",
       "background-position",
-      "background-quantity",
       "background-repeat",
       "background-size",
-      "background-spacing"
-    ],
-    "abstract": "CSS (Cascading Style Sheets) is a language for describing the rendering of\nstructured documents (such as HTML and XML) on screen, on paper, in speech,\netc. This draft describes the functionality that is proposed for CSS level 3\nto describe backgrounds, such as background colors and background images. It\nincludes and extends the functionality of CSS level 2 [CSS2], which builds on CSS Level 1 [CSS1]."
+      "border",
+      "border-bottom",
+      "border-bottom-color",
+      "border-bottom-left-radius",
+      "border-bottom-right-radius",
+      "border-bottom-style",
+      "border-bottom-width",
+      "border-color",
+      "border-image",
+      "border-image-outset",
+      "border-image-repeat",
+      "border-image-slice",
+      "border-image-source",
+      "border-image-width",
+      "border-left",
+      "border-left-color",
+      "border-left-style",
+      "border-left-width",
+      "border-radius",
+      "border-right",
+      "border-right-color",
+      "border-right-style",
+      "border-right-width",
+      "border-style",
+      "border-top",
+      "border-top-color",
+      "border-top-left-radius",
+      "border-top-right-radius",
+      "border-top-style",
+      "border-top-width",
+      "border-width",
+      "box-shadow"
+    ]
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-motion-1-20150409/",
+    "properties": [
+      "motion-path",
+      "motion-offset",
+      "motion-rotation",
+      "motion"
+    ]
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/css-font-loading-3/"
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-align-3-20180830/",
+    "properties": [
+      "align-content",
+      "align-items",
+      "align-self",
+      "column-gap",
+      "gap",
+      "justify-content",
+      "justify-items",
+      "justify-self",
+      "place-content",
+      "place-items",
+      "place-self",
+      "row-gap"
+    ]
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-contain-2-20201216/",
+    "properties": [
+      "contain",
+      "content-visibility"
+    ]
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-align-3-20180423/",
+    "properties": [
+      "align-content",
+      "align-items",
+      "align-self",
+      "column-gap",
+      "gap",
+      "justify-content",
+      "justify-items",
+      "justify-self",
+      "place-content",
+      "place-items",
+      "place-self",
+      "row-gap"
+    ]
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/css-scroll-snap-1/",
+    "properties": [
+      "scroll-margin",
+      "scroll-margin-block",
+      "scroll-margin-block-end",
+      "scroll-margin-block-start",
+      "scroll-margin-bottom",
+      "scroll-margin-inline",
+      "scroll-margin-inline-end",
+      "scroll-margin-inline-start",
+      "scroll-margin-left",
+      "scroll-margin-right",
+      "scroll-margin-top",
+      "scroll-padding",
+      "scroll-padding-block",
+      "scroll-padding-block-end",
+      "scroll-padding-block-start",
+      "scroll-padding-bottom",
+      "scroll-padding-inline",
+      "scroll-padding-inline-end",
+      "scroll-padding-inline-start",
+      "scroll-padding-left",
+      "scroll-padding-right",
+      "scroll-padding-top",
+      "scroll-snap-align",
+      "scroll-snap-stop",
+      "scroll-snap-type"
+    ]
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2020/CRD-css-display-3-20201218/",
+    "properties": [
+      "display"
+    ]
   }
 ]
