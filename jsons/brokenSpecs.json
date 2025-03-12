@@ -3,12 +3,12 @@
     "types": [
       "Props"
     ],
-    "sheet": "https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/"
+    "sheet": "https://www.w3.org/TR/2023/WD-css-nesting-1-20230214/"
   },
   {
     "types": [
       "Props"
     ],
-    "sheet": "https://www.w3.org/TR/css-font-loading-3/"
+    "sheet": "https://www.w3.org/TR/2013/CR-css-text-decor-3-20130801/"
   }
 ]

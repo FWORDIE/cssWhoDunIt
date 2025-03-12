@@ -28,5 +28,15 @@
         "DocName":"CSS Text Decoration Module Level 3",
         "issue": "Does this contain props",
         "description":"debatable"
+    },
+    {
+        "thisSpecUrl":"http://dev.w3.org/fxtf/web-animations/",
+        "DocName":"Index of web-animations/",
+        "issue":"its not what we expect",
+        "description":"we should trace its origin"
+    },{
+        "thisSpecUrl":"https://www.w3.org/TR/2013/CR-css-text-decor-3-20130801/",
+        "docName":"CSS Text Decoration Module Level 3",
+        "issue":"has no terms, and no props, but like it has props"
     }
 ]

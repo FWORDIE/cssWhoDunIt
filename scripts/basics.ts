@@ -37,7 +37,7 @@ export const ignore = async (focus: string, sheet: string) => {
 		await Deno.readTextFile("./jsons/missing.json"),
 	)[focus];
 
-	if (linksThatAreMissing.length > 0) {
+	if (linksThatAreMissing && linksThatAreMissing.length > 0) {
 		return linksThatAreMissing.some((link: string) => {
 			return link == sheet;
 		});

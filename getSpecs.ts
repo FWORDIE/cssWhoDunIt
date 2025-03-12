@@ -1,5 +1,6 @@
+import { delay } from "jsr:@std/async/delay";
 import * as cheerio from "npm:cheerio@^1.0.0";
-import { delay, specSheetLinkArray } from "./scripts/basics.ts";
+// import { delay } from "./scripts/basics.ts";
 
 // URL used to make links direct properly
 const baseURL = "https://www.w3.org";
