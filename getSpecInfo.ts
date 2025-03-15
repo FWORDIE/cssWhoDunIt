@@ -83,6 +83,15 @@ const scrapeAll = async () => {
 		await progress.console(
 			`Running ${specs.length} old specs sheets for ${flags.focus}`,
 		);
+	} else if (Deno.args[0] == "from") {
+		// Run the a selction from all
+		specs = specSheetLinkArray.slice(
+			Deno.args[1] || 0,
+			Deno.args[2] || specs.length - 1,
+		);
+		await progress.console(
+			`Running ${specs.length} old specs sheets for ${flags.focus}`,
+		);
 	} else if (Deno.args[0] == "broken") {
 		// Run any that failed last time
 		// See brokenSpecs.json
@@ -104,6 +113,14 @@ const scrapeAll = async () => {
 
 	progress.total = specs.length;
 
+	// Save all run links
+	if (Deno.args[0] && Deno.args[0].match("broken|spec")) {
+		await Deno.writeTextFile(
+			"./jsons/oldSpecs.json",
+			JSON.stringify(specs, null, 2),
+		);
+	}
+
 	// Loop to go over all Spec Urls
 	for (const specSheet of specs) {
 		//pause for for time out issues
@@ -111,19 +128,24 @@ const scrapeAll = async () => {
 		await getSpecInfo(specSheet);
 	}
 
+	await progress.console(`Sorting all finished Sheets`);
+
+	allSpecInfo.sort(function (a, b) {
+		// Turn your strings into dates, and then subtract them
+		// to get a value that is either negative, positive, or zero.
+		return new Date(b.date) - new Date(a.date);
+	});
+	await Deno.writeTextFile(
+		"./jsons/allSpecInfo.json",
+		JSON.stringify(allSpecInfo, null, 2),
+	);
+
 	await progress.console(
 		`Finished with only ${brokenLinks.length} Specs Failing`,
 	);
-	await progress.render(completed++)
+	await progress.render(completed++);
 	await progress.complete;
 
-	// Save all run links
-	if (Deno.args[0] != "broken") {
-		await Deno.writeTextFile(
-			"./jsons/oldSpecs.json",
-			JSON.stringify(specs, null, 2),
-		);
-	}
 	// Rerun broken incase of 429: Too Many Requests
 	// Only if Forced --force=true
 	if (flags.force === "true") {
@@ -141,10 +163,20 @@ const scrapeAll = async () => {
 	// TODO: Function that removes the working urls
 };
 
-const getSpecInfo = async (specSheet: string) => {
+const getSpecInfo = async (specSheet: string, atttempt2 = false) => {
 	// await progress.console(`Scraping: ${specSheet}`);
 
 	try {
+		// add trailing slashes to ever url for consistencey
+		if (
+			specSheet[specSheet.length - 1] !== "/" &&
+			specSheet.slice(specSheet.length - 4, specSheet.length) !==
+				"html" &&
+			!atttempt2
+		) {
+			specSheet += "/";
+		}
+
 		//Make a cheerio object from each url
 		let $specSheet = await cheerio.fromURL(specSheet);
 
@@ -153,12 +185,10 @@ const getSpecInfo = async (specSheet: string) => {
 		if ($specSheet("title").text().trim() === "Redirecting...") {
 			const redirect = $specSheet("body p a").attr()?.href;
 			if (redirect) {
-				await progress.console(
-					`Redirecting from ${specSheet} to ${redirect}`,
-				);
 				$specSheet = await cheerio.fromURL(redirect);
 			}
 		}
+
 		const thisSpecsInfo: SpecSheet = {
 			authors: await getAuthors($specSheet, specSheet),
 			editors: await getEditors($specSheet, specSheet),
@@ -166,7 +196,7 @@ const getSpecInfo = async (specSheet: string) => {
 			thisSpecUrl: specSheet, // Done
 			thisDocName: await getDocName($specSheet, specSheet),
 			type: await getType($specSheet, specSheet), // Imre
-			properties: await getProps($specSheet, specSheet), // Fred
+			properties: [...new Set(await getProps($specSheet, specSheet))], // Fred
 			terms: await getTerms($specSheet, specSheet), // Fred
 			abstract: await getAbstract($specSheet, specSheet), // Done
 		};
@@ -185,11 +215,16 @@ const getSpecInfo = async (specSheet: string) => {
 		} else if (e instanceof Error) {
 			msg = e.message; // works, `e` narrowed to Error
 		}
-		// await progress.console(`${msg} --- ${specSheet}`);
 
-		logError(`ERROR: ${msg}`, specSheet);
+		if (msg == "Response status code 404: Not Found" && !atttempt2) {
+			getSpecInfo(specSheet.slice(0, specSheet.length - 1), true);
+		} else {
+			logError(`ERROR: ${msg}`, specSheet);
+		}
+		// await progress.console(`${msg} --- ${specSheet}`);
 	}
 	await progress.render(completed++);
+
 	await Deno.writeTextFile(
 		"./jsons/allSpecInfo.json",
 		JSON.stringify(allSpecInfo, null, 2),

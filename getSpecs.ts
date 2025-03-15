@@ -66,12 +66,25 @@ const getSpecsFromList = async () => {
 
 	specs = await getEditorDrafs(specs);
 
+	// filters out on dupe
+	specs.filter((spec: string) => {
+		!spec.includes("/fonts.html");
+	});
+
+	// filters out on dupe
+	specs.filter((spec: string) => {
+		!spec.includes("//dvcs.w3.org/");
+	});
+
 	console.log(`Found ${specs.length} Spec Sheets after second scrape!`);
 
 	console.log("Saving Scraped sheet urls");
 
 	/// Write a JSON of the links
-	await Deno.writeTextFile(`./jsons/AllSpecs.json`, JSON.stringify(specs, null, 2));
+	await Deno.writeTextFile(
+		`./jsons/AllSpecs.json`,
+		JSON.stringify(specs, null, 2),
+	);
 };
 
 const searchHistory = async (historyLink: string) => {

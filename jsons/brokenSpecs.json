@@ -1,14 +1,28 @@
 [
   {
     "types": [
-      "Props"
+      "DATE",
+      "ABSTRACT"
     ],
-    "sheet": "https://www.w3.org/TR/2023/WD-css-nesting-1-20230214/"
+    "sheet": "https://www.w3.org/TR/WD-CSS2-971104/"
   },
   {
     "types": [
-      "Props"
+      "DATE",
+      "ABSTRACT"
     ],
-    "sheet": "https://www.w3.org/TR/2013/CR-css-text-decor-3-20130801/"
+    "sheet": "http://dev.w3.org/fxtf/web-animations/"
+  },
+  {
+    "types": [
+      "ABSTRACT"
+    ],
+    "sheet": "https://drafts.css-houdini.org/css-animationworklet-1/"
+  },
+  {
+    "types": [
+      "DATE"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css-style-attr/"
   }
 ]
