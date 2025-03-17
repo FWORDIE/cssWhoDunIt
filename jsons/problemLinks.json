@@ -43,5 +43,7 @@
 	{
 		"thisSpecUrl": "https://dvcs.w3.org/hg/FXTF/raw-file/default/filters/index.html",
 		"issue": "ERROR: Response status code 404: Not Found"
-	}
+	},
+	{"thisSpecUrl":"http://dev.w3.org/csswg/css2/",
+"issue":"CSS margin nad border, no space. "}
 ]
