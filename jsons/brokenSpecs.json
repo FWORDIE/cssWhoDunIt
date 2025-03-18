@@ -3,144 +3,1461 @@
     "types": [
       "Authors"
     ],
-    "sheet": "https://drafts.csswg.org/web-animations-2/"
+    "sheet": "https://www.w3.org/TR/2013/WD-css3-grid-layout-20130402/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "https://drafts.csswg.org/css-box-3/"
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-grid-layout-20121106/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "https://drafts.csswg.org/css-position/"
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-grid-layout-20120322/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "https://drafts.csswg.org/css-grid-2/"
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "https://drafts.csswg.org/css-values/"
+    "sheet": "https://www.w3.org/TR/2007/WD-css3-grid-20070905/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "http://dev.w3.org/csswg/css-cascade-3/"
+    "sheet": "https://www.w3.org/TR/2011/CR-css3-multicol-20110412/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "https://www.w3.org/TR/2023/DNOTE-css-2023-20230214/"
+    "sheet": "https://www.w3.org/TR/2009/CR-css3-multicol-20091217/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "https://drafts.csswg.org/web-animations-1/"
+    "sheet": "https://www.w3.org/TR/2009/WD-css3-multicol-20090630/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "http://dev.w3.org/csswg/css-values/"
+    "sheet": "https://www.w3.org/TR/2007/WD-css3-multicol-20070606/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "http://dev.w3.org/fxtf/web-animations/"
+    "sheet": "https://www.w3.org/TR/2005/WD-css3-multicol-20051215/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "http://dev.w3.org/csswg/css3-grid-align/"
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-multicol-20010118/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "http://dev.w3.org/csswg/css3-transforms/"
+    "sheet": "https://www.w3.org/1999/06/WD-css3-multicol-19990623"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "http://dev.w3.org/csswg/css-ui-4/"
+    "sheet": "https://www.w3.org/TR/2012/CR-css3-values-20120828/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "https://www.w3.org/TR/css-variables-1/"
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-values-20120308/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "http://dev.w3.org/csswg/css-style-attr/"
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-values-20110906/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "https://drafts.csswg.org/css-ui/"
+    "sheet": "https://www.w3.org/TR/2006/WD-css3-values-20060919/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "https://drafts.csswg.org/css-writing-modes-4/"
+    "sheet": "https://www.w3.org/TR/2005/WD-css3-values-20050726/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-values-20010713/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/WD-css-text-3-20131010/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-text-20121113/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-text-20120814/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-text-20120119/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-text-20110901/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-text-20110412/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-text-20110215/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2010/WD-css3-text-20101005/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2007/WD-css3-text-20070306/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2005/WD-css3-text-20050627/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/CR-css3-text-20030514/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-css3-text-20030226/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-text-20021024/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-text-20020515/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-text-20010517/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1999/WD-i18n-format-19990910/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1999/WD-i18n-format-19990726/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1999/WD-i18n-format-19990322/"
+  },
+  {
+    "types": [
+      "Authors"
     ],
     "sheet": "https://www.w3.org/TR/1999/WD-i18n-format-19990127/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
     ],
-    "sheet": "http://dev.w3.org/csswg/css-counter-styles-3/"
+    "sheet": "https://www.w3.org/TR/2005/WD-css3-cascade-20051215/"
   },
   {
     "types": [
-      "specType"
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-cascade-20020219/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-cascade-20010713/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-box-20021024/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-box-20010726/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/CR-css3-mediaqueries-20020708/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-mediaqueries-20020123/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-mediaqueries-20010517/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-mediaqueries-20010404/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/WD-cssom-20131205/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-cssom-20110712/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/WD-cssom-view-20131217/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-cssom-view-20110804/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2009/WD-cssom-view-20090804/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2008/WD-cssom-view-20080222/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2014/CR-css3-background-20140909/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2014/WD-css3-background-20140204/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/CR-css3-background-20120724/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/CR-css3-background-20120417/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-background-20120214/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/CR-css3-background-20110215/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2010/WD-css3-background-20100612/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2009/CR-css3-background-20091217/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2009/WD-css3-background-20091015/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2008/WD-css3-background-20080910/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2005/WD-css3-background-20050216/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-background-20020802/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/CR-css3-color-20030514/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-css3-color-20030214/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-color-20020418/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-color-20020219/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-color-20010305"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/1999/06/WD-css3-iccprof-19990623"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2018/PR-css-fonts-3-20180814/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2018/CR-css-fonts-3-20180626/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2018/CR-css-fonts-3-20180315/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/CR-css-fonts-3-20131003/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/WD-css-fonts-3-20130711/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/WD-css3-fonts-20130212/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-fonts-20121211/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-fonts-20120823/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-fonts-20111004/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-fonts-20110324/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2009/WD-css3-fonts-20090618/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-fonts-20020802/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-fonts-20010731/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1999/WD-font-19990902"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/WD-font-970721"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/css-fonts-3/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2010/WD-css3-gcpm-20100608/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2007/WD-css3-gcpm-20070504/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2007/WD-css3-gcpm-20070205/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2006/WD-css3-gcpm-20060919/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2006/WD-css3-gcpm-20060612/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-images-20110908/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-images-20110712/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-images-20110217/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2009/WD-css3-images-20090723/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2006/WD-css3-page-20061010/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2004/CR-css3-page-20040225/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-css3-page-20031218/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-css3-page-20030909/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1999/WD-css3-page-19990928"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/1999/06/WD-css3-page-19990623"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2009/WD-css3-transitions-20091201/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2009/WD-css3-transitions-20090320/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2014/WD-web-animations-20140605/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/WD-web-animations-20130625/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2009/WD-css3-animations-20090320/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2020/CR-css-speech-1-20200310/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2018/NOTE-css3-speech-20180605/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/CR-css3-speech-20120320/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-speech-20110818/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-speech-20110419/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2004/WD-css3-speech-20041216/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2004/WD-css3-speech-20040727/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-css3-speech-20030514/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-css3-syntax-20030813/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-ruby-20110630/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/CR-css3-ruby-20030514/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-ruby-20021024/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-ruby-20010216/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/CR-css3-selectors-20011113/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css3-selectors-20010126/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2000/WD-css3-selectors-20001005/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2000/WD-css3-selectors-20000410"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1999/WD-CSS3-selectors-19990803"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/WD-css-variables-20130312/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/WD-css-text-decor-3-20130103/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-sizing-20120927/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-transforms-20120911/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-transforms-20120403/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-transforms-20120228/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2015/CR-css-counter-styles-3-20150203/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2014/WD-css-counter-styles-3-20140826/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2013/WD-css-counter-styles-3-20130221/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css-counter-styles-3-20121009/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2015/WD-css3-ui-20150224/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-ui-20120117/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2004/CR-css3-ui-20040511/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-css3-ui-20030703/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-ui-20020802/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-lists-20110524/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-lists-20021107/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css3-lists-20020220/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-writing-modes-20121115/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-writing-modes-20120501/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110901/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110531/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110428/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110201/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2010/WD-css3-writing-modes-20101202/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-css3-content-20030514/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-flexbox-20120612/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2012/WD-css3-flexbox-20120322/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-flexbox-20111129/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/WD-css3-flexbox-20110322/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2009/WD-css3-flexbox-20090723/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2018/SPSD-CSS1-20180913/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2008/REC-CSS1-20080411/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1999/REC-CSS1-19990111"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/REC-CSS1-961217"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/PR-CSS1"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-960911.html"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-960726.html"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-960505.html"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-960418.html"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-960220.html"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-951222.html"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-951209.html"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-951123.html"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-951117.html"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2008/REC-CSS2-20080411/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2004/CR-CSS21-20040225/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-CSS21-20030915/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-CSS21-20030128/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-CSS21-20020802/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1998/REC-CSS2-19980512/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1998/PR-CSS2-19980324/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/1998/WD-css2-19980128/"
+  },
+  {
+    "types": [
+      "Authors",
+      "DATE",
+      "specType",
+      "ABSTRACT"
+    ],
+    "sheet": "https://www.w3.org/TR/WD-CSS2-971104/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/NOTE-css-2010-20110512/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2010/WD-css-2010-20101202/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/REC-css3-namespace-20110929/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2011/PR-css3-namespace-20110811/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2008/CR-css3-namespace-20080523/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2008/WD-css3-namespace-20080215/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2006/WD-css3-namespace-20060828/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/1999/06/25/WD-css3-namespace-19990625/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2010/WD-css-style-attr-20100121/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-css-style-attr-20020515"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2001/WD-css-style-attr-20010305"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2000/WD-css-style-attr-20001025"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-align/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-positioning/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-grid-layout/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-grid-align/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-values/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-conditional/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.fxtf.org/motion-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/motion-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-text/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-cascade/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.csswg.org/css-timing/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.csswg.org/css-snappoints/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css-snappoints/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-mediaqueries/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/mediaqueries4/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.css-houdini.org/css-typed-om-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.fxtf.org/compositing-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/compositing-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-background/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-fonts/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-images/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css4-images/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-transitions/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/web-animations/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-animations/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.css-houdini.org/css-animationworklet-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.csswg.org/css3-speech/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-ruby/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/selectors4/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-sizing/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.css-houdini.org/css-paint-api-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-transforms/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.fxtf.org/css-masking-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/css-masking-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/masking/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
     ],
     "sheet": "http://dev.w3.org/csswg/css3-ui/"
   },
   {
     "types": [
-      "specType"
+      "ERROR: Response status code 504: Gateway Time-out"
     ],
-    "sheet": "http://dev.w3.org/csswg/css-writing-modes-3/"
+    "sheet": "http://dev.w3.org/csswg/css3-lists/"
   },
   {
     "types": [
-      "specType"
+      "ERROR: Response status code 504: Gateway Time-out"
     ],
-    "sheet": "https://drafts.csswg.org/resize-observer/"
+    "sheet": "http://dev.w3.org/csswg/css3-writing-modes/"
   },
   {
     "types": [
-      "specType"
+      "ERROR: Response status code 504: Gateway Time-out"
     ],
-    "sheet": "https://drafts.csswg.org/css-tables-3/"
+    "sheet": "http://dev.w3.org/csswg/css3-break/"
   },
   {
     "types": [
-      "specType"
+      "ERROR: Response status code 504: Gateway Time-out"
     ],
-    "sheet": "https://drafts.csswg.org/css-values-3/"
+    "sheet": "https://drafts.fxtf.org/filter-effects-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/filters/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.fxtf.org/geometry/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/geometry/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-flexbox/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "https://drafts.css-houdini.org/css-layout-api-1/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 504: Gateway Time-out"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-exclusions/"
+  },
+  {
+    "types": [
+      "DATE"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css-style-attr/"
   }
 ]
