@@ -114,7 +114,7 @@ const scrapeAll = async () => {
 	progress.total = specs.length;
 
 	// Save all run links
-	if (Deno.args[0] && Deno.args[0].match("broken|spec")) {
+	if (Deno.args[0] && !Deno.args[0].match("broken|spec")) {
 		await Deno.writeTextFile(
 			"./jsons/oldSpecs.json",
 			JSON.stringify(specs, null, 2),
