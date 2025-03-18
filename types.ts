@@ -30,8 +30,7 @@ export type CssProperty = {
 export type Authors = {
 	name: string | null;
 	org: string | null;
-	link: string | null;
-	type: string | null;
+	link: string | undefined;
 };
 
 export type ErrorLink = { types: string[]; sheet: string };
