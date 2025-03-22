@@ -133,6 +133,8 @@ const scrapeAll = async () => {
 	allSpecInfo.sort(function (a, b) {
 		// Turn your strings into dates, and then subtract them
 		// to get a value that is either negative, positive, or zero.
+
+		// @ts-ignore: I know these are dates
 		return new Date(b.date) - new Date(a.date);
 	});
 	await Deno.writeTextFile(

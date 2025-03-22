@@ -1,4 +1,27 @@
-[
+"thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-positioning-20150203/",
+{
+    "authors": [
+      {
+        "name": "Håkon Wium Lie",
+        "org": "Opera Software",
+        "link": "mailto:howcome@opera.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "On behalf of Bloomberg",
+        "link": "https://florian.rivoal.net"
+      },
+      {
+        "name": "Rachel Andrew",
+        "org": "Fronteers",
+        "link": "https://rachelandrew.co.uk"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-multicol-1-20191015/",
+    "properties": []
+  },
+
+  [
   {
     "types": [
       "Authors"
@@ -94,5 +117,23 @@
       "Authors"
     ],
     "sheet": "https://www.w3.org/pub/WWW/TR/WD-css1-960220.html"
+  }
+]
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/WD-CSS2-971104/"
+
+    the annoying page
+  },
+
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/web-animations/"
+
+    goes to a weird page
   }
 ]
