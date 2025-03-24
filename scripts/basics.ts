@@ -77,3 +77,50 @@ export const logError = async (type: string, sheet: string) => {
 		JSON.stringify(brokenLinks, null, 2),
 	);
 };
+
+export const compileList = (array: any[], items: any[]) => {
+	for (let item of items) {
+		let index = array.findIndex((currentItem) => currentItem.item === item);
+		if (index == -1) {
+			array.push({
+				item: item,
+				num: 1,
+			});
+		} else {
+			array[index].num++;
+		}
+	}
+};
+
+export const orgTable = [
+	[
+		"Google",
+		"Google Inc",
+		"GoogleInc.",
+		"Chromium.org",
+		"Google Inc.",
+		"Google.com",
+	],
+	["Invited Expert"],
+	["Apple", "Apple Inc", "Apple.com", "Apple Inc."],
+	["Bloomberg", "On behalf of Bloomberg"],
+	["Mozilla", "Mozilla Foundation", "Mozilla Japan"],
+	["Microsoft", "Microsoft Corporation", "Microsoft.com"],
+	["W3C", "W3", "W3.org"],
+	["Opera Software", "opera", "Opera Software ASA", "Opera.com"],
+	[
+		"Adobe",
+		"Adobe Systems",
+		"Adobe SystemsInc.",
+		"Adobe Inc.",
+		"Adobe Systems Inc",
+		"Adobe SystemsInc",
+		"Adobe Inc",
+		"Adobe Systems Inc.",
+		"Then of Adobe Systems Inc.",
+	],
+	["Netscape/AOL", "Netscape Communications"],
+	["Igalia"],
+	["Stanford", "stanford", "Cs.stanford.edu"],
+	["Hewlett-Packard", "Boi.hp.com"],
+];

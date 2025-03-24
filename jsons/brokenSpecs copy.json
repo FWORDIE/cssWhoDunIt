@@ -1,0 +1,26 @@
+[
+  {
+    "types": [
+      "Authors & ERROR"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-CSS21-20020802/"
+  },
+  {
+    "types": [
+      "Authors & ERROR"
+    ],
+    "sheet": "https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/"
+  },
+  {
+    "types": [
+      "Authors & ERROR"
+    ],
+    "sheet": "https://www.w3.org/TR/2016/WD-css-properties-values-api-1-20160607/"
+  },
+  {
+    "types": [
+      "Authors & ERROR"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-CSS21-20030915/"
+  }
+]

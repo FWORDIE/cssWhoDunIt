@@ -10,8 +10,9 @@ import {
 	specSheetLinkArray,
 	testArray,
 	logError,
+	compileList,
 } from "./scripts/basics.ts";
-import type { ErrorLink, SpecSheet } from "./types.ts";
+import type { Authors, ErrorLink, SpecSheet } from "./types.ts";
 import ProgressBar from "jsr:@deno-library/progress";
 import { delay } from "jsr:@std/async";
 import { parseArgs } from "jsr:@std/cli/parse-args";
@@ -29,6 +30,8 @@ const allSpecInfo: SpecSheet[] = [];
 // Get URLs of scrapped Spec Sheets
 // See getSpecs.ts
 let specs = specSheetLinkArray;
+const allNamesList: any[] = [];
+const allOrgsList: any[] = [];
 
 // General Set Up
 
@@ -137,6 +140,27 @@ const scrapeAll = async () => {
 		// @ts-ignore: I know these are dates
 		return new Date(b.date) - new Date(a.date);
 	});
+
+	// Complies a list of every name found and orders them
+	allNamesList.sort(function (a, b) {
+		// sort names by number
+		return b.num - a.num;
+	});
+	await Deno.writeTextFile(
+		"./jsons/allNamesList.json",
+		JSON.stringify(allNamesList, null, 2),
+	);
+
+	// Complies a list of every org found and orders them
+	allOrgsList.sort(function (a, b) {
+		// sort names by number
+		return b.num - a.num;
+	});
+	await Deno.writeTextFile(
+		"./jsons/allOrgsList.json",
+		JSON.stringify(allOrgsList, null, 2),
+	);
+
 	await Deno.writeTextFile(
 		"./jsons/allSpecInfo.json",
 		JSON.stringify(allSpecInfo, null, 2),
@@ -206,6 +230,23 @@ const getSpecInfo = async (specSheet: string, atttempt2 = false) => {
 		// await progress.console("Finished Scraping: ", specSheet);
 
 		allSpecInfo.push(thisSpecsInfo);
+
+		// This function is for debugging,
+		// It will make a list of All the orgs and names
+		if (thisSpecsInfo.authors && thisSpecsInfo.authors?.length > 0) {
+			compileList(
+				allNamesList,
+				thisSpecsInfo.authors.map(function (el: Authors) {
+					return el.name;
+				}),
+			);
+			compileList(
+				allOrgsList,
+				thisSpecsInfo.authors.map(function (el: Authors) {
+					return el.org;
+				}),
+			);
+		}
 		// await progress.console(thisSpecsInfo);
 	} catch (e) {
 		let msg = "Unkown";
