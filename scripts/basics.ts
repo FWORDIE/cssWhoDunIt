@@ -122,5 +122,5 @@ export const orgTable = [
 	["Netscape/AOL", "Netscape Communications"],
 	["Igalia"],
 	["Stanford", "stanford", "Cs.stanford.edu"],
-	["Hewlett-Packard", "Boi.hp.com"],
+	["Hewlett-Packard", "Boi.hp.com","HP"],
 ];
