@@ -1,86 +1,250 @@
 [
   {
     "item": "Google",
-    "num": 69
+    "num": 699
   },
   {
     "item": "Invited Expert",
-    "num": 48
+    "num": 522
   },
   {
     "item": "Apple",
-    "num": 23
-  },
-  {
-    "item": "Mozilla",
-    "num": 21
+    "num": 330
   },
   {
     "item": "Microsoft",
-    "num": 20
+    "num": 221
   },
   {
     "item": "W3C",
-    "num": 13
+    "num": 161
   },
   {
-    "item": "Bloomberg",
-    "num": 9
-  },
-  {
-    "item": "Opera Software",
-    "num": 6
+    "item": "Mozilla",
+    "num": 160
   },
   {
     "item": "Adobe",
-    "num": 6
+    "num": 107
   },
   {
-    "item": "Antenna House",
-    "num": 3
+    "item": "Opera Software",
+    "num": 78
   },
   {
-    "item": "Netscape/AOL",
-    "num": 3
-  },
-  {
-    "item": "Tetralogical",
-    "num": 1
+    "item": "Bloomberg",
+    "num": 74
   },
   {
     "item": "Stanford",
-    "num": 1
+    "num": 39
   },
   {
-    "item": "Canon Information Systems Research Australia",
-    "num": 1
+    "item": "LG Electronics",
+    "num": 19
   },
   {
-    "item": "Gmail.com",
-    "num": 1
+    "item": "Disruptive Innovations",
+    "num": 18
   },
   {
-    "item": "Disruptive-innovations.com",
-    "num": 1
+    "item": "Hachette Livre",
+    "num": 16
   },
   {
-    "item": "Adobe.com",
-    "num": 1
-  },
-  {
-    "item": "Igalia",
-    "num": 1
-  },
-  {
-    "item": "Cox.com",
-    "num": 1
-  },
-  {
-    "item": "Mailto:marcins@microsoft.com",
-    "num": 1
+    "item": "Antenna House",
+    "num": 15
   },
   {
     "item": "Hixie.ch",
+    "num": 14
+  },
+  {
+    "item": "Netscape/AOL",
+    "num": 13
+  },
+  {
+    "item": "Igalia",
+    "num": 12
+  },
+  {
+    "item": "Quark",
+    "num": 11
+  },
+  {
+    "item": "Inc.",
+    "num": 9
+  },
+  {
+    "item": "Mozilla Corporation",
+    "num": 9
+  },
+  {
+    "item": "Mailto:jdaggett@mozilla.com",
+    "num": 8
+  },
+  {
+    "item": "Hewlett-Packard",
+    "num": 8
+  },
+  {
+    "item": "W3C Invited Expert",
+    "num": 7
+  },
+  {
+    "item": "Disruptive-innovations.com",
+    "num": 7
+  },
+  {
+    "item": "Rivoal.net",
+    "num": 6
+  },
+  {
+    "item": "Http://fantasai.inkedblade.net/contact",
+    "num": 6
+  },
+  {
+    "item": "Canon Information Systems Research Australia",
+    "num": 6
+  },
+  {
+    "item": "BFO",
+    "num": 6
+  },
+  {
+    "item": "Vivliostyle",
+    "num": 5
+  },
+  {
+    "item": "Adobe.com",
+    "num": 5
+  },
+  {
+    "item": "DAISY Consortium",
+    "num": 5
+  },
+  {
+    "item": "Mailto:michelsu@microsoft.com",
+    "num": 4
+  },
+  {
+    "item": "Mailto:marcins@microsoft.com",
+    "num": 4
+  },
+  {
+    "item": "Http://xanthir.com/contact/",
+    "num": 4
+  },
+  {
+    "item": "Tetralogical",
+    "num": 4
+  },
+  {
+    "item": "Apple formerly Mozilla",
+    "num": 3
+  },
+  {
+    "item": "Aryeh.name",
+    "num": 3
+  },
+  {
+    "item": "Netscape.com",
+    "num": 3
+  },
+  {
+    "item": "Gmail.com",
+    "num": 2
+  },
+  {
+    "item": "Cox.com",
+    "num": 2
+  },
+  {
+    "item": "NIST",
+    "num": 2
+  },
+  {
+    "item": "Bitstream",
+    "num": 2
+  },
+  {
+    "item": "Canon",
+    "num": 2
+  },
+  {
+    "item": "Formerly of Netscape/AOL",
+    "num": 2
+  },
+  {
+    "item": "Rakuten Inc.",
+    "num": 2
+  },
+  {
+    "item": "Adobe Systems&#44; Inc.",
+    "num": 2
+  },
+  {
+    "item": "Fronteers",
+    "num": 1
+  },
+  {
+    "item": "Mailto:howcome@operasoftware.com",
+    "num": 1
+  },
+  {
+    "item": "Http://vivliostyle.com",
+    "num": 1
+  },
+  {
+    "item": "Mailto:shanestephens@google.com",
+    "num": 1
+  },
+  {
+    "item": "Agfa",
+    "num": 1
+  },
+  {
+    "item": "HP",
+    "num": 1
+  },
+  {
+    "item": "Http://www.xanthir.com/contact",
+    "num": 1
+  },
+  {
+    "item": "Formerly Mozilla",
+    "num": 1
+  },
+  {
+    "item": "Formerly Kozea",
+    "num": 1
+  },
+  {
+    "item": "Hewlett-Packard until April 2009 / Mozilla Corporation (since May 2009)",
+    "num": 1
+  },
+  {
+    "item": "Kozea",
+    "num": 1
+  },
+  {
+    "item": "Dbaron.org",
+    "num": 1
+  },
+  {
+    "item": "Rakuten",
+    "num": 1
+  },
+  {
+    "item": "Daniel Glazman Disruptive Innovations",
+    "num": 1
+  },
+  {
+    "item": "Libertysurf.fr",
+    "num": 1
+  },
+  {
+    "item": "Linss.com",
     "num": 1
   },
   {
@@ -88,27 +252,19 @@
     "num": 1
   },
   {
-    "item": "BFO",
+    "item": "Http://tantek.com",
     "num": 1
   },
   {
-    "item": "DAISY Consortium",
+    "item": "MicrosoftCorporation",
     "num": 1
   },
   {
-    "item": "Mailto:michelsu@microsoft.com",
+    "item": "Facebook",
     "num": 1
   },
   {
-    "item": "Quark",
-    "num": 1
-  },
-  {
-    "item": "Mailto:jdaggett@mozilla.com",
-    "num": 1
-  },
-  {
-    "item": "Adobe Systems&#44; Inc.",
+    "item": "Https://gsnedders.com",
     "num": 1
   }
 ]
