@@ -23,6 +23,15 @@ export const getAbstract = async ($: cheerio.CheerioAPI, sheet: string) => {
 			abstract = $("#Abstract").next().text().trim();
 		}
 
+		// e.g. I am not sure if I have this actually 
+		if (!abstract){
+			abstract = $("#Abstract").children().text().trim();
+		}
+		// e.g. https://www.w3.org/TR/2014/WD-web-animations-20140605/
+		if (!abstract){
+			abstract = $("#abstract").children().text().trim();
+		}
+
 		// e.g. https://www.w3.org/TR/2003/CR-css3-ruby-20030514
 		if (!abstract) {
 			abstract = $("#Abstract").parent().next().text().trim();

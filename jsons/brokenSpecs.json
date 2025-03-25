@@ -1,8 +1,14 @@
 [
   {
     "types": [
-      "ERROR: Headers Timeout Error"
+      "ABSTRACT"
     ],
-    "sheet": "https://drafts.csswg.org/css-easing/"
+    "sheet": "https://www.w3.org/TR/WD-CSS2-971104/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 400: Bad Request"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-align/"
   }
 ]

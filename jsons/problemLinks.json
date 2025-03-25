@@ -46,4 +46,17 @@
 	},
 	{"thisSpecUrl":"http://dev.w3.org/csswg/css2/",
 "issue":"CSS margin nad border, no space. "}
+
+	{  "thisSpecUrl": "https://drafts.csswg.org/css3-images/",
+		"issue": "No information for the repository"
+
+	}
+
+	{ "thisSpecUrl": "//drafts.csswg.org/css3-positioning/",
+		"issue": "No information for the repository"
+	}
+
+	{ "thisSpecUrl": "https://drafts.csswg.org/css3-transitions/",
+		"issue": "No information for the repository"
+	}
 ]
