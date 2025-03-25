@@ -4737,5 +4737,774 @@
     "thisSpecUrl": "http://dev.w3.org/csswg/css-display/",
     "properties": [],
     "abstract": "This module describes how the CSS formatting box tree is generated from the document element tree and defines the display property that controls it."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-multicol-2/",
+    "properties": [],
+    "abstract": "This specification describes multi-column layouts in CSS, a style sheet language for the web. Using functionality described in the specification, content can be flowed into multiple columns with a gap and a rule between them."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-multicol/",
+    "properties": [],
+    "abstract": "This specification describes multi-column layouts in CSS, a style sheet language for the web. Using functionality described in the specification, content can be flowed into multiple columns with a gap and a rule between them."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-inline-3/",
+    "properties": [],
+    "abstract": "The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. This module describes box model for this inline layout model and defines the block-axis alignment and sizing of inline-level content, extending the model in [CSS2]. It also adds a special layout mode for drop-caps."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-inline/",
+    "properties": [],
+    "abstract": "The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. This module describes box model for this inline layout model and defines the block-axis alignment and sizing of inline-level content, extending the model in [CSS2]. It also adds a special layout mode for drop-caps."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-inline/",
+    "properties": [],
+    "abstract": "The CSS formatting model provides for a flow of elements and text inside of a container to be wrapped into lines. This module describes box model for this inline layout model and defines the block-axis alignment and sizing of inline-level content, extending the model in [CSS2]. It also adds a special layout mode for drop-caps."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-color-hdr-1/",
+    "properties": [],
+    "abstract": "This module defines additions to CSS Color 4 to enable High Dynamic Range (HDR)."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-overflow-5/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS relating to scrollable overflow handling in visual media.\nIt builds on the CSS Overflow Module Level 4,\nadding the ability to generate and associate various scrolling controls\n(markers to indicate scroll progress, buttons to trigger scrolling),\nand adding an appendix containing an experimental exploration\nof redirecting overflow by fragmentation."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-overflow-3/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS relating to scrollable overflow handling in visual media.\nThis level is focused on completing a precise specification for the existing overflow features,\nincluding the overflow property and its longhands;\nand the text-overflow property.\nA few additional features introduced in support of [CSS-CONTAIN-1] and [CSS-CONTAIN-2] are also defined: overflow: clip and the overflow-clip-margin property."
+  },
+  {
+    "thisSpecUrl": "http://drafts.csswg.org/css-overflow/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS relating to scrollable overflow handling in visual media.\nThis level is focused on completing a precise specification for the existing overflow features,\nincluding the overflow property and its longhands;\nand the text-overflow property.\nA few additional features introduced in support of [CSS-CONTAIN-1] and [CSS-CONTAIN-2] are also defined: overflow: clip and the overflow-clip-margin property."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-overflow-3/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS relating to scrollable overflow handling in visual media.\nThis level is focused on completing a precise specification for the existing overflow features,\nincluding the overflow property and its longhands;\nand the text-overflow property.\nA few additional features introduced in support of [CSS-CONTAIN-1] and [CSS-CONTAIN-2] are also defined: overflow: clip and the overflow-clip-margin property."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-overflow-4/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS relating to scrollable overflow handling in visual media.\nIt builds on the CSS Overflow Module Level 3,\ndefining line-clamp, its longhands, and its legacy pre-standard syntax;\nadding a block-ellipsis property;\nand expanding overflow-clip-margin with longhands."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-view-transitions-2/",
+    "properties": [],
+    "abstract": "This module defines how the View Transition API works with cross-document navigations."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-view-transitions-1/",
+    "properties": [],
+    "abstract": "This module defines the View Transition API, along with associated properties and pseudo-elements,\nwhich allows developers to create animated visual transitions representing changes in the document state."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-values-5/",
+    "properties": [],
+    "abstract": "This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-values-3/",
+    "properties": [],
+    "abstract": "This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-values/",
+    "properties": [],
+    "abstract": "This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-values/",
+    "properties": [],
+    "abstract": "This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-values-4/",
+    "properties": [],
+    "abstract": "This CSS module describes the common values and units that CSS properties accept and the syntax used for describing them in CSS property definitions."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-conditional-5/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS\nfor conditional processing of parts of style sheets,\nbased on capabilities of the processor or the environment\nthe style sheet is being applied in.\nIt includes and extends the functionality of CSS Conditional 4 [css-conditional-4],\nadding the generalized conditional rule @when and the chained conditional rule @else,\nas well as introducing font processing queries\nto the supports query syntax used in @supports rules,\nand container queries."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-conditional-3/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS for conditional processing of parts of\nstyle sheets, conditioned on capabilities of the processor or the\ndocument the style sheet is being applied to.  It includes and extends the\nfunctionality of CSS level 2 [CSS21], which builds on CSS level 1 [CSS1].  The main extensions compared to level 2 are allowing nesting of\ncertain at-rules inside @media, and the addition of the @supports rule for\nconditional processing."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-conditional-4/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS\nfor conditional processing of parts of style sheets,\nbased on capabilities of the processor or the environment\nthe style sheet is being applied in.\nIt includes and extends the functionality of CSS Conditional 3 [css-conditional-3],\nadding the ability to query support for particular selectors [SELECTORS-4] through the new selector() notation for supports queries."
+  },
+  {
+    "thisSpecUrl": "https://drafts.fxtf.org/motion-1/",
+    "properties": [],
+    "abstract": "Motion path allows authors to position any graphical object and animate it along an author specified path."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/fxtf/motion-1/",
+    "properties": [],
+    "abstract": "Motion path allows authors to position any graphical object and animate it along an author specified path."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-anchor-position-1/",
+    "properties": [],
+    "abstract": "This specification defines anchor positioning,\nwhere a positioned element can size and position itself\nrelative to one or more “anchor elements” elsewhere on the page."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-text-3/",
+    "properties": [],
+    "abstract": "This CSS module defines properties for text manipulation and specifies their processing model. It covers line breaking, justification and alignment, white space handling, and text transformation."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-text-3/",
+    "properties": [],
+    "abstract": "This CSS module defines properties for text manipulation and specifies their processing model. It covers line breaking, justification and alignment, white space handling, and text transformation."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-text-4/",
+    "properties": [],
+    "abstract": "This CSS module defines properties for text manipulation and specifies their processing model. It covers line breaking, justification and alignment, white space handling, and text transformation."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-text-4/",
+    "properties": [],
+    "abstract": "This CSS module defines properties for text manipulation and specifies their processing model. It covers line breaking, justification and alignment, white space handling, and text transformation."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-cascade-6/",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level is § 2.5 Scoping Styles: the @scope rule."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-cascade-3/",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-cascade-3/",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-cascade/",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level are the revert keyword and <supports-condition> for the @import rule."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-cascade-4/",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level are the revert keyword and <supports-condition> for the @import rule."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-cascade/",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level are the revert keyword and <supports-condition> for the @import rule."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-cascade-5/",
+    "properties": [],
+    "abstract": "This CSS module describes how to collate style rules and assign values to all properties on all elements. By way of cascading and inheritance, values are propagated for all properties on all elements.New in this level is cascade layers."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-easing/",
+    "properties": [],
+    "abstract": "This CSS module describes a way for authors to define a transformation\nthat controls the rate of change of some value.\nApplied to animations, such transformations can be used to produce\nanimations that mimic physical phenomena such as momentum or to cause the\nanimation to move in discrete steps producing robot-like movement.\nLevel 2 adds more sophisticated functions for custom easing curves."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-timing/",
+    "properties": [],
+    "abstract": "This CSS module describes a way for authors to define a transformation\nthat controls the rate of change of some value.\nApplied to animations, such transformations can be used to produce\nanimations that mimic physical phenomena such as momentum or to cause the\nanimation to move in discrete steps producing robot-like movement.\nLevel 2 adds more sophisticated functions for custom easing curves."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-box-4/",
+    "properties": [],
+    "abstract": "This specification describes the margin and padding properties, which create spacing in and around a CSS box. It may later be extended to include borders (currently described in [css-backgrounds-3])."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-box-3/",
+    "properties": [],
+    "abstract": "This specification describes the margin and padding properties, which create spacing in and around a CSS box."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-scroll-snap-2/",
+    "properties": [],
+    "abstract": "This module contains features to control panning and scrolling behavior with “snap positions”."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-scroll-snap-1/",
+    "properties": [],
+    "abstract": "This module contains features to control panning and scrolling behavior with “snap positions”."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-snappoints/",
+    "properties": [],
+    "abstract": "This module contains features to control panning and scrolling behavior with “snap positions”."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-snappoints/",
+    "properties": [],
+    "abstract": "This module contains features to control panning and scrolling behavior with “snap positions”."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-contain-1/",
+    "properties": [],
+    "abstract": "This CSS module describes the contain property, which indicates that the element’s subtree is independent of the rest of the page. This enables heavy optimizations by user agents when used well."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-contain/",
+    "properties": [],
+    "abstract": "This CSS module describes the contain property, which indicates that the element’s subtree is independent of the rest of the page. This enables heavy optimizations by user agents when used well."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-contain-2/",
+    "properties": [],
+    "abstract": "This CSS module describes the contain property, which indicates that the element’s subtree is independent of the rest of the page. This enables heavy optimizations by user agents when used well."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-contain-3/",
+    "properties": [],
+    "abstract": "This specification is a placeholder.\nIt used to refine and extend features defined in CSS Containment Level 2,\nbut extensions of containment been moved back to the Level 2 specification,\nwhile the main new feature it used to introduce has been moved to [CSS-CONDITIONAL-5].Having moved these features to other specifications,\nthis document is now empty.\nIt may be revived at a later point,\nwhen Level 2 stabilizes."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/mediaqueries-3/",
+    "properties": [],
+    "abstract": "HTML4 and CSS2 currently support media-dependent style sheets tailored\n   for different media types. For example, a document may use\n   sans-serif fonts when displayed on a screen and serif fonts when printed.\n   ‘screen’ and ‘print’ are two media types that have been defined.\n   Media queries extend the functionality of media types by allowing\n   more precise labeling of style sheets."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/mediaqueries-4/",
+    "properties": [],
+    "abstract": "Media Queries allow authors to test and query values or features of the user agent or display device, independent of the document being rendered.  They are used in the CSS @media rule to conditionally apply styles to a document, and in various other contexts and languages, such as HTML and JavaScript.Media Queries Level 4 describes the mechanism and syntax of media queries, media types, and media features. It extends and supersedes the features defined in Media Queries Level 3."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/mediaqueries4/",
+    "properties": [],
+    "abstract": "Media Queries allow authors to test and query values or features of the user agent or display device, independent of the document being rendered.  They are used in the CSS @media rule to conditionally apply styles to a document, and in various other contexts and languages, such as HTML and JavaScript.Media Queries Level 4 describes the mechanism and syntax of media queries, media types, and media features. It extends and supersedes the features defined in Media Queries Level 3."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/mediaqueries-4/",
+    "properties": [],
+    "abstract": "Media Queries allow authors to test and query values or features of the user agent or display device, independent of the document being rendered.  They are used in the CSS @media rule to conditionally apply styles to a document, and in various other contexts and languages, such as HTML and JavaScript.Media Queries Level 4 describes the mechanism and syntax of media queries, media types, and media features. It extends and supersedes the features defined in Media Queries Level 3."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/mediaqueries-5/",
+    "properties": [],
+    "abstract": "Media Queries allow authors to test and query values or features of the user agent or display device, independent of the document being rendered.  They are used in the CSS @media rule to conditionally apply styles to a document, and in various other contexts and languages, such as HTML and JavaScript.Media Queries Level 5 describes the mechanism and syntax of media queries, media types, and media features. It extends and supersedes the features defined in Media Queries Level 4."
+  },
+  {
+    "thisSpecUrl": "https://drafts.css-houdini.org/css-properties-values-api-1/",
+    "properties": [],
+    "abstract": "This CSS module defines an API for registering new CSS properties. Properties registered using this API are provided with a parse syntax that defines a type, inheritance behaviour, and an initial value."
+  },
+  {
+    "thisSpecUrl": "https://drafts.css-houdini.org/css-typed-om-1/",
+    "properties": [],
+    "abstract": "Converting CSSOM value strings into meaningfully typed JavaScript representations and back can incur a significant performance overhead. This specification exposes CSS values as typed JavaScript objects, to make manipulating them both easier and more performant."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/cssom/",
+    "properties": [],
+    "abstract": "CSSOM defines APIs (including generic parsing and serialization rules) for Media Queries, Selectors, and of course CSS itself."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/cssom/",
+    "properties": [],
+    "abstract": "CSSOM defines APIs (including generic parsing and serialization rules) for Media Queries, Selectors, and of course CSS itself."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/cssom-view/",
+    "properties": [],
+    "abstract": "The APIs introduced by this specification provide authors with a way to inspect and manipulate the visual view of a document. This includes getting the position of element layout boxes, obtaining the width of the viewport through script, and also scrolling an element."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/cssom-view/",
+    "properties": [],
+    "abstract": "The APIs introduced by this specification provide authors with a way to inspect and manipulate the visual view of a document. This includes getting the position of element layout boxes, obtaining the width of the viewport through script, and also scrolling an element."
+  },
+  {
+    "thisSpecUrl": "https://drafts.fxtf.org/compositing-1/",
+    "properties": [],
+    "abstract": "Compositing describes how shapes of different elements are combined into a single image. There are various possible approaches for compositing. Previous versions of SVG and CSS used Simple Alpha Compositing. In this model, each element is rendered into its own buffer and is then merged with its backdrop using the Porter Duff source-over operator. This specification will define a new compositing model that expands upon the Simple Alpha Compositing model by offering:"
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/fxtf/compositing-1/",
+    "properties": [],
+    "abstract": "Compositing describes how shapes of different elements are combined into a single image. There are various possible approaches for compositing. Previous versions of SVG and CSS used Simple Alpha Compositing. In this model, each element is rendered into its own buffer and is then merged with its backdrop using the Porter Duff source-over operator. This specification will define a new compositing model that expands upon the Simple Alpha Compositing model by offering:"
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-backgrounds/",
+    "properties": [],
+    "abstract": "This draft contains the features of CSS relating to borders and backgrounds. The main extensions compared to level 2 are borders consisting of images, boxes with multiple backgrounds, boxes with rounded corners and boxes with shadows."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-color-5/",
+    "properties": [],
+    "abstract": "This module extends CSS Color [css-color-4] to add color modification functions, custom color spaces (ICC profiles), contrast-color(), light-dark() and device-cmyk()."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-color-3/",
+    "properties": [],
+    "abstract": "CSS (Cascading Style Sheets) is a language for describing the rendering\n   of HTML and XML documents on screen, on paper, in speech, etc. It uses\n   color-related properties and values to color the text, backgrounds,\n   borders, and other parts of elements in a document. This specification\n   describes color values and properties for foreground color and group\n   opacity. These include properties and values from CSS level 2 and new\n   values."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-color-4/",
+    "properties": [],
+    "abstract": "This specification describes CSS <color> values, and properties for foreground color and group opacity."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-color/",
+    "properties": [],
+    "abstract": "This specification describes CSS <color> values, and properties for foreground color and group opacity."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-fonts-5/",
+    "properties": [],
+    "abstract": "This specification defines modifications to the existing CSS Fonts 4 specification along with additional features."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-fonts/",
+    "properties": [],
+    "abstract": "This specification defines modifications to the existing CSS Fonts 3 specification along with additional features for font feature control, font variations, and color fonts."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-fonts/",
+    "properties": [],
+    "abstract": "This specification defines modifications to the existing CSS Fonts 3 specification along with additional features for font feature control, font variations, and color fonts."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-fonts-4/",
+    "properties": [],
+    "abstract": "This specification defines modifications to the existing CSS Fonts 3 specification along with additional features for font feature control, font variations, and color fonts."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-gcpm/",
+    "properties": [],
+    "abstract": "Books and other paged media often use special techniques to display information. Content may be moved to or generated for special areas of the page, such as running heads or footnotes. Generated content within pages, such as tab leaders or cross-references, helps readers navigate within and between pages."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-gcpm/",
+    "properties": [],
+    "abstract": "Books and other paged media often use special techniques to display information. Content may be moved to or generated for special areas of the page, such as running heads or footnotes. Generated content within pages, such as tab leaders or cross-references, helps readers navigate within and between pages."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-viewport/",
+    "properties": [],
+    "abstract": "This specification provides a way for an author to specify, in CSS, the size, zoom factor, and orientation of the viewport that is used as the base for the initial containing block."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-images-3/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS level 3 relating to the <image> type and some replaced elements.\nIt includes and extends the functionality of CSS level 2 [CSS2].\nThe main extensions compared to CSS2.1 are the generalization of the <url> type to the <image> type,\nseveral additions to the <image> type, a generic sizing algorithm for images and other replaced content in CSS,\ndefinitions for interpolating several <image> types,\nand several properties controlling the interaction of replaced elements and CSS’s layout models."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-images-4/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS level 4 relating to the <image> type and replaced elements.\nIt includes and extends the functionality of CSS level 2 [CSS2] and in the previous level of this specification [css-images-3].\nThe main extensions compared to \"CSS Images Module Level 3\" [css-images-3] are several additions to the <image> type, such as the image() notation, the element() notation, and conic gradients.\nThis level is currently maintained as a diff spec over the level 3 module."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-page-3/",
+    "properties": [],
+    "abstract": "This CSS module specifies how pages are generated and laid out to hold fragmented content in a paged presentation. It adds functionality for controlling page margins, page size and orientation, and headers and footers, and extends generated content to enable page numbering and running headers / footers. The process of paginating a flow into such generated pages is covered in [CSS-BREAK-3]."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-transitions-2/",
+    "properties": [],
+    "abstract": "CSS Transitions allows property changes in CSS values to occur smoothly over a specified duration."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-transitions/",
+    "properties": [],
+    "abstract": "CSS Transitions allows property changes in CSS values to occur smoothly over a specified duration."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-transitions/",
+    "properties": [],
+    "abstract": "CSS Transitions allows property changes in CSS values to occur smoothly over a specified duration."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/scroll-animations-1/",
+    "properties": [],
+    "abstract": "Defines CSS properties and an API for creating animations that are tied to\nthe scroll offset of a scroll container."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/web-animations-1/",
+    "properties": [],
+    "abstract": "This specification defines a model for synchronization and timing\nof changes to the presentation of a Web page.\nIt also defines an application programming interface (API)\nfor interacting with this model\nand it is expected that other specifications will define\ndeclarative means for exposing these features."
+  },
+  {
+    "thisSpecUrl": "https://w3c.github.io/web-animations/",
+    "properties": [],
+    "abstract": "This specification defines a model for synchronization and\ntiming of changes to the presentation of a Web page.\nThis specification also defines an application programming interface\nfor interacting with this model and it is expected that further\nspecifications will define declarative means for exposing these\nfeatures."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/fxtf/web-animations/",
+    "properties": []
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/web-animations-2/",
+    "properties": [],
+    "abstract": "This specification defines a model for synchronization and\ntiming of changes to the presentation of a Web page.\nThis specification also defines an application programming interface\nfor interacting with this model and it is expected that further\nspecifications will define declarative means for exposing these\nfeatures."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-animations-2/",
+    "properties": [],
+    "abstract": "This CSS module describes a way for authors to animate the values of CSS properties over time, using keyframes. The behavior of these keyframe animations can be controlled by specifying their duration, number of repeats, and repeating behavior."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-animations/",
+    "properties": [],
+    "abstract": "This CSS module describes a way for authors to animate the values of CSS properties over time, using keyframes. The behavior of these keyframe animations can be controlled by specifying their duration, number of repeats, and repeating behavior."
+  },
+  {
+    "thisSpecUrl": "https://drafts.css-houdini.org/css-animationworklet-1/",
+    "properties": [],
+    "abstract": "Abstract"
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-font-loading/",
+    "properties": [],
+    "abstract": "This CSS module describes events and interfaces used for dynamically loading font resources."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-font-loading/",
+    "properties": [],
+    "abstract": "This CSS module describes events and interfaces used for dynamically loading font resources."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-speech-1/",
+    "properties": [],
+    "abstract": "The Speech module defines aural CSS properties that enable authors to declaratively control the rendering of documents via speech synthesis, and using optional audio cues. Note that this standard was developed in cooperation with the Voice Browser Activity."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-nesting/",
+    "properties": [],
+    "abstract": "This module introduces the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule.  This increases the modularity and maintainability of CSS stylesheets."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-syntax/",
+    "properties": [],
+    "abstract": "This module describes, in general terms, the basic structure and syntax of CSS stylesheets. It defines, in detail, the syntax and parsing of CSS - how to turn a stream of bytes into a meaningful stylesheet."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-syntax/",
+    "properties": [],
+    "abstract": "This module describes, in general terms, the basic structure and syntax of CSS stylesheets. It defines, in detail, the syntax and parsing of CSS - how to turn a stream of bytes into a meaningful stylesheet."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-ruby-1/",
+    "properties": [],
+    "abstract": "“Ruby”, a form of interlinear annotation, are short runs of text alongside the base text.\nThey are typically used in East Asian documents to indicate pronunciation or to provide a short annotation.\nThis module describes the rendering model and formatting controls related to displaying ruby annotations in CSS."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-ruby-1/",
+    "properties": [],
+    "abstract": "“Ruby”, a form of interlinear annotation, are short runs of text alongside the base text.\nThey are typically used in East Asian documents to indicate pronunciation or to provide a short annotation.\nThis module describes the rendering model and formatting controls related to displaying ruby annotations in CSS."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-pseudo-4/",
+    "properties": [],
+    "abstract": "This CSS module defines pseudo-elements, abstract elements that represent portions of the CSS render tree that can be selected and styled."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-pseudo-4/",
+    "properties": [],
+    "abstract": "This CSS module defines pseudo-elements, abstract elements that represent portions of the CSS render tree that can be selected and styled."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-shapes/",
+    "properties": [],
+    "abstract": "CSS Shapes describe geometric shapes for use in CSS. For Level 1, CSS Shapes can be applied to floats. A circle shape on a float will cause inline content to wrap around the circle shape instead of the float’s bounding box."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-shapes/",
+    "properties": [],
+    "abstract": "CSS Shapes describe geometric shapes for use in CSS. For Level 1, CSS Shapes can be applied to floats. A circle shape on a float will cause inline content to wrap around the circle shape instead of the float’s bounding box."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/selectors/",
+    "properties": [],
+    "abstract": "Selectors are patterns that match against elements in a tree, and as such form one of several technologies that can be used to select nodes in a document. Selectors have been optimized for use with HTML and XML, and are designed to be usable in performance-critical code. They are a core component of CSS (Cascading Style Sheets), which uses Selectors to bind style properties to elements in the document.\nSelectors Level 4 describes the selectors that already exist in [SELECT], and further introduces new selectors for CSS and other languages that may need them."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/selectors/",
+    "properties": [],
+    "abstract": "Selectors are patterns that match against elements in a tree, and as such form one of several technologies that can be used to select nodes in a document. Selectors have been optimized for use with HTML and XML, and are designed to be usable in performance-critical code. They are a core component of CSS (Cascading Style Sheets), which uses Selectors to bind style properties to elements in the document.\nSelectors Level 4 describes the selectors that already exist in [SELECT], and further introduces new selectors for CSS and other languages that may need them."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/selectors-4/",
+    "properties": [],
+    "abstract": "Selectors are patterns that match against elements in a tree, and as such form one of several technologies that can be used to select nodes in a document. Selectors have been optimized for use with HTML and XML, and are designed to be usable in performance-critical code. They are a core component of CSS (Cascading Style Sheets), which uses Selectors to bind style properties to elements in the document.\nSelectors Level 4 describes the selectors that already exist in [SELECT], and further introduces new selectors for CSS and other languages that may need them."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/selectors-3/",
+    "properties": [],
+    "abstract": "Selectors are patterns that match\n   against elements in a tree, and as such form one of several technologies\n   that can be used to select nodes in an XML document. Selectors have been\n   optimized for use with HTML and XML, and are designed to be usable in\n   performance-critical code."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-variables/",
+    "properties": [],
+    "abstract": "This module introduces cascading variables as a new primitive value type that is accepted by all CSS properties, and custom properties for defining them."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-variables/",
+    "properties": [],
+    "abstract": "This module introduces cascading variables as a new primitive value type that is accepted by all CSS properties, and custom properties for defining them."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-color-adjust-1/",
+    "properties": [],
+    "abstract": "This module introduces a model and controls over automatic color adjustment by the user agent to handle user preferences, such as \"Dark Mode\", contrast adjustment, or specific desired color schemes."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-text-decor-3/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS relating to text decoration, such as underlines, text shadows, and emphasis marks."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-text-decor-3/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS relating to text decoration, such as underlines, text shadows, and emphasis marks."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-text-decor-4/",
+    "properties": [],
+    "abstract": "This module contains the features of CSS relating to text decoration, such as underlines, text shadows, and emphasis marks."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-will-change/",
+    "properties": [],
+    "abstract": "This document defines the will-change CSS property, which allows an author to inform the UA ahead of time of what kinds of changes they are likely to make to an element.  This allows the UA to optimize how they handle the element ahead of time, performing potentially-expensive work preparing for an animation before the animation actually begins."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-will-change/",
+    "properties": [],
+    "abstract": "This document defines the will-change CSS property, which allows an author to inform the UA ahead of time of what kinds of changes they are likely to make to an element.  This allows the UA to optimize how they handle the element ahead of time, performing potentially-expensive work preparing for an animation before the animation actually begins."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-sizing-3/",
+    "properties": [],
+    "abstract": "This module extends the CSS sizing properties with keywords that represent content-based \"intrinsic\" sizes and context-based \"extrinsic\" sizes, allowing CSS to more easily describe boxes that fit their content or fit into a particular layout context."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-sizing/",
+    "properties": [],
+    "abstract": "This module extends the CSS sizing properties with keywords that represent content-based \"intrinsic\" sizes and context-based \"extrinsic\" sizes, allowing CSS to more easily describe boxes that fit their content or fit into a particular layout context."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-sizing/",
+    "properties": [],
+    "abstract": "This module extends the CSS sizing properties with keywords that represent content-based \"intrinsic\" sizes and context-based \"extrinsic\" sizes, allowing CSS to more easily describe boxes that fit their content or fit into a particular layout context."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-sizing-4/",
+    "properties": [],
+    "abstract": "This module extends the CSS sizing properties with keywords that represent content-based \"intrinsic\" sizes and context-based \"extrinsic\" sizes, allowing CSS to more easily describe boxes that fit their content or fit into a particular layout context. This is a delta spec over CSS Sizing Level 3."
+  },
+  {
+    "thisSpecUrl": "https://drafts.css-houdini.org/css-paint-api-1/",
+    "properties": [],
+    "abstract": "An API for allowing web developers to define a custom CSS <image> with javascript, which will\nrespond to style and size changes.\nSee EXPLAINER."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-highlight-api-1/",
+    "properties": [],
+    "abstract": "This CSS module describes a mechanism\nfor styling arbitrary ranges of a document identified by script."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-scrollbars/",
+    "properties": [],
+    "abstract": "This CSS module defines properties\nto influence the visual styling of scrollbars,\nintroducing controls for their color and width."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-transforms-2/",
+    "properties": [],
+    "abstract": "CSS transforms allows elements styled with CSS to be transformed in two-dimensional or three-dimensional space.This spec adds new transform functions and properties for three-dimensional transforms, and convenience functions for simple transforms."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-transforms/",
+    "properties": [],
+    "abstract": "CSS transforms allows elements styled with CSS to be transformed in two-dimensional space. This specification is the convergence of the CSS 2D Transforms and SVG transforms specifications."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-transforms/",
+    "properties": [],
+    "abstract": "CSS transforms allows elements styled with CSS to be transformed in two-dimensional space. This specification is the convergence of the CSS 2D Transforms and SVG transforms specifications."
+  },
+  {
+    "thisSpecUrl": "https://drafts.fxtf.org/css-masking-1/",
+    "properties": [],
+    "abstract": "CSS Masking provides two means for partially or fully hiding portions of visual elements: masking and clipping.Masking describes how to use another graphical element or image as a luminance or alpha mask. Typically, rendering an element via CSS or SVG can conceptually be described as if the element, including its children, are drawn into a buffer and then that buffer is composited into the element’s parent. Luminance and alpha masks influence the transparency of this buffer before the compositing stage.Clipping describes the visible region of visual elements. The\nregion can be described by using certain SVG graphics elements or basic shapes. Anything outside of this region is not rendered."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/fxtf/css-masking-1/",
+    "properties": [],
+    "abstract": "CSS Masking provides two means for partially or fully hiding portions of visual elements: masking and clipping.Masking describes how to use another graphical element or image as a luminance or alpha mask. Typically, rendering an element via CSS or SVG can conceptually be described as if the element, including its children, are drawn into a buffer and then that buffer is composited into the element’s parent. Luminance and alpha masks influence the transparency of this buffer before the compositing stage.Clipping describes the visible region of visual elements. The\nregion can be described by using certain SVG graphics elements or basic shapes. Anything outside of this region is not rendered."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/fxtf/masking/",
+    "properties": [],
+    "abstract": "CSS Masking provides two means for partially or fully hiding portions of visual elements: masking and clipping.Masking describes how to use another graphical element or image as a luminance or alpha mask. Typically, rendering an element via CSS or SVG can conceptually be described as if the element, including its children, are drawn into a buffer and then that buffer is composited into the element’s parent. Luminance and alpha masks influence the transparency of this buffer before the compositing stage.Clipping describes the visible region of visual elements. The\nregion can be described by using certain SVG graphics elements or basic shapes. Anything outside of this region is not rendered."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-counter-styles/",
+    "properties": [],
+    "abstract": "This module introduces the @counter-style rule, which allows authors to define their own custom counter styles for use with CSS list-marker and generated-content counters [CSS-LISTS-3]. It also predefines a set of common counter styles, including the ones present in CSS2 and CSS2.1."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-counter-styles/",
+    "properties": [],
+    "abstract": "This module introduces the @counter-style rule, which allows authors to define their own custom counter styles for use with CSS list-marker and generated-content counters [CSS-LISTS-3]. It also predefines a set of common counter styles, including the ones present in CSS2 and CSS2.1."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-counter-styles-3/",
+    "properties": [],
+    "abstract": "This module introduces the @counter-style rule, which allows authors to define their own custom counter styles for use with CSS list-marker and generated-content counters [CSS-LISTS-3]. It also predefines a set of common counter styles, including the ones present in CSS2 and CSS2.1."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-ui-4/",
+    "properties": [],
+    "abstract": "This specification describes user interface related\nproperties and values to style HTML and XML (including XHTML).\nIt includes and extends user interface related features\nfrom the properties and values of previous CSS levels.\nIt uses various properties and values\nto style basic user interface elements in a document."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-ui-4/",
+    "properties": [],
+    "abstract": "This specification describes user interface related\nproperties and values to style HTML and XML (including XHTML).\nIt includes and extends user interface related features\nfrom the properties and values of previous CSS levels.\nIt uses various properties and values\nto style basic user interface elements in a document."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-ui/",
+    "properties": [],
+    "abstract": "This specification describes user interface related\nproperties and values to style HTML and XML (including XHTML).\nIt includes and extends user interface related features\nfrom the properties and values of previous CSS levels.\nIt uses various properties and values\nto style basic user interface elements in a document."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-ui/",
+    "properties": [],
+    "abstract": "This specification describes user interface related\nproperties and values to style HTML and XML (including XHTML).\nIt includes and extends user interface related features\nfrom the properties and values of previous CSS levels.\nIt uses various properties and values\nto style basic user interface elements in a document."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-lists-3/",
+    "properties": [],
+    "abstract": "This module contains CSS features related to list counters: styling them, positioning them, and manipulating their value."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-scroll-anchoring/",
+    "properties": [],
+    "abstract": "Changes in DOM elements above the visible region of a scrolling box can result in the page moving\nwhile the user is in the middle of consuming the content.This spec proposes a mechanism to mitigate this jarring user experience\nby keeping track of the position of an anchor node and adjusting the scroll offset accordingly.This spec also proposes an API for web developers to opt-out of this behavior."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-scroll-anchoring/",
+    "properties": [],
+    "abstract": "Changes in DOM elements above the visible region of a scrolling box can result in the page moving\nwhile the user is in the middle of consuming the content.This spec proposes a mechanism to mitigate this jarring user experience\nby keeping track of the position of an anchor node and adjusting the scroll offset accordingly.This spec also proposes an API for web developers to opt-out of this behavior."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/resize-observer/",
+    "properties": [],
+    "abstract": "This specification describes an API for observing changes to Element’s size."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-writing-modes-3/",
+    "properties": [],
+    "abstract": "CSS Writing Modes Level 3 defines CSS support for various writing modes and their combinations, including left-to-right and right-to-left text ordering as well as horizontal and vertical orientations."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-writing-modes-3/",
+    "properties": [],
+    "abstract": "CSS Writing Modes Level 3 defines CSS support for various writing modes and their combinations, including left-to-right and right-to-left text ordering as well as horizontal and vertical orientations."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-writing-modes-4/",
+    "properties": [],
+    "abstract": "CSS Writing Modes Level 4 defines CSS support for various writing modes and their combinations, including left-to-right and right-to-left text ordering as well as horizontal and vertical orientations."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-nav-1/",
+    "properties": [],
+    "abstract": "This specification defines a general model for navigating the focus using the arrow keys,\nas well as related CSS, JavaScript features and Events."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-content-3/",
+    "properties": [],
+    "abstract": "This CSS3 Module describes how to insert content in a document."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-content/",
+    "properties": [],
+    "abstract": "This CSS3 Module describes how to insert content in a document."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-tables-3/",
+    "properties": [],
+    "abstract": "This CSS module defines a two-dimensional grid-based layout system, optimized for tabular data rendering. In the table layout model, each display node is assigned to an intersection between a set of consecutive rows and a set of consecutive columns, themselves generated from the table structure and sized according to their content."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-overscroll-1/",
+    "properties": [],
+    "abstract": "This module defines overscroll-behavior to control the behavior when the scroll position\nof a scroll container reaches the edge of the scrollport.\nThis allows content authors to hint that the boundary default actions,\nsuch as scroll chaining and overscroll, should not be triggered."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-break-4/",
+    "properties": [],
+    "abstract": "This module describes the fragmentation model that partitions a flow into pages, columns, or regions.\nIt builds on the Page model module and introduces and defines the fragmentation model.\nIt adds functionality for pagination, breaking variable fragment size and orientation, widows and orphans."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-break/",
+    "properties": [],
+    "abstract": "This module describes the fragmentation model that partitions a flow  into pages, columns, or regions.\nIt builds on the Page model module and introduces and defines the fragmentation model.\nIt adds functionality for pagination, breaking variable fragment size and orientation, widows and orphans."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-break/",
+    "properties": [],
+    "abstract": "This module describes the fragmentation model that partitions a flow  into pages, columns, or regions.\nIt builds on the Page model module and introduces and defines the fragmentation model.\nIt adds functionality for pagination, breaking variable fragment size and orientation, widows and orphans."
+  },
+  {
+    "thisSpecUrl": "https://drafts.fxtf.org/filter-effects-1/",
+    "properties": [],
+    "abstract": "Filter effects are a way of processing an element’s rendering before it is displayed in the document. Typically, rendering an element via CSS or SVG can conceptually be described as if the element, including its children, are drawn into a buffer (such as a raster image) and then that buffer is composited into the elements parent. Filters apply an effect before the compositing stage. Examples of such effects are blurring, changing color intensity and warping the image.Although originally designed for use in SVG, filter effects are a set of operations to apply on an image buffer and therefore can be applied to nearly any presentational environment, including CSS. They are triggered by a style instruction (the filter property). This specification describes filters in a manner that allows them to be used in content styled by CSS, such as HTML and SVG. It also defines a CSS property value function that produces a CSS <image> value."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/fxtf/filters/",
+    "properties": [],
+    "abstract": "Filter effects are a way of processing an element’s rendering before it is displayed in the document. Typically, rendering an element via CSS or SVG can conceptually be described as if the element, including its children, are drawn into a buffer (such as a raster image) and then that buffer is composited into the elements parent. Filters apply an effect before the compositing stage. Examples of such effects are blurring, changing color intensity and warping the image.Although originally designed for use in SVG, filter effects are a set of operations to apply on an image buffer and therefore can be applied to nearly any presentational environment, including CSS. They are triggered by a style instruction (the filter property). This specification describes filters in a manner that allows them to be used in content styled by CSS, such as HTML and SVG. It also defines a CSS property value function that produces a CSS <image> value."
+  },
+  {
+    "thisSpecUrl": "https://drafts.fxtf.org/geometry/",
+    "properties": [],
+    "abstract": "This specification provides basic geometric interfaces to represent points, rectangles, quadrilaterals and transformation matrices that can be used by other modules or specifications."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/fxtf/geometry/",
+    "properties": [],
+    "abstract": "This specification provides basic geometric interfaces to represent points, rectangles, quadrilaterals and transformation matrices that can be used by other modules or specifications."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-flexbox-1/",
+    "properties": [],
+    "abstract": "The specification describes a CSS box model optimized for user interface design. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated. Nesting of these boxes (horizontal inside vertical, or vertical inside horizontal) can be used to build layouts in two dimensions."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-flexbox/",
+    "properties": [],
+    "abstract": "The specification describes a CSS box model optimized for user interface design. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated. Nesting of these boxes (horizontal inside vertical, or vertical inside horizontal) can be used to build layouts in two dimensions."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-flexbox/",
+    "properties": [],
+    "abstract": "The specification describes a CSS box model optimized for user interface design. In the flex layout model, the children of a flex container can be laid out in any direction, and can “flex” their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. Both horizontal and vertical alignment of the children can be easily manipulated. Nesting of these boxes (horizontal inside vertical, or vertical inside horizontal) can be used to build layouts in two dimensions."
+  },
+  {
+    "thisSpecUrl": "http://drafts.csswg.org/css-shadow-parts/",
+    "properties": [],
+    "abstract": "This specification defines the ::part() pseudo-element on shadow hosts, allowing shadow hosts to selectively expose chosen elements from their shadow tree to the outside page for styling purposes."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-logical-1/",
+    "properties": [],
+    "abstract": "This module introduces logical properties and values that provide the author with the ability to control layout through logical, rather than physical, direction and dimension mappings. The module defines logical properties and values for the features defined in [CSS2]. These properties are writing-mode relative equivalents of their corresponding physical properties."
   }
 ]
