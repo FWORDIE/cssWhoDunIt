@@ -4687,5 +4687,55 @@
     "thisSpecUrl": "http://dev.w3.org/csswg/css-align/",
     "properties": [],
     "abstract": "This module contains the features of CSS relating to the alignment of boxes within their containers in the various CSS box layout models: block layout, table layout, flex layout, and grid layout. (The alignment of text and inline-level content is defined in [CSS-TEXT-3] and [CSS-INLINE-3].)"
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-position-3/",
+    "properties": [],
+    "abstract": "This module contains defines coordinate-based positioning and offsetting schemes of CSS: relative positioning, sticky positioning, absolute positioning, and fixed positioning."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-position/",
+    "properties": [],
+    "abstract": "This module contains defines coordinate-based positioning and offsetting schemes of CSS: relative positioning, sticky positioning, absolute positioning, and fixed positioning."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-position/",
+    "properties": [],
+    "abstract": "This module contains defines coordinate-based positioning and offsetting schemes of CSS: relative positioning, sticky positioning, absolute positioning, and fixed positioning."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-grid-3/",
+    "properties": [],
+    "abstract": "This module introduces masonry layout as an additional layout mode for CSS Grid containers."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-grid/",
+    "properties": [],
+    "abstract": "This CSS module defines a two-dimensional grid-based layout system, optimized for user interface design. In the grid layout model, the children of a grid container can be positioned into arbitrary slots in a predefined flexible or fixed-size layout grid. Level 2 expands Grid by adding “subgrid” capabilities for nested grids to participate in the sizing of their parent grids."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-grid/",
+    "properties": [],
+    "abstract": "This CSS module defines a two-dimensional grid-based layout system, optimized for user interface design. In the grid layout model, the children of a grid container can be positioned into arbitrary slots in a predefined flexible or fixed-size layout grid. Level 2 expands Grid by adding “subgrid” capabilities for nested grids to participate in the sizing of their parent grids."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-grid-2/",
+    "properties": [],
+    "abstract": "This CSS module defines a two-dimensional grid-based layout system, optimized for user interface design. In the grid layout model, the children of a grid container can be positioned into arbitrary slots in a predefined flexible or fixed-size layout grid. Level 2 expands Grid by adding “subgrid” capabilities for nested grids to participate in the sizing of their parent grids."
+  },
+  {
+    "thisSpecUrl": "https://drafts.csswg.org/css-display/",
+    "properties": [],
+    "abstract": "This module describes how the CSS formatting box tree is generated from the document element tree and defines the display property that controls it."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-display/",
+    "properties": [],
+    "abstract": "This module describes how the CSS formatting box tree is generated from the document element tree and defines the display property that controls it."
+  },
+  {
+    "thisSpecUrl": "http://dev.w3.org/csswg/css-display/",
+    "properties": [],
+    "abstract": "This module describes how the CSS formatting box tree is generated from the document element tree and defines the display property that controls it."
   }
 ]
