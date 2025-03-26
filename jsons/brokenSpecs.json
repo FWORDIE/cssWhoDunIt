@@ -3,18 +3,6 @@
     "types": [
       "Authors"
     ],
-    "sheet": "https://www.w3.org/TR/2014/WD-css-ruby-1-20140805/"
-  },
-  {
-    "types": [
-      "Authors"
-    ],
-    "sheet": "https://www.w3.org/TR/2014/CR-css-masking-1-20140826/"
-  },
-  {
-    "types": [
-      "Authors"
-    ],
-    "sheet": "https://www.w3.org/TR/2014/WD-css-counter-styles-3-20140826/"
+    "sheet": "http://dev.w3.org/fxtf/web-animations/"
   }
 ]

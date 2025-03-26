@@ -9,6 +9,19 @@ export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 	}
 
 	try {
+
+		// Code to get HTML from https://www.w3.org/TR/WD-CSS2-971104/
+		if ($("body").find('a:contains("HTML on line")').length > 0) {
+			const redirect =
+				sheet +
+				$("body").find('a:contains("HTML on line")').first().attr()
+					?.href;
+			sheet = redirect;
+			if (redirect) {
+				$ = await cheerio.fromURL(redirect);
+			}
+		}
+		
 		// find date with time tag
 		// e.g. https://www.w3.org/TR/css-shadow-parts-1/
 		let date = $(".head").find("time").text();

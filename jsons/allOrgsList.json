@@ -1,62 +1,130 @@
 [
   {
     "item": "Google",
-    "num": 120
+    "num": 711
   },
   {
     "item": "Invited Expert",
-    "num": 96
+    "num": 522
   },
   {
     "item": "Apple",
-    "num": 48
+    "num": 337
   },
   {
     "item": "Microsoft",
-    "num": 46
+    "num": 241
   },
   {
     "item": "Mozilla",
-    "num": 39
+    "num": 199
+  },
+  {
+    "item": "W3C",
+    "num": 178
   },
   {
     "item": "Adobe",
-    "num": 26
+    "num": 111
+  },
+  {
+    "item": "Opera Software",
+    "num": 85
   },
   {
     "item": "Bloomberg",
-    "num": 13
-  },
-  {
-    "item": "Antenna House",
-    "num": 9
+    "num": 75
   },
   {
     "item": "Disruptive Innovations",
-    "num": 8
+    "num": 26
   },
   {
-    "item": "Disruptive Innovations SARL",
-    "num": 7
+    "item": "LG Electronics",
+    "num": 19
   },
   {
-    "item": "Rakuten Inc.",
-    "num": 6
+    "item": "Stanford",
+    "num": 19
   },
   {
     "item": "Hixie.ch",
-    "num": 4
+    "num": 18
   },
   {
-    "item": "W3C Invited Expert",
-    "num": 4
+    "item": "Igalia",
+    "num": 16
   },
   {
     "item": "Hachette Livre",
+    "num": 16
+  },
+  {
+    "item": "Netscape/AOL",
+    "num": 16
+  },
+  {
+    "item": "Antenna House",
+    "num": 15
+  },
+  {
+    "item": "Quark Inc.",
+    "num": 10
+  },
+  {
+    "item": "Rakuten Inc.",
+    "num": 9
+  },
+  {
+    "item": "Hewlett-Packard",
+    "num": 9
+  },
+  {
+    "item": "Http://fantasai.inkedblade.net/contact",
+    "num": 8
+  },
+  {
+    "item": "Vivliostyle",
+    "num": 8
+  },
+  {
+    "item": "Mozilla.com",
+    "num": 8
+  },
+  {
+    "item": "W3C Invited Expert",
+    "num": 7
+  },
+  {
+    "item": "Canon",
+    "num": 6
+  },
+  {
+    "item": "BFO",
+    "num": 6
+  },
+  {
+    "item": "DAISY Consortium",
+    "num": 5
+  },
+  {
+    "item": "W3C Invited Experts",
     "num": 4
   },
   {
-    "item": "Adobe.com",
+    "item": "Dbaron.org",
+    "num": 4
+  },
+  {
+    "item": "Tetralogical",
+    "num": 4
+  },
+  {
+    "item": "W3.orgHåkon Wium Lie",
+    "num": 4
+  },
+  {
+    "item": "Apple formerly Mozilla",
     "num": 3
   },
   {
@@ -64,19 +132,59 @@
     "num": 3
   },
   {
-    "item": "LG Electronics",
+    "item": "Netscape.com",
     "num": 3
   },
   {
-    "item": "W3C",
+    "item": "Cox.com",
     "num": 2
   },
   {
-    "item": "Netscape/AOL",
+    "item": "NIST",
     "num": 2
   },
   {
-    "item": "Daniel Glazman",
+    "item": "Bitstream",
+    "num": 2
+  },
+  {
+    "item": "Adobe Systems&#44; Inc.",
+    "num": 2
+  },
+  {
+    "item": "Https://annevankesteren.nl/contact",
+    "num": 2
+  },
+  {
+    "item": "Fronteers",
+    "num": 1
+  },
+  {
+    "item": "",
+    "num": 1
+  },
+  {
+    "item": "Agfa",
+    "num": 1
+  },
+  {
+    "item": "Http://www.xanthir.com/contact",
+    "num": 1
+  },
+  {
+    "item": "Invited Expert formerly Mozilla",
+    "num": 1
+  },
+  {
+    "item": "Mozilla formerly Kozea",
+    "num": 1
+  },
+  {
+    "item": "Kozea",
+    "num": 1
+  },
+  {
+    "item": "Quark.com",
     "num": 1
   },
   {
@@ -84,7 +192,11 @@
     "num": 1
   },
   {
-    "item": "MicrosoftCorporation",
+    "item": "Facebook",
+    "num": 1
+  },
+  {
+    "item": "Https://gsnedders.com",
     "num": 1
   }
 ]

@@ -1,3 +1,31 @@
-https://www.w3.org/TR/2014/WD-css-counter-styles-3-20140826/
-https://www.w3.org/TR/2014/CR-css-masking-1-20140826/
-https://www.w3.org/TR/2014/WD-css-ruby-1-20140805/
+https://www.w3.org/TR/2016/WD-css-typed-om-1-20160607/
+https://www.w3.org/TR/2011/WD-cssom-20110712/
+https://www.w3.org/TR/2011/WD-cssom-view-20110804/
+
+[
+
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2008/CR-css3-namespace-20080523/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2008/WD-css3-namespace-20080215/"
+  },
+  {
+    "types": [
+      "ERROR: Response status code 503: Service Unavailable"
+    ],
+    "sheet": "http://dev.w3.org/csswg/css3-fonts/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/web-animations/"
+  }
+]

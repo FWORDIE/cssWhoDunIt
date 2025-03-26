@@ -11,6 +11,18 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 	try {
 		const editors: Authors[] = [];
 
+		// Code to get HTML from https://www.w3.org/TR/WD-CSS2-971104/
+		if ($("body").find('a:contains("HTML on line")').length > 0) {
+			const redirect =
+				sheet +
+				$("body").find('a:contains("HTML on line")').first().attr()
+					?.href;
+			sheet = redirect;
+			if (redirect) {
+				$ = await cheerio.fromURL(redirect);
+			}
+		}
+
 		// This code fails becuase it also finds former Editors
 		// e.g. https://www.w3.org/TR/css-paint-api-1/
 		// //e.g. https://www.w3.org/TR/css-contain-3/
@@ -63,8 +75,14 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 			let item = $(editorsHeader);
 			while (stillSearching) {
 				item = $(item).next();
-				if (item.length < 1 || item.prop("tagName") == "DT" || $(item).text().includes("(")) {
-					stillSearching = false;
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).text().includes("(")
+				) {
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					const string = $(item).text().split(",");
 					if (
@@ -76,7 +94,6 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 						let name = $(item).text().split(",")[0]?.trim() || "";
 						const org = $(item).text().split(",")[1]?.trim() || "";
 						const link = $(item).find("a")?.prop("href") || "";
-						console.log(name)
 
 						if (name.includes("(") && name.includes(")")) {
 							name = name.split("(")[0];
@@ -111,7 +128,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					$(item).children().length < 2 ||
 					$(item).text().includes("<") // fix for https://www.w3.org/TR/2013/WD-cssom-20131205/
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					const name = $(item).children().first().text().trim() || "";
 					const org =
@@ -144,14 +163,15 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					item.length < 1 ||
 					item.prop("tagName") == "DT" ||
 					$(item).children().length < 2 ||
-					$(item).text().includes("<") // fix for https://www.w3.org/TR/2013/WD-cssom-20131205/ ||
-					|| $(item).text().includes("(")
+					$(item).text().includes("<") || // fix for https://www.w3.org/TR/2013/WD-cssom-20131205/ ||
+					$(item).text().includes("(")
 				) {
 					if (item.prop("tagName") != "DD") {
-						stillSearching = false;
+						if (item.prop("tagName") != "DD") {
+							stillSearching = false;
+						}
 					}
 				} else {
-
 					const name = $(item).children().first().text().trim() || "";
 					const org = $(item).children().next()?.text().trim() || "";
 					const link = $(item).find("a").prop("href") || "";
@@ -185,7 +205,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					$(item).find("a").length > 0 ||
 					$(item).find(".p-name").length > 0
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					const name = $(item).text().split("(")[0].trim() || "";
 					const org = $(item).children().first().text().trim() || "";
@@ -220,9 +242,10 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					$(item).find(".p-name").length < 1 ||
 					$(item).find(".p-org").length < 1
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
-
 					const name =
 						$(item).find(".p-name").first().text().trim() || "";
 					const org =
@@ -254,11 +277,12 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					item.length < 1 ||
 					item.prop("tagName") == "DT" ||
 					$(item).text().split("(")[1] === undefined ||
-					$(item).text().includes('former')
+					$(item).text().includes("former")
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
-
 					const name = $(item).text().split("(")[0].trim() || "";
 					const org = $(item).text().split("(")[1].trim() || "";
 					const link = $(item).find("a").prop("href") || "";
@@ -290,7 +314,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					item.prop("tagName") == "DT" ||
 					$(item).find(".p-name").length < 1
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					const name = $(item).children().first().text() || "";
 					const org = $(item).find("a").prop("href") || "";
@@ -325,7 +351,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					($(item).find(".fn").length < 1 &&
 						$(item).find(".family-name").length < 1) // thanks daniel https://www.w3.org/TR/2008/WD-css3-mediaqueries-20081015/
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					let name = $(item).children().first().text() || "";
 					const org = $(item).children().next().text() || "";
@@ -374,7 +402,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					$(item).text().includes("<") ||
 					$(item).find(".p-name").length > 0
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					let name = $(item).children().first().text().trim() || "";
 					const org =
@@ -412,7 +442,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					$(item).text().includes("<") ||
 					$(item).find(".p-name").length > 0
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					let strings = $(item).text().split(",");
 					if (strings.length > 1) {
@@ -449,7 +481,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					$(item).text().includes("<") ||
 					$(item).find(".p-name").length > 0
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					let strings = $(item).text().split("(");
 					if (strings.length > 1) {
@@ -492,7 +526,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					$(item).find(".p-name").length < 1 ||
 					$(item).find(".h-org").length < 1
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					let strings = $(item).text().split("<");
 					if (strings.length > 1) {
@@ -527,18 +563,143 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 
 			while (stillSearching) {
 				item = $(item).next();
-				console.log(item.text());
 				if (
 					item.length < 1 ||
 					item.prop("tagName") == "DT" ||
 					$(item).find(".p-name").length < 1 ||
 					$(item).find(".p-org").length < 1
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					let name = $(item).find(".p-name").text() || "";
 					const org = $(item).find(".p-org").text() || "";
 					const link = $(item).find("a").prop("href") || "";
+					if (name.includes("(") && name.includes(")")) {
+						name = name.split("(")[0];
+					}
+					// TODO: Write a function to get org from email
+					// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+					if (name) {
+						const editorInfo = {
+							name: name,
+							org: org,
+							link: link,
+						};
+						editors.push(editorInfo);
+					}
+				}
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		//e.g. https://www.w3.org/TR/2014/WD-css-counter-styles-3-20140826/
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader);
+
+			while (stillSearching) {
+				item = $(item).next();
+
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).find(".p-name").length < 1 ||
+					$(item).find(".p-org").length < 1
+				) {
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
+				} else {
+					let name = $(item).find(".p-name").text() || "";
+					const org = $(item).find(".p-org").text() || "";
+					const link = $(item).find("a").prop("href") || "";
+					if (name.includes("(") && name.includes(")")) {
+						name = name.split("(")[0];
+					}
+					// TODO: Write a function to get org from email
+					// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+					if (name) {
+						const editorInfo = {
+							name: name,
+							org: org,
+							link: link,
+						};
+						editors.push(editorInfo);
+					}
+				}
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		//e.g. https://www.w3.org/TR/2016/WD-css-typed-om-1-20160607/
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader);
+
+			while (stillSearching) {
+				item = $(item).next();
+
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).find(".p-name").length < 1 ||
+					$(item).find(".u-email").length < 1
+				) {
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
+				} else {
+					let name = $(item).find(".p-name").text() || "";
+					const org = $(item).find(".p-org").text() || "";
+					const link = $(item).find("a").prop("href") || "";
+					if (name.includes("(") && name.includes(")")) {
+						name = name.split("(")[0];
+					}
+					// TODO: Write a function to get org from email
+					// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+					if (name) {
+						const editorInfo = {
+							name: name,
+							org: org,
+							link: link,
+						};
+						editors.push(editorInfo);
+					}
+				}
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		//e.g. https://www.w3.org/TR/2011/WD-cssom-20110712/
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader);
+
+			while (stillSearching) {
+				item = $(item).next();
+
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).find(".p-name").length > 0 ||
+					$(item).find(".u-email").length > 0
+				) {
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
+				} else {
+					let name = $(item).children().first().text() || "";
+					const org = $(item).children().first().next().text() || "";
+					const link =
+						$(item).children().first().next().next().text() || "";
 					if (name.includes("(") && name.includes(")")) {
 						name = name.split("(")[0];
 					}
@@ -572,7 +733,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					item.prop("tagName") == "DT" ||
 					$(item).text().includes("<")
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					let strings = $(item).text().split(",");
 					if (strings.length > 1) {
@@ -610,7 +773,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 			while (stillSearching) {
 				item = $(item).next();
 				if (item.length < 1 || item.prop("tagName") == "DT") {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
 					let strings = $(item).text().split("<");
 					if (strings.length > 1) {
@@ -705,7 +870,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 				item = $(item).next();
 				if (!$(item).html()?.includes("<br>")) {
 					if (item.length < 1 || item.prop("tagName") == "DT") {
-						stillSearching = false;
+						if (item.prop("tagName") != "DD") {
+							stillSearching = false;
+						}
 					} else {
 						let strings = $(item).text().split(",");
 						if (strings.length > 1) {
@@ -725,7 +892,9 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 						}
 					}
 				} else {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				}
 			}
 			if (editors.length > 0) {
@@ -788,6 +957,72 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 				}
 			}
 
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		//e.g. https://www.w3.org/TR/WD-CSS2-971104/cover.html
+		editorsHeader = $('h2:contains("Editors")').first();
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader).next().children().first();
+
+			while (stillSearching) {
+				if (item.length < 1 || item.prop("tagName") == "H2") {
+					stillSearching = false;
+				} else {
+					let strings = $(item).text().split("<");
+					if (strings.length > 1) {
+						const name = strings[0].trim() || "";
+						const org = strings[1].trim() || "";
+						const link = strings[1].trim() || "";
+
+						// TODO: Write a function to get org from email
+						// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+						if (name) {
+							const editorInfo = {
+								name: name,
+								org: org,
+								link: link,
+							};
+							editors.push(editorInfo);
+						}
+					}
+				}
+				item = $(item).next();
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		//e.g. https://www.w3.org/TR/2008/CR-css3-namespace-20080523/
+		editorsHeader = $('dt:contains("Editors:")').first();
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader).next();
+
+			while (stillSearching) {
+				if (item.length < 1 || item.prop("tagName") == "DT") {
+					stillSearching = false;
+				} else {
+					const name = $(item).children().first().text().trim() || "";
+					const org = $(item).find("a").prop("href") || "";
+					const link = $(item).find("a").prop("href") || "";
+					// TODO: Write a function to get org from email
+					// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+					if (name) {
+						const editorInfo = {
+							name: name,
+							org: org,
+							link: link,
+						};
+						editors.push(editorInfo);
+					}
+				}
+				item = $(item).next();
+			}
 			if (editors.length > 0) {
 				return cleaner(editors);
 			}

@@ -1,102 +1,322 @@
 [
   {
     "item": "Elika J. Etemad / fantasai",
-    "num": 63
+    "num": 432
   },
   {
     "item": "Tab Atkins Jr.",
-    "num": 44
-  },
-  {
-    "item": "Koji Ishii",
-    "num": 33
-  },
-  {
-    "item": "Tantek Çelik",
-    "num": 32
+    "num": 310
   },
   {
     "item": "Florian Rivoal",
-    "num": 25
-  },
-  {
-    "item": "Elika J. Etemad",
-    "num": 22
+    "num": 176
   },
   {
     "item": "Rossen Atanassov",
-    "num": 22
+    "num": 104
+  },
+  {
+    "item": "Chris Lilley",
+    "num": 100
+  },
+  {
+    "item": "Koji Ishii",
+    "num": 94
   },
   {
     "item": "Tab Atkins",
-    "num": 20
+    "num": 93
   },
   {
-    "item": "Daniel Glazman",
-    "num": 19
+    "item": "L. David Baron",
+    "num": 78
+  },
+  {
+    "item": "Tantek Çelik",
+    "num": 70
+  },
+  {
+    "item": "Tab Atkins-Bittner",
+    "num": 69
   },
   {
     "item": "Dean Jackson",
-    "num": 16
-  },
-  {
-    "item": "Dirk Schulze",
-    "num": 15
-  },
-  {
-    "item": "Alan Stearns",
-    "num": 11
-  },
-  {
-    "item": "Ian Hickson",
-    "num": 11
-  },
-  {
-    "item": "Simon Fraser",
-    "num": 11
-  },
-  {
-    "item": "Rune Lillesveen",
-    "num": 9
-  },
-  {
-    "item": "Theresa OConnor",
-    "num": 7
+    "num": 69
   },
   {
     "item": "Brian Birtles",
-    "num": 7
+    "num": 62
   },
   {
-    "item": "Greg Whitworth",
-    "num": 6
+    "item": "Bert Bos",
+    "num": 59
   },
   {
-    "item": "Ian Kilpatrick",
-    "num": 5
+    "item": "Elika J. Etemad",
+    "num": 55
   },
   {
-    "item": "Shinyu Murakami",
-    "num": 5
+    "item": "Håkon Wium Lie",
+    "num": 51
+  },
+  {
+    "item": "Dirk Schulze",
+    "num": 46
+  },
+  {
+    "item": "Alan Stearns",
+    "num": 40
+  },
+  {
+    "item": "Daniel Glazman",
+    "num": 30
+  },
+  {
+    "item": "Miriam E. Suzanne",
+    "num": 30
+  },
+  {
+    "item": "Lea Verou",
+    "num": 29
+  },
+  {
+    "item": "Ian Hickson",
+    "num": 27
+  },
+  {
+    "item": "Robert Flack",
+    "num": 23
+  },
+  {
+    "item": "Matt Rakow",
+    "num": 22
+  },
+  {
+    "item": "John Daggett",
+    "num": 21
   },
   {
     "item": "Fantasai",
-    "num": 4
+    "num": 17
   },
   {
-    "item": "Jen Simmons",
-    "num": 4
+    "item": "Simon Fraser",
+    "num": 17
   },
   {
-    "item": "Sanket Joshi",
-    "num": 4
-  },
-  {
-    "item": "Megan Gardner",
-    "num": 4
+    "item": "Rachel Andrew",
+    "num": 16
   },
   {
     "item": "Dave Cramer",
+    "num": 16
+  },
+  {
+    "item": "Adam Argyle",
+    "num": 16
+  },
+  {
+    "item": "Håkon Lie",
+    "num": 16
+  },
+  {
+    "item": "Myles C. Maxfield",
+    "num": 16
+  },
+  {
+    "item": "Jihye Hong",
+    "num": 15
+  },
+  {
+    "item": "Jacob Rossi",
+    "num": 15
+  },
+  {
+    "item": "Ian Kilpatrick",
+    "num": 14
+  },
+  {
+    "item": "Khushal Sagar",
+    "num": 13
+  },
+  {
+    "item": "Antoine Quint",
+    "num": 13
+  },
+  {
+    "item": "Alex Mogilevsky",
+    "num": 12
+  },
+  {
+    "item": "Shane Stephens",
+    "num": 12
+  },
+  {
+    "item": "Anne van Kesteren",
+    "num": 12
+  },
+  {
+    "item": "Peter Linss",
+    "num": 12
+  },
+  {
+    "item": "Oriol Brufau",
+    "num": 11
+  },
+  {
+    "item": "Michel Suignard",
+    "num": 11
+  },
+  {
+    "item": "John Williams",
+    "num": 11
+  },
+  {
+    "item": "Theresa OConnor",
+    "num": 11
+  },
+  {
+    "item": "Jen Simmons",
+    "num": 10
+  },
+  {
+    "item": "Vladimir Levin",
+    "num": 10
+  },
+  {
+    "item": "Greg Whitworth",
+    "num": 10
+  },
+  {
+    "item": "Emilio Cobos Álvarez",
+    "num": 10
+  },
+  {
+    "item": "Chris Harrelson",
+    "num": 10
+  },
+  {
+    "item": "Rik Cabanier",
+    "num": 10
+  },
+  {
+    "item": "Simon Sapin",
+    "num": 10
+  },
+  {
+    "item": "David Hyatt",
+    "num": 10
+  },
+  {
+    "item": "Chris Marrin",
+    "num": 10
+  },
+  {
+    "item": "Rune Lillesveen",
+    "num": 10
+  },
+  {
+    "item": "Jake Archibald",
+    "num": 9
+  },
+  {
+    "item": "Shinyu Murakami",
+    "num": 9
+  },
+  {
+    "item": "Simon Pieters",
+    "num": 9
+  },
+  {
+    "item": "Brad Kemper",
+    "num": 9
+  },
+  {
+    "item": "Una Kravets",
+    "num": 9
+  },
+  {
+    "item": "Stephen McGruer",
+    "num": 9
+  },
+  {
+    "item": "Vincent Hardy",
+    "num": 9
+  },
+  {
+    "item": "Xidorn Quan",
+    "num": 8
+  },
+  {
+    "item": "Botond Ballo",
+    "num": 7
+  },
+  {
+    "item": "Olga Gerchikov",
+    "num": 7
+  },
+  {
+    "item": "Steve Zilles",
+    "num": 6
+  },
+  {
+    "item": "Nikos Andronikos",
+    "num": 6
+  },
+  {
+    "item": "Mike Bremford",
+    "num": 6
+  },
+  {
+    "item": "Majid Valipour",
+    "num": 6
+  },
+  {
+    "item": "Brandon Stewart",
+    "num": 5
+  },
+  {
+    "item": "Daniel Weck",
+    "num": 5
+  },
+  {
+    "item": "Sanket Joshi",
+    "num": 5
+  },
+  {
+    "item": "Megan Gardner",
+    "num": 5
+  },
+  {
+    "item": "Steve Kobes",
+    "num": 5
+  },
+  {
+    "item": "Hyojin Song",
+    "num": 5
+  },
+  {
+    "item": "Markus Mielke",
+    "num": 4
+  },
+  {
+    "item": "Noam Rosenthal",
+    "num": 4
+  },
+  {
+    "item": "Marcin Sawicki",
+    "num": 4
+  },
+  {
+    "item": "François Remy",
+    "num": 4
+  },
+  {
+    "item": "Léonie Watson",
+    "num": 4
+  },
+  {
+    "item": "Dave Raggett",
     "num": 4
   },
   {
@@ -104,11 +324,35 @@
     "num": 4
   },
   {
-    "item": "Michel Suignard",
+    "item": "Erik Dahlström",
+    "num": 4
+  },
+  {
+    "item": "Håkon WLie",
+    "num": 4
+  },
+  {
+    "item": "Elika Etemad",
+    "num": 4
+  },
+  {
+    "item": "Arron Eicholz",
     "num": 3
   },
   {
-    "item": "Vincent Hardy",
+    "item": "Phil Cupp",
+    "num": 3
+  },
+  {
+    "item": "Daniel Libby",
+    "num": 3
+  },
+  {
+    "item": "Robert Stevahn",
+    "num": 3
+  },
+  {
+    "item": "Jim Bigelow",
     "num": 3
   },
   {
@@ -120,35 +364,51 @@
     "num": 3
   },
   {
-    "item": "Steve Kobes",
+    "item": "Fergal Daly",
     "num": 3
   },
   {
-    "item": "Tab Atkins-Bittner",
+    "item": "Soonbo Han until June 2015",
     "num": 3
   },
   {
-    "item": "Jihye Hong",
+    "item": "Håkon W Lie",
     "num": 3
+  },
+  {
+    "item": "Johannes Wilm",
+    "num": 3
+  },
+  {
+    "item": "Marc Attinasi",
+    "num": 3
+  },
+  {
+    "item": "Glenn Adams",
+    "num": 2
+  },
+  {
+    "item": "Tim Boland",
+    "num": 2
+  },
+  {
+    "item": "Melinda Grant",
+    "num": 2
+  },
+  {
+    "item": "Alex Danilo",
+    "num": 2
+  },
+  {
+    "item": "Sylvain Galineau",
+    "num": 2
+  },
+  {
+    "item": "Claudio Santambrogio",
+    "num": 2
   },
   {
     "item": "Richard Ishida",
-    "num": 2
-  },
-  {
-    "item": "Shane Stephens",
-    "num": 2
-  },
-  {
-    "item": "L. David Baron",
-    "num": 2
-  },
-  {
-    "item": "David Hyatt",
-    "num": 2
-  },
-  {
-    "item": "Chris Marrin",
     "num": 2
   },
   {
@@ -160,8 +420,76 @@
     "num": 2
   },
   {
-    "item": "Majid Valipour",
+    "item": "Sebastian Zartner",
     "num": 2
+  },
+  {
+    "item": "Elika J Etemad",
+    "num": 2
+  },
+  {
+    "item": "Howcome@operasoftware.com",
+    "num": 1
+  },
+  {
+    "item": "Eric Willigers",
+    "num": 1
+  },
+  {
+    "item": "Paul Nelson",
+    "num": 1
+  },
+  {
+    "item": "Anton Prowse",
+    "num": 1
+  },
+  {
+    "item": "Elliot Sprehn",
+    "num": 1
+  },
+  {
+    "item": "Naina Raisinghani",
+    "num": 1
+  },
+  {
+    "item": "Microsoft Corporation",
+    "num": 1
+  },
+  {
+    "item": "Brad Pettit",
+    "num": 1
+  },
+  {
+    "item": "Brad Chase",
+    "num": 1
+  },
+  {
+    "item": "Chuck Rowe",
+    "num": 1
+  },
+  {
+    "item": "David Meltzer",
+    "num": 1
+  },
+  {
+    "item": "Glen Rippel",
+    "num": 1
+  },
+  {
+    "item": "Randy Polen",
+    "num": 1
+  },
+  {
+    "item": "Jacob Refstrup",
+    "num": 1
+  },
+  {
+    "item": "Dmitry Baranovskiy",
+    "num": 1
+  },
+  {
+    "item": "Electricité de France",
+    "num": 1
   },
   {
     "item": "Luke Macpherson",
@@ -169,6 +497,26 @@
   },
   {
     "item": "Edward O’Connor",
+    "num": 1
+  },
+  {
+    "item": "Ian Jacobs",
+    "num": 1
+  },
+  {
+    "item": "Luke Warlow",
+    "num": 1
+  },
+  {
+    "item": "Bramus Van Damme",
+    "num": 1
+  },
+  {
+    "item": "Benoit Girard",
+    "num": 1
+  },
+  {
+    "item": "Sam Sneddon",
     "num": 1
   }
 ]
