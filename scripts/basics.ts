@@ -100,12 +100,13 @@ export const orgTable = [
 		"Chromium.org",
 		"Google Inc.",
 		"Google.com",
+		"Gmail.com",
 	],
 	["Invited Expert"],
 	["Apple", "Apple Inc", "Apple.com", "Apple Inc."],
 	["Bloomberg", "On behalf of Bloomberg"],
-	["Mozilla", "Mozilla Foundation", "Mozilla Japan"],
-	["Microsoft", "Microsoft Corporation", "Microsoft.com"],
+	["Mozilla", "Mozilla Foundation", "Mozilla Japan", "Mozilla Corporation"],
+	["Microsoft", "Microsoft Corporation", "Microsoft.com","MicrosoftCorporation"],
 	["W3C", "W3", "W3.org"],
 	["Opera Software", "opera", "Opera Software ASA", "Opera.com"],
 	[
@@ -118,9 +119,44 @@ export const orgTable = [
 		"Adobe Inc",
 		"Adobe Systems Inc.",
 		"Then of Adobe Systems Inc.",
+		"Adobe.com",
 	],
 	["Netscape/AOL", "Netscape Communications"],
 	["Igalia"],
 	["Stanford", "stanford", "Cs.stanford.edu"],
 	["Hewlett-Packard", "Boi.hp.com","HP"],
+	["Hachette Livre"],
+	["Disruptive Innovations", "Disruptive-innovations.com"],
+	["LG Electronics"],
+	["Canon", "Canon Information Systems Research Australia"],
+	["DAISY Consortium"],
+	["Cox"],
+	["NIST", "National Institute of Standarts and Technology"],
+    ["Tetralogical"],
+	["Vivliostyle"],
+	["Agfa"],
+	["Kozea"],
+	["Antenna House"],
+	["Quark Inc.","Quark"],
+	["Bitstream"],
+	["BFO"],
+	["Rakuten"],
+	["Electricité de France"],
+
+
+
+
+
+
+	
+];
+
+export const authorTable = [
+	["Elika J. Etemad fantasai", "Elika J. Etemad / fantasai", "Elika J. Etemad", "Fantasai",  ],
+	["Tab Atkins", "Tab Atkins Jr.", "Tab Atkins-Bittner"],
+	["Rossen Atanassov"],
+	["Florian Rivoal"],
+	["Koji Ishii", "Koji Ishii Rakuten"]
+
+
 ];

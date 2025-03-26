@@ -1,164 +1,86 @@
 [
   {
     "types": [
-      "ABSTRACT"
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2014/WD-geometry-1-20140918/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2014/WD-css-flexbox-1-20140925/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2004/CR-CSS21-20040225/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-CSS21-20030915/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2003/WD-CSS21-20030128/"
+  },
+  {
+    "types": [
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2002/WD-CSS21-20020802/"
+  },
+  {
+    "types": [
+      "Authors"
     ],
     "sheet": "https://www.w3.org/TR/WD-CSS2-971104/"
   },
   {
     "types": [
-      "ERROR: Response status code 400: Bad Request"
+      "Authors"
     ],
-    "sheet": "http://dev.w3.org/csswg/css3-align/"
+    "sheet": "https://www.w3.org/TR/2008/CR-css3-namespace-20080523/"
   },
   {
     "types": [
-      "ERROR: Response status code 400: Bad Request"
+      "Authors"
+    ],
+    "sheet": "https://www.w3.org/TR/2008/WD-css3-namespace-20080215/"
+  },
+  {
+    "types": [
+      "ERROR: "
     ],
     "sheet": "http://dev.w3.org/csswg/css3-positioning/"
   },
   {
     "types": [
-      "ERROR: Response status code 400: Bad Request"
+      "ERROR: "
     ],
-    "sheet": "http://dev.w3.org/csswg/css3-grid-layout/"
+    "sheet": "https://drafts.csswg.org/css-grid-3/"
   },
   {
     "types": [
-      "ERROR: Response status code 400: Bad Request"
+      "ERROR: "
     ],
-    "sheet": "http://dev.w3.org/csswg/css3-grid-align/"
+    "sheet": "https://drafts.csswg.org/css-grid/"
   },
   {
     "types": [
-      "ERROR: Response status code 400: Bad Request"
+      "ERROR: Headers Timeout Error"
     ],
-    "sheet": "http://dev.w3.org/csswg/css3-values/"
+    "sheet": "http://dev.w3.org/csswg/css-transitions/"
   },
   {
     "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-conditional/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-text/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-cascade/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-mediaqueries/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-background/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-fonts/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-images/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css4-images/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-transitions/"
-  },
-  {
-    "types": [
-      "ABSTRACT"
+      "Authors"
     ],
     "sheet": "http://dev.w3.org/fxtf/web-animations/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-animations/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "https://drafts.csswg.org/css3-speech/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-ruby/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/selectors4/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-sizing/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-transforms/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-ui/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-lists/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-writing-modes/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-break/"
-  },
-  {
-    "types": [
-      "ERROR: Response status code 400: Bad Request"
-    ],
-    "sheet": "http://dev.w3.org/csswg/css3-flexbox/"
   }
 ]
