@@ -125,30 +125,7 @@ export const orgTable = [
 	["Igalia"],
 	["Stanford", "stanford", "Cs.stanford.edu"],
 	["Hewlett-Packard", "Boi.hp.com","HP"],
-	["Hachette Livre"],
-	["Disruptive Innovations", "Disruptive-innovations.com"],
-	["LG Electronics"],
-	["Canon", "Canon Information Systems Research Australia"],
-	["DAISY Consortium"],
-	["Cox"],
-	["NIST", "National Institute of Standarts and Technology"],
-    ["Tetralogical"],
-	["Vivliostyle"],
-	["Agfa"],
-	["Kozea"],
-	["Antenna House"],
-	["Quark Inc.","Quark"],
-	["Bitstream"],
-	["BFO"],
-	["Rakuten"],
-	["Electricité de France"],
-
-
-
-
-
-
-	
+	["Rivoal", "Rivoal.net"]
 ];
 
 export const authorTable = [

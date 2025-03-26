@@ -1,3652 +1,66 @@
 [
   {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-break-4/",
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-ruby-1-20140805/",
     "properties": []
   },
   {
     "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-break-4-20181218/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-break-3-20181204/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-break-3-20170209/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2016/CR-css-break-3-20160114/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Http://www.microsoft.com/"
-      },
-      {
-        "name": "Elika J. Etemad",
-        "org": "Mozilla",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-break-20150129/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Http://www.microsoft.com/"
-      },
-      {
-        "name": "Elika J. Etemad",
-        "org": "Mozilla",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css3-break-20140116/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Http://www.microsoft.com/"
-      },
-      {
-        "name": "Elika J. Etemad",
-        "org": "Mozilla",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-break-20120823/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Http://www.microsoft.com/"
-      },
-      {
-        "name": "Elika J. Etemad",
-        "org": "Mozilla",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-break-20120228/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-break-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/filter-effects-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181218/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-filter-effects-1-20181124/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      },
-      {
-        "name": "Erik Dahlström",
-        "org": "Opera Software",
-        "link": "Mailto:ed@opera.com"
-      },
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      },
-      {
-        "name": "Erik Dahlström",
-        "org": "Opera Software",
-        "link": "Mailto:ed@opera.com"
-      },
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-filter-effects-1-20131126/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": ""
-      },
-      {
-        "name": "Erik Dahlström",
-        "org": "Opera Software",
-        "link": ""
-      },
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-filter-effects-20130523/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Vincent Hardy",
-        "org": "Adobe",
-        "link": ""
-      },
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": ""
-      },
-      {
-        "name": "Erik Dahlström",
-        "org": "Opera Software",
-        "link": ""
-      },
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-filter-effects-20121025/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Chris Harrelson",
-        "org": "Google",
-        "link": "Mailto:chrishtr@chromium.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/geometry-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Chris Harrelson",
-        "org": "Google",
-        "link": "Mailto:chrishtr@chromium.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-geometry-1-20181204/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Simon Pieters",
-        "org": "Opera Software",
-        "link": "Mailto:simonp@opera.com"
-      },
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Rik Cabanier",
-        "org": "Adobe",
-        "link": "Mailto:cabanier@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/CR-geometry-1-20141125/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-geometry-1-20140918/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Simon Pieters",
-        "org": "Opera Software",
-        "link": "Mailto:simonp@opera.com"
-      },
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Rik Cabanier",
-        "org": "Adobe",
-        "link": "Mailto:rcabanier@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-geometry-1-20140626/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Simon Pieters",
-        "org": "Opera Software",
-        "link": "Mailto:simonp@opera.com"
-      },
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Rik Cabanier",
-        "org": "Adobe",
-        "link": "Mailto:rcabanier@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-geometry-1-20140522/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-flexbox-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181119/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-flexbox-1-20181108/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-flexbox-1-20171019/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2016/CR-css-flexbox-1-20160526/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2016/CR-css-flexbox-1-20160301/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Fantasai",
-        "org": "Mozilla",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css-flexbox-1-20150514/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-flexbox-1-20140925/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Fantasai",
-        "org": "Mozilla",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-flexbox-1-20140325/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://www.xanthir.com/contact"
-      },
       {
         "name": "Elika J. Etemad",
         "org": "Mozilla",
         "link": "Http://fantasai.inkedblade.net/contact"
       },
       {
-        "name": "Alex Mogilevsky",
-        "org": "Microsoft",
-        "link": "Mailto:alexmog@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://www.xanthir.com/contact"
-      },
-      {
-        "name": "Elika J. Etemad",
-        "org": "Mozilla",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Alex Mogilevsky",
-        "org": "Microsoft",
-        "link": "Mailto:alexmog@microsoft.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-flexbox-20120612/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://www.xanthir.com/contact"
-      },
-      {
-        "name": "Alex Mogilevsky",
-        "org": "Microsoft",
-        "link": "Mailto:alexmog@microsoft.com"
-      },
-      {
-        "name": "L. David Baron",
-        "org": "Mozilla",
-        "link": "Mailto:dbaron@dbaron.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-flexbox-20120322/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://www.xanthir.com/contact"
-      },
-      {
-        "name": "Alex Mogilevsky",
-        "org": "Microsoft",
-        "link": "Mailto:alexmog@microsoft.com"
-      },
-      {
-        "name": "L. David Baron",
-        "org": "Mozilla",
-        "link": "Mailto:dbaron@dbaron.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-flexbox-20111129/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Mailto:jackalmage@gmail.com"
-      },
-      {
-        "name": "Alex Mogilevsky",
-        "org": "Microsoft",
-        "link": "Mailto:alexmog@microsoft.com"
-      },
-      {
-        "name": "L. David Baron",
-        "org": "Mozilla",
-        "link": "Mailto:dbaron@dbaron.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-flexbox-20110322/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "L. David Baron",
-        "org": "Mozilla",
-        "link": "Mailto:dbaron@dbaron.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2009/WD-css3-flexbox-20090723/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Fergal Daly",
-        "org": "Google",
-        "link": "Mailto:fergal@chromium.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-shadow-parts-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Fergal Daly",
-        "org": "Google",
-        "link": "Mailto:fergal@chromium.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-logical-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-logical-1-20180827/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-logical-1-20170518/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Greg Whitworth",
-        "org": "Microsoft",
-        "link": "Mailto:gwhit@microsoft.com"
-      },
-      {
-        "name": "Ian Kilpatrick",
-        "org": "Google",
-        "link": "Mailto:ikilpatrick@chromium.org"
-      },
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Shane Stephens",
-        "org": "Google",
-        "link": "Mailto:shanestephens@google.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-layout-api-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Greg Whitworth",
-        "org": "Microsoft",
-        "link": "Mailto:gwhit@microsoft.com"
-      },
-      {
-        "name": "Ian Kilpatrick",
-        "org": "Google",
-        "link": "Mailto:ikilpatrick@chromium.org"
-      },
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Shane Stephens",
-        "org": "Google",
-        "link": "Mailto:shanestephens@google.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-layout-api-1-20180412/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Koji Ishii",
-        "org": "Google",
-        "link": "Mailto:kojiishi@gmail.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-rhythm-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Koji Ishii",
-        "org": "Google",
-        "link": "Mailto:kojiishi@gmail.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-rhythm-1-20170302/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Hyojin Song",
-        "org": "LG Electronics",
-        "link": "Mailto:hyojin22.song@lge.com"
-      },
-      {
-        "name": "Jihye Hong",
-        "org": "LG Electronics",
-        "link": "Mailto:jh.hong@lge.com"
-      },
-      {
-        "name": "Soonbo Han until June 2015",
-        "org": "LG Electronics",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-round-display-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Hyojin Song",
-        "org": "LG Electronics",
-        "link": "Mailto:hyojin22.song@lge.com"
-      },
-      {
-        "name": "Jihye Hong",
-        "org": "LG Electronics",
-        "link": "Mailto:jh.hong@lge.com"
-      },
-      {
-        "name": "Soonbo Han until June 2015",
-        "org": "LG Electronics",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-round-display-1-20161222/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Hyojin Song",
-        "org": "LG Electronics",
-        "link": "Mailto:hyojin22.song@lge.com"
-      },
-      {
-        "name": "Jihye Hong",
-        "org": "LG Electronics",
-        "link": "Mailto:jh.hong@lge.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Hyojin Song",
-        "org": "LG Electronics",
-        "link": "Mailto:hyojin22.song@lge.com"
-      },
-      {
-        "name": "Jihye Hong",
-        "org": "LG Electronics",
-        "link": "Mailto:jh.hong@lge.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css-round-display-1-20150922/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
+        "name": "Richard Ishida",
         "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
+        "link": "Mailto:ishida@w3.org"
       }
     ],
-    "thisSpecUrl": "https://www.w3.org/TR/CSS22/",
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css3-ruby-20130919/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-CSS22-20160412/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon Wium Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/SPSD-CSS1-20180913/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon Wium Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2008/REC-CSS1-20080411/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon Wium Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/1999/REC-CSS1-19990111",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon Wium Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/REC-CSS1-961217",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon Wium Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-960911.html",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon Wium Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-960726.html",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon Wium Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/PR-CSS1",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon W Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-960505.html",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon W Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-960418.html",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon W Lie",
-        "org": "W3C",
-        "link": "Howcome@w3.org"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Bert@w3.org"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-960220.html",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon WLie",
-        "org": "W3C",
-        "link": "Https://www.w3.org/pub/WWW/People/howcome/"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Http://www.let.rug.nl/~bert/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-951222.html",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon WLie",
-        "org": "W3C",
-        "link": "Https://www.w3.org/pub/WWW/People/howcome/"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Http://www.let.rug.nl/~bert/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-951209.html",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon WLie",
-        "org": "W3C",
-        "link": "Https://www.w3.org/hypertext/WWW/People/howcome/"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Http://www.let.rug.nl/~bert/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-951123.html",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Håkon WLie",
-        "org": "W3C",
-        "link": "Https://www.w3.org/hypertext/WWW/People/howcome/"
-      },
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Http://www.let.rug.nl/~bert/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/pub/WWW/TR/WD-css1-951117.html",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/REC-CSS2-20110607/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/PR-CSS2-20110412/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2010/WD-CSS2-20101207/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2009/CR-CSS2-20090908/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2009/CR-CSS2-20090423/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2008/REC-CSS2-20080411/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2007/CR-CSS21-20070719/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2006/WD-CSS21-20061106/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2006/WD-CSS21-20060411/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2005/WD-CSS21-20050613/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2004/CR-CSS21-20040225/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2003/WD-CSS21-20030915/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2003/WD-CSS21-20030128/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-CSS21-20020802/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/1998/REC-CSS2-19980512/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/1998/PR-CSS2-19980324/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/1998/WD-css2-19980128/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/WD-CSS2-971104/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad",
-        "org": "Http://fantasai.inkedblade.net/contact",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/NOTE-css-2010-20110512/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad",
-        "org": "Http://fantasai.inkedblade.net/contact",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2010/WD-css-2010-20101202/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Rivoal.net",
-        "link": "Http://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2015/NOTE-css-2015-20151013/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Vivliostyle",
-        "link": "Http://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2017/NOTE-css-2017-20170131/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2019/NOTE-css-2018-20190122/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2018/NOTE-css-2018-20181115/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2020/NOTE-css-2020-20201222/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2021/NOTE-css-2021-20211231/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2021/NOTE-css-2021-20211230/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2021/NOTE-css-2021-20211221/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2022/DNOTE-css-2022-20221122/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2023/NOTE-css-2023-20231207/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2023/DNOTE-css-2023-20230214/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      },
-      {
-        "name": "Sebastian Zartner",
-        "org": "Invited Expert",
-        "link": "Mailto:sebastianzartner@gmail.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2025/NOTE-css-2024-20250225/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Bert Bos",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Tantek Çelik",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      },
-      {
-        "name": "Ian Hickson",
-        "org": "Hixie.ch",
-        "link": "Http://ian.hixie.ch/"
-      },
-      {
-        "name": "Håkon Wium Lie",
-        "org": "Opera Software",
-        "link": "Http://people.opera.com/howcome/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/CSS21/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Johannes Wilm",
-        "org": "Vivliostyle",
-        "link": "Mailto:johanneswilm@vivliostyle.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-page-floats-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Johannes Wilm",
-        "org": "Vivliostyle",
-        "link": "Mailto:johanneswilm@vivliostyle.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css-page-floats-3-20150915/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Vincent Hardy",
-        "org": "Adobe",
-        "link": "Mailto:vhardy@adobe.com"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:astearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css3-exclusions/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Vincent Hardy",
-        "org": "Adobe",
-        "link": "Mailto:vhardy@adobe.com"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:astearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css3-exclusions-20130528/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-exclusions-20111213/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe Systems&#44; Inc.",
-        "link": "Mailto:stearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-regions-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe Systems&#44; Inc.",
-        "link": "Mailto:stearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-regions-1-20141009/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css3-regions-20140218/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css3-regions-20130528/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Alex Mogilevsky",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-regions-20120823/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Alex Mogilevsky",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-regions-20120503/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Alex Mogilevsky",
-        "org": "Microsoft",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-regions-20111129/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Vincent Hardy",
-        "org": "Adobe",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-regions-20110609/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika Etemad",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Invited Expert",
-        "link": "Mailto:kojiishi@gluesoft.co.jp"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:stearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-line-grid-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika Etemad",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Invited Expert",
-        "link": "Mailto:kojiishi@gluesoft.co.jp"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:stearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-line-grid-1-20140916/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika Etemad",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Invited Expert",
-        "link": "Mailto:kojiishi@gluesoft.co.jp"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-line-grid-1-20140403/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J Etemad",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-scoping-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J Etemad",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-scoping-1-20140403/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-namespaces-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad",
-        "org": "Invited Expert",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2014/REC-css-namespaces-3-20140320/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Anne van Kesteren",
-        "org": "Opera Software",
-        "link": "Https://annevankesteren.nl/about"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/REC-css3-namespace-20110929/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Anne van Kesteren",
-        "org": "Opera Software",
-        "link": "Https://annevankesteren.nl/about"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2011/PR-css3-namespace-20110811/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2008/CR-css3-namespace-20080523/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "https://www.w3.org/TR/2008/WD-css3-namespace-20080215/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Peter Linss",
-        "org": "Netscape/AOL",
-        "link": ""
-      },
-      {
-        "name": "Chris Lilley",
+        "name": "Richard Ishida",
         "org": "W3C",
         "link": ""
       }
     ],
-    "thisSpecUrl": "https://www.w3.org/TR/2006/WD-css3-namespace-20060828/",
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-ruby-20110630/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Peter Linss",
-        "org": "Netscape/AOL",
-        "link": "Mailto:peterl@netscape.com"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/1999/06/25/WD-css3-namespace-19990625/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tantek Çelik Mozilla",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/css-style-attr/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tantek Çelik Mozilla",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2013/REC-css-style-attr-20131107/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tantek Çelik Mozilla",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2013/PR-css-style-attr-20131003/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tantek Çelik Invited Expert",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2010/CR-css-style-attr-20101012/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tantek Çelik Microsoft",
+        "name": "Michel Suignard",
         "org": "Microsoft",
-        "link": "Http://www.microsoft.com/"
-      },
-      {
-        "name": "Bert Bos W3C",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Marc Attinasi AOL/Netscape",
-        "org": "Netscape.com",
-        "link": "Mailto:attinasi@netscape.com"
+        "link": "Mailto:michelsu@microsoft.com"
       }
     ],
-    "thisSpecUrl": "https://www.w3.org/TR/2010/WD-css-style-attr-20100121/",
+    "thisSpecUrl": "https://www.w3.org/TR/2003/CR-css3-ruby-20030514/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Tantek Çelik Microsoft",
+        "name": "Michel Suignard",
         "org": "Microsoft",
-        "link": "Http://www.microsoft.com/"
-      },
-      {
-        "name": "Bert Bos W3C",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Marc Attinasi AOL/Netscape",
-        "org": "Netscape.com",
-        "link": "Mailto:attinasi@netscape.com"
+        "link": "Mailto:michelsu@microsoft.com"
       }
     ],
-    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css-style-attr-20020515",
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-ruby-20021024/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Tantek Çelik Microsoft",
+        "name": "Michel Suignard",
         "org": "Microsoft",
-        "link": "Mailto:tantekc@microsoft.com"
-      },
-      {
-        "name": "Bert Bos W3C",
-        "org": "W3C",
-        "link": "Https://www.w3.org/People/Bos/"
-      },
-      {
-        "name": "Marc Attinasi Netscape",
-        "org": "Netscape.com",
-        "link": "Mailto:attinasi@netscape.com"
+        "link": "Mailto:michelsu@microsoft.com"
       }
     ],
-    "thisSpecUrl": "https://www.w3.org/TR/2001/WD-css-style-attr-20010305",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tantek Çelik Microsoft",
-        "org": "Microsoft",
-        "link": "Mailto:tantekc@microsoft.com"
-      },
-      {
-        "name": "Bert Bos W3C",
-        "org": "W3C",
-        "link": "/People/Bos"
-      }
-    ],
-    "thisSpecUrl": "https://www.w3.org/TR/2000/WD-css-style-attr-20001025",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-align/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-align/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-align/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-position-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-position/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-position/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://www.xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Oriol Brufau",
-        "org": "Igalia",
-        "link": "Mailto:obrufau@igalia.com"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-grid/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://www.xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Oriol Brufau",
-        "org": "Igalia",
-        "link": "Mailto:obrufau@igalia.com"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-grid-layout/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://www.xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Oriol Brufau",
-        "org": "Igalia",
-        "link": "Mailto:obrufau@igalia.com"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-grid-align/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://www.xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Oriol Brufau",
-        "org": "Igalia",
-        "link": "Mailto:obrufau@igalia.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-grid-2/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-display/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-display/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-display/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Http://florian.rivoal.net/"
-      },
-      {
-        "name": "Rachel Andrew",
-        "org": "Google",
-        "link": "Mailto:rachelandrew@google.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-multicol-2/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Https://florian.rivoal.net"
-      },
-      {
-        "name": "Rachel Andrew",
-        "org": "Google",
-        "link": "Mailto:rachelandrew@google.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-multicol/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-inline-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-inline/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-inline/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-color-hdr-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Http://florian.rivoal.net/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Robert Flack",
-        "org": "Google",
-        "link": "Mailto:flackr@google.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-overflow-5/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Http://florian.rivoal.net/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-overflow-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Http://florian.rivoal.net/"
-      }
-    ],
-    "thisSpecUrl": "http://drafts.csswg.org/css-overflow/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Http://florian.rivoal.net/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-overflow-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "L. David Baron",
-        "org": "Mozilla",
-        "link": "Https://dbaron.org/"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Http://florian.rivoal.net/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-overflow-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Noam Rosenthal",
-        "org": "Google",
-        "link": ""
-      },
-      {
-        "name": "Khushal Sagar",
-        "org": "Google",
-        "link": ""
-      },
-      {
-        "name": "Vladimir Levin",
-        "org": "Google",
-        "link": ""
-      },
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-view-transitions-2/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Jake Archibald",
-        "org": "Google",
-        "link": ""
-      },
-      {
-        "name": "Khushal Sagar",
-        "org": "Google",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-view-transitions-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Miriam E. Suzanne",
-        "org": "Invited Expert",
-        "link": "Http://miriamsuzanne.com/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-values-5/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-values-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-values/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-values/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-values/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-values-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "L. David Baron",
-        "org": "Mozilla",
-        "link": "Https://dbaron.org/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      },
-      {
-        "name": "Miriam E. Suzanne",
-        "org": "Invited Expert",
-        "link": "Https://www.miriamsuzanne.com/who/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-conditional-5/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "L. David Baron",
-        "org": "Mozilla",
-        "link": "Https://dbaron.org/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-conditional-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "L. David Baron",
-        "org": "Mozilla",
-        "link": "Https://dbaron.org/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-conditional/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "L. David Baron",
-        "org": "Mozilla",
-        "link": "Https://dbaron.org/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-conditional-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Jihye Hong",
-        "org": "Igalia",
-        "link": "Mailto:jihye@igalia.com"
-      },
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.fxtf.org/motion-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dirk Schulze",
-        "org": "Adobe",
-        "link": "Mailto:dschulze@adobe.com"
-      },
-      {
-        "name": "Jihye Hong",
-        "org": "Igalia",
-        "link": "Mailto:jihye@igalia.com"
-      },
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/fxtf/motion-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Ian Kilpatrick",
-        "org": "Google",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-anchor-position-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Invited Expert",
-        "link": "Mailto:kojiishi@gluesoft.co.jp"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-text-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Invited Expert",
-        "link": "Mailto:kojiishi@gluesoft.co.jp"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-text-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Invited Expert",
-        "link": "Mailto:kojiishi@gluesoft.co.jp"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-text/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Invited Expert",
-        "link": "Mailto:kojiishi@gluesoft.co.jp"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:stearns@adobe.com"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-text-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Invited Expert",
-        "link": "Mailto:kojiishi@gluesoft.co.jp"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:stearns@adobe.com"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-text-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Miriam E. Suzanne",
-        "org": "Invited Expert",
-        "link": "Http://miriamsuzanne.com/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-cascade-6/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-cascade-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-cascade-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-cascade/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-cascade/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-cascade-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-cascade/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Miriam E. Suzanne",
-        "org": "Invited Expert",
-        "link": "Http://miriamsuzanne.com/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-cascade-5/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Brian Birtles",
-        "org": "Mozilla",
-        "link": "Mailto:bbirtles@mozilla.com"
-      },
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-easing/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Brian Birtles",
-        "org": "Mozilla",
-        "link": "Mailto:bbirtles@mozilla.com"
-      },
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-timing/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-box-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-box-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Adam Argyle",
-        "org": "Google",
-        "link": "Https://nerdy.dev"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-scroll-snap-2/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Matt Rakow",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Jacob Rossi",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-scroll-snap-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Matt Rakow",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Jacob Rossi",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-snappoints/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Matt Rakow",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Jacob Rossi",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-snappoints/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Https://florian.rivoal.net/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-contain-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Https://florian.rivoal.net/"
-      },
-      {
-        "name": "Vladimir Levin",
-        "org": "Google",
-        "link": "Mailto:vmpstr@google.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-contain/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Https://florian.rivoal.net/"
-      },
-      {
-        "name": "Vladimir Levin",
-        "org": "Google",
-        "link": "Mailto:vmpstr@google.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-contain-2/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Bloomberg",
-        "link": "Https://florian.rivoal.net/"
-      },
-      {
-        "name": "Miriam E. Suzanne",
-        "org": "Invited Expert",
-        "link": "Https://www.miriamsuzanne.com/who/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-contain-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/mediaqueries-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-mediaqueries/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/mediaqueries-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/mediaqueries4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/mediaqueries-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": ""
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Daniel Libby",
-        "org": "Microsoft",
-        "link": ""
-      },
-      {
-        "name": "Luke Warlow",
-        "org": "Igalia",
-        "link": "Https://lukewarlow.dev"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/mediaqueries-5/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.css-houdini.org/css-properties-values-api-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "François Remy",
-        "org": "Microsoft",
-        "link": ""
-      }
-    ],
-    "thisSpecUrl": "https://drafts.css-houdini.org/css-typed-om-1/",
+    "thisSpecUrl": "https://www.w3.org/TR/2001/WD-css3-ruby-20010216/",
     "properties": []
   },
   {
@@ -3654,15 +68,20 @@
       {
         "name": "Daniel Glazman",
         "org": "Disruptive Innovations",
-        "link": "Mailto:daniel.glazman@disruptive-innovations.com"
+        "link": ""
       },
       {
-        "name": "Emilio Cobos Álvarez",
-        "org": "Mozilla",
-        "link": "Mailto:emilio@mozilla.com"
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/cssom/",
+    "thisSpecUrl": "https://www.w3.org/TR/css-pseudo-4/",
     "properties": []
   },
   {
@@ -3670,15 +89,1818 @@
       {
         "name": "Daniel Glazman",
         "org": "Disruptive Innovations",
-        "link": "Mailto:daniel.glazman@disruptive-innovations.com"
+        "link": ""
       },
       {
-        "name": "Emilio Cobos Álvarez",
-        "org": "Mozilla",
-        "link": "Mailto:emilio@mozilla.com"
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
       }
     ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/cssom/",
+    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-css-pseudo-4-20221230/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations",
+        "link": ""
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-pseudo-4-20201231/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations",
+        "link": ""
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-pseudo-4-20190225/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations",
+        "link": ""
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-pseudo-4-20160607/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations",
+        "link": ""
+      },
+      {
+        "name": "Fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css-pseudo-4-20150115/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-shapes-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2022/CRD-css-shapes-1-20221115/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Vincent Hardy",
+        "org": "Adobe",
+        "link": "Mailto:vhardy@adobe.com"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2014/CR-css-shapes-1-20140320/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Vincent Hardy",
+        "org": "Adobe",
+        "link": "Mailto:vhardy@adobe.com"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-shapes-1-20140211/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Vincent Hardy",
+        "org": "Adobe",
+        "link": "Mailto:vhardy@adobe.com"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Alan Stearns",
+        "org": "Adobe",
+        "link": "Mailto:stearns@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-shapes-1-20131203/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": ""
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-shapes-1-20130620/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/selectors-4/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-selectors-4-20221111/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-selectors-4-20220507/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-selectors-4-20181121/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-selectors-4-20180202/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-selectors-4-20180201/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-selectors4-20130502/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-selectors4-20120823/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-selectors4-20110929/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Invited Expert",
+        "link": "Http://www.tantek.com/"
+      },
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations SARL",
+        "link": ""
+      },
+      {
+        "name": "Ian Hickson",
+        "org": "Google",
+        "link": "Mailto:ian@hixie.ch"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/REC-selectors-3-20181106/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Invited Expert",
+        "link": "Http://www.tantek.com/"
+      },
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations SARL",
+        "link": ""
+      },
+      {
+        "name": "Ian Hickson",
+        "org": "Google",
+        "link": "Mailto:ian@hixie.ch"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/PR-selectors-3-20180911/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Invited Expert",
+        "link": "Http://www.tantek.com/"
+      },
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations SARL",
+        "link": ""
+      },
+      {
+        "name": "Ian Hickson",
+        "org": "Google",
+        "link": "Mailto:ian@hixie.ch"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-selectors-3-20180130/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Invited Expert",
+        "link": "Http://www.tantek.com/"
+      },
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations SARL",
+        "link": ""
+      },
+      {
+        "name": "Ian Hickson",
+        "org": "Google",
+        "link": "Mailto:ian@hixie.ch"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2011/REC-css3-selectors-20110929/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Invited Expert",
+        "link": "Http://www.tantek.com/"
+      },
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations SARL",
+        "link": ""
+      },
+      {
+        "name": "Ian Hickson",
+        "org": "Google",
+        "link": "Mailto:ian@hixie.ch"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2009/PR-css3-selectors-20091215/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Invited Expert",
+        "link": "Http://www.tantek.com/"
+      },
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations SARL",
+        "link": ""
+      },
+      {
+        "name": "Ian Hickson",
+        "org": "Google",
+        "link": "Mailto:ian@hixie.ch"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2009/WD-css3-selectors-20090310/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Daniel Glazman",
+        "org": "Daniel Glazman",
+        "link": ""
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2005/WD-css3-selectors-20051215/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Daniel Glazman",
+        "org": "Netscape/AOL",
+        "link": "Mailto:glazman@netscape.com"
+      },
+      {
+        "name": "Tantek Çelik",
+        "org": "Microsoft",
+        "link": "Mailto:tantekc@microsoft.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2001/CR-css3-selectors-20011113/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Daniel Glazman",
+        "org": "Netscape/AOL",
+        "link": "Mailto:glazman@netscape.com"
+      },
+      {
+        "name": "Tantek Çelik",
+        "org": "Microsoft",
+        "link": "Mailto:tantekc@microsoft.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2001/WD-css3-selectors-20010126/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Microsoft",
+        "link": "Mailto:tantekc@microsoft.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2000/WD-css3-selectors-20001005/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Microsoft",
+        "link": "Http://www.microsoft.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2000/WD-css3-selectors-20000410",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Daniel Glazman",
+        "org": "Der.edf.fr",
+        "link": "Http://www.edf.fr/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/1999/WD-CSS3-selectors-19990803",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Invited Expert",
+        "link": "Http://www.tantek.com/"
+      },
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations SARL",
+        "link": ""
+      },
+      {
+        "name": "Ian Hickson",
+        "org": "Google",
+        "link": "Mailto:ian@hixie.ch"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/selectors-3/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-variables-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2022/CR-css-variables-1-20220616/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/CRD-css-variables-1-20211111/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/CR-css-variables-1-20151203/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-variables-1-20140506/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-variables-1-20130620/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact"
+      },
+      {
+        "name": "Luke Macpherson",
+        "org": "Google",
+        "link": "Mailto:macpherson@google.com"
+      },
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations",
+        "link": "Mailto:daniel.glazman@disruptive-innovations.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-variables-20130312/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Daniel Glazman",
+        "org": "Disruptive Innovations",
+        "link": ""
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css-variables-20120410/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Rune Lillesveen",
+        "org": "Google",
+        "link": "Mailto:futhark@google.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-color-adjust-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Rune Lillesveen",
+        "org": "Google",
+        "link": "Mailto:futhark@google.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2022/CRD-css-color-adjust-1-20220614/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Rune Lillesveen",
+        "org": "Google",
+        "link": "Mailto:futhark@google.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2022/CR-css-color-adjust-1-20220210/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Rune Lillesveen",
+        "org": "Google",
+        "link": "Mailto:futhark@google.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-color-adjust-1-20210616/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Rune Lillesveen",
+        "org": "Google",
+        "link": "Mailto:futhark@google.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-color-adjust-1-20210520/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Rune Lillesveen",
+        "org": "Google",
+        "link": "Mailto:futhark@google.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-color-adjust-1-20201109/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Rune Lillesveen",
+        "org": "Google",
+        "link": "Mailto:futhark@google.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-color-adjust-1-20200402/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Rune Lillesveen",
+        "org": "Google",
+        "link": "Mailto:futhark@google.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190523/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Rune Lillesveen",
+        "org": "Google",
+        "link": "Mailto:futhark@google.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-color-adjust-1-20190521/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-text-decor-3/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2022/CRD-css-text-decor-3-20220505/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-text-decor-3-20190813/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-text-decor-3-20180703/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Rakuten Inc.",
+        "link": "Mailto:koji.a.ishii@mail.rakuten.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/CR-css-text-decor-3-20130801/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Rakuten Inc.",
+        "link": "Mailto:koji.a.ishii@mail.rakuten.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-text-decor-3-20130103/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Rakuten Inc.",
+        "link": "Mailto:koji.a.ishii@mail.rakuten.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2022/WD-css-text-decor-4-20220504/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-text-decor-4-20200506/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-text-decor-4-20180313/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-text-decor-4/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-will-change-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2022/CRD-css-will-change-1-20220505/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/CR-css-will-change-1-20151203/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-will-change-1-20140429/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-sizing-3/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-sizing-3-20211217/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-sizing-3-20210317/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-sizing-3-20201218/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-sizing-3-20201023/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-sizing-3-20170207/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-sizing-3-20160512/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-sizing-3-20160510/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact"
+      },
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-sizing-20120927/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Jen Simmons",
+        "org": "Apple",
+        "link": "Http://jensimmons.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-sizing-4-20210520/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Jen Simmons",
+        "org": "Mozilla",
+        "link": "Http://jensimmons.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-sizing-4-20201020/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Jen Simmons",
+        "org": "Mozilla",
+        "link": "Http://jensimmons.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-sizing-4-20200526/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Jen Simmons",
+        "org": "Apple",
+        "link": "Http://jensimmons.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-sizing-4/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Ian Kilpatrick",
+        "org": "Google",
+        "link": "Mailto:ikilpatrick@chromium.org"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-paint-api-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Ian Kilpatrick",
+        "org": "Google",
+        "link": "Mailto:ikilpatrick@chromium.org"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/CRD-css-paint-api-1-20211216/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Ian Kilpatrick",
+        "org": "Google",
+        "link": "Mailto:ikilpatrick@chromium.org"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Shane Stephens",
+        "org": "Google",
+        "link": "Mailto:shanestephens@google.com"
+      },
+      {
+        "name": "Ian Kilpatrick",
+        "org": "Google",
+        "link": "Mailto:ikilpatrick@chromium.org"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-paint-api-1-20180410/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Shane Stephens",
+        "org": "Google",
+        "link": "Mailto:shanestephens@google.com"
+      },
+      {
+        "name": "Ian Kilpatrick",
+        "org": "Google",
+        "link": "Mailto:ikilpatrick@chromium.org"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-paint-api-1-20160607/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Https://florian.rivoal.net/"
+      },
+      {
+        "name": "Sanket Joshi",
+        "org": "Microsoft",
+        "link": "Https://github.com/sanketj"
+      },
+      {
+        "name": "Megan Gardner",
+        "org": "Apple",
+        "link": "Https://apple.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-highlight-api-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Https://florian.rivoal.net/"
+      },
+      {
+        "name": "Sanket Joshi",
+        "org": "Microsoft",
+        "link": "Https://github.com/sanketj"
+      },
+      {
+        "name": "Megan Gardner",
+        "org": "Apple",
+        "link": "Https://apple.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-highlight-api-1-20211215/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Https://florian.rivoal.net/"
+      },
+      {
+        "name": "Sanket Joshi",
+        "org": "Microsoft",
+        "link": "Https://github.com/sanketj"
+      },
+      {
+        "name": "Megan Gardner",
+        "org": "Apple",
+        "link": "Https://apple.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-highlight-api-1-20201208/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Https://florian.rivoal.net/"
+      },
+      {
+        "name": "Sanket Joshi",
+        "org": "Microsoft",
+        "link": "Https://github.com/sanketj"
+      },
+      {
+        "name": "Megan Gardner",
+        "org": "Apple",
+        "link": "Https://apple.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-highlight-api-1-20201022/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-scrollbars-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/CR-css-scrollbars-1-20211209/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-scrollbars-1-20211202/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-scrollbars-1-20210908/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-scrollbars-1-20210829/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-scrollbars-1-20210805/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com/contact"
+      },
+      {
+        "name": "Rossen Atanassov",
+        "org": "Microsoft",
+        "link": "Mailto:ratan@microsoft.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-scrollbars-1-20180925/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Https://xanthir.com/contact/"
+      },
+      {
+        "name": "L. David Baron",
+        "org": "Google",
+        "link": "Https://dbaron.org/"
+      },
+      {
+        "name": "Simon Fraser",
+        "org": "Apple",
+        "link": "Mailto:simon.fraser@apple.com"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      },
+      {
+        "name": "Theresa OConnor",
+        "org": "Apple",
+        "link": "Mailto:eoconnor@apple.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-transforms-2/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Https://xanthir.com/contact/"
+      },
+      {
+        "name": "L. David Baron",
+        "org": "Google",
+        "link": "Https://dbaron.org/"
+      },
+      {
+        "name": "Simon Fraser",
+        "org": "Apple",
+        "link": "Mailto:simon.fraser@apple.com"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      },
+      {
+        "name": "Theresa OConnor",
+        "org": "Apple",
+        "link": "Mailto:eoconnor@apple.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-transforms-2-20211109/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      },
+      {
+        "name": "Simon Fraser",
+        "org": "Apple",
+        "link": "Mailto:simon.fraser@apple.com"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      },
+      {
+        "name": "Theresa OConnor",
+        "org": "Apple",
+        "link": "Mailto:eoconnor@apple.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-transforms-2-20200303/",
     "properties": []
   },
   {
@@ -3689,12 +1911,22 @@
         "link": "Mailto:simon.fraser@apple.com"
       },
       {
-        "name": "Emilio Cobos Álvarez",
-        "org": "Mozilla",
-        "link": "Mailto:emilio@mozilla.com"
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      },
+      {
+        "name": "Theresa OConnor",
+        "org": "Apple",
+        "link": "Mailto:eoconnor@apple.com"
+      },
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/cssom-view/",
+    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-transforms-1-20190214/",
     "properties": []
   },
   {
@@ -3705,103 +1937,354 @@
         "link": "Mailto:simon.fraser@apple.com"
       },
       {
-        "name": "Emilio Cobos Álvarez",
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      },
+      {
+        "name": "Theresa OConnor",
+        "org": "Apple",
+        "link": "Mailto:eoconnor@apple.com"
+      },
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/WD-css-transforms-1-20181130/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Simon Fraser",
+        "org": "Apple",
+        "link": "Mailto:simon.fraser@apple.com"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      },
+      {
+        "name": "Theresa OConnor",
+        "org": "Apple",
+        "link": "Mailto:eoconnor@apple.com"
+      },
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-transforms-1-20171130/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Simon Fraser",
+        "org": "Apple",
+        "link": "Mailto:simon.fraser@apple.com"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      },
+      {
+        "name": "Edward O’Connor",
+        "org": "Apple",
+        "link": "Mailto:eoconnor@apple.com"
+      },
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-transforms-1-20131126/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Simon Fraser",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Edward OConnor",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe.com",
+        "link": "Http://www.adobe.com/"
+      },
+      {
+        "name": "Aryeh Gregor",
+        "org": "Aryeh.name",
+        "link": "Http://www.mozilla.org/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-transforms-20120911/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Simon Fraser",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "David Hyatt",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Chris Marrin",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Edward OConnor",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe.com",
+        "link": "Http://www.adobe.com/"
+      },
+      {
+        "name": "Aryeh Gregor",
+        "org": "Aryeh.name",
+        "link": "Http://www.mozilla.org/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-transforms-20120403/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Simon Fraser",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "David Hyatt",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Chris Marrin",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Edward OConnor",
+        "org": "Apple",
+        "link": "Http://www.apple.com/"
+      },
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe.com",
+        "link": "Http://www.adobe.com/"
+      },
+      {
+        "name": "Aryeh Gregor",
+        "org": "Aryeh.name",
+        "link": "Http://www.mozilla.org/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-transforms-20120228/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Simon Fraser",
+        "org": "Apple",
+        "link": "Mailto:simon.fraser@apple.com"
+      },
+      {
+        "name": "Dean Jackson",
+        "org": "Apple",
+        "link": "Mailto:dino@apple.com"
+      },
+      {
+        "name": "Theresa OConnor",
+        "org": "Apple",
+        "link": "Mailto:eoconnor@apple.com"
+      },
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-transforms-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
+      },
+      {
+        "name": "Brian Birtles",
         "org": "Mozilla",
-        "link": "Mailto:emilio@mozilla.com"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/cssom-view/",
-    "properties": []
-  },
-  {
-    "authors": [
+        "link": "Mailto:bbirtles@mozilla.com"
+      },
       {
-        "name": "Chris Harrelson",
+        "name": "Tab Atkins Jr.",
         "org": "Google",
-        "link": "Mailto:chrishtr@chromium.org"
+        "link": "Http://www.xanthir.com/contact/"
       }
     ],
-    "thisSpecUrl": "https://drafts.fxtf.org/compositing-1/",
+    "thisSpecUrl": "https://www.w3.org/TR/css-masking-1/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Chris Harrelson",
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
+      },
+      {
+        "name": "Brian Birtles",
+        "org": "Mozilla",
+        "link": "Mailto:bbirtles@mozilla.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
         "org": "Google",
-        "link": "Mailto:chrishtr@chromium.org"
+        "link": "Http://www.xanthir.com/contact/"
       }
     ],
-    "thisSpecUrl": "http://dev.w3.org/fxtf/compositing-1/",
+    "thisSpecUrl": "https://www.w3.org/TR/2021/CRD-css-masking-1-20210805/",
+    "properties": []
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2014/CR-css-masking-1-20140826/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
       },
       {
-        "name": "Brad Kemper",
-        "org": "Invited Expert",
-        "link": "Mailto:brad.kemper@gmail.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-backgrounds/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
+        "name": "Brian Birtles",
+        "org": "Mozilla",
+        "link": "Mailto:bbirtles@mozilla.com"
       },
       {
-        "name": "Brad Kemper",
-        "org": "Invited Expert",
-        "link": "Mailto:brad.kemper@gmail.com"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-background/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      },
-      {
-        "name": "Una Kravets",
+        "name": "Tab Atkins Jr.",
         "org": "Google",
-        "link": "Https://una.im"
-      },
-      {
-        "name": "Lea Verou",
-        "org": "Invited Expert",
-        "link": "Https://lea.verou.me/about"
-      },
-      {
-        "name": "Adam Argyle",
-        "org": "Google",
-        "link": "Https://nerdy.dev"
+        "link": "Http://www.xanthir.com/contact/"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-color-5/",
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-masking-1-20140522/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Tantek Çelik Mozilla Corporation",
-        "org": "Stanford",
-        "link": "Http://tantek.com/"
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
+      },
+      {
+        "name": "Brian Birtles",
+        "org": "Mozilla",
+        "link": "Mailto:bbirtles@mozilla.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-color-3/",
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-masking-1-20140213/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": "Mailto:dschulze@adobe.com"
+      },
+      {
+        "name": "Brian Birtles",
+        "org": "Mozilla",
+        "link": "Mailto:bbirtles@mozilla.com"
+      },
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://www.xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-masking-1-20131029/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": ""
+      },
+      {
+        "name": "Brian Birtles",
+        "org": "Mozilla",
+        "link": ""
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-masking-20130620/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Dirk Schulze",
+        "org": "Adobe",
+        "link": ""
+      },
+      {
+        "name": "Brian Birtles",
+        "org": "Mozilla",
+        "link": ""
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css-masking-20121115/",
     "properties": []
   },
   {
@@ -3809,20 +2292,10 @@
       {
         "name": "Tab Atkins Jr.",
         "org": "Google",
-        "link": "Http://xanthir.com/contact"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      },
-      {
-        "name": "Lea Verou",
-        "org": "Invited Expert",
-        "link": "Http://lea.verou.me/"
+        "link": "Http://xanthir.com/contact/"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-color-4/",
+    "thisSpecUrl": "https://www.w3.org/TR/css-counter-styles-3/",
     "properties": []
   },
   {
@@ -3830,117 +2303,135 @@
       {
         "name": "Tab Atkins Jr.",
         "org": "Google",
-        "link": "Http://xanthir.com/contact"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      },
-      {
-        "name": "Lea Verou",
-        "org": "Invited Expert",
-        "link": "Http://lea.verou.me/"
+        "link": "Http://xanthir.com/contact/"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-color/",
+    "thisSpecUrl": "https://www.w3.org/TR/2021/CR-css-counter-styles-3-20210727/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Https://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-fonts-5/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Http://svgees.us"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-fonts/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Http://svgees.us"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-fonts/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "John Daggett",
-        "org": "Invited Expert",
-        "link": "Https://twitter.com/nattokirai"
-      },
-      {
-        "name": "Myles C. Maxfield",
-        "org": "Apple",
-        "link": "Mailto:mmaxfield@apple.com"
-      },
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Http://svgees.us/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-fonts/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Chris Lilley",
-        "org": "W3C",
-        "link": "Http://svgees.us"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-fonts-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Mike Bremford",
-        "org": "BFO",
-        "link": "Mailto:mike@bfo.com"
-      },
-      {
-        "name": "Rachel Andrew",
+        "name": "Tab Atkins Jr.",
         "org": "Google",
-        "link": "Mailto:rachelandrew@google.com"
+        "link": "Https://xanthir.com/contact/"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-gcpm/",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-counter-styles-3-20171214/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Mike Bremford",
-        "org": "BFO",
-        "link": "Mailto:mike@bfo.com"
-      },
-      {
-        "name": "Rachel Andrew",
+        "name": "Tab Atkins Jr.",
         "org": "Google",
-        "link": "Mailto:rachelandrew@google.com"
+        "link": "Http://xanthir.com/contact/"
       }
     ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-gcpm/",
+    "thisSpecUrl": "https://www.w3.org/TR/2015/CR-css-counter-styles-3-20150611/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/CR-css-counter-styles-3-20150203/",
+    "properties": []
+  },
+  {
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-counter-styles-3-20140826/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-counter-styles-3-20130718/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-counter-styles-3-20130221/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins Jr.",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css-counter-styles-3-20121009/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-ui-4/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2021/WD-css-ui-4-20210316/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-ui-4-20200124/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-ui-4-20200102/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Https://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-ui-4-20171222/",
     "properties": []
   },
   {
@@ -3948,339 +2439,966 @@
       {
         "name": "Florian Rivoal",
         "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net"
-      },
+        "link": "Http://florian.rivoal.net"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css-ui-4-20150922/",
+    "properties": []
+  },
+  {
+    "authors": [
       {
-        "name": "Emilio Cobos Álvarez",
+        "name": "Tantek Çelik",
         "org": "Mozilla",
-        "link": "Mailto:emilio@mozilla.com"
+        "link": "Http://tantek.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Http://florian.rivoal.net/"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-viewport/",
+    "thisSpecUrl": "https://www.w3.org/TR/2018/REC-css-ui-3-20180621/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Lea Verou",
-        "org": "Invited Expert",
-        "link": "Http://lea.verou.me/about"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-images-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Lea Verou",
-        "org": "Invited Expert",
-        "link": "Http://lea.verou.me/about"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-images/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Lea Verou",
-        "org": "Invited Expert",
-        "link": "Http://lea.verou.me/about"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-images-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Lea Verou",
-        "org": "Invited Expert",
-        "link": "Http://lea.verou.me/about"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css4-images/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple formerly Mozilla",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-page-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "L. David Baron",
-        "org": "Google",
-        "link": "Https://dbaron.org/"
-      },
-      {
-        "name": "Brian Birtles",
-        "org": "Invited Expert",
-        "link": "Mailto:brian@birchill.co.jp"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-transitions-2/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "L. David Baron",
+        "name": "Tantek Çelik",
         "org": "Mozilla",
-        "link": "Https://dbaron.org/"
+        "link": "Http://tantek.com"
       },
       {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      },
-      {
-        "name": "Brian Birtles",
-        "org": "Mozilla",
-        "link": "Mailto:bbirtles@mozilla.com"
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Http://florian.rivoal.net/"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-transitions/",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/PR-css-ui-3-20171214/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "L. David Baron",
+        "name": "Tantek Çelik",
         "org": "Mozilla",
-        "link": "Https://dbaron.org/"
+        "link": "Http://tantek.com"
       },
       {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      },
-      {
-        "name": "Brian Birtles",
-        "org": "Mozilla",
-        "link": "Mailto:bbirtles@mozilla.com"
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Http://florian.rivoal.net/"
       }
     ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-transitions/",
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-ui-3-20170302/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Brian Birtles",
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com"
+      },
+      {
+        "name": "Florian Rivoal",
         "org": "Invited Expert",
-        "link": "Mailto:brian@birchill.co.jp"
-      },
+        "link": "Http://florian.rivoal.net"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/CR-css-ui-3-20150707/",
+    "properties": []
+  },
+  {
+    "authors": [
       {
-        "name": "Botond Ballo",
+        "name": "Tantek Çelik",
         "org": "Mozilla",
-        "link": "Mailto:botond@mozilla.com"
+        "link": "Http://tantek.com"
       },
       {
-        "name": "Antoine Quint",
-        "org": "Apple",
-        "link": "Mailto:graouts@apple.com"
-      },
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Http://florian.rivoal.net"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-ui-20150519/",
+    "properties": []
+  },
+  {
+    "authors": [
       {
-        "name": "Olga Gerchikov",
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-ui-20150409/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-ui-20150310/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/WD-css3-ui-20150224/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-ui-20120117/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
         "org": "Microsoft",
-        "link": "Mailto:gerchiko@microsoft.com"
+        "link": "Http://www.microsoft.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2004/CR-css3-ui-20040511/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Microsoft",
+        "link": "Http://www.microsoft.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2003/WD-css3-ui-20030703/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Microsoft",
+        "link": "Http://www.microsoft.com/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-ui-20020802/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Mozilla",
+        "link": "Http://tantek.com"
       },
       {
+        "name": "Florian Rivoal",
+        "org": "Bloomberg",
+        "link": "Http://florian.rivoal.net/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-ui-3/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
         "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
+        "org": "Invited Expert",
         "link": "Http://fantasai.inkedblade.net/contact"
       },
       {
-        "name": "Robert Flack",
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-lists-3/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-lists-3-20201117/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-lists-3-20200709/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-lists-3-20190817/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-lists-3-20190425/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tab Atkins",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2014/WD-css-lists-3-20140320/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Ian Hickson",
+        "org": "Hixie.ch",
+        "link": "Mailto:ian@hixie.ch"
+      },
+      {
+        "name": "Tantek Çelı̇k",
+        "org": "Microsoft",
+        "link": "Mailto:tantekc@microsoft.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-lists-20110524/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Ian Hickson",
+        "org": "Hixie.ch",
+        "link": "Mailto:ian@hixie.ch"
+      },
+      {
+        "name": "Tantek Çelı̇k",
+        "org": "MicrosoftCorporation",
+        "link": "Mailto:tantekc@microsoft.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-lists-20021107/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Tantek Çelik",
+        "org": "Microsoft",
+        "link": "Mailto:tantekc@microsoft.com"
+      },
+      {
+        "name": "Ian Hickson",
+        "org": "Hixie.ch",
+        "link": "Mailto:ian@hixie.ch"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2002/WD-css3-lists-20020220/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Steve Kobes",
         "org": "Google",
         "link": ""
       },
       {
-        "name": "Bramus Van Damme",
-        "org": "Google",
-        "link": "Https://www.bram.us/about/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/scroll-animations-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Brian Birtles",
-        "org": "Invited Expert",
-        "link": "Mailto:brian@birchill.co.jp"
-      },
-      {
-        "name": "Robert Flack",
-        "org": "Google",
-        "link": "Mailto:flackr@google.com"
-      },
-      {
-        "name": "Stephen McGruer",
-        "org": "Google",
-        "link": "Mailto:smcgruer@google.com"
-      },
-      {
-        "name": "Antoine Quint",
-        "org": "Apple",
-        "link": "Mailto:graouts@apple.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/web-animations-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Brian Birtles",
-        "org": "Invited Expert",
-        "link": "Mailto:brian@birchill.co.jp"
-      },
-      {
-        "name": "Robert Flack",
-        "org": "Google",
-        "link": "Mailto:flackr@google.com"
-      }
-    ],
-    "thisSpecUrl": "https://w3c.github.io/web-animations/",
-    "properties": []
-  },
-  {
-    "thisSpecUrl": "http://dev.w3.org/fxtf/web-animations/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Brian Birtles",
-        "org": "Invited Expert",
-        "link": "Mailto:brian@birchill.co.jp"
-      },
-      {
-        "name": "Robert Flack",
-        "org": "Google",
-        "link": "Mailto:flackr@google.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/web-animations-2/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "L. David Baron",
-        "org": "Google",
-        "link": "Https://dbaron.org/"
-      },
-      {
-        "name": "Brian Birtles",
-        "org": "Invited Expert",
-        "link": "Mailto:brian@birchill.co.jp"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-animations-2/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      },
-      {
-        "name": "L. David Baron",
-        "org": "Google",
-        "link": "Https://dbaron.org/"
-      },
-      {
-        "name": "Tab Atkins Jr.",
+        "name": "Tab Atkins-Bittner",
         "org": "Google",
         "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Brian Birtles",
-        "org": "Invited Expert",
-        "link": "Mailto:brian@birchill.co.jp"
       }
     ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-animations/",
+    "thisSpecUrl": "https://www.w3.org/TR/css-scroll-anchoring-1/",
     "properties": []
   },
   {
     "authors": [
       {
-        "name": "Dean Jackson",
-        "org": "Apple",
-        "link": "Mailto:dino@apple.com"
-      },
-      {
-        "name": "L. David Baron",
+        "name": "Steve Kobes",
         "org": "Google",
-        "link": "Https://dbaron.org/"
+        "link": ""
       },
       {
-        "name": "Tab Atkins Jr.",
+        "name": "Tab Atkins-Bittner",
         "org": "Google",
         "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Brian Birtles",
-        "org": "Invited Expert",
-        "link": "Mailto:brian@birchill.co.jp"
       }
     ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-animations/",
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20201111/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Steve Kobes",
+        "org": "Google",
+        "link": ""
+      },
+      {
+        "name": "Tab Atkins-Bittner",
+        "org": "Google",
+        "link": "Http://xanthir.com/contact/"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-css-scroll-anchoring-1-20200211/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Aleks Totic",
+        "org": "Google",
+        "link": "Mailto:atotic@google.com"
+      },
+      {
+        "name": "Greg Whitworth",
+        "org": "Microsoft",
+        "link": "Mailto:gwhit@microsoft.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/resize-observer-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Aleks Totic",
+        "org": "Google",
+        "link": "Mailto:atotic@google.com"
+      },
+      {
+        "name": "Greg Whitworth",
+        "org": "Microsoft",
+        "link": "Mailto:gwhit@microsoft.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2020/WD-resize-observer-1-20200211/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-writing-modes-3/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/REC-css-writing-modes-3-20191210/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/PR-css-writing-modes-3-20191024/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190903/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-writing-modes-3-20190730/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-writing-modes-3-20180524/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2017/CR-css-writing-modes-3-20171207/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Invited Expert",
+        "link": "Mailto:kojiishi@gluesoft.co.jp"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2014/CR-css-writing-modes-3-20140320/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Fantasai",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Rakuten Inc.",
+        "link": "Mailto:koji.a.ishii@mail.rakuten.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-writing-modes-3-20131126/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Fantasai",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Rakuten Inc.",
+        "link": "Mailto:koji.a.ishii@mail.rakuten.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2013/WD-css-writing-modes-3-20131024/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Rakuten Inc.",
+        "link": "Mailto:koji.a.ishii@mail.rakuten.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-writing-modes-20121115/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Invited Expert",
+        "link": "Mailto:kojiishi@gluesoft.co.jp"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2012/WD-css3-writing-modes-20120501/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Mozilla",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Invited Expert",
+        "link": "Mailto:kojiishi@gluesoft.co.jp"
+      },
+      {
+        "name": "Shinyu Murakami",
+        "org": "Antenna House",
+        "link": "Mailto:murakami@antenna.co.jp"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110901/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Antenna House",
+        "link": "Mailto:kojiishi@gluesoft.co.jp"
+      },
+      {
+        "name": "Shinyu Murakami",
+        "org": "Antenna House",
+        "link": "Mailto:murakami@antenna.co.jp"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110531/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Antenna House",
+        "link": "Mailto:kojiishi@gluesoft.co.jp"
+      },
+      {
+        "name": "Shinyu Murakami",
+        "org": "Antenna House",
+        "link": "Mailto:murakami@antenna.co.jp"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110428/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Antenna House",
+        "link": "Mailto:kojiishi@gluesoft.co.jp"
+      },
+      {
+        "name": "Shinyu Murakami",
+        "org": "Antenna House",
+        "link": "Mailto:murakami@antenna.co.jp"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2011/WD-css3-writing-modes-20110201/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Antenna House",
+        "link": "Mailto:kojiishi@gluesoft.co.jp"
+      },
+      {
+        "name": "Shinyu Murakami",
+        "org": "Antenna House",
+        "link": "Mailto:murakami@antenna.co.jp"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2010/WD-css3-writing-modes-20101202/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/CR-css-writing-modes-4-20190730/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2018/CR-css-writing-modes-4-20180524/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-writing-modes-4-20171207/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Koji Ishii",
+        "org": "Google",
+        "link": "Mailto:kojiishi@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-writing-modes-4/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Jihye Hong",
+        "org": "LG Electronics",
+        "link": "Mailto:jh.hong@lge.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Https://florian.rivoal.net"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-nav-1/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Jihye Hong",
+        "org": "LG Electronics",
+        "link": "Mailto:jh.hong@lge.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Https://florian.rivoal.net"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-nav-1-20191126/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Jihye Hong",
+        "org": "LG Electronics",
+        "link": "Mailto:jh.hong@lge.com"
+      },
+      {
+        "name": "Florian Rivoal",
+        "org": "Invited Expert",
+        "link": "Https://florian.rivoal.net"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-nav-1-20190423/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "W3C Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Dave Cramer",
+        "org": "Hachette Livre",
+        "link": "Mailto:dauwhe@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-content-3/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "W3C Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Dave Cramer",
+        "org": "Hachette Livre",
+        "link": "Mailto:dauwhe@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-content-3-20190802/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "W3C Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Dave Cramer",
+        "org": "Hachette Livre",
+        "link": "Mailto:dauwhe@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-content-3-20190710/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Elika J. Etemad / fantasai",
+        "org": "W3C Invited Expert",
+        "link": "Http://fantasai.inkedblade.net/contact"
+      },
+      {
+        "name": "Dave Cramer",
+        "org": "Hachette Livre",
+        "link": "Mailto:dauwhe@gmail.com"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-content-3-20160602/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Ian Hickson",
+        "org": "Hixie.ch",
+        "link": "Mailto:ian@hixie.ch"
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2003/WD-css3-content-20030514/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Francois Remy",
+        "org": "Invited Expert",
+        "link": ""
+      },
+      {
+        "name": "Greg Whitworth",
+        "org": "Microsoft",
+        "link": ""
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-tables-3/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Francois Remy",
+        "org": "Invited Expert",
+        "link": ""
+      },
+      {
+        "name": "Greg Whitworth",
+        "org": "Microsoft",
+        "link": ""
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-tables-3-20190727/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Francois Remy",
+        "org": "Microsoft",
+        "link": ""
+      },
+      {
+        "name": "Greg Whitworth",
+        "org": "Microsoft",
+        "link": ""
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2017/WD-css-tables-3-20170307/",
+    "properties": []
+  },
+  {
+    "authors": [
+      {
+        "name": "Francois Remy",
+        "org": "Microsoft",
+        "link": ""
+      },
+      {
+        "name": "Greg Whitworth",
+        "org": "Microsoft",
+        "link": ""
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/2016/WD-css-tables-3-20161025/",
     "properties": []
   },
   {
@@ -4289,364 +3407,20 @@
         "name": "Majid Valipour",
         "org": "Google",
         "link": "Mailto:majidvp@google.com"
-      },
+      }
+    ],
+    "thisSpecUrl": "https://www.w3.org/TR/css-overscroll-1/",
+    "properties": []
+  },
+  {
+    "authors": [
       {
-        "name": "Robert Flack",
+        "name": "Majid Valipour",
         "org": "Google",
-        "link": "Mailto:flackr@chromium.org"
-      },
-      {
-        "name": "Stephen McGruer",
-        "org": "Google",
-        "link": "Mailto:smcgruer@chromium.org"
+        "link": "Mailto:majidvp@google.com"
       }
     ],
-    "thisSpecUrl": "https://drafts.css-houdini.org/css-animationworklet-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-font-loading/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-font-loading/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Léonie Watson",
-        "org": "Tetralogical",
-        "link": "Mailto:lwatson@tetralogical.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-speech-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Léonie Watson",
-        "org": "Tetralogical",
-        "link": "Mailto:lwatson@tetralogical.com"
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css3-speech/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins-Bittner",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Adam Argyle",
-        "org": "Google",
-        "link": "Https://nerdy.dev"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-nesting/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Simon Sapin",
-        "org": "Mozilla",
-        "link": "Http://exyr.org/about/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-syntax/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      },
-      {
-        "name": "Simon Sapin",
-        "org": "Mozilla",
-        "link": "Http://exyr.org/about/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-syntax/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Google",
-        "link": "Mailto:kojiishi@gmail.com"
-      },
-      {
-        "name": "Xidorn Quan",
-        "org": "Mozilla",
-        "link": "Https://www.upsuper.org/"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-ruby-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Google",
-        "link": "Mailto:kojiishi@gmail.com"
-      },
-      {
-        "name": "Xidorn Quan",
-        "org": "Mozilla",
-        "link": "Https://www.upsuper.org/"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-ruby-1/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Koji Ishii",
-        "org": "Google",
-        "link": "Mailto:kojiishi@gmail.com"
-      },
-      {
-        "name": "Xidorn Quan",
-        "org": "Mozilla",
-        "link": "Https://www.upsuper.org/"
-      },
-      {
-        "name": "Florian Rivoal",
-        "org": "Invited Expert",
-        "link": "Https://florian.rivoal.net/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css3-ruby/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Daniel Glazman",
-        "org": "Disruptive Innovations",
-        "link": ""
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:stearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-pseudo-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Daniel Glazman",
-        "org": "Disruptive Innovations",
-        "link": ""
-      },
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:stearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-pseudo-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:stearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-shapes/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Rossen Atanassov",
-        "org": "Microsoft",
-        "link": "Mailto:ratan@microsoft.com"
-      },
-      {
-        "name": "Alan Stearns",
-        "org": "Adobe",
-        "link": "Mailto:stearns@adobe.com"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/css-shapes/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/selectors/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/selectors/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/selectors-4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Elika J. Etemad / fantasai",
-        "org": "Apple",
-        "link": "Http://fantasai.inkedblade.net/contact"
-      },
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact/"
-      }
-    ],
-    "thisSpecUrl": "http://dev.w3.org/csswg/selectors4/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Peter Linss former editor",
-        "org": "Netscape/AOL",
-        "link": "Http://www.netscape.com/"
-      },
-      {
-        "name": "John Williams former editor",
-        "org": "Quark Inc.",
-        "link": "Http://www.quark.com/"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/selectors-3/",
-    "properties": []
-  },
-  {
-    "authors": [
-      {
-        "name": "Tab Atkins Jr.",
-        "org": "Google",
-        "link": "Http://xanthir.com/contact"
-      }
-    ],
-    "thisSpecUrl": "https://drafts.csswg.org/css-variables/",
+    "thisSpecUrl": "https://www.w3.org/TR/2019/WD-css-overscroll-1-20190606/",
     "properties": []
   }
 ]

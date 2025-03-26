@@ -1,42 +1,26 @@
 [
   {
     "item": "Elika J. Etemad / fantasai",
-    "num": 92
+    "num": 63
   },
   {
     "item": "Tab Atkins Jr.",
-    "num": 86
-  },
-  {
-    "item": "Chris Lilley",
-    "num": 43
-  },
-  {
-    "item": "Brian Birtles",
-    "num": 36
+    "num": 44
   },
   {
     "item": "Koji Ishii",
-    "num": 35
-  },
-  {
-    "item": "Florian Rivoal",
-    "num": 32
-  },
-  {
-    "item": "Dean Jackson",
-    "num": 31
+    "num": 33
   },
   {
     "item": "Tantek Çelik",
-    "num": 24
+    "num": 32
   },
   {
-    "item": "Tab Atkins",
-    "num": 24
+    "item": "Florian Rivoal",
+    "num": 25
   },
   {
-    "item": "Lea Verou",
+    "item": "Elika J. Etemad",
     "num": 22
   },
   {
@@ -44,47 +28,27 @@
     "num": 22
   },
   {
-    "item": "L. David Baron",
-    "num": 21
-  },
-  {
-    "item": "Elika J. Etemad",
+    "item": "Tab Atkins",
     "num": 20
   },
   {
-    "item": "Bert Bos",
+    "item": "Daniel Glazman",
+    "num": 19
+  },
+  {
+    "item": "Dean Jackson",
     "num": 16
-  },
-  {
-    "item": "Myles C. Maxfield",
-    "num": 15
-  },
-  {
-    "item": "Robert Flack",
-    "num": 15
   },
   {
     "item": "Dirk Schulze",
     "num": 15
   },
   {
-    "item": "John Daggett",
-    "num": 12
-  },
-  {
-    "item": "Adam Argyle",
-    "num": 11
-  },
-  {
-    "item": "Håkon Wium Lie",
-    "num": 11
-  },
-  {
-    "item": "Antoine Quint",
-    "num": 11
-  },
-  {
     "item": "Alan Stearns",
+    "num": 11
+  },
+  {
+    "item": "Ian Hickson",
     "num": 11
   },
   {
@@ -92,100 +56,20 @@
     "num": 11
   },
   {
-    "item": "David Hyatt",
-    "num": 10
-  },
-  {
-    "item": "Chris Marrin",
-    "num": 10
-  },
-  {
-    "item": "Peter Linss former editor",
-    "num": 10
-  },
-  {
-    "item": "John Williams former editor",
-    "num": 10
-  },
-  {
-    "item": "Daniel Glazman",
-    "num": 9
-  },
-  {
     "item": "Rune Lillesveen",
     "num": 9
-  },
-  {
-    "item": "Una Kravets",
-    "num": 8
-  },
-  {
-    "item": "John Daggett Mozilla",
-    "num": 8
-  },
-  {
-    "item": "Brad Kemper",
-    "num": 7
-  },
-  {
-    "item": "Simon Sapin",
-    "num": 7
-  },
-  {
-    "item": "Stephen McGruer",
-    "num": 7
   },
   {
     "item": "Theresa OConnor",
     "num": 7
   },
   {
-    "item": "Rik Cabanier",
-    "num": 6
-  },
-  {
-    "item": "Nikos Andronikos",
-    "num": 6
-  },
-  {
-    "item": "Tantek Çelik Mozilla Corporation",
-    "num": 6
-  },
-  {
-    "item": "Botond Ballo",
-    "num": 6
-  },
-  {
-    "item": "Olga Gerchikov",
-    "num": 6
-  },
-  {
-    "item": "Shane Stephens",
-    "num": 6
-  },
-  {
-    "item": "Tab Atkins-Bittner",
-    "num": 6
+    "item": "Brian Birtles",
+    "num": 7
   },
   {
     "item": "Greg Whitworth",
     "num": 6
-  },
-  {
-    "item": "Michel Suignard",
-    "num": 5
-  },
-  {
-    "item": "Dave Cramer",
-    "num": 5
-  },
-  {
-    "item": "Daniel Weck",
-    "num": 5
-  },
-  {
-    "item": "Xidorn Quan",
-    "num": 5
   },
   {
     "item": "Ian Kilpatrick",
@@ -196,23 +80,7 @@
     "num": 5
   },
   {
-    "item": "W3C",
-    "num": 4
-  },
-  {
-    "item": "Alex Danilo",
-    "num": 4
-  },
-  {
-    "item": "Majid Valipour",
-    "num": 4
-  },
-  {
-    "item": "Dave Raggett",
-    "num": 4
-  },
-  {
-    "item": "Koji Ishii Rakuten",
+    "item": "Fantasai",
     "num": 4
   },
   {
@@ -228,7 +96,7 @@
     "num": 4
   },
   {
-    "item": "Ian Hickson",
+    "item": "Dave Cramer",
     "num": 4
   },
   {
@@ -236,15 +104,7 @@
     "num": 4
   },
   {
-    "item": "Tantek Çelik invited expert",
-    "num": 3
-  },
-  {
-    "item": "Robert Stevahn",
-    "num": 3
-  },
-  {
-    "item": "Jim Bigelow",
+    "item": "Michel Suignard",
     "num": 3
   },
   {
@@ -264,7 +124,7 @@
     "num": 3
   },
   {
-    "item": "Fantasai",
+    "item": "Tab Atkins-Bittner",
     "num": 3
   },
   {
@@ -272,55 +132,23 @@
     "num": 3
   },
   {
-    "item": "Anne van Kesteren",
-    "num": 2
-  },
-  {
-    "item": "Chris Harrelson",
-    "num": 2
-  },
-  {
-    "item": "Tim Boland",
-    "num": 2
-  },
-  {
-    "item": "Microsoft Corporation",
-    "num": 2
-  },
-  {
-    "item": "Mike Bremford",
-    "num": 2
-  },
-  {
-    "item": "Rachel Andrew",
-    "num": 2
-  },
-  {
-    "item": "Emilio Cobos Álvarez",
-    "num": 2
-  },
-  {
-    "item": "Melinda Grant",
-    "num": 2
-  },
-  {
-    "item": "Sylvain Galineau",
-    "num": 2
-  },
-  {
-    "item": "Léonie Watson",
-    "num": 2
-  },
-  {
-    "item": "Claudio Santambrogio",
-    "num": 2
-  },
-  {
     "item": "Richard Ishida",
     "num": 2
   },
   {
-    "item": "John Williams Quark",
+    "item": "Shane Stephens",
+    "num": 2
+  },
+  {
+    "item": "L. David Baron",
+    "num": 2
+  },
+  {
+    "item": "David Hyatt",
+    "num": 2
+  },
+  {
+    "item": "Chris Marrin",
     "num": 2
   },
   {
@@ -332,76 +160,8 @@
     "num": 2
   },
   {
-    "item": "Brad Pettit",
-    "num": 1
-  },
-  {
-    "item": "Brad Chase",
-    "num": 1
-  },
-  {
-    "item": "Chuck Rowe",
-    "num": 1
-  },
-  {
-    "item": "David Meltzer",
-    "num": 1
-  },
-  {
-    "item": "Glen Rippel",
-    "num": 1
-  },
-  {
-    "item": "Håkon Lie",
-    "num": 1
-  },
-  {
-    "item": "Randy Polen",
-    "num": 1
-  },
-  {
-    "item": "Steve Zilles",
-    "num": 1
-  },
-  {
-    "item": "Elika J. Etemad / fantasai Invited Expert",
-    "num": 1
-  },
-  {
-    "item": "Simon Sapin Mozilla",
-    "num": 1
-  },
-  {
-    "item": "Jacob Refstrup",
-    "num": 1
-  },
-  {
-    "item": "Dmitry Baranovskiy",
-    "num": 1
-  },
-  {
-    "item": "Michel Suignard Microsoft",
-    "num": 1
-  },
-  {
-    "item": "Daniel Glazman formerly of Electricité de France",
-    "num": 1
-  },
-  {
-    "item": "Peter Linss formerly of Netscape Communications",
-    "num": 1
-  },
-  {
-    "item": "Electricité de France",
-    "num": 1
-  },
-  {
-    "item": "Luke Macpherson Google",
-    "num": 1
-  },
-  {
-    "item": "Daniel Glazman Disruptive Innovations",
-    "num": 1
+    "item": "Majid Valipour",
+    "num": 2
   },
   {
     "item": "Luke Macpherson",
@@ -409,14 +169,6 @@
   },
   {
     "item": "Edward O’Connor",
-    "num": 1
-  },
-  {
-    "item": "Tab Atkins Jr. Google",
-    "num": 1
-  },
-  {
-    "item": "Tantek Çelik Mozilla tantek@cs.stanford.edu",
     "num": 1
   }
 ]

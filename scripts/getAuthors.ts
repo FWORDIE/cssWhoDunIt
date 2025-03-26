@@ -63,17 +63,24 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 			let item = $(editorsHeader);
 			while (stillSearching) {
 				item = $(item).next();
-				if (item.length < 1 || item.prop("tagName") == "DT") {
+				if (item.length < 1 || item.prop("tagName") == "DT" || $(item).text().includes("(")) {
 					stillSearching = false;
 				} else {
 					const string = $(item).text().split(",");
 					if (
 						string.length > 1 &&
-						!$(item).text().includes("Adobe Systems, Inc")
+						!$(item).text().includes(", Inc") &&
+						!$(item).text().includes(", formerly") &&
+						!$(item).text().includes(" and before")
 					) {
-						const name = $(item).text().split(",")[0]?.trim() || "";
+						let name = $(item).text().split(",")[0]?.trim() || "";
 						const org = $(item).text().split(",")[1]?.trim() || "";
 						const link = $(item).find("a")?.prop("href") || "";
+						console.log(name)
+
+						if (name.includes("(") && name.includes(")")) {
+							name = name.split("(")[0];
+						}
 						if (name && org) {
 							const editorInfo = {
 								name: name,
@@ -101,13 +108,16 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 				if (
 					item.length < 1 ||
 					item.prop("tagName") == "DT" ||
-					$(item).children().length < 2
+					$(item).children().length < 2 ||
+					$(item).text().includes("<") // fix for https://www.w3.org/TR/2013/WD-cssom-20131205/
 				) {
 					stillSearching = false;
 				} else {
 					const name = $(item).children().first().text().trim() || "";
-					const org = $(item).children().last().text().trim() || "";
+					const org =
+						$(item).children().first().next().text().trim() || "";
 					const link = $(item).find("a").prop("href") || "";
+
 					if (name) {
 						const editorInfo = {
 							name: name,
@@ -133,10 +143,15 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 				if (
 					item.length < 1 ||
 					item.prop("tagName") == "DT" ||
-					$(item).children().length < 2
+					$(item).children().length < 2 ||
+					$(item).text().includes("<") // fix for https://www.w3.org/TR/2013/WD-cssom-20131205/ ||
+					|| $(item).text().includes("(")
 				) {
-					stillSearching = false;
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
 				} else {
+
 					const name = $(item).children().first().text().trim() || "";
 					const org = $(item).children().next()?.text().trim() || "";
 					const link = $(item).find("a").prop("href") || "";
@@ -167,7 +182,8 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					item.length < 1 ||
 					item.prop("tagName") == "DT" ||
 					$(item).text().split(")")[1] == undefined ||
-					$(item).find("a").length > 0
+					$(item).find("a").length > 0 ||
+					$(item).find(".p-name").length > 0
 				) {
 					stillSearching = false;
 				} else {
@@ -190,7 +206,7 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 			}
 		}
 
-		//e.g. https://www.w3.org/TR/2011/WD-css3-values-20110906/
+		//e.g. https://www.w3.org/TR/2022/REC-css-color-3-20220118/
 		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
 			let stillSearching = true;
 			let item = $(editorsHeader);
@@ -200,13 +216,53 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 				if (
 					item.length < 1 ||
 					item.prop("tagName") == "DT" ||
-					$(item).text().split("(")[1] === undefined
+					$(item).text().split("(")[1] === undefined ||
+					$(item).find(".p-name").length < 1 ||
+					$(item).find(".p-org").length < 1
 				) {
 					stillSearching = false;
 				} else {
+
+					const name =
+						$(item).find(".p-name").first().text().trim() || "";
+					const org =
+						$(item).find(".p-org").first().text().trim() || "";
+					const link = $(item).find("a").prop("href") || "";
+					// TODO: Write a function to get org from email
+					if (name) {
+						const editorInfo = {
+							name: name,
+							org: org,
+							link: link,
+						};
+						editors.push(editorInfo);
+					}
+				}
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		//e.g. https://www.w3.org/TR/2011/WD-css3-values-20110906/
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader);
+			while (stillSearching) {
+				item = $(item).next();
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).text().split("(")[1] === undefined ||
+					$(item).text().includes('former')
+				) {
+					stillSearching = false;
+				} else {
+
 					const name = $(item).text().split("(")[0].trim() || "";
 					const org = $(item).text().split("(")[1].trim() || "";
 					const link = $(item).find("a").prop("href") || "";
+
 					// TODO: Write a function to get org from email
 					if (name) {
 						const editorInfo = {
@@ -227,7 +283,6 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
 			let stillSearching = true;
 			let item = $(editorsHeader);
-
 			while (stillSearching) {
 				item = $(item).next();
 				if (
@@ -240,6 +295,52 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					const name = $(item).children().first().text() || "";
 					const org = $(item).find("a").prop("href") || "";
 					const link = $(item).find("a").prop("href") || "";
+
+					// TODO: Write a function to get org from email
+					// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+					if (name) {
+						const editorInfo = {
+							name: name,
+							org: org,
+							link: link,
+						};
+						editors.push(editorInfo);
+					}
+				}
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		// e.g. https://www.w3.org/TR/2008/WD-css3-mediaqueries-20081015/
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader);
+			while (stillSearching) {
+				item = $(item).next();
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					($(item).find(".fn").length < 1 &&
+						$(item).find(".family-name").length < 1) // thanks daniel https://www.w3.org/TR/2008/WD-css3-mediaqueries-20081015/
+				) {
+					stillSearching = false;
+				} else {
+					let name = $(item).children().first().text() || "";
+					const org = $(item).children().next().text() || "";
+					const link = $(item).find("a").prop("href") || "";
+
+					if (
+						$(item).find(".family-name").length > 0 &&
+						$(item).find(".given-name").length > 0
+					) {
+						name =
+							$(item).find(".given-name").text().trim() +
+							" " +
+							$(item).find(".family-name").text().trim();
+					}
+
 					// TODO: Write a function to get org from email
 					// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
 					if (name) {
@@ -262,15 +363,26 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
 			let stillSearching = true;
 			let item = $(editorsHeader);
+
 			while (stillSearching) {
 				item = $(item).next();
-				if (item.length < 1 || item.prop("tagName") == "DT") {
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					($(item).children().length < 2 &&
+						$(item).find("a").length < 1) ||
+					$(item).text().includes("<") ||
+					$(item).find(".p-name").length > 0
+				) {
 					stillSearching = false;
 				} else {
-					const name = $(item).children().first().text().trim() || "";
+					let name = $(item).children().first().text().trim() || "";
 					const org =
 						$(item).children().first().next()?.text().trim() || "";
 					const link = $(item).find("a").prop("href") || "";
+					if (name.includes("(") && name.includes(")")) {
+						name = name.split("(")[0];
+					}
 					// TODO: Write a function to get org from email
 					// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
 					if (name) {
@@ -294,7 +406,12 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 			let item = $(editorsHeader);
 			while (stillSearching) {
 				item = $(item).next();
-				if (item.length < 1 || item.prop("tagName") == "DT") {
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).text().includes("<") ||
+					$(item).find(".p-name").length > 0
+				) {
 					stillSearching = false;
 				} else {
 					let strings = $(item).text().split(",");
@@ -326,14 +443,23 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 			let item = $(editorsHeader);
 			while (stillSearching) {
 				item = $(item).next();
-				if (item.length < 1 || item.prop("tagName") == "DT") {
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).text().includes("<") ||
+					$(item).find(".p-name").length > 0
+				) {
 					stillSearching = false;
 				} else {
 					let strings = $(item).text().split("(");
 					if (strings.length > 1) {
 						const name = strings[0]?.trim() || "";
 						const org = strings[1]?.trim() || "";
-						const link = strings[2]?.trim() || "";
+						const link =
+							$(item).find("a")?.prop("href") ||
+							strings[2]?.trim() ||
+							"";
+
 						// TODO: Write a function to get org from email
 						// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
 						if (name) {
@@ -352,6 +478,87 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 			}
 		}
 
+		//e.g. https://www.w3.org/TR/2012/WD-css3-ui-20120117/
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader);
+
+			while (stillSearching) {
+				item = $(item).next();
+
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).find(".p-name").length < 1 ||
+					$(item).find(".h-org").length < 1
+				) {
+					stillSearching = false;
+				} else {
+					let strings = $(item).text().split("<");
+					if (strings.length > 1) {
+						let name = $(item).find(".p-name").text() || "";
+						const org = $(item).find(".h-org").text() || "";
+						const link = $(item).find("a").prop("href") || "";
+						if (name.includes("(") && name.includes(")")) {
+							name = name.split("(")[0];
+						}
+						// TODO: Write a function to get org from email
+						// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+						if (name) {
+							const editorInfo = {
+								name: name,
+								org: org,
+								link: link,
+							};
+							editors.push(editorInfo);
+						}
+					}
+				}
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		//e.g. https://www.w3.org/TR/2015/WD-css3-ui-20150224/
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader);
+
+			while (stillSearching) {
+				item = $(item).next();
+				console.log(item.text());
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).find(".p-name").length < 1 ||
+					$(item).find(".p-org").length < 1
+				) {
+					stillSearching = false;
+				} else {
+					let name = $(item).find(".p-name").text() || "";
+					const org = $(item).find(".p-org").text() || "";
+					const link = $(item).find("a").prop("href") || "";
+					if (name.includes("(") && name.includes(")")) {
+						name = name.split("(")[0];
+					}
+					// TODO: Write a function to get org from email
+					// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+					if (name) {
+						const editorInfo = {
+							name: name,
+							org: org,
+							link: link,
+						};
+						editors.push(editorInfo);
+					}
+				}
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
 		//e.g. https://www.w3.org/1999/06/25/WD-css3-namespace-19990625/
 		editorsHeader = $('dt:contains("Editor")').first();
 		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
@@ -360,7 +567,11 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 
 			while (stillSearching) {
 				item = $(item).next();
-				if (item.length < 1 || item.prop("tagName") == "DT") {
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).text().includes("<")
+				) {
 					stillSearching = false;
 				} else {
 					let strings = $(item).text().split(",");
@@ -371,6 +582,44 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 							$(item).children().first().next()?.text().trim() ||
 							"";
 						const link = $(item).find("a").prop("href") || "";
+
+						// TODO: Write a function to get org from email
+						// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+						if (name) {
+							const editorInfo = {
+								name: name,
+								org: org,
+								link: link,
+							};
+							editors.push(editorInfo);
+						}
+					}
+				}
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		//e.g. https://www.w3.org/1999/06/WD-css3-multicol-19990623
+		editorsHeader = $('dt:contains("Editor")').first();
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader);
+
+			while (stillSearching) {
+				item = $(item).next();
+				if (item.length < 1 || item.prop("tagName") == "DT") {
+					stillSearching = false;
+				} else {
+					let strings = $(item).text().split("<");
+					if (strings.length > 1) {
+						let name = strings[0].trim() || "";
+						const org = strings[1].trim() || "";
+						const link = $(item).find("a").prop("href") || "";
+						if (name.includes("(") && name.includes(")")) {
+							name = name.split("(")[0];
+						}
 						// TODO: Write a function to get org from email
 						// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
 						if (name) {
@@ -559,7 +808,7 @@ const cleaner = (authors: Authors[]) => {
 		//@ts-ignore
 		author.link = cleanString(author.link);
 		if (author.org === "" && author.link) {
-			author.org = author.link;
+			author.org = cleanOrg(author.link);
 		}
 	}
 	return authors;
@@ -580,6 +829,7 @@ const cleanString = (string: string | null) => {
 		string = string
 			.replace("\n", "")
 			.replace("'", "")
+			.replace("(invited expert", "")
 			.replace("(", "")
 			.replace(")", "")
 			.replace(",", "")
