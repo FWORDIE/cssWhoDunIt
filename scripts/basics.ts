@@ -126,7 +126,7 @@ export const orgTable = [
 	["Stanford", "stanford", "Cs.stanford.edu"],
 	["Hewlett-Packard", "Boi.hp.com","HP"],
 	["Hachette Livre"],
-	["Disruptive Innovations", "Disruptive-innovations.com"],
+	["Disruptive Innovations", "Disruptive-innovations.com", "disruptive innovations SARL"],
 	["LG Electronics"],
 	["Canon", "Canon Information Systems Research Australia"],
 	["DAISY Consortium"],
@@ -140,7 +140,7 @@ export const orgTable = [
 	["Quark Inc.","Quark"],
 	["Bitstream"],
 	["BFO"],
-	["Rakuten"],
+	["Rakuten", "Rakuten Inc."],
 	["Electricité de France"],
 
 
@@ -156,7 +156,7 @@ export const authorTable = [
 	["Tab Atkins", "Tab Atkins Jr.", "Tab Atkins-Bittner"],
 	["Rossen Atanassov"],
 	["Florian Rivoal"],
-	["Koji Ishii", "Koji Ishii Rakuten"]
+	["Koji Ishii"],
 
 
 ];
