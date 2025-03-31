@@ -2,3 +2,9 @@
 .prettierrc
 .env
 infos/*
+/jsons/allNamesList.json
+/jsons/allOrgsList.json
+/jsons/allNamesList.json
+/jsons/brokenSpecs.json
+/jsons/AllSpecInfo.json
+

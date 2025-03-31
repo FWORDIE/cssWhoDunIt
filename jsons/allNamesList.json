@@ -1,7 +1,7 @@
 [
   {
     "item": "Elika J. Etemad / fantasai",
-    "num": 432
+    "num": 430
   },
   {
     "item": "Tab Atkins Jr.",
@@ -17,7 +17,7 @@
   },
   {
     "item": "Chris Lilley",
-    "num": 100
+    "num": 99
   },
   {
     "item": "Koji Ishii",
@@ -25,11 +25,11 @@
   },
   {
     "item": "Tab Atkins",
-    "num": 93
+    "num": 92
   },
   {
     "item": "L. David Baron",
-    "num": 78
+    "num": 77
   },
   {
     "item": "Tantek Çelik",
@@ -41,7 +41,7 @@
   },
   {
     "item": "Dean Jackson",
-    "num": 69
+    "num": 68
   },
   {
     "item": "Brian Birtles",
@@ -57,7 +57,7 @@
   },
   {
     "item": "Håkon Wium Lie",
-    "num": 51
+    "num": 52
   },
   {
     "item": "Dirk Schulze",
@@ -69,7 +69,7 @@
   },
   {
     "item": "Daniel Glazman",
-    "num": 30
+    "num": 31
   },
   {
     "item": "Miriam E. Suzanne",
@@ -132,11 +132,11 @@
     "num": 15
   },
   {
-    "item": "Ian Kilpatrick",
-    "num": 14
+    "item": "Khushal Sagar",
+    "num": 13
   },
   {
-    "item": "Khushal Sagar",
+    "item": "Ian Kilpatrick",
     "num": 13
   },
   {
@@ -428,10 +428,6 @@
     "num": 2
   },
   {
-    "item": "Howcome@operasoftware.com",
-    "num": 1
-  },
-  {
     "item": "Eric Willigers",
     "num": 1
   },
@@ -449,10 +445,6 @@
   },
   {
     "item": "Naina Raisinghani",
-    "num": 1
-  },
-  {
-    "item": "Microsoft Corporation",
     "num": 1
   },
   {
@@ -488,10 +480,6 @@
     "num": 1
   },
   {
-    "item": "Electricité de France",
-    "num": 1
-  },
-  {
     "item": "Luke Macpherson",
     "num": 1
   },
@@ -513,10 +501,6 @@
   },
   {
     "item": "Benoit Girard",
-    "num": 1
-  },
-  {
-    "item": "Sam Sneddon",
     "num": 1
   }
 ]

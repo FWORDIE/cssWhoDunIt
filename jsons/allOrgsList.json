@@ -1,7 +1,7 @@
 [
   {
     "item": "Google",
-    "num": 711
+    "num": 709
   },
   {
     "item": "Invited Expert",
@@ -9,7 +9,7 @@
   },
   {
     "item": "Apple",
-    "num": 337
+    "num": 334
   },
   {
     "item": "Microsoft",
@@ -17,11 +17,11 @@
   },
   {
     "item": "Mozilla",
-    "num": 199
+    "num": 198
   },
   {
     "item": "W3C",
-    "num": 178
+    "num": 177
   },
   {
     "item": "Adobe",
@@ -45,7 +45,7 @@
   },
   {
     "item": "Stanford",
-    "num": 19
+    "num": 18
   },
   {
     "item": "Hixie.ch",
@@ -160,7 +160,7 @@
     "num": 1
   },
   {
-    "item": "",
+    "item": "Operasoftware.com",
     "num": 1
   },
   {
@@ -193,10 +193,6 @@
   },
   {
     "item": "Facebook",
-    "num": 1
-  },
-  {
-    "item": "Https://gsnedders.com",
     "num": 1
   }
 ]

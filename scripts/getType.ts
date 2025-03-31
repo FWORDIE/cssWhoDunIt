@@ -24,7 +24,6 @@ export const getType = async ($: cheerio.CheerioAPI, sheet: string) => {
 	if (!specType) {
         // https://www.w3.org/TR/2012/WD-css3-grid-layout-20121106/ 
         const specTypeString = $("h1").next().text().replace("W3C", "");
-		console.log("Im here");
         specType = specTypeString.split(/\d/)[0].trim();
         if (specType && await checkSpecType(specType, sheet) != "Failed") {
           return checkSpecType(specType, sheet);

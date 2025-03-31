@@ -690,7 +690,8 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					item.length < 1 ||
 					item.prop("tagName") == "DT" ||
 					$(item).find(".p-name").length > 0 ||
-					$(item).find(".u-email").length > 0
+					$(item).find(".u-email").length > 0 ||
+					$(item).text().includes("<")
 				) {
 					if (item.prop("tagName") != "DD") {
 						stillSearching = false;
@@ -703,6 +704,7 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 					if (name.includes("(") && name.includes(")")) {
 						name = name.split("(")[0];
 					}
+
 					// TODO: Write a function to get org from email
 					// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
 					if (name) {
@@ -712,6 +714,51 @@ export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
 							link: link,
 						};
 						editors.push(editorInfo);
+					}
+				}
+			}
+			if (editors.length > 0) {
+				return cleaner(editors);
+			}
+		}
+
+		//e.g. https://www.w3.org/TR/1999/WD-CSS3-selectors-19990803
+		if (editorsHeader && !$(editorsHeader).text().includes("Former")) {
+			let stillSearching = true;
+			let item = $(editorsHeader);
+
+			while (stillSearching) {
+				item = $(item).next();
+
+				if (
+					item.length < 1 ||
+					item.prop("tagName") == "DT" ||
+					$(item).find(".p-name").length > 0 ||
+					$(item).find(".u-email").length > 0
+				) {
+					if (item.prop("tagName") != "DD") {
+						stillSearching = false;
+					}
+				} else {
+					let strings = $(item).text().split("<");
+					if (strings.length > 1) {
+						let name = strings[0] || "";
+						const org = strings[1] || "";
+						const link = $(item).find("a").prop("href") || "";
+						if (name.includes("(") && name.includes(")")) {
+							name = name.split("(")[0];
+						}
+
+						// TODO: Write a function to get org from email
+						// TODO: Write fucntion to clean Org, name BIG PATTERN MATCH
+						if (name) {
+							const editorInfo = {
+								name: name,
+								org: org,
+								link: link,
+							};
+							editors.push(editorInfo);
+						}
 					}
 				}
 			}
