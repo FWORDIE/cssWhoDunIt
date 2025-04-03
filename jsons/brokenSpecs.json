@@ -1,0 +1,23 @@
+[
+  {
+    "types": [
+      "DATE"
+    ],
+    "sheet": "https://www.w3.org/TR/WD-CSS2-971104/cover.html"
+  },
+  {
+    "types": [
+      "specType",
+      "ABSTRACT"
+    ],
+    "sheet": "https://www.w3.org/TR/WD-CSS2-971104/"
+  },
+  {
+    "types": [
+      "Authors",
+      "DATE",
+      "ABSTRACT"
+    ],
+    "sheet": "http://dev.w3.org/fxtf/web-animations/"
+  }
+]

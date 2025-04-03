@@ -1,12 +1,11 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
 const string: string = "/en-US/docs/Web/CSS/";
 
-let $ = await cheerio.fromURL(
+const $ = await cheerio.fromURL(
 	"https://developer.mozilla.org/en-US/docs/Web/CSS",
 );
 const props: string[] = [];
-let allProps = $('summary:contains("Properties")').next().find("a");
-console.log(allProps.length);
+const allProps = $('summary:contains("Properties")').next().find("a");
 for (const posProp of allProps) {
 	let href = $(posProp).attr()?.href;
 	if (href && href?.includes(string)) {

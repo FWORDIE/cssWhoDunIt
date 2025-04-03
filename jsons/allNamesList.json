@@ -1,7 +1,7 @@
 [
   {
     "item": "Elika J. Etemad / fantasai",
-    "num": 430
+    "num": 432
   },
   {
     "item": "Tab Atkins Jr.",
@@ -17,7 +17,7 @@
   },
   {
     "item": "Chris Lilley",
-    "num": 99
+    "num": 100
   },
   {
     "item": "Koji Ishii",
@@ -25,15 +25,15 @@
   },
   {
     "item": "Tab Atkins",
-    "num": 92
+    "num": 93
   },
   {
     "item": "L. David Baron",
-    "num": 77
+    "num": 78
   },
   {
     "item": "Tantek Çelik",
-    "num": 70
+    "num": 71
   },
   {
     "item": "Tab Atkins-Bittner",
@@ -41,7 +41,7 @@
   },
   {
     "item": "Dean Jackson",
-    "num": 68
+    "num": 69
   },
   {
     "item": "Brian Birtles",
@@ -132,11 +132,11 @@
     "num": 15
   },
   {
-    "item": "Khushal Sagar",
-    "num": 13
+    "item": "Ian Kilpatrick",
+    "num": 14
   },
   {
-    "item": "Ian Kilpatrick",
+    "item": "Khushal Sagar",
     "num": 13
   },
   {
@@ -501,6 +501,10 @@
   },
   {
     "item": "Benoit Girard",
+    "num": 1
+  },
+  {
+    "item": "Sam Sneddon",
     "num": 1
   }
 ]

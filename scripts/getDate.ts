@@ -56,7 +56,6 @@ export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
         thisVersion.length - (8 + change),
         thisVersion.length - change,
       );
-      console.log(date);
       formatedDate = moment(date, "YYYYMMDD").format();
 
       if (formatedDate && formatedDate != "Invalid date") {
@@ -81,7 +80,6 @@ export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
     if (
       formatedDate == [0 - 9] + formatedDate && formatedDate != "Invalid date"
     ) {
-      console.log(date);
       return formatedDate;
     }
 

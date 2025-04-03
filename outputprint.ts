@@ -1,13 +1,17 @@
 //Takes the data and formats it as an output for a dot matrix printer
 
+//TODO: ADD BOLD FOR PRINTER
+//TODO: CENTER DATE AND MOVE IT ABOVE TITLE
+
 import { SpecSheet } from "./types.ts";
 import moment from "npm:moment";
 
 const chrLimit = 80;
+let string = "";
 
 //Takes the JSON file filled with all the data and turns it into an array of objects
 const specSheetInfoArray = JSON.parse(
-  await Deno.readTextFile("jsons/AllSpecInfo.json"),
+	await Deno.readTextFile("jsons/AllSpecInfo.json"),
 );
 
 //don't hate me for the amount of breaks
@@ -24,86 +28,114 @@ const specSheetInfoArray = JSON.parse(
 // I thınk ıts all good now....
 
 function makeLine(left: string, right: string) {
-  const centerLength = chrLimit - left.length - right.length;
-  let center = "";
-  for (let i = 0; i < centerLength; i++) {
-    center += " ";
-  }
-  let line = left + center + right;
-  line = line.trim();
 
-  return line + "\n";
+	const centerLength = chrLimit - left.length - right.length;
+
+	let center = "";
+
+	for (let i = 0; i < centerLength; i++) {
+		center += " ";
+	}
+
+	let line = left + center + right;
+
+	line = line.trim();
+
+	return line + "\n";
 }
 
 function breakItDown(string: string) {
-  let returnString = '';
-  let chunks = string.match(/.{1,80}/g);
-  console.log(chunks)
-  if (chunks) {
-    chunks.forEach((chunk) => {
-		returnString += chunk
-		returnString += "\n"
-    });
+	let returnString = "";
 
-  }else{
-	returnString += string
-	returnString += "\n"
+	let count = 0;
 
-  }
-  return returnString
+  //break down string into words on spaces
+	let words = string.split(" ");
+  
+  //loop over each word
+	words.forEach((word, i) => {
+    // check if it will go over line count
+		if (word.length + count > chrLimit) {
+      // break line
+			returnString += "\n";
+      // add  word
+			returnString += word;
+      // reset count
+      count = 0
+		} else {
+      // add word
+			returnString += word;
+		}
+
+    // add word length to count
+    count += word.length;
+
+    // add punctation if not lst or first words
+		if (
+			i != 0 &&
+			i != 1 &&
+			i != words.length - 1 &&
+			i != words.length - 2
+		) {
+			returnString += ", ";
+			count += 2;
+		} else if (i == 0 || i == 1) {
+			returnString += " ";
+			count += 1;
+		}
+	});
+
+  // return string
+	return returnString;
 }
-let string = "";
 
-console.log("Number of spec shets:", specSheetInfoArray.length);
 
 //loop through specSheetInfoArray to add it all together in a string
 for (let i = 0; i < specSheetInfoArray.length; i++) {
-  //this is the sting we add the specs to and return
-  const item: SpecSheet = specSheetInfoArray[i];
-  //the loop after this goes through item author to seperate it into names and orgs
-  //and because the string is declared before now we can add them to it
-  const formatedDate = moment(item.date).format("DD/MM/YYYY");
-  const docName = item.thisDocName || "Name Unknown";
+	//this is the sting we add the specs to and return
+	const item: SpecSheet = specSheetInfoArray[i];
+	//the loop after this goes through item author to seperate it into names and orgs
+	//and because the string is declared before now we can add them to it
+	const formatedDate = moment(item.date).format("DD/MM/YYYY");
+	const docName = item.thisDocName || "Name Unknown";
 
-  string += makeLine(docName.trim(), "");
+	string += makeLine(docName.trim(), "");
 
-  //TODO: turn the date thibgies to a dte thıngy
+	//TODO: turn the date thibgies to a dte thıngy
 
-  const date = "Date: " + formatedDate;
-  const type = "Type: " + item.type;
+	const date = "Date: " + formatedDate;
+	const type = "Type: " + item.type;
 
-  string += makeLine(date.trim(), type.trim());
-  let tempString = "PROPERTIES DEFINED: ";
+	string += makeLine(date.trim(), type.trim());
+	let tempString = "PROPERTIES DEFINED: ";
 
-  //FIXME:I have no idea how to add properties into the line function
-  if (item.properties && item.properties.length > 0) {
-    for (let i = 0; i < item.properties.length; i++) {
-      const prop = item.properties[i];
-      tempString += prop + ", ";
-      //TODO: Dont add comma on last
-    }
-  } else {
-     tempString = "No properties defined";
-  }
-  string += breakItDown(tempString)
-  string += "\n";
+	if (item.properties && item.properties.length > 0) {
+		for (let i = 0; i < item.properties.length; i++) {
+			const prop = item.properties[i];
+			tempString += prop + " ";
+		}
+	} else {
+		tempString = "No properties defined";
+	}
 
-  //FIXME: I also don't know where to write the function(editor,org) outside or inside the loop
-  if (item.authors) {
-    for (let i = 0; i < item.authors.length; i++) {
-      const name = item.authors[i].name;
-      let org = item.authors[i].org || "Org Unknown";
-      if (org == "Invited Expert") {
-        org = org + " - Unknown Funding";
-      }
-      // string += "\n Editor: " + name + "..................... ORG: " + org +
-      //   "\n";
-      let editor = "Editor: " + name;
-      //FIXME: should this be outside of this loop?
-      string += makeLine(editor.trim(), org.trim());
-    }
-  }
-  string += "\n\n";
+	string += breakItDown(tempString);
+	string += "\n";
+
+	//FIXME: I also don't know where to write the function(editor,org) outside or inside the loop
+	if (item.authors) {
+		for (let i = 0; i < item.authors.length; i++) {
+			const name = item.authors[i].name;
+			let org = item.authors[i].org || "Org Unknown";
+			if (org == "Invited Expert") {
+				org = org + " - Unknown Funding";
+			}
+
+			let editor = "Editor: " + name;
+			//FIXME: should this be outside of this loop?
+			string += makeLine(editor.trim(), org.trim());
+		}
+	}
+	string += "\n\n";
 }
 
 await Deno.writeTextFile("output.txt", string);
