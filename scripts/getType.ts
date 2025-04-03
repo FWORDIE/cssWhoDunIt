@@ -57,9 +57,8 @@ const checkSpecType = async (specType: string, sheet: string) => {
   if (specType[specType.length - 1] === "'") {
     specType = specType.slice(0, specType.length - 1);
   }
-  if (specType.includes("W3C")) {
     specType = specType.replace("W3C", "").trim();
-  }
+  
   if (specType) {
     if (
       !specType.match(
@@ -73,7 +72,10 @@ const checkSpecType = async (specType: string, sheet: string) => {
 
       return "Failed";
     }
-
+    specType = specType.replace(",", "").trim();
+    specType = specType.replace("-", "").trim();
+    specType = specType.replace("\n", "").trim();
+    specType = specType.replace(/\s+/g, " ").trim();
     return specType;
   }
 };
