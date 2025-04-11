@@ -600,7 +600,7 @@ const cleanProp = (prop: string, sheet: string) => {
 	if (prop[prop.length - 1] === "'") {
 		prop = prop.slice(0, prop.length - 1);
 	}
-
+	prop = prop.replace('(Descriptor)', '')
 	// Here we check that MDN lists this as a Property based off the getAllProps.ts Scrape
 	if (
 		prop &&

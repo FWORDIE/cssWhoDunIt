@@ -1,19 +1,19 @@
 [
   {
     "item": "Google",
-    "num": 711
+    "num": 716
   },
   {
     "item": "Invited Expert",
-    "num": 522
+    "num": 531
   },
   {
     "item": "Apple",
-    "num": 337
+    "num": 343
   },
   {
     "item": "Microsoft",
-    "num": 241
+    "num": 244
   },
   {
     "item": "Mozilla",
@@ -21,7 +21,7 @@
   },
   {
     "item": "W3C",
-    "num": 178
+    "num": 179
   },
   {
     "item": "Adobe",
@@ -40,7 +40,7 @@
     "num": 26
   },
   {
-    "item": "LG Electronics",
+    "item": "Igalia",
     "num": 19
   },
   {
@@ -48,12 +48,12 @@
     "num": 19
   },
   {
-    "item": "Hixie.ch",
-    "num": 18
+    "item": "LG Electronics",
+    "num": 19
   },
   {
-    "item": "Igalia",
-    "num": 16
+    "item": "Hixie.ch",
+    "num": 18
   },
   {
     "item": "Hachette Livre",
@@ -78,10 +78,6 @@
   {
     "item": "Hewlett-Packard",
     "num": 9
-  },
-  {
-    "item": "Http://fantasai.inkedblade.net/contact",
-    "num": 8
   },
   {
     "item": "Vivliostyle",

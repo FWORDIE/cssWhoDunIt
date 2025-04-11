@@ -1,5 +1,7 @@
 {
   "props": [
+    "http://dvcs.w3.org/hg/FXTF/raw-file/tip/masking/index.html",
+    "https://www.w3.org/TR/1998/REC-CSS2-19980512/fonts.html",
     "http://dev.w3.org/csswg/css-counter-styles-3/",
     "http://dev.w3.org/csswg/css-counter-styles/",
     "http://dev.w3.org/csswg/css-font-loading/",
@@ -277,6 +279,7 @@
     "https://www.w3.org/TR/2024/WD-css-typed-om-1-20240321/",
     "https://www.w3.org/TR/2024/WD-css-values-4-20240312/",
     "https://www.w3.org/TR/2024/WD-css-viewport-1-20240125/",
+    "https://www.w3.org/TR/2025/WD-css-color-5-20250318/",
     "https://www.w3.org/TR/css-animation-worklet-1/",
     "https://www.w3.org/TR/css-cascade-6/",
     "https://www.w3.org/TR/css-color-5/",

@@ -1,5 +1,6 @@
 import { delay } from "jsr:@std/async/delay";
 import * as cheerio from "npm:cheerio@^1.0.0";
+import { specSheetLinkArray } from "./scripts/basics.ts";
 // import { delay } from "./scripts/basics.ts";
 
 // URL used to make links direct properly
@@ -67,13 +68,22 @@ const getSpecsFromList = async () => {
 	specs = await getEditorDrafs(specs);
 
 	// filters out on dupe
-	specs.filter((spec: string) => {
-		!spec.includes("/fonts.html");
+	specs = specs.filter((spec: string) => {
+		return !spec.includes("/fonts.html");
+	});
+
+	specs = specs.filter((spec: string) => {
+		return !spec.includes("/fonts.html");
 	});
 
 	// filters out on dupe
-	specs.filter((spec: string) => {
-		!spec.includes("//dvcs.w3.org/");
+	specs = specs.filter((spec: string) => {
+		return !spec.includes("//dvcs.w3.org/");
+	});
+
+	// filters out on dupe
+	specs = specs.filter((spec: string) => {
+		return !spec.includes("drafts.fxtf.org/web-animations/");
 	});
 
 	console.log(`Found ${specs.length} Spec Sheets after second scrape!`);
@@ -207,7 +217,6 @@ const getEditorDrafs = async (specs: string[]) => {
 				// or the spec refrences it in a weird way
 				// hence we add it to an array so we can debug
 
-				console.log(spec);
 				brokenLinks.push(spec);
 			} else {
 				//if we do have a link we add it to an array

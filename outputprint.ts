@@ -3,24 +3,42 @@
 //TODO: ADD BOLD FOR PRINTER
 //TODO: CENTER DATE AND MOVE IT ABOVE TITLE
 
+import { italic } from "jsr:@std/fmt@1.0.3/colors";
 import { SpecSheet } from "./types.ts";
 import moment from "npm:moment";
 
-const chrLimit = 80;
+const chrLimit = 96;
 let string = "";
-const orgList:{
-	name:string,
-	num:number
-}[] = []
-const nameList:{
-	name:string,
-	num:number
-}[] = []
+const orgList: {
+	name: string;
+	num: number;
+}[] = [];
+const nameList: {
+	name: string;
+	num: number;
+}[] = [];
+
+type SpecialChrs = {
+	bold: { value: string; key: string };
+	normal: { value: string; key: string };
+	italic: { value: string; key: string };
+	misc: { value: string; key: string };
+};
+
+const specialChrs = {
+	bold: { key: "", value: "" },
+	normal: { key: "", value: "" },
+	italic: { key: "", value: "" },
+	misc: { key: "", value: "" },
+};
 
 //Takes the JSON file filled with all the data and turns it into an array of objects
-const specSheetInfoArray = JSON.parse(
+let specSheetInfoArray = JSON.parse(
 	await Deno.readTextFile("jsons/AllSpecInfo.json"),
 );
+
+specSheetInfoArray = specSheetInfoArray.reverse().slice(222,224);
+
 
 //don't hate me for the amount of breaks
 //FIXME: I do not understand how to fix the errors
@@ -35,8 +53,18 @@ const specSheetInfoArray = JSON.parse(
 
 // I thınk ıts all good now....
 
+const lengthWithOut = (string: string) => {
+	let tempString = string;
+
+	for (const chr in specialChrs) {
+		tempString = tempString.replaceAll(specialChrs[chr].key, "");
+	}
+
+	return tempString.length;
+};
+
 function makeLine(left: string, right: string) {
-	const centerLength = chrLimit - left.length - right.length;
+	const centerLength = chrLimit - lengthWithOut(left) - lengthWithOut(right);
 
 	let center = "";
 
@@ -52,7 +80,7 @@ function makeLine(left: string, right: string) {
 }
 
 function centerText(string: string) {
-	const centerPoint = (chrLimit - string.length) / 2;
+	const centerPoint = (chrLimit - lengthWithOut(string)) / 2;
 	let center = "";
 	for (let i = 0; i < centerPoint; i++) {
 		center += " ";
@@ -72,7 +100,7 @@ function breakItDown(string: string) {
 	//loop over each word
 	words.forEach((word, i) => {
 		// check if it will go over line count
-		if (word.length + count > chrLimit) {
+		if (word.length + count + 1 > chrLimit) {
 			// break line
 			returnString += "\n";
 			// add  word
@@ -106,19 +134,21 @@ function breakItDown(string: string) {
 	return returnString;
 }
 
-const addToList = (array: any[], item: string) => {
-	let index = array.findIndex((currentItem) => currentItem.item === item);
-	if (index == -1) {
-		array.push({
-			item: item,
-			num: 1,
-		});
-		return 1
-	} else {
-		array[index].num++;
-		return array[index].num
+const addToList = (array: any[], item: string | null) => {
+	if (item) {
+		let index = array.findIndex((currentItem) => currentItem.item === item);
+		if (index == -1) {
+			array.push({
+				item: item,
+				num: 1,
+			});
+			return 1;
+		} else {
+			array[index].num++;
+			return array[index].num;
+		}
 	}
-	
+	return "NaN";
 };
 
 //loop through specSheetInfoArray to add it all together in a string
@@ -128,21 +158,39 @@ for (let i = 0; i < specSheetInfoArray.length; i++) {
 	//the loop after this goes through item author to seperate it into names and orgs
 	//and because the string is declared before now we can add them to it
 	const formatedDate = moment(item.date).format("DD/MM/YYYY");
-	const docName = item.thisDocName || "Name Unknown";
 
-	// string += makeLine(docName.trim(), "");
+	// Here we center the text and also add special characters to command the printer
+	string += centerText(
+		specialChrs.bold.key + specialChrs.italic.key + formatedDate,
+	);
 
-	//TODO: turn the date thibgies to a dte thıngy
+	// set the text to normal
+	string += specialChrs.normal.key;
 
-	// const date = "Date: " + formatedDate;
-
-	string += centerText(formatedDate);
+	// line break
 	string += "\n";
 
-	const type = "" + item.type;
+	//Add Name
+	const docName =
+		specialChrs.bold.key +
+		(item.thisDocName?.trim() || "Name Unknown") +
+		specialChrs.normal.key;
 
+	// Add Type
+	const type =
+		specialChrs.bold.key +
+		(item.type?.trim() || "Unkown Type") +
+		specialChrs.normal.key;
+
+	// make one line with left and right align for name and type
 	string += makeLine("" + docName.trim(), type.trim());
-	let tempString = "Properties Defined: ";
+
+	// make a list of all the properties
+	let tempString =
+		specialChrs.bold.key +
+		"Properties Defined:" +
+		specialChrs.normal.key +
+		" ";
 
 	if (item.properties && item.properties.length > 0) {
 		for (let i = 0; i < item.properties.length; i++) {
@@ -153,28 +201,62 @@ for (let i = 0; i < specSheetInfoArray.length; i++) {
 		tempString = "No properties defined";
 	}
 
+	// jusitfy this list
 	string += breakItDown(tempString);
+
+	// set the text to normal
+	string += specialChrs.normal.key;
+
 	string += "\n";
 
 	//FIXME: I also don't know where to write the function(editor,org) outside or inside the loop
 	if (item.authors) {
 		for (let i = 0; i < item.authors.length; i++) {
+			// write name of editor
 			const name = item.authors[i].name;
-			let org = "[Num:" + addToList(orgList, item.authors[i].org) +'] ';
+
+			let editor =
+				specialChrs.bold.key +
+				"Editor: " +
+				specialChrs.normal.key +
+				name +
+				specialChrs.italic.key +
+				" [Num:" +
+				addToList(nameList, name) +
+				"]" +
+				specialChrs.normal.key;
+
+			let org = "";
+			if (item.authors[i].org) {
+				org +=
+					specialChrs.italic.key +
+					"[Num:" +
+					addToList(orgList, item.authors[i].org) +
+					"] " +
+					specialChrs.normal.key;
+			}
 			org += item.authors[i].org || "Org Unknown";
 			if (org == "Invited Expert") {
 				org = org + " - Unknown Funding";
 			}
-			
-			let editor = "Editor: " + name + " [Num:" + addToList(nameList, name) +']';
-			//FIXME: should this be outside of this loop?
+
 			string += makeLine(editor.trim(), org.trim());
 		}
 	}
 	string += "\n\n";
 }
 
-await Deno.writeTextFile("output.txt", string);
+const correctString = (string: string) => {
+	let tempString = string;
 
-//TODO: Bug over line, title and type
-//TODO: add in bold
+	for (const chr in specialChrs) {
+		tempString = tempString.replaceAll(
+			specialChrs[chr].key,
+			specialChrs[chr].value
+		);
+	}
+
+	return tempString;
+};
+await Deno.writeTextFile("output.txt", correctString(string));
+
