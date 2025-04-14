@@ -3,7 +3,6 @@
 //TODO: ADD BOLD FOR PRINTER
 //TODO: CENTER DATE AND MOVE IT ABOVE TITLE
 
-import { italic } from "jsr:@std/fmt@1.0.3/colors";
 import { SpecSheet } from "./types.ts";
 import moment from "npm:moment";
 
@@ -25,11 +24,21 @@ type SpecialChrs = {
 	misc: { value: string; key: string };
 };
 
-const specialChrs = {
+let specialChrs = {
 	bold: { key: "", value: "" },
 	normal: { key: "", value: "" },
 	italic: { key: "", value: "" },
 	misc: { key: "", value: "" },
+};
+
+specialChrs = {
+	bold: { key: "≐", value: String.fromCharCode(27, 84) },
+	normal: {
+		key: "≑",
+		value: String.fromCharCode(27, 51),
+	},
+	italic: { key: "≒", value: String.fromCharCode(27, 49) },
+	misc: { key: "≓", value: "nan" },
 };
 
 //Takes the JSON file filled with all the data and turns it into an array of objects
@@ -37,8 +46,7 @@ let specSheetInfoArray = JSON.parse(
 	await Deno.readTextFile("jsons/AllSpecInfo.json"),
 );
 
-specSheetInfoArray = specSheetInfoArray.reverse().slice(222,224);
-
+specSheetInfoArray = specSheetInfoArray.reverse().slice(222, 224);
 
 //don't hate me for the amount of breaks
 //FIXME: I do not understand how to fix the errors
@@ -252,11 +260,23 @@ const correctString = (string: string) => {
 	for (const chr in specialChrs) {
 		tempString = tempString.replaceAll(
 			specialChrs[chr].key,
-			specialChrs[chr].value
+			specialChrs[chr].value,
 		);
 	}
 
 	return tempString;
 };
-await Deno.writeTextFile("output.txt", correctString(string));
 
+const lineBreakReturn = String.fromCharCode(10);
+const returnChr = String.fromCharCode(13);
+const half = String.fromCharCode(27, 60);
+const fast = String.fromCharCode(27, 62);
+
+const gothic = String.fromCharCode(27, 49);
+const courir = String.fromCharCode(27, 51);
+const utility = String.fromCharCode(27, 48);
+
+string =
+
+	"this will work first time for sure";
+await Deno.writeTextFile("output.txt", correctString(string));
