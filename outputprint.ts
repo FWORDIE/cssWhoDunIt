@@ -8,6 +8,7 @@ import moment from "npm:moment";
 
 const chrLimit = 96;
 let string = "";
+
 const orgList: {
 	name: string;
 	num: number;
@@ -17,13 +18,35 @@ const nameList: {
 	num: number;
 }[] = [];
 
+const lineBreakReturn = String.fromCharCode(10);
+const returnChr = String.fromCharCode(13);
+const half = String.fromCharCode(27, 60);
+const fast = String.fromCharCode(27, 62);
+const italic = String.fromCharCode(27, 37, 71);
+const underline = String.fromCharCode(27, 45, 49);
+const normal =
+	String.fromCharCode(27, 45, 48) +
+	String.fromCharCode(27, 37, 72) +
+	String.fromCharCode(27, 84); // No underline + no italics + np super/sub Script
+const gothic = String.fromCharCode(27, 49);
+const courir = String.fromCharCode(27, 51);
+const utility = String.fromCharCode(27, 48);
+const superscript = String.fromCharCode(27, 83, 48);
+const popSpacing = String.fromCharCode(27, 80, 49);
+const noPopSpacing = String.fromCharCode(27, 80, 48);
+const overscore = String.fromCharCode(27, 95, 49);
+const noOverscore = String.fromCharCode(27, 95, 48);
+
+// Set Spacing to n/72"
+const setLineHeight =
+	String.fromCharCode(27, 65, 15) + " " + String.fromCharCode(27, 50);
+const setSize = String.fromCharCode(27, 58);
 type SpecialChrs = {
 	bold: { value: string; key: string };
 	normal: { value: string; key: string };
 	italic: { value: string; key: string };
 	misc: { value: string; key: string };
 };
-
 let specialChrs = {
 	bold: { key: "", value: "" },
 	normal: { key: "", value: "" },
@@ -31,22 +54,50 @@ let specialChrs = {
 	misc: { key: "", value: "" },
 };
 
+// specialChrs = {
+// 	bold: { key: "≐", value: String.fromCharCode(27, 84) },
+// 	normal: {
+// 		key: "≑",
+// 		value: String.fromCharCode(27, 51),
+// 	},
+// 	italic: { key: "≒", value: String.fromCharCode(27, 49) },
+// 	misc: { key: "≓", value: "nan" },
+// };
 specialChrs = {
-	bold: { key: "≐", value: String.fromCharCode(27, 84) },
+	bold: { key: "≐", value: underline },
 	normal: {
 		key: "≑",
-		value: String.fromCharCode(27, 51),
+		value: normal,
 	},
-	italic: { key: "≒", value: String.fromCharCode(27, 49) },
-	misc: { key: "≓", value: "nan" },
+	italic: { key: "≒", value: italic },
+	misc: { key: "≓", value: superscript },
 };
+
+// let specialChrs = {
+// 	bold: { key: "", value: "" },
+// 	normal: { key: "", value: "" },
+// 	italic: { key: "", value: "" },
+// 	misc: { key: "", value: "" },
+// };
+
+// String Reset Area
+string +=
+	setLineHeight +
+	" " +
+	normal +
+	" " +
+	noPopSpacing +
+	" " +
+	noOverscore +
+	"" +
+	lineBreakReturn;
 
 //Takes the JSON file filled with all the data and turns it into an array of objects
 let specSheetInfoArray = JSON.parse(
 	await Deno.readTextFile("jsons/AllSpecInfo.json"),
 );
 
-specSheetInfoArray = specSheetInfoArray.reverse().slice(222, 224);
+specSheetInfoArray = specSheetInfoArray.reverse().slice(230, 232);
 
 //don't hate me for the amount of breaks
 //FIXME: I do not understand how to fix the errors
@@ -168,15 +219,15 @@ for (let i = 0; i < specSheetInfoArray.length; i++) {
 	const formatedDate = moment(item.date).format("DD/MM/YYYY");
 
 	// Here we center the text and also add special characters to command the printer
-	string += centerText(
-		specialChrs.bold.key + specialChrs.italic.key + formatedDate,
-	);
+	string += centerText(specialChrs.bold.key + formatedDate);
 
 	// set the text to normal
 	string += specialChrs.normal.key;
 
 	// line break
 	string += "\n";
+	string += "\n";
+
 
 	//Add Name
 	const docName =
@@ -186,7 +237,7 @@ for (let i = 0; i < specSheetInfoArray.length; i++) {
 
 	// Add Type
 	const type =
-		specialChrs.bold.key +
+		specialChrs.italic.key +
 		(item.type?.trim() || "Unkown Type") +
 		specialChrs.normal.key;
 
@@ -225,22 +276,23 @@ for (let i = 0; i < specSheetInfoArray.length; i++) {
 
 			let editor =
 				specialChrs.bold.key +
-				"Editor: " +
+				"Editor:" +
 				specialChrs.normal.key +
+				" " +
 				name +
-				specialChrs.italic.key +
-				" [Num:" +
+				specialChrs.misc.key +
+				"  Tot: " +
 				addToList(nameList, name) +
-				"]" +
+				"" +
 				specialChrs.normal.key;
 
 			let org = "";
 			if (item.authors[i].org) {
 				org +=
-					specialChrs.italic.key +
-					"[Num:" +
+					specialChrs.misc.key +
+					"Tot: " +
 					addToList(orgList, item.authors[i].org) +
-					"] " +
+					"  " +
 					specialChrs.normal.key;
 			}
 			org += item.authors[i].org || "Org Unknown";
@@ -267,16 +319,7 @@ const correctString = (string: string) => {
 	return tempString;
 };
 
-const lineBreakReturn = String.fromCharCode(10);
-const returnChr = String.fromCharCode(13);
-const half = String.fromCharCode(27, 60);
-const fast = String.fromCharCode(27, 62);
+// string = lineBreakReturn + popSpacing + normal + "hi     " + "for sure";
+// string += lineBreakReturn + noPopSpacing + normal + "hi     " + "for sure";
 
-const gothic = String.fromCharCode(27, 49);
-const courir = String.fromCharCode(27, 51);
-const utility = String.fromCharCode(27, 48);
-
-string =
-
-	"this will work first time for sure";
 await Deno.writeTextFile("output.txt", correctString(string));
