@@ -6,12 +6,13 @@ import moment from "npm:moment";
 const chrLimit = 96;
 let string = "";
 const forPrint = true;
+let lastDate = '';
 
-const orgList: {
+let orgList: {
 	name: string;
 	num: number;
 }[] = [];
-const nameList: {
+let nameList: {
 	name: string;
 	num: number;
 }[] = [];
@@ -195,6 +196,20 @@ const addToList = (array: any[], item: string | null) => {
 	return "NaN";
 };
 
+const genTable = ()=> {
+	let tempString = ''
+	const title = specialChrs.bold.key + 'The Influencer Charts' 
+	const date = specialChrs.italic.key + lastDate;
+	tempString += centerText(title)
+	tempString += centerText(date)
+	tempString += '\n'
+	nameList = nameList.sort((a, b) => b.num - a.num);
+	orgList = orgList.sort((a, b) => b.num - a.num);
+	console.log(nameList, orgList)
+
+	
+}
+
 //loop through specSheetInfoArray to add it all together in a string
 for (let i = 0; i < specSheetInfoArray.length; i++) {
 	//this is the sting we add the specs to and return
@@ -202,6 +217,8 @@ for (let i = 0; i < specSheetInfoArray.length; i++) {
 	//the loop after this goes through item author to seperate it into names and orgs
 	//and because the string is declared before now we can add them to it
 	const formatedDate = moment(item.date).format("DD/MM/YYYY");
+
+	lastDate = formatedDate
 
 	// Here we center the text and also add special characters to command the printer
 	string += centerText(specialChrs.bold.key + formatedDate);
@@ -288,7 +305,10 @@ for (let i = 0; i < specSheetInfoArray.length; i++) {
 		}
 	}
 	string += "\n\n";
+	genTable()
 }
+
+
 
 const correctString = (string: string) => {
 	let tempString = string;
