@@ -99,7 +99,7 @@ export const orgTable = [
 		"Google",
 		"Google Inc",
 		"GoogleInc.",
-		"Chromium.org",
+		   "Chromium.org",
 		"Google Inc.",
 		"Google.com",
 		"Gmail.com",
