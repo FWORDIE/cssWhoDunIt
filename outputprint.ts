@@ -1,13 +1,11 @@
 //Takes the data and formats it as an output for a dot matrix printer
 
-//TODO: ADD BOLD FOR PRINTER
-//TODO: CENTER DATE AND MOVE IT ABOVE TITLE
-
 import { SpecSheet } from "./types.ts";
 import moment from "npm:moment";
 
 const chrLimit = 96;
 let string = "";
+const forPrint = true;
 
 const orgList: {
 	name: string;
@@ -18,6 +16,7 @@ const nameList: {
 	num: number;
 }[] = [];
 
+// Special Commands for IBM Proline
 const lineBreakReturn = String.fromCharCode(10);
 const returnChr = String.fromCharCode(13);
 const half = String.fromCharCode(27, 60);
@@ -41,29 +40,20 @@ const noOverscore = String.fromCharCode(27, 95, 48);
 const setLineHeight =
 	String.fromCharCode(27, 65, 15) + " " + String.fromCharCode(27, 50);
 const setSize = String.fromCharCode(27, 58);
+
 type SpecialChrs = {
 	bold: { value: string; key: string };
 	normal: { value: string; key: string };
 	italic: { value: string; key: string };
 	misc: { value: string; key: string };
 };
-let specialChrs = {
-	bold: { key: "", value: "" },
-	normal: { key: "", value: "" },
-	italic: { key: "", value: "" },
-	misc: { key: "", value: "" },
+
+// Sets line height
+const setLineHeightFunc = (number = 15) => {
+	return String.fromCharCode(27, 65, number) + String.fromCharCode(27, 50);
 };
 
-// specialChrs = {
-// 	bold: { key: "≐", value: String.fromCharCode(27, 84) },
-// 	normal: {
-// 		key: "≑",
-// 		value: String.fromCharCode(27, 51),
-// 	},
-// 	italic: { key: "≒", value: String.fromCharCode(27, 49) },
-// 	misc: { key: "≓", value: "nan" },
-// };
-specialChrs = {
+let specialChrs = {
 	bold: { key: "≐", value: underline },
 	normal: {
 		key: "≑",
@@ -73,7 +63,7 @@ specialChrs = {
 	misc: { key: "≓", value: superscript },
 };
 
-// let specialChrs = {
+//  specialChrs = {
 // 	bold: { key: "", value: "" },
 // 	normal: { key: "", value: "" },
 // 	italic: { key: "", value: "" },
@@ -97,31 +87,22 @@ let specSheetInfoArray = JSON.parse(
 	await Deno.readTextFile("jsons/AllSpecInfo.json"),
 );
 
-specSheetInfoArray = specSheetInfoArray.reverse().slice(230, 232);
+// Slice the sheet
+specSheetInfoArray = specSheetInfoArray.reverse().slice(50, 60);
 
-//don't hate me for the amount of breaks
-//FIXME: I do not understand how to fix the errors
-// or why they are there to begin with AAAAAA
-// okay ,I fixed some and have no idea how to figure out center.lenght
-// length is a read only property..... i don't think I can assign it a value
-// I changed the places of center.lenght to fix it
-//but it now wants a semi colon up its ass I think
-//But okay some other questions 1) how to position the stuff
-// like does it make sense to write this function in the begining,
-// what to do with the loops for author and properties??
-
-// I thınk ıts all good now....
-
+// Works out length without specail characters
 const lengthWithOut = (string: string) => {
 	let tempString = string;
 
 	for (const chr in specialChrs) {
+		//@ts-ignore
 		tempString = tempString.replaceAll(specialChrs[chr].key, "");
 	}
 
 	return tempString.length;
 };
 
+// Makes left/right lines
 function makeLine(left: string, right: string) {
 	const centerLength = chrLimit - lengthWithOut(left) - lengthWithOut(right);
 
@@ -138,6 +119,7 @@ function makeLine(left: string, right: string) {
 	return line + "\n";
 }
 
+// Centers text
 function centerText(string: string) {
 	const centerPoint = (chrLimit - lengthWithOut(string)) / 2;
 	let center = "";
@@ -148,6 +130,7 @@ function centerText(string: string) {
 	return center;
 }
 
+// Justifys text
 function breakItDown(string: string) {
 	let returnString = "";
 
@@ -159,7 +142,7 @@ function breakItDown(string: string) {
 	//loop over each word
 	words.forEach((word, i) => {
 		// check if it will go over line count
-		if (word.length + count + 1 > chrLimit) {
+		if (word.length + count + 2 > chrLimit) {
 			// break line
 			returnString += "\n";
 			// add  word
@@ -193,6 +176,7 @@ function breakItDown(string: string) {
 	return returnString;
 }
 
+// Adds and returns ocunt
 const addToList = (array: any[], item: string | null) => {
 	if (item) {
 		let index = array.findIndex((currentItem) => currentItem.item === item);
@@ -201,10 +185,11 @@ const addToList = (array: any[], item: string | null) => {
 				item: item,
 				num: 1,
 			});
-			return 1;
+			return "First Ever Contribution";
 		} else {
 			array[index].num++;
-			return array[index].num;
+			//TODO: IS THIS THE RIGHT VERBIAGE
+			return array[index].num + " Contributions So Far";
 		}
 	}
 	return "NaN";
@@ -227,7 +212,6 @@ for (let i = 0; i < specSheetInfoArray.length; i++) {
 	// line break
 	string += "\n";
 	string += "\n";
-
 
 	//Add Name
 	const docName =
@@ -268,39 +252,39 @@ for (let i = 0; i < specSheetInfoArray.length; i++) {
 
 	string += "\n";
 
+	let left = specialChrs.bold.key + "Editors:" + specialChrs.normal.key;
+	let right =
+		specialChrs.bold.key + "Organisations:" + specialChrs.normal.key;
+
+	string += makeLine(left, right);
 	//FIXME: I also don't know where to write the function(editor,org) outside or inside the loop
 	if (item.authors) {
 		for (let i = 0; i < item.authors.length; i++) {
 			// write name of editor
 			const name = item.authors[i].name;
 
-			let editor =
-				specialChrs.bold.key +
-				"Editor:" +
-				specialChrs.normal.key +
-				" " +
-				name +
-				specialChrs.misc.key +
-				"  Tot: " +
-				addToList(nameList, name) +
-				"" +
-				specialChrs.normal.key;
+			let editor = name || " Name Unknown";
 
 			let org = "";
-			if (item.authors[i].org) {
-				org +=
-					specialChrs.misc.key +
-					"Tot: " +
-					addToList(orgList, item.authors[i].org) +
-					"  " +
-					specialChrs.normal.key;
-			}
 			org += item.authors[i].org || "Org Unknown";
 			if (org == "Invited Expert") {
 				org = org + " - Unknown Funding";
 			}
 
 			string += makeLine(editor.trim(), org.trim());
+
+			let editContribsName =
+				specialChrs.italic.key +
+				specialChrs.misc.key +
+				addToList(nameList, editor?.trim()) +
+				specialChrs.normal.key;
+			let editContribsOrg =
+				specialChrs.italic.key +
+				specialChrs.misc.key +
+				addToList(orgList, org?.trim()) +
+				specialChrs.normal.key;
+
+			string += makeLine(editContribsName, editContribsOrg);
 		}
 	}
 	string += "\n\n";
@@ -311,15 +295,14 @@ const correctString = (string: string) => {
 
 	for (const chr in specialChrs) {
 		tempString = tempString.replaceAll(
+			//@ts-ignore
 			specialChrs[chr].key,
-			specialChrs[chr].value,
+			//@ts-ignore
+			forPrint ? specialChrs[chr].value : "",
 		);
 	}
 
 	return tempString;
 };
-
-// string = lineBreakReturn + popSpacing + normal + "hi     " + "for sure";
-// string += lineBreakReturn + noPopSpacing + normal + "hi     " + "for sure";
 
 await Deno.writeTextFile("output.txt", correctString(string));
