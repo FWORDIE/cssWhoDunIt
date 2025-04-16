@@ -1,11 +1,11 @@
 [
   {
-    "item": "Elika J. Etemad / fantasai",
-    "num": 435
+    "item": "Elika J. Etemad fantasai",
+    "num": 512
   },
   {
-    "item": "Tab Atkins Jr.",
-    "num": 313
+    "item": "Tab Atkins",
+    "num": 475
   },
   {
     "item": "Florian Rivoal",
@@ -24,20 +24,16 @@
     "num": 94
   },
   {
-    "item": "Tab Atkins",
-    "num": 93
-  },
-  {
     "item": "L. David Baron",
     "num": 78
   },
   {
-    "item": "Tantek Çelik",
-    "num": 71
+    "item": "Håkon Wium Lie",
+    "num": 75
   },
   {
-    "item": "Tab Atkins-Bittner",
-    "num": 69
+    "item": "Tantek Çelik",
+    "num": 73
   },
   {
     "item": "Dean Jackson",
@@ -50,14 +46,6 @@
   {
     "item": "Bert Bos",
     "num": 59
-  },
-  {
-    "item": "Elika J. Etemad",
-    "num": 55
-  },
-  {
-    "item": "Håkon Wium Lie",
-    "num": 52
   },
   {
     "item": "Dirk Schulze",
@@ -96,10 +84,6 @@
     "num": 21
   },
   {
-    "item": "Fantasai",
-    "num": 17
-  },
-  {
     "item": "Adam Argyle",
     "num": 17
   },
@@ -113,10 +97,6 @@
   },
   {
     "item": "Dave Cramer",
-    "num": 16
-  },
-  {
-    "item": "Håkon Lie",
     "num": 16
   },
   {
@@ -232,16 +212,20 @@
     "num": 9
   },
   {
-    "item": "Brad Kemper",
-    "num": 9
-  },
-  {
     "item": "Stephen McGruer",
     "num": 9
   },
   {
     "item": "Vincent Hardy",
     "num": 9
+  },
+  {
+    "item": "Francois Remy",
+    "num": 8
+  },
+  {
+    "item": "Brad Kemper",
+    "num": 8
   },
   {
     "item": "Xidorn Quan",
@@ -308,10 +292,6 @@
     "num": 4
   },
   {
-    "item": "François Remy",
-    "num": 4
-  },
-  {
     "item": "Léonie Watson",
     "num": 4
   },
@@ -320,19 +300,11 @@
     "num": 4
   },
   {
-    "item": "Francois Remy",
+    "item": "Edward O’Connor",
     "num": 4
   },
   {
     "item": "Erik Dahlström",
-    "num": 4
-  },
-  {
-    "item": "Håkon WLie",
-    "num": 4
-  },
-  {
-    "item": "Elika Etemad",
     "num": 4
   },
   {
@@ -360,10 +332,6 @@
     "num": 3
   },
   {
-    "item": "Edward OConnor",
-    "num": 3
-  },
-  {
     "item": "Aryeh Gregor",
     "num": 3
   },
@@ -372,11 +340,7 @@
     "num": 3
   },
   {
-    "item": "Soonbo Han until June 2015",
-    "num": 3
-  },
-  {
-    "item": "Håkon W Lie",
+    "item": "Soonbo Han",
     "num": 3
   },
   {
@@ -416,19 +380,11 @@
     "num": 2
   },
   {
-    "item": "Tantek Çelı̇k",
-    "num": 2
-  },
-  {
     "item": "Aleks Totic",
     "num": 2
   },
   {
     "item": "Sebastian Zartner",
-    "num": 2
-  },
-  {
-    "item": "Elika J Etemad",
     "num": 2
   },
   {
@@ -485,10 +441,6 @@
   },
   {
     "item": "Luke Macpherson",
-    "num": 1
-  },
-  {
-    "item": "Edward O’Connor",
     "num": 1
   },
   {

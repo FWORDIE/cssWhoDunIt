@@ -5,11 +5,11 @@
   },
   {
     "item": "Invited Expert",
-    "num": 531
+    "num": 556
   },
   {
     "item": "Apple",
-    "num": 343
+    "num": 342
   },
   {
     "item": "Microsoft",
@@ -17,19 +17,19 @@
   },
   {
     "item": "Mozilla",
-    "num": 199
+    "num": 210
   },
   {
     "item": "W3C",
-    "num": 179
+    "num": 183
   },
   {
     "item": "Adobe",
-    "num": 111
+    "num": 113
   },
   {
     "item": "Opera Software",
-    "num": 85
+    "num": 86
   },
   {
     "item": "Bloomberg",
@@ -52,15 +52,11 @@
     "num": 19
   },
   {
-    "item": "Hixie.ch",
-    "num": 18
+    "item": "Netscape/AOL",
+    "num": 19
   },
   {
     "item": "Hachette Livre",
-    "num": 16
-  },
-  {
-    "item": "Netscape/AOL",
     "num": 16
   },
   {
@@ -84,10 +80,6 @@
     "num": 8
   },
   {
-    "item": "Mozilla.com",
-    "num": 8
-  },
-  {
     "item": "W3C Invited Expert",
     "num": 7
   },
@@ -104,31 +96,11 @@
     "num": 5
   },
   {
-    "item": "W3C Invited Experts",
-    "num": 4
-  },
-  {
-    "item": "Dbaron.org",
-    "num": 4
-  },
-  {
     "item": "Tetralogical",
     "num": 4
   },
   {
-    "item": "W3.orgHåkon Wium Lie",
-    "num": 4
-  },
-  {
     "item": "Apple formerly Mozilla",
-    "num": 3
-  },
-  {
-    "item": "Aryeh.name",
-    "num": 3
-  },
-  {
-    "item": "Netscape.com",
     "num": 3
   },
   {
@@ -144,19 +116,11 @@
     "num": 2
   },
   {
-    "item": "Adobe Systems&#44; Inc.",
-    "num": 2
-  },
-  {
     "item": "Https://annevankesteren.nl/contact",
     "num": 2
   },
   {
     "item": "Fronteers",
-    "num": 1
-  },
-  {
-    "item": "Operasoftware.com",
     "num": 1
   },
   {

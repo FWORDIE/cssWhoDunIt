@@ -79,6 +79,8 @@ export const logError = async (type: string, sheet: string) => {
 };
 
 export const compileList = (array: any[], items: any[]) => {
+	console.log(items)
+
 	for (let item of items) {
 		let index = array.findIndex((currentItem) => currentItem.item === item);
 		if (index == -1) {
@@ -101,18 +103,19 @@ export const orgTable = [
 		"Google Inc.",
 		"Google.com",
 		"Gmail.com",
+		"Http://www.xanthir.com/contact"
 	],
-	["Apple", "Apple Inc", "Apple.com", "Apple Inc."],
+	["Apple", "Apple Inc", "Apple.com", "Apple Inc.", "Apple formerly Mozilla", "Https://gsnedders.com"],
 	["Bloomberg", "On behalf of Bloomberg"],
-	["Mozilla", "Mozilla Foundation", "Mozilla Japan", "Mozilla Corporation"],
+	["Mozilla", "Mozilla Foundation", "Mozilla Japan", "Mozilla Corporation", "Mozilla.com", "Aryeh.name", "Mozilla formerly Kozea"],
 	[
 		"Microsoft",
 		"Microsoft Corporation",
 		"Microsoft.com",
 		"MicrosoftCorporation",
 	],
-	["W3C", "W3", "W3.org"],
-	["Opera Software", "opera", "Opera Software ASA", "Opera.com"],
+	["W3C", "W3", "W3.org", "W3.orgHåkon Wium Lie"],
+	["Opera Software", "opera", "Opera Software ASA", "Opera.com", "Operasoftware.com", "Https://annevankesteren.nl/contact"],
 	[
 		"Adobe",
 		"Adobe Systems",
@@ -124,8 +127,9 @@ export const orgTable = [
 		"Adobe Systems Inc.",
 		"Then of Adobe Systems Inc.",
 		"Adobe.com",
+		"Adobe Systems&#44; Inc."
 	],
-	["Netscape/AOL", "Netscape Communications"],
+	["Netscape/AOL", "Netscape Communications", "Netscape.com"],
 	["Igalia"],
 	["Stanford", "stanford", "Cs.stanford.edu"],
 	["Hewlett-Packard", "Boi.hp.com", "HP"],
@@ -138,31 +142,42 @@ export const orgTable = [
 	["LG Electronics"],
 	["Canon", "Canon Information Systems Research Australia"],
 	["DAISY Consortium"],
-	["Cox"],
+	["Cox", "Cox.com"],
 	["NIST", "National Institute of Standarts and Technology"],
 	["Tetralogical"],
 	["Vivliostyle"],
 	["Agfa"],
 	["Kozea"],
 	["Antenna House"],
-	["Quark Inc.", "Quark"],
+	["Quark Inc.", "Quark", "Quark.com"],
 	["Bitstream"],
 	["BFO"],
 	["Rakuten", "Rakuten Inc."],
-	["Electricité de France"],
-	["Invited Expert", "Http://fantasai.inkedblade.net/contact"],
+	["Electricité de France", "Der.edf.fr"],
+	["Invited Expert", "Http://fantasai.inkedblade.net/contact", "W3C Invited Experts", "Dbaron.org", "Hixie.ch", "W3C Invited Expert", "Invited Expert formerly Mozilla"],
 ];
 
 export const authorTable = [
-	[
-		"Elika J. Etemad fantasai",
-		"Elika J. Etemad / fantasai",
-		"Elika J. Etemad",
-		"Fantasai",
-	],
-	["Tab Atkins", "Tab Atkins Jr.", "Tab Atkins-Bittner"],
-	["Rossen Atanassov"],
-	["Florian Rivoal"],
-	["Koji Ishii"],
-	//TODO: Add in other names
+[
+	"Elika J. Etemad fantasai",
+	"Elika J. Etemad / fantasai",
+	"Elika J. Etemad",
+	"Fantasai",
+	"Elika Etemad",
+	"Elika J Etemad",
+
+],
+//for hakon and erik their name has weird a and ö and we should take it away. also tantek çelik
+["Tab Atkins", "Tab Atkins Jr.", "Tab Atkins-Bittner"],
+["Edward O’Connor", "Edward OConnor"],
+["Soonbo Han", "Soonbo Han until June 2015"],
+//I not this is not how we fix the top one but please
+["Koji Ishii"],
+["Tantek Celik", "Tantek Çelik", "Tantek Çelı̇k"],
+["Hakon Wium Liw", "Håkon Wium Lie", "Håkon Lie", "Håkon WLie", "Håkon W Lie"],
+["Francois Remy", "François Remy"],
+["Erik Dahlstrom", "Erik Dahlström"],
+["Emilio Cobos Alvarez", "Emilio Cobos Álvarez"],
+["Leonie Watson","Léonie Watson"],
+//TODO: Add in other names
 ];
