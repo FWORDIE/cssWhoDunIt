@@ -93,7 +93,8 @@ export const compileList = (array: any[], items: any[]) => {
 		}
 	}
 };
-
+//The personal websites and email addresses that have been added to organization list names were found through 
+//stalk sessions on linkedin to check which company they were working in when that spec came out
 export const orgTable = [
 	[
 		"Google",
@@ -179,5 +180,5 @@ export const authorTable = [
 ["Erik Dahlstrom", "Erik Dahlström"],
 ["Emilio Cobos Alvarez", "Emilio Cobos Álvarez"],
 ["Leonie Watson","Léonie Watson"],
-//TODO: Add in other names
+
 ];

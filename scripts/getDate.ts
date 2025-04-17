@@ -78,7 +78,7 @@ export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 
 		// Check if string contains only numbers
 		// https://www.fwait.com/how-to-check-if-string-does-not-contain-letters-in-javascript/
-
+//the first chech
 		let regExp = /[a-z]/i;
 
 		date = sheet.slice(sheet.length - 19, sheet.length - 11);
@@ -87,7 +87,7 @@ export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 		if (
 			formatedDate &&
 			formatedDate != "Invalid date" &&
-			!regExp.test(date)
+			!regExp.test("1" + date)
 		) {
 			return formatedDate;
 		}
@@ -105,7 +105,7 @@ export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 			return formatedDate;
 		}
 
-		//NOTE: What is this meant to be doing and for what spec
+		//NOTE: What is this meant to be doing and for what spec 2 lets see if this works
 		//why is it not working???
 		date = $(".head").find("h2.no-num.no-toc").children().text().trim();
 		formatedDate = moment(date, "DDMMMMYYYY").format();
