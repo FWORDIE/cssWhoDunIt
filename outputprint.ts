@@ -411,7 +411,7 @@ const titleCard = () => {
 	return tempString;
 };
 
-const essaySection = async() => {
+const essaySection = async () => {
 	let string = "";
 	const essay = await Deno.readTextFile("essay.txt");
 	const essayBits = essay.split("\n");
@@ -420,7 +420,6 @@ const essaySection = async() => {
 			string += breakItDown(bit, true);
 			string += "\n";
 			string += "\n";
-
 		}
 	}
 	string += centerText(
@@ -438,7 +437,6 @@ const essaySection = async() => {
 	string += "\n";
 	string += "\n";
 	string += "\n";
-
 
 	return string;
 };
@@ -509,7 +507,7 @@ while (position < 10) {
 		} else if (position % 50 == 0 && essayNotPrinted) {
 			console.log("PRINTING ESSAY");
 			string += titleCard();
-			string += await essaySection()
+			string += await essaySection();
 			essayNotPrinted = false;
 		} else {
 			string += printSpec();
