@@ -1,15 +1,15 @@
 [
   {
     "item": "Google",
-    "num": 716
+    "num": 717
   },
   {
     "item": "Invited Expert",
-    "num": 556
+    "num": 565
   },
   {
     "item": "Apple",
-    "num": 342
+    "num": 347
   },
   {
     "item": "Microsoft",
@@ -17,7 +17,7 @@
   },
   {
     "item": "Mozilla",
-    "num": 210
+    "num": 211
   },
   {
     "item": "W3C",
@@ -29,7 +29,7 @@
   },
   {
     "item": "Opera Software",
-    "num": 86
+    "num": 88
   },
   {
     "item": "Bloomberg",
@@ -65,7 +65,7 @@
   },
   {
     "item": "Quark Inc.",
-    "num": 10
+    "num": 11
   },
   {
     "item": "Rakuten",
@@ -78,10 +78,6 @@
   {
     "item": "Vivliostyle",
     "num": 8
-  },
-  {
-    "item": "W3C Invited Expert",
-    "num": 7
   },
   {
     "item": "Canon",
@@ -100,11 +96,7 @@
     "num": 4
   },
   {
-    "item": "Apple formerly Mozilla",
-    "num": 3
-  },
-  {
-    "item": "Cox.com",
+    "item": "Cox",
     "num": 2
   },
   {
@@ -116,10 +108,6 @@
     "num": 2
   },
   {
-    "item": "Https://annevankesteren.nl/contact",
-    "num": 2
-  },
-  {
     "item": "Fronteers",
     "num": 1
   },
@@ -128,35 +116,15 @@
     "num": 1
   },
   {
-    "item": "Http://www.xanthir.com/contact",
-    "num": 1
-  },
-  {
-    "item": "Invited Expert formerly Mozilla",
-    "num": 1
-  },
-  {
-    "item": "Mozilla formerly Kozea",
-    "num": 1
-  },
-  {
     "item": "Kozea",
     "num": 1
   },
   {
-    "item": "Quark.com",
-    "num": 1
-  },
-  {
-    "item": "Der.edf.fr",
+    "item": "Electricité de France",
     "num": 1
   },
   {
     "item": "Facebook",
-    "num": 1
-  },
-  {
-    "item": "Https://gsnedders.com",
     "num": 1
   }
 ]

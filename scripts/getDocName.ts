@@ -1,5 +1,6 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
-import { ignore,logError } from "./basics.ts";
+import { logError } from "./basics.ts";
+import { ignore } from "../getSpecInfo.ts";
 
 //Finding docnames
 export const getDocName = async($: cheerio.CheerioAPI, sheet: string) => {

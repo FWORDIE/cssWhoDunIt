@@ -1,14 +1,9 @@
 [
   {
     "types": [
-      "ERROR: "
+      "specType",
+      "ABSTRACT"
     ],
-    "sheet": "http://dev.w3.org/csswg/css3-background/"
-  },
-  {
-    "types": [
-      "Authors"
-    ],
-    "sheet": "http://dev.w3.org/fxtf/web-animations/"
+    "sheet": "https://www.w3.org/TR/WD-CSS2-971104/"
   }
 ]

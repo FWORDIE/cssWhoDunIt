@@ -1,7 +1,8 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
-import { ignore, logError } from "./basics.ts";
+import { logError } from "./basics.ts";
 import { addLink } from "../addToMissing.ts";
 import { progress } from "../getSpecInfo.ts";
+import { ignore } from "../getSpecInfo.ts";
 
 const MDNProps = await JSON.parse(
 	await Deno.readTextFile("./jsons/allProps.json"),
@@ -37,10 +38,8 @@ export const getProps = async ($: cheerio.CheerioAPI, sheet: string) => {
 			propertyIndexList = $("table.proptable")
 				.find("tbody")
 				.find(".property a");
-
 		}
 		if (!propertyIndexList || propertyIndexList.length < 1) {
-
 			// specail check for https://www.w3.org/TR/2013/WD-css-counter-styles-3-20130221/
 			if (
 				$("table.proptable").prev().text().trim() != "Descriptor index"
@@ -50,7 +49,6 @@ export const getProps = async ($: cheerio.CheerioAPI, sheet: string) => {
 					.find("tbody")
 					.find(".property");
 			}
-
 		}
 
 		if (!propertyIndexList || propertyIndexList.length < 1) {
@@ -71,14 +69,17 @@ export const getProps = async ($: cheerio.CheerioAPI, sheet: string) => {
 			for (const row of propertyIndexList) {
 				// extra checks for https://www.w3.org/TR/2002/WD-css3-text-20021024/
 				// and https://www.w3.org/TR/2013/WD-css3-cascade-20130103/
-				if ($(row).parent().next().text().trim() != "" ||$(row).parent().next().length == 0 || $(row).text().trim() === 'all') {
+				if (
+					$(row).parent().next().text().trim() != "" ||
+					$(row).parent().next().length == 0 ||
+					$(row).text().trim() === "all"
+				) {
 					let prop = $(row).text().trim();
 					if (prop && cleanProp(prop, sheet) != "FAILED") {
 						allProps.push(cleanProp(prop, sheet));
 					}
-				}else{
+				} else {
 					// console.log('here',$(row).parent().next().text().trim())
-
 				}
 			}
 			if (allProps.length > 0) {
@@ -129,7 +130,6 @@ export const getProps = async ($: cheerio.CheerioAPI, sheet: string) => {
 				.attr()?.href;
 
 			if (linkedTable) {
-
 				// Here we make another cheerio instance for the linked table
 				const $ = await cheerio.fromURL(
 					sheet +
@@ -272,14 +272,16 @@ export const getProps = async ($: cheerio.CheerioAPI, sheet: string) => {
 						.children()
 						.first()
 						.find("dfn")
-						.text();
-					if (prop && cleanProp(prop, sheet) != "FAILED") {
-						allProps.push(cleanProp(prop, sheet));
+					for (let propper of prop) {
+						let propperText = $(propper).text()
+						if (propperText && cleanProp(propperText, sheet) != "FAILED") {
+							allProps.push(cleanProp(propperText, sheet));
+						}
 					}
 					// e.g. https://www.w3.org/TR/2004/WD-css3-speech-20040727/
-					prop = $(item).find("caption").find("dfn").text();
-					if (prop && cleanProp(prop, sheet) != "FAILED") {
-						allProps.push(cleanProp(prop, sheet));
+					let propText = $(item).find("caption").find("dfn").text();
+					if (propText && cleanProp(propText, sheet) != "FAILED") {
+						allProps.push(cleanProp(propText, sheet));
 					}
 				}
 			}
@@ -600,12 +602,15 @@ const cleanProp = (prop: string, sheet: string) => {
 	if (prop[prop.length - 1] === "'") {
 		prop = prop.slice(0, prop.length - 1);
 	}
-	prop = prop.replace('(Descriptor)', '')
+
+	prop = prop.replace("(Descriptor)", "");
+	prop = prop.replaceAll("[another name?]", "");
 	// Here we check that MDN lists this as a Property based off the getAllProps.ts Scrape
 	if (
 		prop &&
 		!/\d/.test(prop) &&
-		!prop.includes("<")
+		!prop.includes("<") &&
+		!prop.includes("property-name")
 		//REMOVED BECUASE WE LOSE OLD PROPS
 		// &&
 		// MDNProps.some((goodProp: string) => {

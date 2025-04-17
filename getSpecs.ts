@@ -86,6 +86,11 @@ const getSpecsFromList = async () => {
 		return !spec.includes("drafts.fxtf.org/web-animations/");
 	});
 
+		// filters out on dupe
+		specs = specs.filter((spec: string) => {
+			return !spec.includes("dev.w3.org/fxtf/web-animations/");
+		});
+
 	console.log(`Found ${specs.length} Spec Sheets after second scrape!`);
 
 	console.log("Saving Scraped sheet urls");

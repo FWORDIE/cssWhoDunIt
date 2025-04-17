@@ -7,10 +7,10 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
 import {
 	brokenLinks,
-	specSheetLinkArray,
 	testArray,
 	logError,
 	compileList,
+	specSheetLinkArray,
 } from "./scripts/basics.ts";
 import type { Authors, ErrorLink, SpecSheet } from "./types.ts";
 import ProgressBar from "jsr:@deno-library/progress";
@@ -32,8 +32,29 @@ const allSpecInfo: SpecSheet[] = [];
 let specs = specSheetLinkArray;
 const allNamesList: any[] = [];
 const allOrgsList: any[] = [];
+const allPropsList: any[] = [];
 
 // General Set Up
+
+export const ignore = async (focus: string, sheet: string) => {
+	// Ignore if focus is called and not relevent
+	if (!flags.focus.match(`all|${focus}`)) {
+		return true;
+	}
+
+	// Ignore if type is known broken for thing
+	const linksThatAreMissing = JSON.parse(
+		await Deno.readTextFile("./jsons/missing.json"),
+	)[focus];
+
+	if (linksThatAreMissing && linksThatAreMissing.length > 0) {
+		return linksThatAreMissing.some((link: string) => {
+			return link == sheet;
+		});
+	}
+
+	return false;
+};
 
 export const flags = parseArgs(Deno.args, {
 	string: ["force", "focus"],
@@ -138,7 +159,7 @@ const scrapeAll = async () => {
 		// to get a value that is either negative, positive, or zero.
 
 		// @ts-ignore: I know these are dates
-		return new Date(b.date) - new Date(a.date);
+		return a.date < b.date ? -1 : a.date > b.date ? 1 : 0;
 	});
 
 	// Complies a list of every name found and orders them
@@ -156,6 +177,11 @@ const scrapeAll = async () => {
 		// sort names by number
 		return b.num - a.num;
 	});
+
+	allPropsList.sort(function (a, b) {
+		// sort names by number
+		return b.num - a.num;
+	});
 	await Deno.writeTextFile(
 		"./jsons/allOrgsList.json",
 		JSON.stringify(allOrgsList, null, 2),
@@ -164,6 +190,11 @@ const scrapeAll = async () => {
 	await Deno.writeTextFile(
 		"./jsons/allSpecInfo.json",
 		JSON.stringify(allSpecInfo, null, 2),
+	);
+
+	await Deno.writeTextFile(
+		"./jsons/allPropsList.json",
+		JSON.stringify(allPropsList, null, 2),
 	);
 
 	await progress.console(
@@ -246,6 +277,10 @@ const getSpecInfo = async (specSheet: string, atttempt2 = false) => {
 					return el.org;
 				}),
 			);
+		}
+
+		if (thisSpecsInfo.properties && thisSpecsInfo.properties?.length > 0) {
+			compileList(allPropsList, thisSpecsInfo.properties);
 		}
 		// await progress.console(thisSpecsInfo);
 	} catch (e) {

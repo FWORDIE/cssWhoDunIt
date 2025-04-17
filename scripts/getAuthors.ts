@@ -1,6 +1,7 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
-import { authorTable, ignore, logError, orgTable } from "./basics.ts";
+import { authorTable, logError, orgTable } from "./basics.ts";
 import { Authors } from "../types.ts";
+import { ignore } from "../getSpecInfo.ts";
 
 export const getAuthors = async ($: cheerio.CheerioAPI, sheet: string) => {
   // Ignore if focus is called or is a known issue

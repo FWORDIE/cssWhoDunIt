@@ -1,6 +1,8 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
-import { ignore, logError } from "./basics.ts";
+import {  logError } from "./basics.ts";
 import moment from "npm:moment";
+import { ignore } from "../getSpecInfo.ts";
+
 
 export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 	// Ignore if focus is called or is a known issue
@@ -115,8 +117,17 @@ export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 
 		// superLazy fix, but im done
 		if (sheet == "https://www.w3.org/pub/WWW/TR/PR-CSS1") {
-			date = "11 Apr 2008";
-			formatedDate = moment(date, "DDMMMMYYYY").format();
+			date = "11/04/2008";
+			formatedDate = moment(date, "DD/MM/YYYY").format();
+
+			if (formatedDate && formatedDate != "Invalid date") {
+				return formatedDate;
+			}
+		}
+
+		if (sheet == "https://www.w3.org/TR/WD-CSS2-971104/cover.html") {
+			date = "04/11/1997";
+			formatedDate = moment(date, "DD/MM/YYYY").format();
 
 			if (formatedDate && formatedDate != "Invalid date") {
 				return formatedDate;

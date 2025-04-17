@@ -1,148 +1,33 @@
-A 2 -0%HT P0 _0
-                                           -102/08/2002-0%HT
+ 
 
--1CSS3 module: Backgrounds-0%HT                                                           %GWorking Draft-0%HT
--1Properties Defined:-0%HT background, background-attachment, background-clip, background-color, 
-background-image, background-origin, background-position, background-quantity, 
-background-repeat, background-size, background-spacing-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Tim Boland                                                                                  NIST
-%GS0First Ever Contribution-0%HT                                                  %GS0First Ever Contribution-0%HT
+                                           -104/11/1997-0%HT:FHW0
+
+-1CSS2 Specification Release-0%HT:FHW0                                                           %GUnkown Type-0%HT:FHW0
+-1Properties Defined:-0%HT:FHW0 margin-top, margin-right, margin-bottom, margin-left, margin, padding-top, 
+padding-right, padding-bottom, padding-left, padding, border-top-width, border-right-width, 
+border-bottom-width, border-left-width, border-width, border-top-color, border-right-color, 
+border-bottom-color, border-left-color, border-color, border-top-style, border-right-style, 
+border-bottom-style, border-left-style, border-style, border-top, border-bottom, border-right, 
+border-left, border, position, direction, display, float, clear, top, right, bottom, left, 
+z-index, columns, column-gap, column-rule-width, column-rule-style, column-rule-color, 
+column-rule, width, min-width, max-width, height, min-height, max-height, line-height, 
+vertical-align, overflow, clip, visibility, page-break-before, page-break-after, orphans, 
+widows, %Gsize-0%HT:FHW0, %Gmarks-0%HT:FHW0, %Grunning-head-0%HT:FHW0, color, background-color, background-image, 
+background-repeat, background-attachment, background-position, background, font-family, 
+font-style, font-variant, font-weight, font-size, font, text-indent, %Galignment-0%HT:FHW0, 
+text-decoration, text-shadow, letter-spacing, word-spacing, text-transform, white-space, 
+list-style-type, list-style-image, list-style-position, list-style, %Grow-span-0%HT:FHW0, column-span, 
+caption-side, %Gspeak-header-cell-0%HT:FHW0, cursor, %Gvolume-0%HT:FHW0, %Gspeak-0%HT:FHW0, %Gpause-before-0%HT:FHW0, %Gpause-after-0%HT:FHW0, %Gpause-0%HT:FHW0, 
+%Gcue-before-0%HT:FHW0, %Gcue-after-0%HT:FHW0, %Gcue-0%HT:FHW0, %Gplay-during-0%HT:FHW0, %Gazimuth-0%HT:FHW0, %Gelevation-0%HT:FHW0, %Gspeech-rate-0%HT:FHW0, %Gvoice-family-0%HT:FHW0, %Gpitch-0%HT:FHW0, 
+%Gpitch-range-0%HT:FHW0, %Gstress-0%HT:FHW0, %Grichness-0%HT:FHW0, %Gspeak-punctuation-0%HT:FHW0, %Gspeak-date-0%HT:FHW0, %Gspeak-numeral-0%HT:FHW0, %Gspeak-time-0%HT:FHW0-0%HT:FHW0
+-1Editors:-0%HT:FHW0                                                                          -1Organisations:-0%HT:FHW0
 Bert Bos                                                                                     W3C
-%GS0First Ever Contribution-0%HT                                                  %GS0First Ever Contribution-0%HT
-
-
-                                           -124/10/2002-0%HT
-
--1CSS3 module: Ruby-0%HT                                                                  %GWorking Draft-0%HT
--1Properties Defined:-0%HT ruby-align, ruby-overhang, ruby-position, ruby-span-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Michel Suignard                                                                        Microsoft
-%GS0First Ever Contribution-0%HT                                                  %GS0First Ever Contribution-0%HT
-
-
-                                           -124/10/2002-0%HT
-
--1CSS3 module: The box model-0%HT                                                         %GWorking Draft-0%HT
--1Properties Defined:-0%HT border-top-width, border-right-width, border-bottom-width, 
-border-left-width, border-width, box-sizing, box-width, box-height, clear, clear-after, crop, 
-display, display-model, display-role, fit, fit-position, float, float-displace, 
-indent-edge-reset, margin, margin-top, margin-right, margin-bottom, margin-left, marquee, 
-marquee-direction, marquee-repetition, marquee-speed, marquee-style, max-width, max-height, 
-min-width, min-height, overflow, overflow-clip, overflow-x, overflow-y, padding, padding-top, 
-padding-right, padding-bottom, padding-left, visibility, width, height-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Bert Bos                                                                                     W3C
-%GS02 Contributions So Far-0%HT                                                    %GS02 Contributions So Far-0%HT
-
-
-                                           -124/10/2002-0%HT
-
--1CSS3 module: text-0%HT                                                                  %GWorking Draft-0%HT
--1Properties Defined:-0%HT all-space-treatment, direction, glyph-orientation-horizontal, 
-glyph-orientation-vertical, hanging-punctuation, kerning-mode, kerning-pair-threshold, 
-line-grid, line-grid-mode, line-grid-progression, letter-spacing, line-break, 
-linefeed-treatment, max-font-size, min-font-size, punctuation-trim, text-script, text-align, 
-text-align-last, text-autospace, text-blink, text-combine, text-decoration, text-indent, 
-text-justify, text-justify-trim, text-kashida-space, text-line-through, 
-text-line-through-color, text-line-through-mode, text-line-through-style, text-overflow, 
-text-overflow-ellipsis, text-overflow-mode, text-overline, text-overline-color, 
-text-overline-mode, text-overline-style, text-shadow, text-transform, text-underline, 
-text-underline-color, text-underline-mode, text-underline-position, text-underline-style, 
-unicode-bidi, white-space, white-space-treatment, word-break, word-break-CJK, 
-word-break-inside, word-spacing, wrap-option, writing-mode-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Michel Suignard                                                                        Microsoft
-%GS02 Contributions So Far-0%HT                                                    %GS02 Contributions So Far-0%HT
-
-
-                                           -107/11/2002-0%HT
-
--1CSS3 module: Lists-0%HT                                                                 %GWorking Draft-0%HT
--1Properties Defined:-0%HT list-style-type, list-style-image, list-style-position, list-style-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Ian Hickson                                                                             Hixie.ch
-%GS0First Ever Contribution-0%HT                                                  %GS0First Ever Contribution-0%HT
-Tantek Çelı̇k                                                                          Microsoft
-%GS0First Ever Contribution-0%HT                                                   %GS03 Contributions So Far-0%HT
-
-
-                                           -128/01/2003-0%HT
-
--1Cascading Style Sheets, Level 2 revision 1-0%HT                                         %GWorking Draft-0%HT
--1Properties Defined:-0%HT azimuth, background-attachment, background-color, background-image, 
-background-position, background-repeat, background, border-collapse, border-color, 
-border-spacing, border-style, border-top, border-top-color, border-top-style, border-top-width, 
-border-width, border, bottom, caption-side, clear, clip, color, content, counter-increment, 
-counter-reset, cue-after, cue-before, cue, cursor, direction, display, elevation, empty-cells, 
-float, font-family, font-size, font-style, font-variant, font-weight, font, height, left, 
-letter-spacing, line-height, list-style-image, list-style-position, list-style-type, 
-list-style, margin-right, margin-top, margin, max-height, max-width, min-height, min-width, 
-orphans, outline-color, outline-style, outline-width, outline, overflow, padding-top, padding, 
-page-break-after, page-break-before, page-break-inside, pause-after, pause-before, pause, 
-pitch-range, pitch, play-during, position, quotes, richness, right, speak-header, 
-speak-numeral, speak-punctuation, speak, speech-rate, stress, table-layout, text-align, 
-text-decoration, text-indent, text-transform, top, unicode-bidi, vertical-align, visibility, 
-voice-family, volume, white-space, widows, width, word-spacing, z-index-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Bert Bos                                                                                     W3C
-%GS03 Contributions So Far-0%HT                                                    %GS03 Contributions So Far-0%HT
-Tantek Çelik                                                                           Microsoft
-%GS0First Ever Contribution-0%HT                                                   %GS04 Contributions So Far-0%HT
-Ian Hickson                                                                             Hixie.ch
-%GS02 Contributions So Far-0%HT                                                    %GS02 Contributions So Far-0%HT
-Håkon Wium Lie                                                                    Opera Software
-%GS0First Ever Contribution-0%HT                                                  %GS0First Ever Contribution-0%HT
-
-
-                                           -114/02/2003-0%HT
-
--1CSS3 module: Color-0%HT                                                                 %GWorking Draft-0%HT
--1Properties Defined:-0%HT color, color-profile, opacity, rendering-intent-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Tantek Çelik                                                                           Microsoft
-%GS02 Contributions So Far-0%HT                                                    %GS05 Contributions So Far-0%HT
+%GS010 Contributions So Far-0%HT:FHW0                                                  %GS019 Contributions So Far-0%HT:FHW0
+Hakon Wium Liw                                                                               W3C
+%GS010 Contributions So Far-0%HT:FHW0                                                  %GS020 Contributions So Far-0%HT:FHW0
 Chris Lilley                                                                                 W3C
-%GS0First Ever Contribution-0%HT                                                   %GS04 Contributions So Far-0%HT
-
-
-                                           -126/02/2003-0%HT
-
--1CSS3 module: text-0%HT                                                                  %GWorking Draft-0%HT
--1Properties Defined:-0%HT all-space-treatment, direction, glyph-orientation-horizontal, 
-glyph-orientation-vertical, hanging-punctuation, kerning-mode, kerning-pair-threshold, 
-letter-spacing, line-break, linefeed-treatment, line-grid, line-grid-mode, 
-line-grid-progression, max-font-size, min-font-size, punctuation-trim, text-align, 
-text-align-last, text-autospace, text-blink, text-block-indent, text-combine, text-decoration, 
-text-first-indent, text-indent, text-justify, text-justify-trim, text-kashida-space, 
-text-line-through, text-line-through-color, text-line-through-mode, text-line-through-style, 
-text-line-through-width, text-overflow, text-overflow-ellipsis, text-overflow-mode, 
-text-overline, text-overline-color, text-overline-mode, text-overline-style, 
-text-overline-width, text-script, text-shadow, text-transform, text-underline, 
-text-underline-color, text-underline-mode, text-underline-position, text-underline-style, 
-text-underline-width, unicode-bidi, white-space, white-space-treatment, word-break, 
-word-break-cjk, word-break-inside, word-spacing, wrap-option, writing-mode-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Michel Suignard                                                                        Microsoft
-%GS03 Contributions So Far-0%HT                                                    %GS06 Contributions So Far-0%HT
-
-
-                                           -114/05/2003-0%HT
-
--1CSS3 Generated and Replaced Content Module-0%HT                                         %GWorking Draft-0%HT
--1Properties Defined:-0%HT content, counter-increment, counter-reset, crop, display, move-to, 
-page-policy, quotes-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Ian Hickson                                                                             Hixie.ch
-%GS03 Contributions So Far-0%HT                                                    %GS03 Contributions So Far-0%HT
-
-
-                                           -114/05/2003-0%HT
-
--1CSS3 Ruby Module-0%HT                                                        %GCandidate Recommendation-0%HT
--1Properties Defined:-0%HT ruby-align, ruby-overhang, ruby-position, ruby-span-0%HT
--1Editors:-0%HT                                                                          -1Organisations:-0%HT
-Michel Suignard                                                                        Microsoft
-%GS04 Contributions So Far-0%HT                                                    %GS07 Contributions So Far-0%HT
+%GS0First Ever Contribution-0%HT:FHW0                                                  %GS021 Contributions So Far-0%HT:FHW0
+Ian Jacobs                                                                                   W3C
+%GS0First Ever Contribution-0%HT:FHW0                                                  %GS022 Contributions So Far-0%HT:FHW0
 
 

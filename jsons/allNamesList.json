@@ -1,7 +1,7 @@
 [
   {
-    "item": "Elika J. Etemad fantasai",
-    "num": 512
+    "item": "Elika J. Etemad [fantasai]",
+    "num": 513
   },
   {
     "item": "Tab Atkins",
@@ -28,11 +28,11 @@
     "num": 78
   },
   {
-    "item": "Håkon Wium Lie",
+    "item": "Hakon Wium Liw",
     "num": 75
   },
   {
-    "item": "Tantek Çelik",
+    "item": "Tantek Celik",
     "num": 73
   },
   {
@@ -172,7 +172,7 @@
     "num": 10
   },
   {
-    "item": "Emilio Cobos Álvarez",
+    "item": "Emilio Cobos Alvarez",
     "num": 10
   },
   {
@@ -212,6 +212,10 @@
     "num": 9
   },
   {
+    "item": "Brad Kemper",
+    "num": 9
+  },
+  {
     "item": "Stephen McGruer",
     "num": 9
   },
@@ -221,10 +225,6 @@
   },
   {
     "item": "Francois Remy",
-    "num": 8
-  },
-  {
-    "item": "Brad Kemper",
     "num": 8
   },
   {
@@ -292,7 +292,7 @@
     "num": 4
   },
   {
-    "item": "Léonie Watson",
+    "item": "Leonie Watson",
     "num": 4
   },
   {
@@ -304,7 +304,7 @@
     "num": 4
   },
   {
-    "item": "Erik Dahlström",
+    "item": "Erik Dahlstrom",
     "num": 4
   },
   {
