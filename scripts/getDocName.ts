@@ -1,3 +1,5 @@
+// function to get doc names
+
 import * as cheerio from "npm:cheerio@^1.0.0";
 import { logError } from "./basics.ts";
 import { ignore } from "../getSpecInfo.ts";

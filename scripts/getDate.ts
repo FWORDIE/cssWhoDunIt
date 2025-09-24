@@ -1,8 +1,7 @@
 import * as cheerio from "npm:cheerio@^1.0.0";
-import {  logError } from "./basics.ts";
+import { logError } from "./basics.ts";
 import moment from "npm:moment";
 import { ignore } from "../getSpecInfo.ts";
-
 
 export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 	// Ignore if focus is called or is a known issue
@@ -80,7 +79,7 @@ export const getDate = async ($: cheerio.CheerioAPI, sheet: string) => {
 
 		// Check if string contains only numbers
 		// https://www.fwait.com/how-to-check-if-string-does-not-contain-letters-in-javascript/
-//the first chech
+		//the first chech
 		let regExp = /[a-z]/i;
 
 		date = sheet.slice(sheet.length - 19, sheet.length - 11);

@@ -1,33 +1,15 @@
  
 
-                                           -104/11/1997-0%HT:FHW0
+                                           -117/04/2025-0%HT:FHW0
 
--1CSS2 Specification Release-0%HT:FHW0                                                           %GUnkown Type-0%HT:FHW0
--1Properties Defined:-0%HT:FHW0 margin-top, margin-right, margin-bottom, margin-left, margin, padding-top, 
-padding-right, padding-bottom, padding-left, padding, border-top-width, border-right-width, 
-border-bottom-width, border-left-width, border-width, border-top-color, border-right-color, 
-border-bottom-color, border-left-color, border-color, border-top-style, border-right-style, 
-border-bottom-style, border-left-style, border-style, border-top, border-bottom, border-right, 
-border-left, border, position, direction, display, float, clear, top, right, bottom, left, 
-z-index, columns, column-gap, column-rule-width, column-rule-style, column-rule-color, 
-column-rule, width, min-width, max-width, height, min-height, max-height, line-height, 
-vertical-align, overflow, clip, visibility, page-break-before, page-break-after, orphans, 
-widows, %Gsize-0%HT:FHW0, %Gmarks-0%HT:FHW0, %Grunning-head-0%HT:FHW0, color, background-color, background-image, 
-background-repeat, background-attachment, background-position, background, font-family, 
-font-style, font-variant, font-weight, font-size, font, text-indent, %Galignment-0%HT:FHW0, 
-text-decoration, text-shadow, letter-spacing, word-spacing, text-transform, white-space, 
-list-style-type, list-style-image, list-style-position, list-style, %Grow-span-0%HT:FHW0, column-span, 
-caption-side, %Gspeak-header-cell-0%HT:FHW0, cursor, %Gvolume-0%HT:FHW0, %Gspeak-0%HT:FHW0, %Gpause-before-0%HT:FHW0, %Gpause-after-0%HT:FHW0, %Gpause-0%HT:FHW0, 
-%Gcue-before-0%HT:FHW0, %Gcue-after-0%HT:FHW0, %Gcue-0%HT:FHW0, %Gplay-during-0%HT:FHW0, %Gazimuth-0%HT:FHW0, %Gelevation-0%HT:FHW0, %Gspeech-rate-0%HT:FHW0, %Gvoice-family-0%HT:FHW0, %Gpitch-0%HT:FHW0, 
-%Gpitch-range-0%HT:FHW0, %Gstress-0%HT:FHW0, %Grichness-0%HT:FHW0, %Gspeak-punctuation-0%HT:FHW0, %Gspeak-date-0%HT:FHW0, %Gspeak-numeral-0%HT:FHW0, %Gspeak-time-0%HT:FHW0-0%HT:FHW0
+-1CSS Color Module Level 4-0%HT:FHW0                                                          %GEditor’s Draft-0%HT:FHW0
+-1Properties Defined:-0%HT:FHW0 color, opacity-0%HT:FHW0
 -1Editors:-0%HT:FHW0                                                                          -1Organisations:-0%HT:FHW0
-Bert Bos                                                                                     W3C
-%GS010 Contributions So Far-0%HT:FHW0                                                  %GS019 Contributions So Far-0%HT:FHW0
-Hakon Wium Liw                                                                               W3C
-%GS010 Contributions So Far-0%HT:FHW0                                                  %GS020 Contributions So Far-0%HT:FHW0
+Tab Atkins                                                                                Google
+%GS0475 Contributions So Far-0%HT:FHW0                                                %GS0717 Contributions So Far-0%HT:FHW0
 Chris Lilley                                                                                 W3C
-%GS0First Ever Contribution-0%HT:FHW0                                                  %GS021 Contributions So Far-0%HT:FHW0
-Ian Jacobs                                                                                   W3C
-%GS0First Ever Contribution-0%HT:FHW0                                                  %GS022 Contributions So Far-0%HT:FHW0
+%GS0101 Contributions So Far-0%HT:FHW0                                                %GS0183 Contributions So Far-0%HT:FHW0
+Lea Verou                                                       Invited Expert - Unknown Funding
+%GS030 Contributions So Far-0%HT:FHW0                                                 %GS0565 Contributions So Far-0%HT:FHW0
 
 

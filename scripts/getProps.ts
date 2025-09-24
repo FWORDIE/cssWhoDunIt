@@ -1,3 +1,5 @@
+// this function tries to grab all the of the properties for each spec sheet
+
 import * as cheerio from "npm:cheerio@^1.0.0";
 import { logError } from "./basics.ts";
 import { addLink } from "../addToMissing.ts";

@@ -1,3 +1,5 @@
+// This script grabs all the spec sheets and drafts
+
 import { delay } from "jsr:@std/async/delay";
 import * as cheerio from "npm:cheerio@^1.0.0";
 import { specSheetLinkArray } from "./scripts/basics.ts";

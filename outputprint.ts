@@ -1,16 +1,21 @@
 //Takes the data and formats it as an output for a dot matrix printer
 
-import { retry } from "jsr:@std/async/retry";
 import { removeDiacritics } from "./scripts/basics.ts";
 import { SpecSheet } from "./types.ts";
 import moment from "npm:moment";
+import { parseArgs } from "jsr:@std/cli/parse-args";
 
 export const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
+
+const flags = parseArgs(Deno.args, {
+	string: ["position", "emulate", "test"],
+	default: { position: 0, emulate: true, test: false },
+});
 
 let position = 0;
 const chrLimit = 96;
 // let string = "";
-const forPrint = true;
+let forPrint = false;
 let thisYear = "0";
 let essayNotPrinted = true;
 
@@ -235,6 +240,8 @@ const addToList = (array: any[], item: string | null) => {
 // Generates a set of tables for the most
 const genTable = () => {
 	let tempString = "";
+	tempString += addLine();
+	tempString += "\n";
 
 	// Sort arrays by most contrribuatuins
 	yearNameList = yearNameList.sort((a, b) => b.num - a.num);
@@ -294,6 +301,86 @@ const genTable = () => {
 		}
 	}
 	tempString += "\n";
+	tempString += addLine();
+
+	return tempString;
+};
+
+const addLine = () => {
+	let tempString = "";
+	for (let i = 0; i < chrLimit; i++) {
+		tempString += "*";
+	}
+	tempString += "\n";
+	return tempString;
+};
+
+// Generates a set of tables for the most
+const genAllTable = () => {
+	let tempString = "";
+
+	tempString += addLine();
+	tempString += "\n";
+
+	// Sort arrays by most contrribuatuins
+	nameList = nameList.sort((a, b) => b.num - a.num);
+	orgList = orgList.sort((a, b) => b.num - a.num);
+
+	if (nameList.length > 0) {
+		const title =
+			specialChrs.bold.key +
+			"So Far The Most Active Editors" +
+			specialChrs.normal.key;
+		tempString += centerText(title);
+		tempString += "\n";
+		for (let i = 0; i < 5; i++) {
+			if (nameList[i]) {
+				const name = nameList[i].item;
+				let editor = name || " Name Unknown";
+				let editContribsName =
+					specialChrs.italic.key +
+					nameList[i].num +
+					" Contributions" +
+					specialChrs.normal.key;
+
+				tempString += makeLine(
+					(i + 1).toString() + ". " + editor.trim(),
+					editContribsName,
+				);
+			}
+		}
+	}
+
+	tempString += "\n";
+	if (orgList.length > 0) {
+		const title =
+			specialChrs.bold.key +
+			"So Far The Most Active Orginiations" +
+			specialChrs.normal.key;
+		tempString += centerText(title);
+		tempString += "\n";
+
+		for (let i = 0; i < 5; i++) {
+			if (orgList[i]) {
+				const name = orgList[i].item;
+				let org = name || " Name Unknown";
+				let orgContribsName =
+					specialChrs.italic.key +
+					orgList[i].num +
+					" Contributions" +
+					specialChrs.normal.key;
+
+				tempString += makeLine(
+					(i + 1).toString() + ". " + org.trim(),
+					orgContribsName,
+				);
+			}
+		}
+	}
+	
+	tempString += "\n";
+	tempString += addLine;
+
 	return tempString;
 };
 
@@ -458,75 +545,104 @@ const correctString = (string: string) => {
 
 let emuater = "";
 
-while (position < 10) {
-	let string = " ";
-	string += "\n";
-	string += "\n";
-
-	if (position < 1 && essayNotPrinted) {
-		string +=
-			setLineHeight +
-			" " +
-			normal +
-			" " +
-			noPopSpacing +
-			" " +
-			noOverscore +
-			" " +
-			lineBreakReturn;
+const main = async (
+	startPosition: number = position,
+	emulate = true,
+	test = false,
+) => {
+	forPrint = !emulate;
+	position = startPosition;
+	let end: number = specSheetInfoArray.length;
+	if (test) {
+		end = position + 10;
 	}
-	// Decoder thing
-	const td = new TextDecoder();
-	// Run command to see print queue
-	const queue = await new Deno.Command("lpstat", {
-		args: ["-R"],
-	}).output();
+	console.log("Test: ", test);
+	console.log("START POS: ", position);
+	console.log("PRINTING: ", forPrint);
+	while (position < end) {
+		let string = " ";
+		string += "\n";
+		string += "\n";
 
-	//Decode Print queue
-	const queueData = td.decode(queue.stdout);
+		if (position < 1 && essayNotPrinted) {
+			string +=
+				setLineHeight +
+				" " +
+				normal +
+				" " +
+				noPopSpacing +
+				" " +
+				noOverscore +
+				" " +
+				lineBreakReturn;
+		}
+		// Decoder thing
+		const td = new TextDecoder();
+		// Run command to see print queue
+		const queue = await new Deno.Command("lpstat", {
+			args: ["-R"],
+		}).output();
 
-	// if print queue is bigger then 0
-	if (queueData.length > 0 && forPrint) {
-		console.log("Printer Busy");
-		await delay(100);
-	} else {
-		// Print something
+		//Decode Print queue
+		const queueData = td.decode(queue.stdout);
 
-		string += "";
-
-		//this is the sting we add the specs to and return
-		const item: SpecSheet = specSheetInfoArray[position];
-
-		const shortDate = moment(item.date).format("YYYY");
-
-		if (shortDate != thisYear && thisYear != "0") {
-			string += genTable();
-			yearNameList = [];
-			yearOrgList = [];
-			console.log(thisYear);
-		} else if (position % 50 == 0 && essayNotPrinted) {
-			console.log("PRINTING ESSAY");
-			string += titleCard();
-			string += await essaySection();
-			essayNotPrinted = false;
+		// if print queue is bigger then 0
+		if (queueData.length > 0 && forPrint) {
+			console.log("Printer Busy");
+			await delay(100);
 		} else {
-			string += printSpec();
-			essayNotPrinted = true;
+			// Print something
+
+			string += "";
+
+			//this is the sting we add the specs to and return
+			const item: SpecSheet = specSheetInfoArray[position];
+
+			const shortDate = moment(item.date).format("YYYY");
+
+			if (shortDate != thisYear && thisYear != "0") {
+				string += genTable();
+				yearNameList = [];
+				yearOrgList = [];
+				console.log(thisYear);
+			} else if (position % 50 == 0 && essayNotPrinted) {
+				console.log("PRINTING ESSAY");
+				string += titleCard();
+				string += await essaySection();
+				if (position != 0) {
+					string += "\n";
+					string += genAllTable();
+				}
+
+				essayNotPrinted = false;
+			} else {
+				string += printSpec();
+				essayNotPrinted = true;
+			}
+
+			thisYear = shortDate;
+			emuater += string;
+
+			if (forPrint) {
+				await Deno.writeTextFile("output.txt", correctString(string));
+
+				const process = await new Deno.Command("lpr", {
+					args: ["-o raw", "output.txt"],
+				}).output();
+
+				console.log(td.decode(process.stdout));
+				await delay(1000);
+			}
+			console.log("POSITION: ", position);
+			await Deno.writeTextFile("emulater.txt", correctString(emuater));
 		}
-
-		thisYear = shortDate;
-		emuater += string;
-
-		if (forPrint) {
-			await Deno.writeTextFile("output.txt", correctString(string));
-
-			const process = await new Deno.Command("lpr", {
-				args: ["-o raw", "output.txt"],
-			}).output();
-
-			console.log("POSITIONS: " + position, td.decode(process.stdout));
-			await delay(1000);
-		}
-		await Deno.writeTextFile("emulater.txt", correctString(emuater));
 	}
-}
+};
+
+// Run program when called with params position and em
+if (import.meta.main)
+	main(
+		parseInt(flags.position.toString()),
+		flags.emulate == "true",
+		flags.test == "true",
+	);
